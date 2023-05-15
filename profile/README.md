@@ -14,3 +14,4 @@
 | scRNASeq | [scRNASeq](https://github.com/CCBR/TechDev_scRNASeq_Dev2023) | Nextflow | No | [Email](mailto:samantha.sevilla@nih.gov) | 
 | ATACSeq | [ASAP](https://github.com/CCBR/ASAP) | Snakemake | No | [Email](mailto:vishal.koparde@nih.gov) | 
 | CUT&Run | [CARLISLE](https://github.com/CCBR/CARLISLE) | Snakemake | No | [Email](mailto:samantha.sevilla@nih.gov) | 
+| circularRNA | [CHARLIE](https://github.com/CCBR/CHARLIE) | Snakemake | No | [Email](mailto:vishal.koparde@nih.gov) | 
