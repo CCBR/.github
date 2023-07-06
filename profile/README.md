@@ -4,7 +4,7 @@
 - 👋 Hi, we're the [**@CCBR**](https://bioinformatics.ccr.cancer.gov/ccbr/), a group of bioinformatics analysts and engineers
 - 📖 We build flexible, reproducible, workflows for next-generation sequencing data
 - :bulb: We [collaborate](https://abcs-amp.nih.gov/project/request/CCBR/) with CCR PIs
-- 📫 You can reach us at [CCBR_Pipeliner@nih.gov](mailto:CCBR_Pipeliner@nih.gov)
+- 📫 You can reach us at [ccbr_pipeliner@mail.nih.gov](mailto:ccbr_pipeliner@mail.nih.gov)
 
 > <b><ins>RHEL8 BIOWULF updates:</ins></b>
 > 
@@ -43,4 +43,4 @@
 > 
 > <sup> **8** Various single cell modality will be supported by our scRNASeq pipeine... eg. single-cell expression, CITESeq, TCR-Seq, etc.</sup>
 > 
-> For any other datatype or pipeline, please [email :mailbox:](mailto:CCBR_Pipeliner@nih.gov) us directly to get the conversation started! 
+> For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started! 
