@@ -17,8 +17,8 @@
 > | --- | --- | --- |--- |
 > | RNASeq<sup>1</sup> | [RENEE](https://github.com/CCBR/RENEE) | July, 3rd 2023 | July, 14th 2023 |
 > | WESSeq<sup>2</sup> | [XAVIER](https://github.com/CCBR/XAVIER) | July, 21th 2023 | Aug, 4th 2023 |
-> | ATACSeq<sup>3</sup> | ASPEN | July, 28th 2023 | Aug, 11th 2023 |
-> | CUT&RunSeq<sup>4</sup> | CARLISLE | Aug, 11th 2023 | Aug, 25th 2023 |
+> | ATACSeq<sup>3</sup> | ASPEN | Aug, 11th 2023 | Aug, 18th 2023 |
+> | CUT&RunSeq<sup>4</sup> | CARLISLE | Aug, 18th 2023 | Aug, 25th 2023 |
 > | WGSSeq<sup>5</sup> | - | Aug, 25th 2023 | Aug, 25th 2023 |
 > | ChIPSeq<sup>6</sup> | CHAMPAGNE | TBD | TBD |
 > | circRNASeq<sup>7</sup> | CHARLIE | TBD | TBD |
@@ -47,6 +47,8 @@
 > For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started! 
 
 ### Release History
+
+`module load ccbrpipeliner` loads default release of ccbrpipeliner. The complete list can also be viewed [here](https://github.com/CCBR/guis/tags). Each release comprises of a unique combination of the version numbers of the different pipelines offered as part of the ccbrpipeliner suite.
 
 | Release | Tool versions | Released on | Decommissioned on |
 | --- | --- | --- | --- |
