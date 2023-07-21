@@ -5,6 +5,7 @@
 - 📖 We build flexible, reproducible, workflows for next-generation sequencing data
 - :bulb: We [collaborate](https://abcs-amp.nih.gov/project/request/CCBR/) with CCR PIs
 - 📫 You can reach us at [ccbr_pipeliner@mail.nih.gov](mailto:ccbr_pipeliner@mail.nih.gov)
+- 🏁 Check out our [release history](#release-history)
 
 > <b><ins>RHEL8 BIOWULF updates:</ins></b>
 > 
@@ -15,7 +16,7 @@
 > | Data Type | Pipeline Name | CLI<sup>*</sup> availability date | GUI<sup>*</sup> availability date |
 > | --- | --- | --- |--- |
 > | RNASeq<sup>1</sup> | [RENEE](https://github.com/CCBR/RENEE) | July, 3rd 2023 | July, 14th 2023 |
-> | WESSeq<sup>2</sup> | XAVIER | July, 14th 2023 | July, 28th 2023 |
+> | WESSeq<sup>2</sup> | [XAVIER](https://github.com/CCBR/XAVIER) | July, 21th 2023 | Aug, 4th 2023 |
 > | ATACSeq<sup>3</sup> | ASPEN | July, 28th 2023 | Aug, 11th 2023 |
 > | CUT&RunSeq<sup>4</sup> | CARLISLE | Aug, 11th 2023 | Aug, 25th 2023 |
 > | WGSSeq<sup>5</sup> | - | Aug, 25th 2023 | Aug, 25th 2023 |
@@ -44,3 +45,16 @@
 > <sup> **8** Various single cell modality will be supported by our scRNASeq pipeine... eg. single-cell expression, CITESeq, TCR-Seq, etc.</sup>
 > 
 > For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started! 
+
+### Release History
+
+| Release | Tool versions |
+| --- | --- |
+| 1 | RENEE v2.1 (CLI/GUI) |
+| 2 | RENEE v2.2 (CLI/GUI) |
+| 3 | RENEE v2.2 (CLI/GUI), XAVIER v2.0 (CLI only)|
+
+<hr>
+<p align="center">
+	<a href="##ccr-collaborative-bioinformatics-resource">Back to Top</a>
+</p>
