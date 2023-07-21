@@ -48,11 +48,11 @@
 
 ### Release History
 
-| Release | Tool versions |
-| --- | --- |
-| 1 | RENEE v2.1 (CLI/GUI) |
-| 2 | RENEE v2.2 (CLI/GUI) |
-| 3 | RENEE v2.2 (CLI/GUI), XAVIER v2.0 (CLI only)|
+| Release | Tool versions | Released on | Decommissioned on |
+| --- | --- | --- | --- |
+| 1 | RENEE v2.1 (CLI/GUI) | July, 10th 2023 | July, 14th 2023 |
+| 2 | RENEE v2.2 (CLI/GUI) | July, 14th 2023 | - |
+| 3 | RENEE v2.2 (CLI/GUI), XAVIER v2.0 (CLI only)| July, 21st 2023 | - |
 
 <hr>
 <p align="center">
