@@ -22,7 +22,7 @@
 > | WGSSeq<sup>5</sup> | - | TBD | TBD |
 > | ChIPSeq<sup>6</sup> | CHAMPAGNE | TBD | TBD |
 > | circRNASeq<sup>7</sup> | CHARLIE | TBD | TBD |
-> | SINCLAIR<sup>8</sup> | - | TBD | TBD |
+> | scRNASeq<sup>8</sup> | SINCLAIR | TBD | TBD |
 >
 > <sup>* CLI = Command Line Interface </sup>
 >
