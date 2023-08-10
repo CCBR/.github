@@ -16,13 +16,13 @@
 > | Data Type | Pipeline Name | CLI<sup>*</sup> availability date | GUI<sup>*</sup> availability date |
 > | --- | --- | --- |--- |
 > | RNASeq<sup>1</sup> | [RENEE](https://github.com/CCBR/RENEE) | July, 3rd 2023 | July, 14th 2023 |
-> | WESSeq<sup>2</sup> | [XAVIER](https://github.com/CCBR/XAVIER) | July, 21th 2023 | Aug, 4th 2023 |
-> | ATACSeq<sup>3</sup> | ASPEN | Aug, 11th 2023 | Aug, 18th 2023 |
-> | CUT&RunSeq<sup>4</sup> | CARLISLE | Aug, 18th 2023 | Aug, 25th 2023 |
-> | WGSSeq<sup>5</sup> | - | Aug, 25th 2023 | Aug, 25th 2023 |
+> | WESSeq<sup>2</sup> | [XAVIER](https://github.com/CCBR/XAVIER) | July, 21th 2023 | Aug, 18th 2023 |
+> | ATACSeq<sup>3</sup> | ASPEN | Aug, 18th 2023 | Aug, 25th 2023 |
+> | CUT&RunSeq<sup>4</sup> | CARLISLE | TBD | TBD |
+> | WGSSeq<sup>5</sup> | - | TBD | TBD |
 > | ChIPSeq<sup>6</sup> | CHAMPAGNE | TBD | TBD |
 > | circRNASeq<sup>7</sup> | CHARLIE | TBD | TBD |
-> | scRNASeq<sup>8</sup> | - | TBD | TBD |
+> | SINCLAIR<sup>8</sup> | - | TBD | TBD |
 >
 > <sup>* CLI = Command Line Interface </sup>
 >
@@ -42,7 +42,7 @@
 > 
 > <sup> **7** CHARLIE finds known and novel circRNAs in human/mouse + virus genomes. Differential circRNA analysis is planned for future.</sup>
 > 
-> <sup> **8** Various single cell modality will be supported by our scRNASeq pipeine... eg. single-cell expression, CITESeq, TCR-Seq, etc.</sup>
+> <sup> **8** SINCLAIR=SINgle CelL AnalysIs Resource;Various single cell modality will be supported by our scRNASeq pipeine... eg. single-cell expression, CITESeq, TCR-Seq, etc.</sup>
 > 
 > For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started! 
 
