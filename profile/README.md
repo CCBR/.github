@@ -16,33 +16,36 @@
 > | Data Type | Pipeline Name | CLI<sup>*</sup> availability date | GUI<sup>*</sup> availability date |
 > | --- | --- | --- |--- |
 > | RNASeq<sup>1</sup> | [RENEE](https://github.com/CCBR/RENEE) | July, 3rd 2023 | July, 14th 2023 |
-> | WESSeq<sup>2</sup> | [XAVIER](https://github.com/CCBR/XAVIER) | July, 21th 2023 | Aug, 18th 2023 |
-> | ATACSeq<sup>3</sup> | ASPEN | Aug, 18th 2023 | Aug, 25th 2023 |
-> | CUT&RunSeq<sup>4</sup> | CARLISLE | TBD | TBD |
-> | WGSSeq<sup>5</sup> | - | TBD | TBD |
-> | ChIPSeq<sup>6</sup> | CHAMPAGNE | TBD | TBD |
-> | circRNASeq<sup>7</sup> | CHARLIE | TBD | TBD |
+> | WESSeq<sup>2</sup> | [XAVIER](https://github.com/CCBR/XAVIER) | July, 21th 2023 | Sep, 1st 2023 |
+> | ATACSeq<sup>3</sup> | [ASPEN](https://github.com/CCBR/ASPEN) | Coming Soon | Coming Soon |
+> | ChIPSeq<sup>4</sup> | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE) | Coming Soon | Coming Soon |
+> | CRISPRSeq<sup>5</sup> | [CRUISE](https://github.com/CCBR/CRUISE) | Coming Soon | Coming Soon |
+> | CUT&RunSeq<sup>6</sup> | [CARLISLE](https://github.com/CCBR/CARLISLE) | TBD | TBD |
+> | circRNASeq<sup>7</sup> | [CHARLIE](https://github.com/CCBR/CHARLIE) | TBD | TBD |
 > | scRNASeq<sup>8</sup> | SINCLAIR | TBD | TBD |
+> | WGSSeq<sup>9</sup> | - | TBD | TBD |
 >
 > <sup>* CLI = Command Line Interface </sup>
 >
 > <sup>* GUI = Graphical User Interface </sup>
 > 
-> <sup> **1** RNASeq pipeline (RENEE) starts with raw fastq files and ends with counts matrix. Downstream DEG support will be added at a later date. In the mean time you can use [iDEP](http://bioinformatics.sdstate.edu/idep/0) for DEG analysis.</sup>
+> <sup> **1** RENEE=_Rna sEquencing aNalysis pipElinE_ starts with raw fastq files and ends with counts matrix. Downstream DEG support will be added at a later date. In the mean time you can use NIDAP or [iDEP](http://bioinformatics.sdstate.edu/idep/0) for DEG analysis.</sup>
 > 
-> <sup> **2** WESSeq pipelines (XAVIER) will be soon available on Biowulf.</sup>
+> <sup> **2** XAVIER=_eXome Analysis and Variant explorER_ will be soon available on Biowulf.</sup>
 > 
-> <sup> **3** ASPEN has limited support for differential ATACSeq signal analysis. CCBR has other pipelines for footprinting analysis like TOBIAS. Please reach out for details.</sup>
+> <sup> **3** ASPEN=_Atac Seq PipEliNe_ has limited support for differential ATACSeq signal analysis. CCBR has other pipelines for footprinting analysis like TOBIAS. Please reach out for details.</sup>
 > 
-> <sup> **4** CARLISLE supports human and mouse samples with (recommended) or without spike-ins.</sup>
+> <sup> **4** CHAMPAGNE=_CHromAtin iMmuno PrecipitAtion sequencinG aNalysis pipEline_. CCBR plans to completely revamp ChIPSeq and may not be available until Q4 of 2023. In the interim, we recommend using the [ENCODE pipeline](https://hpc.nih.gov/apps/chipseq_pipeline.html) on biowulf for ChIPSeq analsyis.</sup>
 > 
-> <sup> **5** WGSSeq pipeline will soon be CCBR's newest offering.</sup>
+> <sup> **5** CRUISE=_Crispr scReen seqUencIng analySis pipEline_. CRISPRSeq analysis with MAGeCK, drugZ and BAGEL2. </sup>
 > 
-> <sup> **6** CCBR plans to completely revamp ChIPSeq and may not be available until Q4 of 2023. In the interim, we recommend using the [ENCODE pipeline](https://hpc.nih.gov/apps/chipseq_pipeline.html) on biowulf for ChIPSeq analsyis.</sup>
+> <sup> **6** CARLISLE=_Cut And Run anaLysIS pipeLinE_ supports human and mouse samples with (recommended) or without spike-ins.</sup>
 > 
-> <sup> **7** CHARLIE finds known and novel circRNAs in human/mouse + virus genomes. Differential circRNA analysis is planned for future.</sup>
+> <sup> **7** CHARLIE=_Circrnas in Host And viRuses anaLysis pIpEline_ finds known and novel circRNAs in human/mouse + virus genomes. Differential circRNA analysis is planned for future.</sup>
 > 
-> <sup> **8** SINCLAIR=SINgle CelL AnalysIs Resource;Various single cell modality will be supported by our scRNASeq pipeine... eg. single-cell expression, CITESeq, TCR-Seq, etc.</sup>
+> <sup> **8** SINCLAIR=_SINgle CelL AnalysIs Resource_ addresses various single cell modalities... eg. single-cell expression, CITESeq, TCR-Seq, etc.</sup>
+> 
+> <sup> **9** WGSSeq pipeline will soon be CCBR's newest offering.</sup>
 > 
 > For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started! 
 
