@@ -2,7 +2,7 @@
 
 ## Auto-add issues & PRs to user projects
 
-1. Add your username and GitHub project URL in `assets/user-kanbans.yml`.
+1. Add your username and GitHub project URL to the organization-wide list of kanbans in [`assets/user-kanbans.yml`](https://github.com/CCBR/.github/blob/main/assets/user-kanbans.yml).
 
 1. In your repo, create a YAML file in `.github/workflows` with the following content:
 
