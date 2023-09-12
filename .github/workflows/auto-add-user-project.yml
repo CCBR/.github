@@ -14,9 +14,9 @@ jobs:
   add-to-project:
     runs-on: ubuntu-latest
     steps:
-      - name: download yaml
+      - name: download yaml # todo change path back to main
         run: |
-          wget https://raw.githubusercontent.com/CCBR/.github/main/assets/user-kanbans.yml
+          wget https://raw.githubusercontent.com/CCBR/.github/reusable-workflows/assets/user-kanbans.yml
 
       - uses: pietrobolcato/action-read-yaml@1.1.0
         id: metadata
