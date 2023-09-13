@@ -21,7 +21,7 @@
 
     jobs:
       add-to-project:
-        uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@main
+        uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@v0.1.0
         secrets: inherit
     ```
 
@@ -55,7 +55,7 @@ If your repo is not part of the CCBR GitHub organization, you will need to do a 
 
     jobs:
       add-to-project:
-        uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@main
+        uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@v0.1.0
         with:
           user_projects: https://raw.githubusercontent.com/YOUR_ORG/.github/main/assets/user-kanbans.yml
         secrets:
