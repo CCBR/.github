@@ -4,8 +4,15 @@ on:
   workflow_call:
     inputs:
       username:
-        required: true
+        required: false
         type: string
+        description: "GitHub username of the person assigned to the Issue or PR"
+        default: ${{ github.event.assignee.login }}
+      user_projects:
+        required: false
+        type: string
+        description: "URL of a yaml file mapping usernames to project boards"
+        default: https://raw.githubusercontent.com/CCBR/.github/main/assets/user-kanbans.yml
     secrets:
       ADD_TO_PROJECT_PAT:
         required: true
@@ -16,7 +23,7 @@ jobs:
     steps:
       - name: download yaml
         run: |
-          wget https://raw.githubusercontent.com/CCBR/.github/main/assets/user-kanbans.yml
+          wget ${{ inputs.user_projects }}
 
       - uses: pietrobolcato/action-read-yaml@1.1.0
         id: metadata
