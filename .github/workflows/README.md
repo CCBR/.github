@@ -57,7 +57,7 @@ If your repo is not part of the CCBR GitHub organization, you will need to do a 
 
     Be sure to replace the `user_projects` URL with the actual URL to your YAML file of usernames & their project boards.
 
-1. Create a token with repo & project scope.
+1. [Create a token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) with repo & project scope.
 
 1. [Add the token to your organization as a secret](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-secrets-for-your-repository-and-organization-for-github-codespaces#adding-secrets-for-an-organization) and name it `ADD_TO_PROJECT_PAT`.
 
