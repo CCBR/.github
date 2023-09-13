@@ -12,12 +12,12 @@
     name: Add issues/PRs to user projects
 
     on:
-    issues:
-      types:
-      - assigned
-    pull_request:
-      types:
-      - assigned
+      issues:
+        types:
+        - assigned
+      pull_request:
+        types:
+        - assigned
 
     jobs:
       add-to-project:
@@ -46,12 +46,12 @@ If your repo is not part of the CCBR GitHub organization, you will need to do a 
     name: Add issues/PRs to user projects
 
     on:
-    issues:
-      types:
-      - assigned
-    pull_request:
-      types:
-      - assigned
+      issues:
+        types:
+        - assigned
+      pull_request:
+        types:
+        - assigned
 
     jobs:
       add-to-project:
