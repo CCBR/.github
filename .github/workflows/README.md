@@ -61,7 +61,7 @@ If your repo is not part of the CCBR GitHub organization, you will need to do a 
 
 1. [Add the token to your organization as a secret](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-secrets-for-your-repository-and-organization-for-github-codespaces#adding-secrets-for-an-organization) and name it `ADD_TO_PROJECT_PAT`.
 
-    Alternatively, if you don't have the permissions to add a secret to your organization, you can add it to your repo and pass it to the action with:
+    Alternatively, if you don't have the permissions to add a secret to your organization, you can [add the secret to your repo](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) and pass it to the action with:
 
     ```yaml
     uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@main
