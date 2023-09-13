@@ -6,7 +6,7 @@ on:
       username:
         required: false
         type: string
-        description: "GitHub username of person assigned to the Issue or PR"
+        description: "GitHub username of the person assigned to the Issue or PR"
         default: ${{ github.event.assignee.login }}
       user_projects:
         required: false
