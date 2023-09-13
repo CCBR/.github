@@ -6,7 +6,7 @@
 
 1. Add your username and GitHub project URL to the organization-wide list of project boards in [`assets/user-kanbans.yml`](https://github.com/CCBR/.github/blob/main/assets/user-kanbans.yml) if it's not already listed.
 
-1. In your repo where issues and PRs will be opened, create a YAML file in `.github/workflows` with the following content:
+1. In your repo where issues and PRs will be opened, create a workflow YAML file in `.github/workflows` with the following content:
 
     ```yaml
     name: Add issues/PRs to user projects
@@ -34,7 +34,7 @@ If your repo is not part of the CCBR GitHub organization, you will need to do a 
 1. Create a YAML file following [this format](https://github.com/CCBR/.github/blob/main/assets/user-kanbans.yml) to map usernames of organization members to their project boards.
    We recommend keeping this file in a central public repo, such as `YOUR_ORG/.github`.
 
-1. In any repo where issues and PRs will be opened, create a YAML file in `.github/workflows` with the following content:
+1. In any repo where issues and PRs will be opened, create a workflow YAML file in `.github/workflows` with the following content:
 
     ```yaml
     name: Add issues/PRs to user projects
@@ -55,7 +55,7 @@ If your repo is not part of the CCBR GitHub organization, you will need to do a 
           secrets: inherit
     ```
 
-    Be sure to replace the `user_projects` URL with the actual URL to your YAML file.
+    Be sure to replace the `user_projects` URL with the actual URL to your YAML file of usernames & their project boards.
 
 1. Create a token with repo & project scope.
 
