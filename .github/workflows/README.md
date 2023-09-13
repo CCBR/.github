@@ -49,10 +49,10 @@ If your repo is not part of the CCBR GitHub organization, you will need to do a 
 
     jobs:
       add-to-project:
-          uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@main
-          with:
-            user_projects: https://raw.githubusercontent.com/YOUR_ORG/.github/main/assets/user-kanbans.yml
-          secrets: inherit
+        uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@main
+        with:
+          user_projects: https://raw.githubusercontent.com/YOUR_ORG/.github/main/assets/user-kanbans.yml
+        secrets: inherit
     ```
 
     Be sure to replace the `user_projects` URL with the actual URL to your YAML file of usernames & their project boards.
