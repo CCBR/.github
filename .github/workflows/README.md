@@ -22,7 +22,7 @@
     jobs:
       add-to-project:
         uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@main
-          secrets: inherit
+        secrets: inherit
     ```
 
 1. Every time an issue or PR in the repo is assigned to a user listed in [`assets/user-kanbans.yml`](https://github.com/CCBR/.github/blob/main/assets/user-kanbans.yml), it will be added to their project board.
@@ -65,9 +65,9 @@ If your repo is not part of the CCBR GitHub organization, you will need to do a 
 
     ```yaml
     uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@main
-      with:
-        user_projects: https://raw.githubusercontent.com/YOUR_ORG/.github/main/assets/user-kanbans.yml
-      secrets:
-        ADD_TO_PROJECT_PAT: ${{ secrets.ADD_TO_PROJECT_PAT }}
+    with:
+      user_projects: https://raw.githubusercontent.com/YOUR_ORG/.github/main/assets/user-kanbans.yml
+    secrets:
+      ADD_TO_PROJECT_PAT: ${{ secrets.ADD_TO_PROJECT_PAT }}
     ```
 
