@@ -22,8 +22,8 @@
 > | CRISPRSeq<sup>5</sup> | [CRUISE](https://github.com/CCBR/CRUISE) | Coming Soon | Coming Soon |
 > | CUT&RunSeq<sup>6</sup> | [CARLISLE](https://github.com/CCBR/CARLISLE) | TBD | TBD |
 > | circRNASeq<sup>7</sup> | [CHARLIE](https://github.com/CCBR/CHARLIE) | TBD | TBD |
-> | scRNASeq<sup>8</sup> | SINCLAIR | TBD | TBD |
-> | WGSSeq<sup>9</sup> | - | TBD | TBD |
+> | scRNASeq<sup>8</sup> | [SINCLAIR](https://github.com/CCBR/SINCLAIR) | TBD | TBD |
+> | WGSSeq<sup>9</sup> | [LOGAN](https://github.com/CCBR/LOGAN) | TBD | TBD |
 >
 > <sup>* CLI = Command Line Interface </sup>
 >
