@@ -1,35 +1,18 @@
 name: Add repo name to issue label
 
-# on:
-#   workflow_dispatch:
-
 on:
   issues:
   pull_request:
-  
-env:
-  GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
 
 jobs:
-
   add-label:
-
     runs-on: ubuntu-latest
-
-    permissions:
-      issues: write
-
     steps:
-
-      - name: checkout repo
-        uses: actions/checkout@v4
-        with:
-          ref: 'main'
-          token: ${{ secrets.ADD_TO_PROJECT_PAT }}
 
       - name: add label
         uses: actions/github-script@v6
         with:
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
           script: |
             try {
               const response = await github.rest.issues.createLabel({
