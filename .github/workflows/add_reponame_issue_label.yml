@@ -1,0 +1,52 @@
+name: Add repo name to issue label
+
+# on:
+#   workflow_dispatch:
+
+on:
+  issues:
+  pull_request:
+  
+env:
+  GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
+
+jobs:
+
+  add-label:
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+
+    steps:
+
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: 'main'
+          token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+
+      - name: add label
+        uses: actions/github-script@v6
+        with:
+          script: |
+            try {
+              const response = await github.rest.issues.createLabel({
+                                owner: context.repo.owner,
+                                repo: context.repo.repo,
+                                name: context.repo.repo,
+                                color: 'B60205',
+                                description: 'RepoName'
+                                });
+              console.log('LABEL ' + context.repo.repo + ' CREATED SUCCESSFULLY');
+            } catch (createLabelError) {
+              console.log('FAILED TO CREATE LABEL ' + context.repo.repo + ' ... MAY BE IT ALREADY EXISTS.');
+              console.log('FAILURE MSG: ' + createLabelError.message);
+            }
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: [context.repo.repo]
+            })
