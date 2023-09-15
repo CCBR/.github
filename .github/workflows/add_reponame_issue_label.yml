@@ -1,8 +1,7 @@
 name: Add repo name to issue label
 
 on:
-  issues:
-  pull_request:
+  workflow_call:
 
 jobs:
   add-label:
