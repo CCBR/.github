@@ -72,7 +72,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | 2 | RENEE v2.2 <sup>@#</sup> | July, 14th 2023 | September, 5th 2023 |
 | 3 | RENEE v2.2 <sup>@#</sup>, XAVIER v2.0 <sup>@</sup>| July, 21st 2023 | - |
 | 4 | RENEE v2.5 <sup>@#</sup>, XAVIER v3.0 <sup>@#</sup>| September, 5th 2023 | - |
-| 5 | RENEE v2.5 <sup>@#</sup>, XAVIER v3.0 <sup>@#</sup>, CARLISLE v2.4, CHAMPAGNE v0.2, CRUISE v0.1, spacesavers2 v0.10, permfix v0.6 | October, 27th 2023 | - |
+| 5 | RENEE v2.5 <sup>@#</sup>, XAVIER v3.0 <sup>@#</sup>, CARLISLE v2.4 <sup>@</sup>, CHAMPAGNE v0.2 <sup>@</sup>, CRUISE v0.1 <sup>@</sup>, spacesavers2 v0.10 <sup>@</sup>, permfix v0.6 <sup>@</sup> | October, 27th 2023 | - |
 >
 > <sup>@</sup> = CLI available
 >  
