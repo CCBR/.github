@@ -20,15 +20,15 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 > 
 > | Data Type | Pipeline Name | CLI<sup>*</sup> availability date | GUI<sup>*</sup> availability date |
 > | --- | --- | --- |--- |
-> | RNASeq<sup>1</sup> | [RENEE](https://github.com/CCBR/RENEE)![snakemake](../img/snakemake-small-v2.svg) | July 3rd 2023 | July 14th 2023 |
-> | WESSeq<sup>2</sup> | [XAVIER](https://github.com/CCBR/XAVIER)![snakemake](../img/snakemake-small-v2.svg) | July 21th 2023 | Sep 1st 2023 |
-> | ATACSeq<sup>3</sup> | [ASPEN](https://github.com/CCBR/ASPEN)![snakemake](../img/snakemake-small-v2.svg) | November 30th 2023 | TBD |
-> | ChIPSeq<sup>4</sup> | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)![nextflow](../img/nextflow-small-v2.svg) | October 15th 2023 | TBD |
-> | CRISPRSeq<sup>5</sup> | [CRUISE](https://github.com/CCBR/CRUISE)![nextflow](../img/nextflow-small-v2.svg) | October 31st 2023 | TBD |
-> | CUT&RunSeq<sup>6</sup> | [CARLISLE](https://github.com/CCBR/CARLISLE)![snakemake](../img/snakemake-small-v2.svg) | October 31st 2023 | TBD |
-> | circRNASeq<sup>7</sup> | [CHARLIE](https://github.com/CCBR/CHARLIE)![snakemake](../img/snakemake-small-v2.svg) | TBD | TBD |
-> | scRNASeq<sup>8</sup> | [SINCLAIR](https://github.com/CCBR/SINCLAIR)![nextflow](../img/nextflow-small-v2.svg) | TBD | TBD |
-> | WGSSeq<sup>9</sup> | [LOGAN](https://github.com/CCBR/LOGAN)![nextflow](../img/nextflow-small-v2.svg) | TBD | TBD |
+> | RNASeq<sup>1</sup> | [RENEE](https://github.com/CCBR/RENEE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | July 3rd 2023 | July 14th 2023 |
+> | WESSeq<sup>2</sup> | [XAVIER](https://github.com/CCBR/XAVIER)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | July 21th 2023 | Sep 1st 2023 |
+> | ATACSeq<sup>3</sup> | [ASPEN](https://github.com/CCBR/ASPEN)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | November 30th 2023 | TBD |
+> | ChIPSeq<sup>4</sup> | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | October 15th 2023 | TBD |
+> | CRISPRSeq<sup>5</sup> | [CRUISE](https://github.com/CCBR/CRUISE)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | October 31st 2023 | TBD |
+> | CUT&RunSeq<sup>6</sup> | [CARLISLE](https://github.com/CCBR/CARLISLE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | October 31st 2023 | TBD |
+> | circRNASeq<sup>7</sup> | [CHARLIE](https://github.com/CCBR/CHARLIE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | TBD | TBD |
+> | scRNASeq<sup>8</sup> | [SINCLAIR](https://github.com/CCBR/SINCLAIR)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | TBD | TBD |
+> | WGSSeq<sup>9</sup> | [LOGAN](https://github.com/CCBR/LOGAN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | TBD | TBD |
 >
 > <sup>* CLI = Command Line Interface </sup>
 >
