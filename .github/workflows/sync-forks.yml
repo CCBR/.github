@@ -12,7 +12,8 @@ permissions:
   contents: write
 
 env:
-  # token must be created by someone with write access for all forks
+  # Token must be created by someone with write access for all forks.
+  # Be sure to 'configure SSO' from the token creation page for each fork organization.
   GH_TOKEN: ${{ secrets.SYNC_FORK_TOKEN }}
   UPSTREAM_OWNER: CCBR
 
