@@ -1,0 +1,29 @@
+name: Sync Forks
+
+on:
+  schedule:
+    - cron: "47 11 * * *" # once every day
+  push:
+    paths:
+      - .github/workflows/sync-forks.yml
+
+permissions:
+  contents: write
+
+env:
+  # Token must be created by someone with write access for all forks.
+  # Be sure to 'configure SSO' from the token creation page for each fork organization.
+  GH_TOKEN: ${{ secrets.SYNC_FORK_TOKEN }}
+  UPSTREAM_OWNER: CCBR
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        FORK_OWNER: [NCIPangea]
+        REPO: [XAVIER, RENEE]
+    steps:
+      - name: sync forked repos
+        run: |
+          gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source $UPSTREAM_OWNER/${{ matrix.REPO }} --force
