@@ -2,9 +2,11 @@ name: Auto add reponame as label to all issues and PRs
 
 on:
   issues:
-    - opened
+    types:
+      - opened
   pull_request:
-    - opened
+    types:
+      - opened
 
 jobs:
   add_label:
