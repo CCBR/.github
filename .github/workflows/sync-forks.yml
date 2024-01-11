@@ -21,8 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        FORK_OWNER: [NCIPangea]
-        REPO: [XAVIER, RENEE]
+        FORK_OWNER: [NCIPangea, abcsFrederick]
+        REPO: [ASPEN, RENEE, XAVIER]
     steps:
       - name: sync forked repos
         run: |
