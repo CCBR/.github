@@ -22,7 +22,31 @@ jobs:
     strategy:
       matrix:
         FORK_OWNER: [NCIPangea, abcsFrederick]
-        REPO: [ASPEN, RENEE, XAVIER]
+        REPO: [ASPEN, CARLISLE, CHAMPAGNE, CRUISE, RENEE, XAVIER]
+        include:
+          - REPO: ASCENT
+            FORK_OWNER: abcsFrederick
+          - REPO: CCBR_circRNA_AmpliconSeq
+            FORK_OWNER: abcsFrederick
+          - REPO: DNAnexus
+            FORK_OWNER: abcsFrederick
+          - REPO: HapFerret
+            FORK_OWNER: abcsFrederick
+          - REPO: HERVx
+            FORK_OWNER: abcsFrederick
+          - REPO: l2p
+            FORK_OWNER: abcsFrederick
+          - REPO: METRO
+            FORK_OWNER: abcsFrederick
+          #- REPO: MAAPSTER
+          #  FORK_OWNER: abcsFrederick
+          - REPO: SINCLAIR
+            FORK_OWNER: abcsFrederick
+          - REPO: TRANQUIL
+            FORK_OWNER: abcsFrederick
+          - REPO: LOGAN
+            FORK_OWNER: abcsFrederick
+            
     steps:
       - name: sync forked repos
         run: |
