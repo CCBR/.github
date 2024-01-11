@@ -20,6 +20,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         FORK_OWNER: [NCIPangea, abcsFrederick]
         REPO: [ASPEN, CARLISLE, CHAMPAGNE, CRUISE, RENEE, XAVIER]
