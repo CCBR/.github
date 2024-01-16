@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - .github/workflows/sync-forks.yml
+  workflow_dispatch:
 
 permissions:
   contents: write
