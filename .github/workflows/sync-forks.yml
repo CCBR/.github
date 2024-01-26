@@ -40,8 +40,8 @@ jobs:
             FORK_OWNER: abcsFrederick
           - REPO: METRO
             FORK_OWNER: abcsFrederick
-          #- REPO: MAAPSTER
-          #  FORK_OWNER: abcsFrederick
+          - REPO: MAAPSTER
+            FORK_OWNER: abcsFrederick
           - REPO: SINCLAIR
             FORK_OWNER: abcsFrederick
           - REPO: TRANQUIL
