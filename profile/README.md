@@ -1,4 +1,4 @@
-# ![CCBR](img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png")(https://bioinformatics.ccr.cancer.gov/ccbr/)
+# [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
 
 ### About Us
 - 👋 Hi, we're the [**@CCBR**](https://bioinformatics.ccr.cancer.gov/ccbr/), a group of bioinformatics analysts and engineers
