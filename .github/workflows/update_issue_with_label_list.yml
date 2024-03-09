@@ -1,0 +1,36 @@
+name: Update issue with list of issue of a given label
+
+on:
+  workflow_call:
+    inputs:
+      # reponame:
+      #   required: true
+      #   type: string
+      #   description: "GitHub Repo of the users log (the repo tied with user's kanban)"
+      issuenum:
+          required: true
+          type: number
+          description: "Number of the issue to update (issue should already exist!)" 
+      labelname:
+          required: true
+          type: string
+          description: "Name of the label to create a task list for (eg. RENEE or ccbr1310, etc.)"
+    secrets:
+      GITHUB_TOKEN:
+        required: true
+
+jobs:
+  makelist:
+    name: build task list and update issue
+    runs-on: ubuntu-20.04
+    steps:
+        - name: Get issues and update list
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            label: ${{ github.event.inputs.label }}
+            issuenum: ${{ github.event.inputs.issue }}
+          run: |
+            gh issue list --repo "$GITHUB_REPOSITORY" --label "$label" \
+                --json number --jq 'map("- #\(.number)")[]' \
+            | gh issue edit "$issuenum" \
+                --repo "$GITHUB_REPOSITORY" --body-file -                
