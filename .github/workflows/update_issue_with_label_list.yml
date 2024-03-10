@@ -16,7 +16,7 @@ on:
           type: string
           description: "Name of the label to create a task list for (eg. RENEE or ccbr1310, etc.)"
     secrets:
-      GITHUB_TOKEN:
+      ADD_TO_PROJECT_PAT:
         required: true
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
     steps:
         - name: Get issues and update list
           env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            ADD_TO_PROJECT_PAT: ${{ secrets.ADD_TO_PROJECT_PAT }}
             label: ${{ github.event.inputs.label }}
             issuenum: ${{ github.event.inputs.issue }}
           run: |
