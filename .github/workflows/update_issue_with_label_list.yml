@@ -9,7 +9,7 @@ on:
       #   description: "GitHub Repo of the users log (the repo tied with user's kanban)"
       issuenum:
           required: true
-          type: number
+          type: string
           description: "Number of the issue to update (issue should already exist!)" 
       labelname:
           required: true
