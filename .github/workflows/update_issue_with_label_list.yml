@@ -26,7 +26,7 @@ jobs:
     steps:
         - name: Get issues and update list
           env:
-            ADD_TO_PROJECT_PAT: ${{ secrets.ADD_TO_PROJECT_PAT }}
+            GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
             label: ${{ github.event.inputs.label }}
             issuenum: ${{ github.event.inputs.issue }}
           run: |
