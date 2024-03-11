@@ -30,7 +30,13 @@ jobs:
             FORK_OWNER: abcsFrederick
           - REPO: CCBR_circRNA_AmpliconSeq
             FORK_OWNER: abcsFrederick
+          - REPO: CCBR_NextflowTemplate
+            FORK_OWNER: abcsFrederick
+          - REPO: CCBR_SnakemakeTemplate
+            FORK_OWNER: abcsFrederick
           - REPO: DNAnexus
+            FORK_OWNER: abcsFrederick
+          - REPO: DOCKERS
             FORK_OWNER: abcsFrederick
           - REPO: HapFerret
             FORK_OWNER: abcsFrederick
@@ -42,13 +48,23 @@ jobs:
             FORK_OWNER: abcsFrederick
           - REPO: MAAPSTER
             FORK_OWNER: abcsFrederick
+          - REPO: permfix
+            FORK_OWNER: abcsFrederick
+          - REPO: PIM
+            FORK_OWNER: abcsFrederick
+          - REPO: pyrkit
+            FORK_OWNER: abcsFrederick
+          - REPO: rNA
+            FORK_OWNER: abcsFrederick
           - REPO: SINCLAIR
+            FORK_OWNER: abcsFrederick
+          - REPO: spacesavers2
             FORK_OWNER: abcsFrederick
           - REPO: TRANQUIL
             FORK_OWNER: abcsFrederick
           - REPO: LOGAN
             FORK_OWNER: abcsFrederick
-            
+
     steps:
       - name: sync forked repos
         run: |
