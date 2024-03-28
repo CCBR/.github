@@ -50,8 +50,6 @@ jobs:
             FORK_OWNER: abcsFrederick
           - REPO: permfix
             FORK_OWNER: abcsFrederick
-          - REPO: PIM
-            FORK_OWNER: abcsFrederick
           - REPO: pyrkit
             FORK_OWNER: abcsFrederick
           - REPO: rNA
