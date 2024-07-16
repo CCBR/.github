@@ -67,3 +67,18 @@ jobs:
       - name: sync forked repos
         run: |
           gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source $UPSTREAM_OWNER/${{ matrix.REPO }} --force
+
+  sync-nidap:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        FORK_OWNER: [NIDAP-Community]
+        REPO:
+          - CPTR-9-Weigert-DSP-Analysis
+          - CPTR_5_DSP_Krug
+          - CPTR_6_DSP_Annunziata
+    steps:
+      - name: sync forked repos
+        run: |
+          gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source $UPSTREAM_OWNER/${{ matrix.REPO }} --force
