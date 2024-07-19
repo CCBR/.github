@@ -1,0 +1,28 @@
+name: Auto update CCBR README
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 04 * * SUN'
+
+jobs:
+  createreadme:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Pull Docker
+        run: |
+          docker pull nciccbr/make_readme:latest
+      - name: Run script in docker
+        env:
+            GH_TOKEN: ${{ github.token }}
+        run: |
+          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/make_readme.sh
+      - name: verify output
+        run: |
+          cat profile/README.md
+    #   - name: Commit changes
+    #     uses: stefanzweifel/git-auto-commit-action@v5
+    #     env:
+    #       GH_TOKEN: ${{ github.token }}
