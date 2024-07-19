@@ -1,6 +1,10 @@
 name: Auto update CCBR README
 
+
 on:
+  push:
+    branches:
+      - issue-15
   workflow_dispatch:
   schedule:
     - cron: '30 04 * * SUN'
