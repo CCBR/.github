@@ -1,8 +1,8 @@
+
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
 ## Table of Contents
-
-  - [NEW Releases](#new-releases)
-  - [TOP contributors](#top-contributors)
+  - [NEW Releases: :new:](#new-releases:-:new:)
+  - [TOP contributors: :angel:](#top-contributors:-:angel:)
   - [About Us](#about-us)
   - [Our model](#our-model)
   - [Pipelines](#pipelines)
@@ -11,28 +11,27 @@
   - [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
   - [Citation](#citation) 
 
-## NEW Releases
+## NEW Releases: :new: 
 
 | Repo Name                                            | Release Name                                                               | Release Date   |   Open Issues |
 |:-----------------------------------------------------|:---------------------------------------------------------------------------|:---------------|--------------:|
-| [spacesavers2](https://github.com/CCBR/spacesavers2) | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)       | 2024-07-16     |             5 |
+| [spacesavers2](https://github.com/CCBR/spacesavers2) | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)       | 2024-07-16     |             6 |
 | [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)               | 2024-07-11     |             9 |
 | [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)               | 2024-06-27     |             1 |
 | [permfix](https://github.com/CCBR/permfix)           | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)              | 2024-05-07     |             0 |
 | [journal-club](https://github.com/CCBR/journal-club) | [jchelper 0.1.0](https://github.com/CCBR/journal-club/releases/tag/v0.1.0) | 2024-05-07     |             2 |
 | [reports](https://github.com/CCBR/reports)           | [ccbr.reports 0.2.0](https://github.com/CCBR/reports/releases/tag/v0.2.0)  | 2024-04-30     |            11 |
-
-## TOP contributors 
+## TOP contributors: :angel: 
 
 | User           |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:---------------|----------------:|------------------------:|---------------------------:|
-| kopardev       |            4114 |                      31 |                        528 |
+| kopardev       |            4117 |                      30 |                        531 |
 | kelly-sovacool |            3310 |                     122 |                       1051 |
 | slsevilla      |            1700 |                       0 |                        119 |
 | skchronicles   |            1074 |                       0 |                          0 |
-| dnousome       |             647 |                      13 |                        137 |
-| kcgfarb        |             478 |                      28 |                        169 |
-| finneyr        |             342 |                       1 |                         20 |
+| dnousome       |             649 |                      15 |                        139 |
+| kcgfarb        |             479 |                      29 |                        170 |
+| finneyr        |             344 |                       3 |                         22 |
 | samarth8392    |             339 |                      20 |                         99 |
 | jlac           |             307 |                       0 |                          0 |
 | kvaldez        |             222 |                       0 |                          0 |
@@ -155,7 +154,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 
 | Repo Name                                                                                                                | Release Name                                                                                                    | Release Date   |   Open Issues |
 |:-------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|:---------------|--------------:|
-| [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                                            | 2024-07-16     |             5 |
+| [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                                            | 2024-07-16     |             6 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)                                                    | 2024-07-11     |             9 |
 | [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)                                                    | 2024-06-27     |             1 |
 | [permfix](https://github.com/CCBR/permfix)                                                                               | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)                                                   | 2024-05-07     |             0 |
