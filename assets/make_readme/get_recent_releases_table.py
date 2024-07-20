@@ -26,7 +26,6 @@ def get_repos(org_name):
     page = 1
     while True:
         response = requests.get(f'https://api.github.com/orgs/{org_name}/repos?per_page=100&page={page}', headers=headers)
-        print(response.json())
         if response.status_code != 200:
             break
         repos.extend(response.json())

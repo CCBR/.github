@@ -22,14 +22,15 @@ jobs:
       
       - name: Run Docker to make readme
         env:
-            GITHUB_TOKEN: ${{ github.token }}
+            GITHUB_TOKEN: ${{ secrets.OMNITOKEN }}
         run: |
           docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/make_readme.sh
 
       - name: verify output
         run: |
           cat profile/README.md
-    #   - name: Commit changes
-    #     uses: stefanzweifel/git-auto-commit-action@v5
-    #     env:
-    #       GITHUB_TOKEN: ${{ github.token }}
+  
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.OMNITOKEN }}
