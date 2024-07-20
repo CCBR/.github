@@ -10,11 +10,11 @@ cat ${MDPATH}/banner.md > README_tmp.md
 echo -ne "<!-- TOC --> \n\n" >> README_tmp.md
 
 # add latest releses
-echo -ne "## NEW Releases: :new: \n\n" >> README_tmp.md
+echo -ne "## NEW Releases \n\n" >> README_tmp.md
 python ${MDPATH}/get_recent_releases_table.py --nmonths 3 >> README_tmp.md
 
 # top contributors
-echo -ne "## TOP contributors: :angel: \n\n" >> README_tmp.md
+echo -ne "## TOP contributors \n\n" >> README_tmp.md
 python ${MDPATH}/get_per_user_commits.py >> README_tmp.md
 
 # about us
