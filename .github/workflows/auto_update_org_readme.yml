@@ -15,27 +15,28 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-      
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.11
-  
-      - name: Install dependencies
+      - name: Pull Docker
         run: |
-          python -m pip install --upgrade pip
-          pip install -r ./assets/make_readme/requirements.txt
-      
-      - name: run test 1
+          docker pull nciccbr/make_readme:latest
+      - name: Run script in docker test1
         env:
             GITHUB_TOKEN: ${{ github.token }}
         run: |
-          python ./assets/make_readme/get_recent_releases_table.py 
-      #     docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/make_readme.sh
-      # - name: verify output
+          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest echo $GITHUB_TOKEN 
+      - name: Run script in docker test2
+        env:
+            GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest python ${MDPATH}/get_per_user_commits.py
+          # - name: Run script in docker
+      #   env:
+      #       GITHUB_TOKEN: ${{ github.token }}
       #   run: |
-      #     cat profile/README.md
+      #     docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/make_readme.sh
+      - name: verify output
+        run: |
+          cat profile/README.md
     #   - name: Commit changes
     #     uses: stefanzweifel/git-auto-commit-action@v5
     #     env:
-    #       GH_TOKEN: ${{ github.token }}
+    #       GITHUB_TOKEN: ${{ github.token }}
