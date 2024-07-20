@@ -36,6 +36,6 @@ jobs:
         run: |
           git add .
           git commit -m "Commit changes made by createreadme github action."
-          git push
+          git push origin main --force
         env:
           GITHUB_TOKEN: ${{ github.token }}
