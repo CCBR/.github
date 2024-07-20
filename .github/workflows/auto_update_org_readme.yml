@@ -2,9 +2,6 @@ name: Auto update CCBR README
 
 
 on:
-  push:
-    branches:
-      - issue-15
   workflow_dispatch:
   schedule:
     - cron: '30 04 * * 0'
@@ -15,6 +12,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: Pull Docker
         run: |
@@ -30,7 +32,10 @@ jobs:
         run: |
           cat profile/README.md
   
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Commit  and push changes
+        run: |
+          git add .
+          git commit -m "Commit changes made by createreadme github action."
+          git push
         env:
-          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
