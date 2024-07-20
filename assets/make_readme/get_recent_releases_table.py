@@ -7,6 +7,8 @@ from dateutil.relativedelta import relativedelta
 
 # Replace these with your GitHub token and organization name
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+if not GITHUB_TOKEN:
+    raise ValueError("GITHUB_TOKEN environment variable not set")
 ORG_NAME = 'CCBR'
 
 headers = {
@@ -24,6 +26,7 @@ def get_repos(org_name):
     page = 1
     while True:
         response = requests.get(f'https://api.github.com/orgs/{org_name}/repos?per_page=100&page={page}', headers=headers)
+        print(response.json())
         if response.status_code != 200:
             break
         repos.extend(response.json())
