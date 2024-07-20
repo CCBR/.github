@@ -22,12 +22,12 @@ jobs:
         env:
             GH_TOKEN: ${{ github.token }}
         run: |
-          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest echo $GITHUB_TOKEN 
+          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/test1.sh 
       - name: Run script in docker test2
         env:
             GH_TOKEN: ${{ github.token }}
         run: |
-          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest python ${MDPATH}/get_per_user_commits.py
+          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/test2.sh
           # - name: Run script in docker
       #   env:
       #       GH_TOKEN: ${{ github.token }}
