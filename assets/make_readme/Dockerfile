@@ -10,4 +10,4 @@ RUN apt-get update && \
     apt-get clean
 
 # Install the required Python packages
-RUN pip install --no-cache-dir pandas requests python-dateutil
+RUN pip install --no-cache-dir pandas requests python-dateutil tabulate

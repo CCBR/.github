@@ -18,11 +18,21 @@ jobs:
       - name: Pull Docker
         run: |
           docker pull nciccbr/make_readme:latest
-      - name: Run script in docker
+      - name: Run script in docker test1
         env:
             GH_TOKEN: ${{ github.token }}
         run: |
-          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/make_readme.sh
+          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest echo $GITHUB_TOKEN 
+      - name: Run script in docker test2
+        env:
+            GH_TOKEN: ${{ github.token }}
+        run: |
+          docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest python ${MDPATH}/get_per_user_commits.py
+          # - name: Run script in docker
+      #   env:
+      #       GH_TOKEN: ${{ github.token }}
+      #   run: |
+      #     docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/make_readme.sh
       - name: verify output
         run: |
           cat profile/README.md
