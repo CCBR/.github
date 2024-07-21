@@ -34,7 +34,7 @@ Here is a list of our prominent pipelines and their release schedule on BIOWULF:
 
 <sup> **4** CHAMPAGNE=_CHromAtin iMmuno PrecipitAtion sequencinG aNalysis pipEline_. CCBR plans to completely revamp ChIPSeq and may not be available until Q4 of 2023. In the interim, we recommend using the [ENCODE pipeline](https://hpc.nih.gov/apps/chipseq_pipeline.html) on biowulf for ChIPSeq analsyis.</sup>
 
-<sup> **5** CRUISE=_Crispr scReen seqUencIng analySis pipEline_. CRISPRSeq analysis with MAGeCK, drugZ and BAGEL2. </sup>
+<sup> **5** CRISPIN=_CRISPr screen sequencing analysis pipelINe_( previously called, CRUISE=_Crispr scReen seqUencIng analySis pipEline_ ). CRISPRSeq analysis with MAGeCK, drugZ and BAGEL2. </sup>
 
 <sup> **6** CARLISLE=_Cut And Run anaLysIS pipeLinE_ supports human and mouse samples with (recommended) or without spike-ins.</sup>
 
