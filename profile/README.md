@@ -20,19 +20,18 @@
 | [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)               | 2024-06-27     |             2 |
 | [permfix](https://github.com/CCBR/permfix)           | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)              | 2024-05-07     |             0 |
 | [journal-club](https://github.com/CCBR/journal-club) | [jchelper 0.1.0](https://github.com/CCBR/journal-club/releases/tag/v0.1.0) | 2024-05-07     |             2 |
-| [reports](https://github.com/CCBR/reports)           | [ccbr.reports 0.2.0](https://github.com/CCBR/reports/releases/tag/v0.2.0)  | 2024-04-30     |            11 |
 ## TOP contributors 
 
 | User           |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:---------------|----------------:|------------------------:|---------------------------:|
-| kopardev       |            4162 |                      63 |                        544 |
-| kelly-sovacool |            3339 |                     130 |                        928 |
-| slsevilla      |            1700 |                       0 |                        100 |
+| kopardev       |            4209 |                     106 |                        545 |
+| kelly-sovacool |            3367 |                     131 |                        889 |
+| slsevilla      |            1700 |                       0 |                         99 |
 | skchronicles   |            1074 |                       0 |                          0 |
-| dnousome       |             652 |                      17 |                        139 |
-| kcgfarb        |             482 |                      22 |                        169 |
+| dnousome       |             653 |                      15 |                        140 |
+| kcgfarb        |             488 |                      25 |                        171 |
+| samarth8392    |             345 |                      14 |                        105 |
 | finneyr        |             344 |                       3 |                         22 |
-| samarth8392    |             340 |                      17 |                        100 |
 | jlac           |             307 |                       0 |                          0 |
 | kvaldez        |             222 |                       0 |                          0 |
 
