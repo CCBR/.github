@@ -13,24 +13,22 @@
 
 ## NEW Releases 
 
-| Repo Name                                            | Release Name                                                               | Release Date   |   Open Issues |
-|:-----------------------------------------------------|:---------------------------------------------------------------------------|:---------------|--------------:|
-| [spacesavers2](https://github.com/CCBR/spacesavers2) | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)       | 2024-07-16     |             6 |
-| [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)               | 2024-07-11     |            11 |
-| [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)               | 2024-06-27     |             2 |
-| [permfix](https://github.com/CCBR/permfix)           | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)              | 2024-05-07     |             0 |
-| [journal-club](https://github.com/CCBR/journal-club) | [jchelper 0.1.0](https://github.com/CCBR/journal-club/releases/tag/v0.1.0) | 2024-05-07     |             2 |
+| Repo Name                                            | Release Name                                                         | Release Date   |   Open Issues |
+|:-----------------------------------------------------|:---------------------------------------------------------------------|:---------------|--------------:|
+| [spacesavers2](https://github.com/CCBR/spacesavers2) | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0) | 2024-07-16     |             6 |
+| [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)         | 2024-07-11     |            14 |
+| [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)         | 2024-06-27     |             2 |
 ## TOP contributors 
 
 | User           |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:---------------|----------------:|------------------------:|---------------------------:|
-| kopardev       |            4209 |                     106 |                        545 |
-| kelly-sovacool |            3367 |                     131 |                        889 |
-| slsevilla      |            1700 |                       0 |                         99 |
+| kopardev       |            4209 |                      98 |                        514 |
+| kelly-sovacool |            3500 |                     235 |                        882 |
+| slsevilla      |            1700 |                       0 |                         74 |
 | skchronicles   |            1074 |                       0 |                          0 |
-| dnousome       |             653 |                      15 |                        140 |
-| kcgfarb        |             488 |                      25 |                        171 |
-| samarth8392    |             345 |                      14 |                        105 |
+| dnousome       |             653 |                       7 |                        139 |
+| kcgfarb        |             488 |                      19 |                        169 |
+| samarth8392    |             349 |                      10 |                        106 |
 | finneyr        |             344 |                       3 |                         22 |
 | jlac           |             307 |                       0 |                          0 |
 | kvaldez        |             222 |                       0 |                          0 |
@@ -154,14 +152,14 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | Repo Name                                                                                                                | Release Name                                                                                                    | Release Date   |   Open Issues |
 |:-------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|:---------------|--------------:|
 | [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                                            | 2024-07-16     |             6 |
-| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)                                                    | 2024-07-11     |            11 |
+| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)                                                    | 2024-07-11     |            14 |
 | [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)                                                    | 2024-06-27     |             2 |
 | [permfix](https://github.com/CCBR/permfix)                                                                               | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)                                                   | 2024-05-07     |             0 |
 | [journal-club](https://github.com/CCBR/journal-club)                                                                     | [jchelper 0.1.0](https://github.com/CCBR/journal-club/releases/tag/v0.1.0)                                      | 2024-05-07     |             2 |
 | [reports](https://github.com/CCBR/reports)                                                                               | [ccbr.reports 0.2.0](https://github.com/CCBR/reports/releases/tag/v0.2.0)                                       | 2024-04-30     |            11 |
 | [parkit](https://github.com/CCBR/parkit)                                                                                 | [v2.0.1](https://github.com/CCBR/parkit/releases/tag/v2.0.1)                                                    | 2024-04-16     |             0 |
 | [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                                                                       | [CCBR_tobias 0.3.0](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.0)                                    | 2024-04-12     |             1 |
-| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [RENEE 2.5.12](https://github.com/CCBR/RENEE/releases/tag/v2.5.12)                                              | 2024-04-12     |            23 |
+| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [RENEE 2.5.12](https://github.com/CCBR/RENEE/releases/tag/v2.5.12)                                              | 2024-04-12     |            26 |
 | [METRO](https://github.com/CCBR/METRO)                                                                                   | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                                                         | 2024-03-28     |             2 |
 | [CCBR-1144](https://github.com/CCBR/CCBR-1144)                                                                           | [Data Release Latest](https://github.com/CCBR/CCBR-1144/releases/tag/v1.0.0)                                    | 2024-03-04     |             0 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.5.0](https://github.com/CCBR/CARLISLE/releases/tag/v.2.5.0)                                                 | 2024-02-26     |            14 |
