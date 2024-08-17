@@ -1,5 +1,7 @@
 # Reusable GitHub Actions
 
+see <https://github.com/CCBR/actions> for our main repository of reusable actions
+
 ## Auto-add issues & PRs to user projects
 
 ### within CCBR
