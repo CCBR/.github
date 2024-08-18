@@ -13,25 +13,27 @@
 
 ## NEW Releases 
 
-| Repo Name                                            | Release Name                                                         | Release Date   |   Open Issues |
-|:-----------------------------------------------------|:---------------------------------------------------------------------|:---------------|--------------:|
-| [spacesavers2](https://github.com/CCBR/spacesavers2) | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0) | 2024-07-16     |             6 |
-| [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)         | 2024-07-11     |            14 |
-| [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)         | 2024-06-27     |             2 |
+| Repo Name                                            | Release Name                                                               | Release Date   |   Open Issues |
+|:-----------------------------------------------------|:---------------------------------------------------------------------------|:---------------|--------------:|
+| [nf-sandbox](https://github.com/CCBR/nf-sandbox)     | [nf-sandbox 0.2.2](https://github.com/CCBR/nf-sandbox/releases/tag/v0.2.2) | 2024-08-13     |             2 |
+| [actions](https://github.com/CCBR/actions)           | [actions 0.1.0](https://github.com/CCBR/actions/releases/tag/v0.1.0)       | 2024-08-13     |             1 |
+| [spacesavers2](https://github.com/CCBR/spacesavers2) | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)       | 2024-07-16     |             6 |
+| [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)               | 2024-07-11     |            11 |
+| [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)               | 2024-06-27     |             2 |
 ## TOP contributors 
 
 | User           |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:---------------|----------------:|------------------------:|---------------------------:|
-| kopardev       |            4209 |                      98 |                        514 |
-| kelly-sovacool |            3500 |                     235 |                        882 |
-| slsevilla      |            1700 |                       0 |                         74 |
+| kopardev       |            4209 |                      91 |                        479 |
+| kelly-sovacool |            3713 |                     396 |                       1024 |
+| slsevilla      |            1700 |                       0 |                         50 |
 | skchronicles   |            1074 |                       0 |                          0 |
-| dnousome       |             653 |                       7 |                        139 |
-| kcgfarb        |             488 |                      19 |                        169 |
-| samarth8392    |             349 |                      10 |                        106 |
-| finneyr        |             344 |                       3 |                         22 |
+| dnousome       |             656 |                       9 |                        142 |
+| kcgfarb        |             488 |                      10 |                        166 |
+| samarth8392    |             362 |                      23 |                        115 |
 | jlac           |             307 |                       0 |                          0 |
 | kvaldez        |             222 |                       0 |                          0 |
+| wong-nw        |              92 |                       0 |                          2 |
 
 ## About Us
 
@@ -151,27 +153,28 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 
 | Repo Name                                                                                                                | Release Name                                                                                                    | Release Date   |   Open Issues |
 |:-------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|:---------------|--------------:|
+| [nf-sandbox](https://github.com/CCBR/nf-sandbox)                                                                         | [nf-sandbox 0.2.2](https://github.com/CCBR/nf-sandbox/releases/tag/v0.2.2)                                      | 2024-08-13     |             2 |
+| [actions](https://github.com/CCBR/actions)                                                                               | [actions 0.1.0](https://github.com/CCBR/actions/releases/tag/v0.1.0)                                            | 2024-08-13     |             1 |
 | [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                                            | 2024-07-16     |             6 |
-| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)                                                    | 2024-07-11     |            14 |
+| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)                                                    | 2024-07-11     |            11 |
 | [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)                                                    | 2024-06-27     |             2 |
 | [permfix](https://github.com/CCBR/permfix)                                                                               | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)                                                   | 2024-05-07     |             0 |
 | [journal-club](https://github.com/CCBR/journal-club)                                                                     | [jchelper 0.1.0](https://github.com/CCBR/journal-club/releases/tag/v0.1.0)                                      | 2024-05-07     |             2 |
-| [reports](https://github.com/CCBR/reports)                                                                               | [ccbr.reports 0.2.0](https://github.com/CCBR/reports/releases/tag/v0.2.0)                                       | 2024-04-30     |            11 |
+| [reports](https://github.com/CCBR/reports)                                                                               | [ccbr.reports 0.2.0](https://github.com/CCBR/reports/releases/tag/v0.2.0)                                       | 2024-04-30     |            12 |
 | [parkit](https://github.com/CCBR/parkit)                                                                                 | [v2.0.1](https://github.com/CCBR/parkit/releases/tag/v2.0.1)                                                    | 2024-04-16     |             0 |
 | [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                                                                       | [CCBR_tobias 0.3.0](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.0)                                    | 2024-04-12     |             1 |
-| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [RENEE 2.5.12](https://github.com/CCBR/RENEE/releases/tag/v2.5.12)                                              | 2024-04-12     |            26 |
+| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [RENEE 2.5.12](https://github.com/CCBR/RENEE/releases/tag/v2.5.12)                                              | 2024-04-12     |            27 |
 | [METRO](https://github.com/CCBR/METRO)                                                                                   | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                                                         | 2024-03-28     |             2 |
 | [CCBR-1144](https://github.com/CCBR/CCBR-1144)                                                                           | [Data Release Latest](https://github.com/CCBR/CCBR-1144/releases/tag/v1.0.0)                                    | 2024-03-04     |             0 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.5.0](https://github.com/CCBR/CARLISLE/releases/tag/v.2.5.0)                                                 | 2024-02-26     |            14 |
 | [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                                                             | [TRANQUIL 0.2.1](https://github.com/CCBR/TRANQUIL/releases/tag/v0.2.1)                                          | 2024-02-22     |             0 |
 | [ccbr1271_ERVpipeline](https://github.com/CCBR/ccbr1271_ERVpipeline)                                                     | [v1.0.3](https://github.com/CCBR/ccbr1271_ERVpipeline/releases/tag/v1.0.3)                                      | 2024-02-21     |             1 |
-| [nf-sandbox](https://github.com/CCBR/nf-sandbox)                                                                         | [nf-sandbox 0.2.1](https://github.com/CCBR/nf-sandbox/releases/tag/v0.2.1)                                      | 2024-01-26     |             3 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                                                                           | [CHAMPAGNE 0.3.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.3.0)                                        | 2024-01-18     |            30 |
 | [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.0.1](https://github.com/CCBR/ASPEN/releases/tag/v1.0.1)                                                     | 2023-12-27     |             6 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.10.1](https://github.com/CCBR/CHARLIE/releases/tag/v0.10.1)                                                 | 2023-12-23     |            21 |
 | [nf-modules](https://github.com/CCBR/nf-modules)                                                                         | [nf-modules 0.1.0](https://github.com/CCBR/nf-modules/releases/tag/v0.1.0)                                      | 2023-11-29     |            11 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [CRUISE 0.1.1](https://github.com/CCBR/CRISPIN/releases/tag/v0.1.1)                                             | 2023-11-06     |            14 |
-| [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                                                             | [v0.2.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.2.0)                                                  | 2023-11-01     |            26 |
+| [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                                                             | [v0.2.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.2.0)                                                  | 2023-11-01     |            28 |
 | [CRISPRAnnotation](https://github.com/CCBR/CRISPRAnnotation)                                                             | [Code/Data Release](https://github.com/CCBR/CRISPRAnnotation/releases/tag/v1.0)                                 | 2023-10-19     |             0 |
 | [SharanLab](https://github.com/CCBR/SharanLab)                                                                           | [Data/Code Release](https://github.com/CCBR/SharanLab/releases/tag/v1.0.0)                                      | 2023-07-18     |             0 |
 | [Pipeliner](https://github.com/CCBR/Pipeliner)                                                                           | [v4.0.7](https://github.com/CCBR/Pipeliner/releases/tag/v4.0.7)                                                 | 2023-05-09     |            24 |
