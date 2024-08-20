@@ -7,33 +7,34 @@
   - [Our model](#our-model)
   - [Pipelines](#pipelines)
   - [Tools](#tools)
-  - [Release History](#release-history)
+  - [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
   - [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
   - [Citation](#citation) 
 
 ## NEW Releases 
 
-| Repo Name                                            | Release Name                                                               | Release Date   |   Open Issues |
-|:-----------------------------------------------------|:---------------------------------------------------------------------------|:---------------|--------------:|
-| [nf-sandbox](https://github.com/CCBR/nf-sandbox)     | [nf-sandbox 0.2.2](https://github.com/CCBR/nf-sandbox/releases/tag/v0.2.2) | 2024-08-13     |             2 |
-| [actions](https://github.com/CCBR/actions)           | [actions 0.1.0](https://github.com/CCBR/actions/releases/tag/v0.1.0)       | 2024-08-13     |             1 |
-| [spacesavers2](https://github.com/CCBR/spacesavers2) | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)       | 2024-07-16     |             6 |
-| [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)               | 2024-07-11     |            11 |
-| [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)               | 2024-06-27     |             2 |
+| Repo Name                                            | Release Name                                                         | Release Date   |   Open Issues |
+|:-----------------------------------------------------|:---------------------------------------------------------------------|:---------------|--------------:|
+| [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)         | 2024-08-19     |             2 |
+| [reports](https://github.com/CCBR/reports)           | [v0.2.1](https://github.com/CCBR/reports/releases/tag/v0.2.1)        | 2024-08-19     |             9 |
+| [nf-sandbox](https://github.com/CCBR/nf-sandbox)     | [v0.2.2](https://github.com/CCBR/nf-sandbox/releases/tag/v0.2.2)     | 2024-08-13     |             2 |
+| [actions](https://github.com/CCBR/actions)           | [v0.1.0](https://github.com/CCBR/actions/releases/tag/v0.1.0)        | 2024-08-13     |             3 |
+| [spacesavers2](https://github.com/CCBR/spacesavers2) | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0) | 2024-07-16     |             6 |
+| [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)         | 2024-07-11     |             8 |
 ## TOP contributors 
 
-| User           |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
-|:---------------|----------------:|------------------------:|---------------------------:|
-| kopardev       |            4209 |                      91 |                        479 |
-| kelly-sovacool |            3713 |                     396 |                       1024 |
-| slsevilla      |            1700 |                       0 |                         50 |
-| skchronicles   |            1074 |                       0 |                          0 |
-| dnousome       |             656 |                       9 |                        142 |
-| kcgfarb        |             488 |                      10 |                        166 |
-| samarth8392    |             362 |                      23 |                        115 |
-| jlac           |             307 |                       0 |                          0 |
-| kvaldez        |             222 |                       0 |                          0 |
-| wong-nw        |              92 |                       0 |                          2 |
+| User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
+|:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
+| [kopardev](https://github.com/kopardev)             |            4217 |                      75 |                        471 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            3763 |                     446 |                       1038 |
+| [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                         47 |
+| [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
+| [dnousome](https://github.com/dnousome)             |             656 |                       7 |                        142 |
+| [kcgfarb](https://github.com/kcgfarb)               |             488 |                       9 |                        159 |
+| [samarth8392](https://github.com/samarth8392)       |             384 |                      41 |                        136 |
+| [jlac](https://github.com/jlac)                     |             307 |                       0 |                          0 |
+| [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
+| [wong-nw](https://github.com/wong-nw)               |              92 |                       0 |                          2 |
 
 ## About Us
 
@@ -52,6 +53,19 @@
 
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/CCBR_circle_diagram.png" width=600>](https://bioinformatics.ccr.cancer.gov/ccbr/)
 
+
+The CCR Collaborative Bioinformatics Resource (CCBR) operates as a crucial support system within the National Cancer Institute, particularly for researchers at the Center for Cancer Research (CCR). CCBR brings together a team of bioinformatics experts from various institutions, including the CCR Office of Science and Technology Resources (OSTR), Frederick National Laboratory for Cancer Research (FNLCR), and the Center for Biomedical Informatics and Information Technology (CBIIT). This collaborative model allows CCBR to offer a wide array of bioinformatics services, ranging from data analysis and interpretation to software development and training.
+
+
+CCBR's working model emphasizes accessibility and collaboration. Researchers at CCR can easily request bioinformatics support through a formal project submission process. This process is designed to streamline access to bioinformatics resources, ensuring that projects receive timely and appropriate expertise. The CCBR team offers personalized consultations, both in-person and virtual, to understand the specific needs of each research project, facilitating a tailored approach that enhances the quality and impact of scientific research within the cancer research community.
+
+The CCBR comprises of the core team and the embedded team. These teams serve different, but similar roles within the CCBR's support structure. 
+
+- The core team consists of bioinformatics experts who provide centralized support to researchers, offering services such as data analysis, software development, and training across a broad range of projects. They are available to assist any CCR researcher who submits a request for bioinformatics help.
+
+- The embedded team members are bioinformaticians who are integrated within specific research groups or labs. Their role is to provide more focused, day-to-day bioinformatics support tailored to the specific needs of the research group they are embedded in. This allows for a deeper collaboration and a more nuanced understanding of the ongoing research projects within that group.
+
+> For details, please visit [CCBR's official website](https://bioinformatics.ccr.cancer.gov/ccbr/).
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -126,7 +140,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 	<a href="##table-of-contents">Back to Top</a>
 </p>
 
-## Release History
+## `ccbrpipeliner` module release history on BIOWULF
 
 `module load ccbrpipeliner` loads default release of ccbrpipeliner. Each release comprises of a unique combination of the version numbers of the different pipelines offered as part of the ccbrpipeliner suite.
 
@@ -145,48 +159,51 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 > <sup>@</sup> = CLI available
 >  
 > <sup>#</sup> = GUI available
+
+
+> `module load ccbrpipeliner` is also available on HELIX. It only loads the **tools** and not the **pipelines** as HELIX does not have a job scheduler
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
-## Latest Releases of pipelines/tools: 
 
-| Repo Name                                                                                                                | Release Name                                                                                                    | Release Date   |   Open Issues |
-|:-------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|:---------------|--------------:|
-| [nf-sandbox](https://github.com/CCBR/nf-sandbox)                                                                         | [nf-sandbox 0.2.2](https://github.com/CCBR/nf-sandbox/releases/tag/v0.2.2)                                      | 2024-08-13     |             2 |
-| [actions](https://github.com/CCBR/actions)                                                                               | [actions 0.1.0](https://github.com/CCBR/actions/releases/tag/v0.1.0)                                            | 2024-08-13     |             1 |
-| [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                                            | 2024-07-16     |             6 |
-| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)                                                    | 2024-07-11     |            11 |
-| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)                                                    | 2024-06-27     |             2 |
-| [permfix](https://github.com/CCBR/permfix)                                                                               | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)                                                   | 2024-05-07     |             0 |
-| [journal-club](https://github.com/CCBR/journal-club)                                                                     | [jchelper 0.1.0](https://github.com/CCBR/journal-club/releases/tag/v0.1.0)                                      | 2024-05-07     |             2 |
-| [reports](https://github.com/CCBR/reports)                                                                               | [ccbr.reports 0.2.0](https://github.com/CCBR/reports/releases/tag/v0.2.0)                                       | 2024-04-30     |            12 |
-| [parkit](https://github.com/CCBR/parkit)                                                                                 | [v2.0.1](https://github.com/CCBR/parkit/releases/tag/v2.0.1)                                                    | 2024-04-16     |             0 |
-| [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                                                                       | [CCBR_tobias 0.3.0](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.0)                                    | 2024-04-12     |             1 |
-| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [RENEE 2.5.12](https://github.com/CCBR/RENEE/releases/tag/v2.5.12)                                              | 2024-04-12     |            27 |
-| [METRO](https://github.com/CCBR/METRO)                                                                                   | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                                                         | 2024-03-28     |             2 |
-| [CCBR-1144](https://github.com/CCBR/CCBR-1144)                                                                           | [Data Release Latest](https://github.com/CCBR/CCBR-1144/releases/tag/v1.0.0)                                    | 2024-03-04     |             0 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.5.0](https://github.com/CCBR/CARLISLE/releases/tag/v.2.5.0)                                                 | 2024-02-26     |            14 |
-| [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                                                             | [TRANQUIL 0.2.1](https://github.com/CCBR/TRANQUIL/releases/tag/v0.2.1)                                          | 2024-02-22     |             0 |
-| [ccbr1271_ERVpipeline](https://github.com/CCBR/ccbr1271_ERVpipeline)                                                     | [v1.0.3](https://github.com/CCBR/ccbr1271_ERVpipeline/releases/tag/v1.0.3)                                      | 2024-02-21     |             1 |
-| [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                                                                           | [CHAMPAGNE 0.3.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.3.0)                                        | 2024-01-18     |            30 |
-| [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.0.1](https://github.com/CCBR/ASPEN/releases/tag/v1.0.1)                                                     | 2023-12-27     |             6 |
-| [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.10.1](https://github.com/CCBR/CHARLIE/releases/tag/v0.10.1)                                                 | 2023-12-23     |            21 |
-| [nf-modules](https://github.com/CCBR/nf-modules)                                                                         | [nf-modules 0.1.0](https://github.com/CCBR/nf-modules/releases/tag/v0.1.0)                                      | 2023-11-29     |            11 |
-| [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [CRUISE 0.1.1](https://github.com/CCBR/CRISPIN/releases/tag/v0.1.1)                                             | 2023-11-06     |            14 |
-| [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                                                             | [v0.2.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.2.0)                                                  | 2023-11-01     |            28 |
-| [CRISPRAnnotation](https://github.com/CCBR/CRISPRAnnotation)                                                             | [Code/Data Release](https://github.com/CCBR/CRISPRAnnotation/releases/tag/v1.0)                                 | 2023-10-19     |             0 |
-| [SharanLab](https://github.com/CCBR/SharanLab)                                                                           | [Data/Code Release](https://github.com/CCBR/SharanLab/releases/tag/v1.0.0)                                      | 2023-07-18     |             0 |
-| [Pipeliner](https://github.com/CCBR/Pipeliner)                                                                           | [v4.0.7](https://github.com/CCBR/Pipeliner/releases/tag/v4.0.7)                                                 | 2023-05-09     |            24 |
-| [MAPLE](https://github.com/CCBR/MAPLE)                                                                                   | [version 1.0.1](https://github.com/CCBR/MAPLE/releases/tag/v1.0.1)                                              | 2023-02-27     |             0 |
-| [DTB_ExomeSeq](https://github.com/CCBR/DTB_ExomeSeq)                                                                     | [v1.0](https://github.com/CCBR/DTB_ExomeSeq/releases/tag/v1.0)                                                  | 2022-06-22     |             0 |
-| [ASCENT](https://github.com/CCBR/ASCENT)                                                                                 | [v0.1.1](https://github.com/CCBR/ASCENT/releases/tag/v0.1.1)                                                    | 2022-01-04     |             2 |
-| [Antitumor-activity-of-entinostat-plus-NHS-IL12](https://github.com/CCBR/Antitumor-activity-of-entinostat-plus-NHS-IL12) | [Manuscript Methods](https://github.com/CCBR/Antitumor-activity-of-entinostat-plus-NHS-IL12/releases/tag/v.1.0) | 2021-06-01     |             0 |
-| [CCBR_circRNA_AmpliconSeq](https://github.com/CCBR/CCBR_circRNA_AmpliconSeq)                                             | [v0.1.1](https://github.com/CCBR/CCBR_circRNA_AmpliconSeq/releases/tag/v0.1.1)                                  | 2021-03-24     |             0 |
-| [rNA](https://github.com/CCBR/rNA)                                                                                       | [Release v1.0.0](https://github.com/CCBR/rNA/releases/tag/v1.0.0)                                               | 2021-01-21     |             0 |
-| [l2p](https://github.com/CCBR/l2p)                                                                                       | [Release v0.0.3](https://github.com/CCBR/l2p/releases/tag/v0.0.3)                                               | 2020-07-13     |             0 |
-| [MAAPster](https://github.com/CCBR/MAAPster)                                                                             | [Release v2.0.0](https://github.com/CCBR/MAAPster/releases/tag/v2.0.0)                                          | 2020-04-27     |             0 |
-| [ChIP-Seq-Pipeline](https://github.com/CCBR/ChIP-Seq-Pipeline)                                                           | [Alpha 2](https://github.com/CCBR/ChIP-Seq-Pipeline/releases/tag/alpha2)                                        | 2016-10-01     |             2 |
+## Latest Releases of pipelines/tools:
+| Repo Name                                                                                                                | Release Name                                                                                       | Release Date   |   Open Issues |
+|:-------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|:---------------|--------------:|
+| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)                                       | 2024-08-19     |             2 |
+| [reports](https://github.com/CCBR/reports)                                                                               | [v0.2.1](https://github.com/CCBR/reports/releases/tag/v0.2.1)                                      | 2024-08-19     |             9 |
+| [nf-sandbox](https://github.com/CCBR/nf-sandbox)                                                                         | [v0.2.2](https://github.com/CCBR/nf-sandbox/releases/tag/v0.2.2)                                   | 2024-08-13     |             2 |
+| [actions](https://github.com/CCBR/actions)                                                                               | [v0.1.0](https://github.com/CCBR/actions/releases/tag/v0.1.0)                                      | 2024-08-13     |             3 |
+| [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                               | 2024-07-16     |             6 |
+| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.0.3](https://github.com/CCBR/XAVIER/releases/tag/v3.0.3)                                       | 2024-07-11     |             8 |
+| [permfix](https://github.com/CCBR/permfix)                                                                               | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)                                      | 2024-05-07     |             0 |
+| [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.0](https://github.com/CCBR/journal-club/releases/tag/v0.1.0)                                 | 2024-05-07     |             2 |
+| [parkit](https://github.com/CCBR/parkit)                                                                                 | [v2.0.1](https://github.com/CCBR/parkit/releases/tag/v2.0.1)                                       | 2024-04-16     |             0 |
+| [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                                                                       | [v0.3.0](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.0)                                  | 2024-04-12     |             1 |
+| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.5.12](https://github.com/CCBR/RENEE/releases/tag/v2.5.12)                                      | 2024-04-12     |            27 |
+| [METRO](https://github.com/CCBR/METRO)                                                                                   | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                                            | 2024-03-28     |             2 |
+| [CCBR-1144](https://github.com/CCBR/CCBR-1144)                                                                           | [v1.0.0](https://github.com/CCBR/CCBR-1144/releases/tag/v1.0.0)                                    | 2024-03-04     |             0 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v.2.5.0](https://github.com/CCBR/CARLISLE/releases/tag/v.2.5.0)                                   | 2024-02-26     |            14 |
+| [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                                                             | [v0.2.1](https://github.com/CCBR/TRANQUIL/releases/tag/v0.2.1)                                     | 2024-02-22     |             0 |
+| [ccbr1271_ERVpipeline](https://github.com/CCBR/ccbr1271_ERVpipeline)                                                     | [v1.0.3](https://github.com/CCBR/ccbr1271_ERVpipeline/releases/tag/v1.0.3)                         | 2024-02-21     |             1 |
+| [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                                                                           | [v0.3.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.3.0)                                    | 2024-01-18     |            30 |
+| [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.0.1](https://github.com/CCBR/ASPEN/releases/tag/v1.0.1)                                        | 2023-12-27     |             6 |
+| [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.10.1](https://github.com/CCBR/CHARLIE/releases/tag/v0.10.1)                                    | 2023-12-23     |            21 |
+| [nf-modules](https://github.com/CCBR/nf-modules)                                                                         | [v0.1.0](https://github.com/CCBR/nf-modules/releases/tag/v0.1.0)                                   | 2023-11-29     |            11 |
+| [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v0.1.1](https://github.com/CCBR/CRISPIN/releases/tag/v0.1.1)                                      | 2023-11-06     |            14 |
+| [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                                                             | [v0.2.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.2.0)                                     | 2023-11-01     |            28 |
+| [CRISPRAnnotation](https://github.com/CCBR/CRISPRAnnotation)                                                             | [v1.0](https://github.com/CCBR/CRISPRAnnotation/releases/tag/v1.0)                                 | 2023-10-19     |             0 |
+| [SharanLab](https://github.com/CCBR/SharanLab)                                                                           | [v1.0.0](https://github.com/CCBR/SharanLab/releases/tag/v1.0.0)                                    | 2023-07-18     |             0 |
+| [Pipeliner](https://github.com/CCBR/Pipeliner)                                                                           | [v4.0.7](https://github.com/CCBR/Pipeliner/releases/tag/v4.0.7)                                    | 2023-05-09     |            24 |
+| [MAPLE](https://github.com/CCBR/MAPLE)                                                                                   | [v1.0.1](https://github.com/CCBR/MAPLE/releases/tag/v1.0.1)                                        | 2023-02-27     |             0 |
+| [DTB_ExomeSeq](https://github.com/CCBR/DTB_ExomeSeq)                                                                     | [v1.0](https://github.com/CCBR/DTB_ExomeSeq/releases/tag/v1.0)                                     | 2022-06-22     |             0 |
+| [ASCENT](https://github.com/CCBR/ASCENT)                                                                                 | [v0.1.1](https://github.com/CCBR/ASCENT/releases/tag/v0.1.1)                                       | 2022-01-04     |             2 |
+| [Antitumor-activity-of-entinostat-plus-NHS-IL12](https://github.com/CCBR/Antitumor-activity-of-entinostat-plus-NHS-IL12) | [v.1.0](https://github.com/CCBR/Antitumor-activity-of-entinostat-plus-NHS-IL12/releases/tag/v.1.0) | 2021-06-01     |             0 |
+| [CCBR_circRNA_AmpliconSeq](https://github.com/CCBR/CCBR_circRNA_AmpliconSeq)                                             | [v0.1.1](https://github.com/CCBR/CCBR_circRNA_AmpliconSeq/releases/tag/v0.1.1)                     | 2021-03-24     |             0 |
+| [rNA](https://github.com/CCBR/rNA)                                                                                       | [v1.0.0](https://github.com/CCBR/rNA/releases/tag/v1.0.0)                                          | 2021-01-21     |             0 |
+| [l2p](https://github.com/CCBR/l2p)                                                                                       | [v0.0.3](https://github.com/CCBR/l2p/releases/tag/v0.0.3)                                          | 2020-07-13     |             0 |
+| [MAAPster](https://github.com/CCBR/MAAPster)                                                                             | [v2.0.0](https://github.com/CCBR/MAAPster/releases/tag/v2.0.0)                                     | 2020-04-27     |             0 |
+| [ChIP-Seq-Pipeline](https://github.com/CCBR/ChIP-Seq-Pipeline)                                                           | [alpha2](https://github.com/CCBR/ChIP-Seq-Pipeline/releases/tag/alpha2)                            | 2016-10-01     |             2 |
 
 <hr>
 <p align="center">
