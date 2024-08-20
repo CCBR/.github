@@ -38,7 +38,8 @@ cat ${MDPATH}/ccbrpipeliner_release_history.md >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
 # add list of all releases releses
-echo -ne "## Latest Releases of pipelines/tools: \n\n" >> README_tmp.md
+# echo -ne "## Latest Releases of pipelines/tools: \n\n" >> README_tmp.md
+cat ${MDPATH}/latest_releases.md >> README_tmp.md
 python ${MDPATH}/get_recent_releases_table.py >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
