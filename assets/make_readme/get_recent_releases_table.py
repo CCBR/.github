@@ -68,8 +68,9 @@ def main():
         open_issues_count = get_open_issues_count(repo['full_name'])
         if latest_release:
             repo_name = repo['name']
-            release_name = latest_release['name']
+            # release_name = latest_release['name']
             release_url = latest_release['html_url']
+            release_name = release_url.split('/')[-1]
             release_date = latest_release['published_at']
             formatted_date = format_date(release_date)
             if formatted_date != 'Unknown date' and (args.nmonths == 0 or formatted_date >= cutoff_date):

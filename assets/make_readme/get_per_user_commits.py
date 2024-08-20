@@ -126,6 +126,7 @@ def main():
     
     df = pd.DataFrame(data, columns=['User', 'Total Commits', 'Commits in Last Month', 'Commits in Last 6 Months'])
     df = df[df['User'] != 'unknown']  # Remove 'unknown' users
+    df['User'] = df['User'].apply(lambda user: f'[{user}](https://github.com/{user})')
     df = df.sort_values(by='Total Commits', ascending=False).head(10)  # Top 10 users
 
     # Create a Markdown table

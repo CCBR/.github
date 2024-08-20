@@ -1,5 +1,5 @@
 
-## Release History
+## `ccbrpipeliner` module release history on BIOWULF
 
 `module load ccbrpipeliner` loads default release of ccbrpipeliner. Each release comprises of a unique combination of the version numbers of the different pipelines offered as part of the ccbrpipeliner suite.
 
@@ -18,3 +18,6 @@
 > <sup>@</sup> = CLI available
 >  
 > <sup>#</sup> = GUI available
+
+
+> `module load ccbrpipeliner` is also available on HELIX. It only loads the **tools** and not the **pipelines** as HELIX does not have a job scheduler
