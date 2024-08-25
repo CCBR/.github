@@ -15,8 +15,8 @@
 
 | Repo Name                                            | Release Name                                                         | Release Date   |   Open Issues |
 |:-----------------------------------------------------|:---------------------------------------------------------------------|:---------------|--------------:|
-| [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)         | 2024-08-19     |             2 |
-| [reports](https://github.com/CCBR/reports)           | [v0.2.1](https://github.com/CCBR/reports/releases/tag/v0.2.1)        | 2024-08-19     |             9 |
+| [reports](https://github.com/CCBR/reports)           | [v0.2.2](https://github.com/CCBR/reports/releases/tag/v0.2.2)        | 2024-08-22     |             9 |
+| [ESCAPE](https://github.com/CCBR/ESCAPE)             | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)         | 2024-08-19     |             1 |
 | [nf-sandbox](https://github.com/CCBR/nf-sandbox)     | [v0.2.2](https://github.com/CCBR/nf-sandbox/releases/tag/v0.2.2)     | 2024-08-13     |             2 |
 | [actions](https://github.com/CCBR/actions)           | [v0.1.0](https://github.com/CCBR/actions/releases/tag/v0.1.0)        | 2024-08-13     |             3 |
 | [spacesavers2](https://github.com/CCBR/spacesavers2) | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0) | 2024-07-16     |             6 |
@@ -25,16 +25,16 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kopardev](https://github.com/kopardev)             |            4217 |                      75 |                        471 |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            3763 |                     446 |                       1038 |
-| [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                         47 |
+| [kopardev](https://github.com/kopardev)             |            4218 |                      57 |                        468 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            3773 |                     433 |                       1000 |
+| [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                         33 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
-| [dnousome](https://github.com/dnousome)             |             656 |                       7 |                        142 |
-| [kcgfarb](https://github.com/kcgfarb)               |             488 |                       9 |                        159 |
-| [samarth8392](https://github.com/samarth8392)       |             384 |                      41 |                        136 |
+| [dnousome](https://github.com/dnousome)             |             656 |                       4 |                        142 |
+| [kcgfarb](https://github.com/kcgfarb)               |             493 |                      12 |                        163 |
+| [samarth8392](https://github.com/samarth8392)       |             394 |                      50 |                        143 |
+| [finneyr](https://github.com/finneyr)               |             345 |                       1 |                         23 |
 | [jlac](https://github.com/jlac)                     |             307 |                       0 |                          0 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
-| [wong-nw](https://github.com/wong-nw)               |              92 |                       0 |                          2 |
 
 ## About Us
 
@@ -170,8 +170,8 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 ## Latest Releases of pipelines/tools:
 | Repo Name                                                                                                                | Release Name                                                                                       | Release Date   |   Open Issues |
 |:-------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|:---------------|--------------:|
-| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)                                       | 2024-08-19     |             2 |
-| [reports](https://github.com/CCBR/reports)                                                                               | [v0.2.1](https://github.com/CCBR/reports/releases/tag/v0.2.1)                                      | 2024-08-19     |             9 |
+| [reports](https://github.com/CCBR/reports)                                                                               | [v0.2.2](https://github.com/CCBR/reports/releases/tag/v0.2.2)                                      | 2024-08-22     |             9 |
+| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.2](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.2)                                       | 2024-08-19     |             1 |
 | [nf-sandbox](https://github.com/CCBR/nf-sandbox)                                                                         | [v0.2.2](https://github.com/CCBR/nf-sandbox/releases/tag/v0.2.2)                                   | 2024-08-13     |             2 |
 | [actions](https://github.com/CCBR/actions)                                                                               | [v0.1.0](https://github.com/CCBR/actions/releases/tag/v0.1.0)                                      | 2024-08-13     |             3 |
 | [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                               | 2024-07-16     |             6 |
@@ -179,8 +179,8 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [permfix](https://github.com/CCBR/permfix)                                                                               | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)                                      | 2024-05-07     |             0 |
 | [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.0](https://github.com/CCBR/journal-club/releases/tag/v0.1.0)                                 | 2024-05-07     |             2 |
 | [parkit](https://github.com/CCBR/parkit)                                                                                 | [v2.0.1](https://github.com/CCBR/parkit/releases/tag/v2.0.1)                                       | 2024-04-16     |             0 |
-| [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                                                                       | [v0.3.0](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.0)                                  | 2024-04-12     |             1 |
-| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.5.12](https://github.com/CCBR/RENEE/releases/tag/v2.5.12)                                      | 2024-04-12     |            27 |
+| [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                                                                       | [v0.3.0](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.0)                                  | 2024-04-12     |             2 |
+| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.5.12](https://github.com/CCBR/RENEE/releases/tag/v2.5.12)                                      | 2024-04-12     |            28 |
 | [METRO](https://github.com/CCBR/METRO)                                                                                   | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                                            | 2024-03-28     |             2 |
 | [CCBR-1144](https://github.com/CCBR/CCBR-1144)                                                                           | [v1.0.0](https://github.com/CCBR/CCBR-1144/releases/tag/v1.0.0)                                    | 2024-03-04     |             0 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v.2.5.0](https://github.com/CCBR/CARLISLE/releases/tag/v.2.5.0)                                   | 2024-02-26     |            14 |
