@@ -60,6 +60,8 @@ jobs:
             FORK_OWNER: abcsFrederick
           - REPO: TRANQUIL
             FORK_OWNER: abcsFrederick
+          - REPO: MAPLE
+            FORK_OWNER: abcsFrederick
           - REPO: LOGAN
             FORK_OWNER: abcsFrederick
 
