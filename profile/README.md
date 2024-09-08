@@ -26,13 +26,13 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kopardev](https://github.com/kopardev)             |            4219 |                      11 |                        363 |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            3869 |                     510 |                       1078 |
-| [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                         20 |
+| [kopardev](https://github.com/kopardev)             |            4219 |                      10 |                        310 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            3869 |                     329 |                       1025 |
+| [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                         11 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
-| [dnousome](https://github.com/dnousome)             |             656 |                       3 |                        142 |
-| [kcgfarb](https://github.com/kcgfarb)               |             503 |                      15 |                        172 |
-| [samarth8392](https://github.com/samarth8392)       |             414 |                      66 |                        163 |
+| [dnousome](https://github.com/dnousome)             |             656 |                       3 |                        121 |
+| [kcgfarb](https://github.com/kcgfarb)               |             509 |                      21 |                        172 |
+| [samarth8392](https://github.com/samarth8392)       |             414 |                      60 |                        163 |
 | [finneyr](https://github.com/finneyr)               |             348 |                       4 |                         26 |
 | [jlac](https://github.com/jlac)                     |             307 |                       0 |                          0 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
