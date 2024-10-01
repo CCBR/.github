@@ -10,32 +10,62 @@ jobs:
   createreadme:
     runs-on: ubuntu-20.04
     steps:
+      # Step 1: Checkout the main repository
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      # Step 2: Set up Git for committing later
       - name: Set up Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
+      # Step 3: Pull Docker container for README generation
       - name: Pull Docker
         run: |
           docker pull nciccbr/make_readme:latest
-      
+
+      # Step 4: Run Docker to generate the README file
       - name: Run Docker to make readme
         env:
             GITHUB_TOKEN: ${{ secrets.OMNITOKEN }}
         run: |
           docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/make_readme.sh
 
+      # Step 5: Verify output of README
       - name: verify output
         run: |
           cat profile/README.md
-  
-      - name: Commit  and push changes
+
+      # Step 6: Commit and push changes to the main repository
+      - name: Commit and push changes
         run: |
           git add .
           git commit -m "Commit changes made by createreadme github action."
           git push origin main --force
         env:
           GITHUB_TOKEN: ${{ github.token }}
+
+      # Step 7: Checkout the CCBR GitHub Pages repository (ccbr.github.io)
+      - name: Checkout github.io
+        uses: actions/checkout@v4
+        with:
+          repository: CCBR/ccbr.github.io
+          token: ${{ secrets.OMNITOKEN }}  # Personal Access Token (PAT)
+          path: ccbr.github.io
+
+
+      # Step 8: Copy the generated README.md to the index.md of the GitHub Pages repo
+      - name: Copy README.md to index.md
+        run: |
+          cp profile/README.md ccbr.github.io/index.md
+
+      # Step 9: Commit and push the changes to the GitHub Pages repository
+      - name: Commit and push to GitHub Pages
+        working-directory: ccbr.github.io
+        run: |
+          git add .
+          git commit -m "Update index.md with README.md content from main repo."
+          git push origin main --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.OMNITOKEN }}
