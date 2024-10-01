@@ -7,7 +7,6 @@ jobs:
   add-label:
     runs-on: ubuntu-latest
     steps:
-
       - name: add label
         uses: actions/github-script@v6
         with:
