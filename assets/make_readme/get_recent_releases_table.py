@@ -5,6 +5,10 @@ import pandas as pd
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
+exclude_list = [
+"nf-sandbox"
+]
+
 # Replace these with your GitHub token and organization name
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 if not GITHUB_TOKEN:
@@ -68,6 +72,7 @@ def main():
         open_issues_count = get_open_issues_count(repo['full_name'])
         if latest_release:
             repo_name = repo['name']
+            if repo_name in exclude_list: continue
             # release_name = latest_release['name']
             release_url = latest_release['html_url']
             release_name = release_url.split('/')[-1]
@@ -90,6 +95,7 @@ def main():
 
     # Print Markdown table
     print(markdown_table)
+    print()
 
 if __name__ == "__main__":
     main()
