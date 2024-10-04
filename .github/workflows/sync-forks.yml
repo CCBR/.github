@@ -84,3 +84,20 @@ jobs:
       - name: sync forked repos
         run: |
           gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source $UPSTREAM_OWNER/${{ matrix.REPO }} --force
+
+  sync-misc:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - REPO: Oncogenomics_NF_WF
+            UPSTREAM_OWNER: CCRGeneticsBranch
+            FORK_OWNER: abcsFrederick
+          - REPO: fruitsc
+            UPSTREAM_OWNER: NCI-CCR-POB
+            FORK_OWNER: abcsFrederick
+    steps:
+      - name: sync forked repos
+        run: |
+          gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source ${{matrix.UPSTREAM_OWNER}}/${{ matrix.REPO }} --force
