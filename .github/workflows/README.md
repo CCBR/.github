@@ -1,6 +1,7 @@
 # Reusable GitHub Actions
 
-see <https://github.com/CCBR/actions> for our main repository of reusable actions
+⚠️ See <https://github.com/CCBR/actions> for our main repository of reusable actions.
+We have moved most actions which were here to that repo. ⚠️
 
 ## Auto-add issues & PRs to user projects
 
@@ -10,23 +11,22 @@ see <https://github.com/CCBR/actions> for our main repository of reusable action
 
 1. In your repo where issues and PRs will be opened, create a workflow YAML file in [`.github/workflows`](.github/workflows/projects.yml) with the following content:
 
+   ```yaml
+   name: Add issues/PRs to user projects
 
-    ```yaml
-    name: Add issues/PRs to user projects
+   on:
+     issues:
+       types:
+         - assigned
+     pull_request:
+       types:
+         - assigned
 
-    on:
-      issues:
-        types:
-        - assigned
-      pull_request:
-        types:
-        - assigned
-
-    jobs:
-      add-to-project:
-        uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@v0.1.0
-        secrets: inherit
-    ```
+   jobs:
+     add-to-project:
+       uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@v0.1.0
+       secrets: inherit
+   ```
 
 1. Every time an issue or PR in the repo is assigned to a user listed in [`assets/user-kanbans.yml`](https://github.com/CCBR/.github/blob/main/assets/user-kanbans.yml), it will be added to their project board.
 
@@ -38,33 +38,31 @@ If your repo is not part of the CCBR GitHub organization, you will need to do a 
 
 1. [Add the token to your organization as a secret](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-secrets-for-your-repository-and-organization-for-github-codespaces#adding-secrets-for-an-organization) and name it `ADD_TO_PROJECT_PAT`.
 
-    Alternatively, if you don't have the permissions to add a secret to your organization, you can [add the secret to your repo](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository).
+   Alternatively, if you don't have the permissions to add a secret to your organization, you can [add the secret to your repo](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository).
 
 1. Create a YAML file following [this format](https://github.com/CCBR/.github/blob/main/assets/user-kanbans.yml) to map usernames of organization members to their project boards.
    We recommend keeping this file in a central public repo, such as `YOUR_ORG/.github`.
 
 1. In any repo where issues and PRs will be opened, create a workflow YAML file in `.github/workflows` with the following content:
 
-    ```yaml
-    name: Add issues/PRs to user projects
+   ```yaml
+   name: Add issues/PRs to user projects
 
-    on:
-      issues:
-        types:
-        - assigned
-      pull_request:
-        types:
-        - assigned
+   on:
+     issues:
+       types:
+         - assigned
+     pull_request:
+       types:
+         - assigned
 
-    jobs:
-      add-to-project:
-        uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@v0.1.0
-        with:
-          user_projects: https://raw.githubusercontent.com/YOUR_ORG/.github/main/assets/user-kanbans.yml
-        secrets:
-          ADD_TO_PROJECT_PAT: ${{ secrets.ADD_TO_PROJECT_PAT }}
-    ```
+   jobs:
+     add-to-project:
+       uses: CCBR/.github/.github/workflows/auto-add-user-project.yml@v0.1.0
+       with:
+         user_projects: https://raw.githubusercontent.com/YOUR_ORG/.github/main/assets/user-kanbans.yml
+       secrets:
+         ADD_TO_PROJECT_PAT: ${{ secrets.ADD_TO_PROJECT_PAT }}
+   ```
 
-    Be sure to replace the `user_projects` URL with the actual URL to your YAML file of usernames & their project boards.
-
-
+   Be sure to replace the `user_projects` URL with the actual URL to your YAML file of usernames & their project boards.
