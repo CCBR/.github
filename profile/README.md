@@ -20,7 +20,7 @@
 | [XAVIER](https://github.com/CCBR/XAVIER)       | [v3.1.2](https://github.com/CCBR/XAVIER/releases/tag/v3.1.2)    | 2024-11-05     |             8 |
 | [RENEE](https://github.com/CCBR/RENEE)         | [v2.6.1](https://github.com/CCBR/RENEE/releases/tag/v2.6.1)     | 2024-10-25     |            16 |
 | [parkit](https://github.com/CCBR/parkit)       | [v2.1.0](https://github.com/CCBR/parkit/releases/tag/v2.1.0)    | 2024-10-16     |             2 |
-| [CRISPIN](https://github.com/CCBR/CRISPIN)     | [v1.0.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.0.1)   | 2024-10-16     |            14 |
+| [CRISPIN](https://github.com/CCBR/CRISPIN)     | [v1.0.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.0.1)   | 2024-10-16     |            15 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)   | [v2.6.1](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.1)  | 2024-10-14     |            12 |
 | [ESCAPE](https://github.com/CCBR/ESCAPE)       | [v1.1.4](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.4)    | 2024-09-23     |             0 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)     | [v0.11.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.11.0) | 2024-09-16     |            15 |
@@ -33,12 +33,12 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            4739 |                     336 |                       1527 |
-| [kopardev](https://github.com/kopardev)             |            4444 |                     194 |                        396 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            4750 |                     322 |                       1535 |
+| [kopardev](https://github.com/kopardev)             |            4444 |                     186 |                        393 |
 | [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
-| [dnousome](https://github.com/dnousome)             |             657 |                       0 |                         93 |
-| [kcgfarb](https://github.com/kcgfarb)               |             626 |                      66 |                        222 |
+| [dnousome](https://github.com/dnousome)             |             666 |                       4 |                         99 |
+| [kcgfarb](https://github.com/kcgfarb)               |             629 |                      63 |                        212 |
 | [samarth8392](https://github.com/samarth8392)       |             460 |                       8 |                        152 |
 | [finneyr](https://github.com/finneyr)               |             348 |                       0 |                          8 |
 | [jlac](https://github.com/jlac)                     |             307 |                       0 |                          0 |
@@ -183,7 +183,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.1.2](https://github.com/CCBR/XAVIER/releases/tag/v3.1.2)                                       | 2024-11-05     |             8 |
 | [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.6.1](https://github.com/CCBR/RENEE/releases/tag/v2.6.1)                                        | 2024-10-25     |            16 |
 | [parkit](https://github.com/CCBR/parkit)                                                                                 | [v2.1.0](https://github.com/CCBR/parkit/releases/tag/v2.1.0)                                       | 2024-10-16     |             2 |
-| [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.0.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.0.1)                                      | 2024-10-16     |            14 |
+| [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.0.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.0.1)                                      | 2024-10-16     |            15 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.6.1](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.1)                                     | 2024-10-14     |            12 |
 | [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.4](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.4)                                       | 2024-09-23     |             0 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.11.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.11.0)                                    | 2024-09-16     |            15 |
