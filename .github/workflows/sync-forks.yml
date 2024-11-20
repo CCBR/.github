@@ -80,6 +80,11 @@ jobs:
           - CPTR-9-Weigert-DSP-Analysis
           - CPTR_5_DSP_Krug
           - CPTR_6_DSP_Annunziata
+          - CPTR-12-Wang-DSP-Analysis
+          - CPTR-11-Beck-Canine-OsteoSarcoma-DSP-Analysis
+          - CPTR-10-Tosato-Mouse-WTA-DSP-Analysis
+          - DSP_Analysis
+
     steps:
       - name: sync forked repos
         run: |
