@@ -18,9 +18,9 @@ Here is a list of our prominent pipelines and their release schedule on BIOWULF:
 | CRISPRSeq<sup>5</sup> | [CRISPIN](https://github.com/CCBR/CRISPIN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | September 31st 2023 | TBD |
 | CUT&RunSeq<sup>6</sup> | [CARLISLE](https://github.com/CCBR/CARLISLE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | October 31st 2023 | TBD |
 | EV-Seq<sup>10</sup> | [ESCAPE](https://github.com/CCBR/ESCAPE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | March 26th, 2024 | TBD |
-| circRNASeq<sup>7</sup> | [CHARLIE](https://github.com/CCBR/CHARLIE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | _Jul 31st 2024_ | TBD |
-| scRNASeq<sup>8</sup> | [SINCLAIR](https://github.com/CCBR/SINCLAIR)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | _Sep 30th 2024_ | TBD |
-| WGSSeq<sup>9</sup> | [LOGAN](https://github.com/CCBR/LOGAN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | _Sep 30th 2024_ | TBD |
+| circRNASeq<sup>7</sup> | [CHARLIE](https://github.com/CCBR/CHARLIE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | Sep 16th 2024 | TBD |
+| scRNASeq<sup>8</sup> | [SINCLAIR](https://github.com/CCBR/SINCLAIR)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | _Feb 28th 2025_ | TBD |
+| WGSSeq<sup>9</sup> | [LOGAN](https://github.com/CCBR/LOGAN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | _May 31st 2025_ | TBD |
 | spatialSeq<sup>11</sup> | [SPENCER](https://github.com/CCBR/SPENCER)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | TBD | TBD |
 
 <sup>* CLI = Command Line Interface </sup>
