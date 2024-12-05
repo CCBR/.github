@@ -18,7 +18,7 @@ env:
   UPSTREAM_OWNER: CCBR
 
 jobs:
-  sync:
+  sync-from-CCBR:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -70,7 +70,7 @@ jobs:
         run: |
           gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source $UPSTREAM_OWNER/${{ matrix.REPO }} --force
 
-  sync-nidap:
+  sync-to-nidap:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -80,7 +80,32 @@ jobs:
           - CPTR-9-Weigert-DSP-Analysis
           - CPTR_5_DSP_Krug
           - CPTR_6_DSP_Annunziata
+          - CPTR-12-Wang-DSP-Analysis
+          - CPTR-11-Beck-Canine-OsteoSarcoma-DSP-Analysis
+          - CPTR-10-Tosato-Mouse-WTA-DSP-Analysis
+          - DSP_Analysis
+
     steps:
       - name: sync forked repos
         run: |
           gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source $UPSTREAM_OWNER/${{ matrix.REPO }} --force
+
+  sync-misc:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - REPO: Oncogenomics_NF_WF
+            UPSTREAM_OWNER: CCRGeneticsBranch
+            FORK_OWNER: abcsFrederick
+          - REPO: fruitsc
+            UPSTREAM_OWNER: NCI-CCR-POB
+            FORK_OWNER: abcsFrederick
+          - REPO: POB_snMultiome_pipeline
+            UPSTREAM_OWNER: NCI-CCDI
+            FORK_OWNER: abcsFrederick
+    steps:
+      - name: sync forked repos
+        run: |
+          gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source ${{matrix.UPSTREAM_OWNER}}/${{ matrix.REPO }} --force
