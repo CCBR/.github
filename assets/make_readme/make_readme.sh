@@ -1,8 +1,8 @@
 #!/bin/bash
 # This will be run inside nciccbr/make_readme:latest docker
 
-# MDPATH="assets/make_readme"
-MDPATH="/Users/kopardevn/Documents/GitRepos/.github/assets/make_readme"
+MDPATH="assets/make_readme"
+# MDPATH="/Users/kopardevn/Documents/GitRepos/.github/assets/make_readme"
 # add banner
 cat ${MDPATH}/banner.md > README_tmp.md
 
