@@ -1,8 +1,8 @@
 #!/bin/bash
 # This will be run inside nciccbr/make_readme:latest docker
 
-MDPATH="assets/make_readme"
-
+# MDPATH="assets/make_readme"
+MDPATH="/Users/kopardevn/Documents/GitRepos/.github/assets/make_readme"
 # add banner
 cat ${MDPATH}/banner.md > README_tmp.md
 
@@ -41,6 +41,12 @@ cat ${MDPATH}/back_to_top.md >> README_tmp.md
 # echo -ne "## Latest Releases of pipelines/tools: \n\n" >> README_tmp.md
 cat ${MDPATH}/latest_releases.md >> README_tmp.md
 python ${MDPATH}/get_recent_releases_table.py >> README_tmp.md
+cat ${MDPATH}/back_to_top.md >> README_tmp.md
+
+# member activities
+echo -ne "\n## Days since last activity \n\n -1=No activity found!\n\n" >> README_tmp.md
+python ${MDPATH}/get_last_activity_per_member.py >> README_tmp.md
+echo -ne "\n\n" >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
 # add citation
