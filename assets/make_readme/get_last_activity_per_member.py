@@ -4,7 +4,7 @@ import requests
 from datetime import datetime, timedelta
 
 # Example usage:
-ORG_NAME = "CCBR"
+# org_name = "CCBR"
 # Load the GitHub token from the environment
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
@@ -81,7 +81,7 @@ def find_dormant_users(org, members):
     for member in members:
         username = member["login"]
         #print(f"Checking activity for {username}...")
-        last_activity = get_user_activity_in_org(username,ORG_NAME)
+        last_activity = get_user_activity_in_org(username,org_name)
         if last_activity:
             last_active_date = datetime.strptime(last_activity, "%Y-%m-%dT%H:%M:%SZ")
             days_difference = (last_active_date - threshold_date).days
@@ -96,7 +96,7 @@ def find_dormant_users(org, members):
             dormant_users.append({"username": username, "last_active": "No activity found", "days_since_activity": -1})
     return dormant_users
 
-def get_days_since_last_activity(org, members, member_type="member"):
+def get_days_since_last_activity(org_name, members, member_type="member"):
     """Get days since the last activity for all users in the organization."""
     users_activity = []
     current_date = datetime.utcnow()
@@ -104,7 +104,7 @@ def get_days_since_last_activity(org, members, member_type="member"):
     for member in members:
         username = member["login"]
         #print(f"Checking activity for {username}...")
-        last_activity = get_user_activity_in_org(username, ORG_NAME)
+        last_activity = get_user_activity_in_org(username, org_name)
         if last_activity:
             # Parse the last activity date
             last_active_date = datetime.strptime(last_activity, "%Y-%m-%dT%H:%M:%SZ")
@@ -149,45 +149,73 @@ def get_github_user_email(username):
     else:
         return f"Email for user '{username}' is not publicly available."
 
+def get_admin_orgs(github_token):
+    """
+    Retrieves the list of organizations where the authenticated user has an admin role.
+    
+    Args:
+        github_token (str): A GitHub personal access token.
+    
+    Returns:
+        list: A list of organization logins where the user is an admin.
+    """
+    url = "https://api.github.com/user/memberships/orgs"
+    headers = {
+        "Authorization": f"token {github_token}"
+    }
+    
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()  # Raise an exception for HTTP errors
+        
+        memberships = response.json()
+        admin_orgs = [
+            org['organization']['login']
+            for org in memberships
+            if org.get('role') == 'admin'
+        ]
+        return admin_orgs
+    
+    except requests.exceptions.RequestException as e:
+        print(f"Error: {e}")
+        return []
 
-def main():
-    #print("Fetching organization members...")
-    members = get_org_members(ORG_NAME)
-    #print(members)
-    #print(len(members))
+def get_activity_per_member(org_name, outdir):
+    members = get_org_members(org_name)
+    collaborators = get_outside_collaborators(org_name)
+    outpath = os.path.join(outdir, org_name ,"README.md")
 
-    #print("Fetching outside collaborators...")
-    collaborators = get_outside_collaborators(ORG_NAME)
-    #print(collaborators)
-    #print(len(collaborators))
-
-    #print("Finding dormant members...")
-    #dormant_members = find_dormant_users(ORG_NAME, members)
-    #print("\nDormant Members:")
-    #for user in dormant_members:
-    #    print(user)
-
-    #print("\nFinding dormant collaborators...")
-    #dormant_collaborators = find_dormant_users(ORG_NAME, collaborators)
-    #print("\nDormant Outside Collaborators:")
-    #for user in dormant_collaborators:
-    #    print(user)
+    # Extract the directory part of the path
+    dir_name = os.path.dirname(outpath)
+    
+    # Create all necessary directories
+    if dir_name and not os.path.exists(dir_name):
+        os.makedirs(dir_name)
 
     #print("\nMember activity...")
-    user_activity = get_days_since_last_activity(ORG_NAME, members, "member")
-    user_activity.extend(get_days_since_last_activity(ORG_NAME, collaborators, "outside_collaborator"))
-    # Output the data as a Markdown table
-    print("| github_handle   | member/collaborator | days_inactive |")
-    print("|-----------------|----------------------|---------------|")
+    user_activity = get_days_since_last_activity(org_name, members, "member")
+    user_activity.extend(get_days_since_last_activity(org_name, collaborators, "outside_collaborator"))
+    
+    with open(outpath, "w") as file:
+        # Output the data as a Markdown table
+        file.write("\n -1=No activity found!\n\n| github_handle   | member/collaborator | days_inactive |\n")
+        file.write("|-----------------|----------------------|---------------|\n")
 
-    for user in user_activity:
-        # Extract user information
-        username = user["username"]
-        usertype = user["usertype"]
-        days_since_activity = user["days_since_activity"]
+        for user in user_activity:
+            # Extract user information
+            username = user["username"]
+            usertype = user["usertype"]
+            days_since_activity = user["days_since_activity"]
 
-        # Print the row in Markdown table format
-        print(f"| {username:<15} | {usertype:<20} | {days_since_activity:<13} |")
+            # Print the row in Markdown table format
+            file.write(f"| {username:<15} | {usertype:<20} | {days_since_activity:<13} |\n")
+    return outpath
+
+def main():
+    admin_organizations = get_admin_orgs(GITHUB_TOKEN)
+    for org in admin_organizations:
+        outpath = get_activity_per_member(org, "activity_data")
+        print(f"  - [{org}]({outpath})")
 
 if __name__ == "__main__":
     main()

@@ -44,7 +44,7 @@ python ${MDPATH}/get_recent_releases_table.py >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
 # member activities
-echo -ne "\n## Days since last activity \n\n -1=No activity found!\n\n" >> README_tmp.md
+echo -ne "\n## Days since last activity \n\n" >> README_tmp.md
 python ${MDPATH}/get_last_activity_per_member.py >> README_tmp.md
 echo -ne "\n\n" >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
@@ -55,5 +55,8 @@ cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
 # add toc
 python ${MDPATH}/add_toc.py --input README_tmp.md --output profile/README.md
+# mv member activity data in the right place 
+if [ -d "profile/activity_data" ]; then rm -rf "profile/activity_data";fi
+mv activity_data profile/
 
 rm -f README_tmp.md
