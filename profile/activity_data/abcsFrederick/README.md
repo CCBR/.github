@@ -1,0 +1,53 @@
+
+ -1=No activity found!
+
+| github_handle   | member/collaborator | days_inactive |
+|-----------------|----------------------|---------------|
+| alodadims       | member               | -1            |
+| amirinenik      | member               | -1            |
+| bshrestha617    | member               | -1            |
+| burnskd         | member               | -1            |
+| choudharis2     | member               | -1            |
+| cwolcott        | member               | -1            |
+| dedonohue       | member               | -1            |
+| DorsaZiaei      | member               | -1            |
+| guthridgerg     | member               | -1            |
+| jackchenx3      | member               | -1            |
+| kelly-sovacool  | member               | -1            |
+| KeyTals         | member               | -1            |
+| kopardev        | member               | -1            |
+| LoneFenris      | member               | -1            |
+| lossm           | member               | -1            |
+| ncigithubbackup | member               | -1            |
+| newhyun00       | member               | -1            |
+| npacheco2       | member               | -1            |
+| onealka         | member               | -1            |
+| pajailwala      | member               | -1            |
+| raraslw-nih     | member               | -1            |
+| rizk-nci-admin  | member               | -1            |
+| shanj-github    | member               | -1            |
+| shent2          | member               | -1            |
+| shuartbr        | member               | -1            |
+| tymiao1220      | member               | -1            |
+| umasm1          | member               | -1            |
+| wuy24           | member               | -1            |
+| xies4           | member               | -1            |
+| yongmzhao       | member               | -1            |
+| almitr          | outside_collaborator | -1            |
+| AmyStonelake    | outside_collaborator | -1            |
+| chenv3          | outside_collaborator | -1            |
+| cj-abcs         | outside_collaborator | -1            |
+| DrValkaryon     | outside_collaborator | -1            |
+| georgezakinih   | outside_collaborator | -1            |
+| johnsonra       | outside_collaborator | -1            |
+| lauragayowski   | outside_collaborator | -1            |
+| lautenbj        | outside_collaborator | -1            |
+| leajv123        | outside_collaborator | -1            |
+| nilsboar        | outside_collaborator | -1            |
+| plmoer          | outside_collaborator | -1            |
+| ravichas        | outside_collaborator | -1            |
+| schaughencyp    | outside_collaborator | -1            |
+| skchronicles    | outside_collaborator | -1            |
+| xc611           | outside_collaborator | -1            |
+| yliu7366        | outside_collaborator | -1            |
+| zhuchm-0704     | outside_collaborator | -1            |

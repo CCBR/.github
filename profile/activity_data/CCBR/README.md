@@ -1,0 +1,55 @@
+
+ -1=No activity found!
+
+| github_handle   | member/collaborator | days_inactive |
+|-----------------|----------------------|---------------|
+| aemmons90       | member               | -1            |
+| bianjh-cloud    | member               | -1            |
+| dnousome        | member               | 9             |
+| epehrsson       | member               | -1            |
+| escauley        | member               | 2             |
+| finneyr         | member               | -1            |
+| hdegen          | member               | -1            |
+| jlmalin         | member               | -1            |
+| JWrows2014      | member               | -1            |
+| kcgfarb         | member               | -1            |
+| kelly-sovacool  | member               | 1             |
+| kopardev        | member               | 0             |
+| Krithika-Bhuvan | member               | -1            |
+| lobanovav       | member               | -1            |
+| maggiecam       | member               | -1            |
+| ncigithubbackup | member               | -1            |
+| pajailwala      | member               | -1            |
+| phoman14        | member               | 38            |
+| raraslw-nih     | member               | -1            |
+| rizk-nci-admin  | member               | -1            |
+| RobSchultz4     | member               | -1            |
+| samarth8392     | member               | 1             |
+| shaoli86        | member               | -1            |
+| shuartbr        | member               | -1            |
+| TJoshMeyer      | member               | -1            |
+| VidhurDS        | member               | -1            |
+| wilfriedguiblet | member               | -1            |
+| wong-nw         | member               | 20            |
+| wuy24           | member               | -1            |
+| yongmzhao       | member               | -1            |
+| e-hutchins      | outside_collaborator | -1            |
+| jeeyounkang     | outside_collaborator | -1            |
+| jlac            | outside_collaborator | -1            |
+| kait-codes      | outside_collaborator | -1            |
+| kvaldez         | outside_collaborator | -1            |
+| McIntoshC       | outside_collaborator | -1            |
+| mtandon09       | outside_collaborator | -1            |
+| nanobio-jcjones | outside_collaborator | -1            |
+| nilsboar        | outside_collaborator | -1            |
+| pchariou        | outside_collaborator | -1            |
+| rohanwedam      | outside_collaborator | -1            |
+| schaughencyp    | outside_collaborator | -1            |
+| seandavi        | outside_collaborator | -1            |
+| skchronicles    | outside_collaborator | -1            |
+| slsevilla       | outside_collaborator | -1            |
+| stephchid       | outside_collaborator | -1            |
+| tovahmarkowitz  | outside_collaborator | -1            |
+| tsnetterfield   | outside_collaborator | -1            |
+| vinegang        | outside_collaborator | -1            |
+| ZhaoBioinformaticsLab | outside_collaborator | -1            |
