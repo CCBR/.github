@@ -1,154 +1,18 @@
-import os
-import sys
-import requests
-from datetime import datetime, timedelta
+import requests,sys,os
+from datetime import datetime
 
-# Example usage:
-# org_name = "CCBR"
-# Load the GitHub token from the environment
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+# This script retrieves and reports the last activity of members and outside collaborators 
+# for GitHub organizations where the authenticated user has an admin role. 
+# It fetches the list of organizations, members, outside collaborators, and repository events 
+# to determine the last activity date for each user. The results are written to a markdown file 
+# for each organization, detailing the days since the last activity for each member and collaborator.
 
-if not GITHUB_TOKEN:
-    raise ValueError("GITHUB_TOKEN environment variable not set")
-# Inactivity threshold in days
-DORMANT_THRESHOLD = 90
-
-# GitHub API base URL
 BASE_URL = "https://api.github.com"
-
-# Headers for authentication
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 HEADERS = {
     "Authorization": f"token {GITHUB_TOKEN}",
     "Accept": "application/vnd.github.v3+json",
 }
-
-def get_org_members(org):
-    """Get all members of the organization."""
-    url = f"{BASE_URL}/orgs/{org}/members"
-    response = requests.get(url, headers=HEADERS)
-    response.raise_for_status()
-    return response.json()
-
-def get_outside_collaborators(org):
-    """Get all outside collaborators of the organization."""
-    url = f"{BASE_URL}/orgs/{org}/outside_collaborators"
-    response = requests.get(url, headers=HEADERS)
-    response.raise_for_status()
-    return response.json()
-
-def get_user_activity(user):
-    """Get the last public activity of a user."""
-    url = f"{BASE_URL}/users/{user}/events"
-    response = requests.get(url, headers=HEADERS)
-    response.raise_for_status()
-    events = response.json()
-    if events:
-        return max(event["created_at"] for event in events)
-    return None
-
-def get_user_activity_in_org(user, org):
-    """Get the last public activity of a user within a specific organization."""
-    # URL to fetch user events
-    url = f"{BASE_URL}/users/{user}/events"
-    response = requests.get(url, headers=HEADERS)
-    response.raise_for_status()
-    events = response.json()
-
-    if not events:
-        return None
-
-    # Filter events for the specified organization
-    org_events = [
-        event for event in events
-        if "repo" in event and event["repo"]["name"].startswith(f"{org}/")
-    ]
-
-    if org_events:
-        #print(user)
-        #for event in org_events:
-        #    print(event["type"],event["created_at"])
-        #sys.exit()
-        # Return the latest activity in the organization
-        return max(event["created_at"] for event in org_events)
-
-    return None
-
-def find_dormant_users(org, members):
-    """Find dormant users based on the activity threshold."""
-    dormant_users = []
-    threshold_date = datetime.utcnow() - timedelta(days=DORMANT_THRESHOLD)
-
-    for member in members:
-        username = member["login"]
-        #print(f"Checking activity for {username}...")
-        last_activity = get_user_activity_in_org(username,org_name)
-        if last_activity:
-            last_active_date = datetime.strptime(last_activity, "%Y-%m-%dT%H:%M:%SZ")
-            days_difference = (last_active_date - threshold_date).days
-            #print(username)
-            #print(last_active_date)
-            #print(threshold_date)
-            #print(days_difference)
-            #sys.exit()
-            if last_active_date < threshold_date:
-                dormant_users.append({"username": username, "last_active": last_activity, "days_since_activity": days_difference})
-        else:
-            dormant_users.append({"username": username, "last_active": "No activity found", "days_since_activity": -1})
-    return dormant_users
-
-def get_days_since_last_activity(org_name, members, member_type="member"):
-    """Get days since the last activity for all users in the organization."""
-    users_activity = []
-    current_date = datetime.utcnow()
-
-    for member in members:
-        username = member["login"]
-        #print(f"Checking activity for {username}...")
-        last_activity = get_user_activity_in_org(username, org_name)
-        if last_activity:
-            # Parse the last activity date
-            last_active_date = datetime.strptime(last_activity, "%Y-%m-%dT%H:%M:%SZ")
-            # Calculate days since last activity
-            days_difference = (current_date - last_active_date).days
-            users_activity.append({
-                "username": username,
-                "usertype": member_type,
-                "last_active": last_activity,
-                "days_since_activity": days_difference,
-            })
-        else:
-            # No activity found
-            users_activity.append({
-                "username": username,
-                "usertype": member_type,
-                "last_active": "No activity found",
-                "days_since_activity": -1,
-            })
-
-    return users_activity
-
-def get_github_user_email(username):
-    """
-    Get the email address of a GitHub user if publicly available.
-    :param username: GitHub username
-    :return: Email address or a message indicating it is not public
-    """
-    # URL for the user's public profile
-    url = f"https://api.github.com/users/{username}"
-    response = requests.get(url, headers=HEADERS)
-
-    if response.status_code == 404:
-        return f"User '{username}' not found."
-
-    response.raise_for_status()
-    user_data = response.json()
-
-    # Check for email in the profile
-    if user_data.get("email"):
-        return user_data["email"]
-    else:
-        return f"Email for user '{username}' is not publicly available."
-
 def get_admin_orgs(github_token):
     """
     Retrieves the list of organizations where the authenticated user has an admin role.
@@ -179,43 +43,155 @@ def get_admin_orgs(github_token):
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
         return []
+    
+def get_org_members(org):
+    """Get all members of the organization."""
+    url = f"{BASE_URL}/orgs/{org}/members"
+    response = requests.get(url, headers=HEADERS)
+    response.raise_for_status()
+    return response.json()
 
-def get_activity_per_member(org_name, outdir):
-    members = get_org_members(org_name)
-    collaborators = get_outside_collaborators(org_name)
-    outpath = os.path.join(outdir, org_name ,"README.md")
+def get_outside_collaborators(org):
+    """Get all outside collaborators of the organization."""
+    url = f"{BASE_URL}/orgs/{org}/outside_collaborators"
+    response = requests.get(url, headers=HEADERS)
+    response.raise_for_status()
+    return response.json()
+
+def get_all_repos(org):
+    """Get all repos in the org"""
+    repos = []
+    page = 1
+    while True:
+        url = f"{BASE_URL}/orgs/{org}/repos"
+        params = {"type": "all", "per_page": 100, "page": page}
+        response = requests.get(url, headers=HEADERS, params=params)
+        response.raise_for_status()
+        page_repos = response.json()
+        if not page_repos:
+            break
+        repos.extend(page_repos)
+        page += 1
+    return repos
+
+def list_repo_events(org, repo):
+    """
+    List all public events for a given repository in an organization.
+
+    Args:
+        org (str): The GitHub organization name.
+        repo (str): The repository name.
+
+    Returns:
+        list: A list of events, or an empty list if no events are found.
+    """
+    url = f"{BASE_URL}/repos/{org}/{repo}/events"
+    events = []
+    page = 1
+
+    try:
+        while True:
+            response = requests.get(f"{url}?per_page=100&page={page}", headers=HEADERS)
+            response.raise_for_status()
+            page_events = response.json()
+
+            if not page_events:
+                break
+
+            events.extend(page_events)
+            page += 1
+            if page == 4: break # get only top 300
+
+        return events
+
+    except requests.exceptions.RequestException as e:
+        # print(f"Error fetching events for repo '{repo}': {e}")
+        return []
+
+def report_org_activity(org,outmd):
+    """Write org activity to a markdown file"""
+    # Example Usage
+    # org = sys.argv[1]
+    # outmd = sys.argv[2]
 
     # Extract the directory part of the path
-    dir_name = os.path.dirname(outpath)
+    dir_name = os.path.dirname(outmd)
     
     # Create all necessary directories
     if dir_name and not os.path.exists(dir_name):
         os.makedirs(dir_name)
+    try:
+        print(f"Organization: {org}")
+        repositories = get_all_repos(org)
+        print(f"Total repositories: {len(repositories)}")
+        members = get_org_members(org)
+        print(f"Total members: {len(members)}")
+        collaborators = get_outside_collaborators(org)
+        print(f"Total collaborators: {len(collaborators)}")
+        # events=list_repo_events(org,sys.argv[1])
+        # print(len(events))
+        last_events=dict()
+        for repo in repositories:
+            reponame=repo["name"]
+            events=list_repo_events(org,reponame)
+            users=set()
+            for event in events:
+                user=event['actor']['login']
+                users.add(user)
+                if not user in last_events:
+                    last_events[user]=[]
+                last_events[user].append(event['created_at'])
+            for user in users:
+                last_events[user]=[max(last_events[user])]
+            print(f"\tFinished working with repo: {org}/{reponame}; Found {len(users)} users and {len(events)} events.")
 
-    #print("\nMember activity...")
-    user_activity = get_days_since_last_activity(org_name, members, "member")
-    user_activity.extend(get_days_since_last_activity(org_name, collaborators, "outside_collaborator"))
-    
-    with open(outpath, "w") as file:
-        # Output the data as a Markdown table
-        file.write("\n -1=No activity found!\n\n| github_handle   | member/collaborator | days_inactive |\n")
-        file.write("|-----------------|----------------------|---------------|\n")
+        with open(outmd, "w") as file:
+            file.write("\n| github_handle   | member/collaborator | days_inactive |\n")
+            file.write("|-----------------|----------------------|---------------|\n")
+            days_inactivity=dict()
+            for member in members:
+                username = member["login"]
+                if not username in last_events:
+                    days_inactivity[username]="No Activity Found"
+                else:
+                    last_event = max(last_events[username])
+                    event_date = datetime.fromisoformat(last_event).date()
+                    today_date = datetime.now().date()
+                    days_inactivity[username]=str((today_date - event_date).days)
+                # print(username,"member",days_inactivity[username])
+                days_since_activity=days_inactivity[username]
+                usertype="member"
+                username_with_hyperlink = f"[{username}](https://github.com/{username})"
+                file.write(f"| {username_with_hyperlink:<15} | {usertype:<20} | {days_since_activity:<13} |\n")
 
-        for user in user_activity:
-            # Extract user information
-            username = user["username"]
-            usertype = user["usertype"]
-            days_since_activity = user["days_since_activity"]
+            for collaborator in collaborators:
+                username = collaborator["login"]
+                if not username in last_events:
+                    days_inactivity[username]="No Activity Found"
+                else:
+                    last_event = max(last_events[user])
+                    event_date = datetime.fromisoformat(last_event).date()
+                    today_date = datetime.now().date()
+                    days_inactivity[username]=str((today_date - event_date).days)
+                # print(username,"outside_collaborator",days_inactivity[username])
+                days_since_activity=days_inactivity[username]
+                usertype="collaborator"
+                username_with_hyperlink = f"[{username}](https://github.com/{username})"
+                file.write(f"| {username_with_hyperlink:<15} | {usertype:<20} | {days_since_activity:<13} |\n")
+    except:
+        return False
+    return True
 
-            # Print the row in Markdown table format
-            file.write(f"| {username:<15} | {usertype:<20} | {days_since_activity:<13} |\n")
-    return outpath
 
 def main():
-    admin_organizations = get_admin_orgs(GITHUB_TOKEN)
-    for org in admin_organizations:
-        outpath = get_activity_per_member(org, "activity_data")
-        print(f"  - [{org}]({outpath})")
+    organizations = get_admin_orgs(GITHUB_TOKEN)
+    print(f"\n")
+    # organizations = ["NCI-CCDI"]
+    # organizations = ["abcswebapps"]
+    for org in organizations:
+        outpath = os.path.join("activity_data",org,"README.md")
+        if report_org_activity(org, outpath):
+            print(f"  - [{org}]({outpath})")
 
 if __name__ == "__main__":
     main()
