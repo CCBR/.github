@@ -1,16 +1,14 @@
 
- -1=No activity found!
-
 | github_handle   | member/collaborator | days_inactive |
 |-----------------|----------------------|---------------|
-| dnousome        | member               | -1            |
-| finneyr         | member               | -1            |
-| kopardev        | member               | -1            |
-| maggiecam       | member               | -1            |
-| ncigithubbackup | member               | -1            |
-| pajailwala      | member               | -1            |
-| raraslw-nih     | member               | -1            |
-| rizk-nci-admin  | member               | -1            |
-| samarth8392     | member               | -1            |
-| shuartbr        | member               | -1            |
-| kelly-sovacool  | outside_collaborator | -1            |
+| [dnousome](https://github.com/dnousome) | member               | No Activity Found |
+| [finneyr](https://github.com/finneyr) | member               | No Activity Found |
+| [kopardev](https://github.com/kopardev) | member               | 3             |
+| [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
+| [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
+| [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
+| [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
+| [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
+| [samarth8392](https://github.com/samarth8392) | member               | No Activity Found |
+| [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | collaborator         | No Activity Found |

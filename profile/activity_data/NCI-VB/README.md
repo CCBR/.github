@@ -1,19 +1,17 @@
 
- -1=No activity found!
-
 | github_handle   | member/collaborator | days_inactive |
 |-----------------|----------------------|---------------|
-| kcgfarb         | member               | -1            |
-| kopardev        | member               | -1            |
-| ncigithubbackup | member               | -1            |
-| pajailwala      | member               | -1            |
-| phoman14        | member               | -1            |
-| raraslw-nih     | member               | -1            |
-| rizk-nci-admin  | member               | -1            |
-| shuartbr        | member               | -1            |
-| bianjh-cloud    | outside_collaborator | -1            |
-| cristinabergamaschi | outside_collaborator | -1            |
-| Hrishi9786      | outside_collaborator | -1            |
-| nshobaki        | outside_collaborator | -1            |
-| SeviKaraliota   | outside_collaborator | -1            |
-| Wtraboulsi      | outside_collaborator | -1            |
+| [kcgfarb](https://github.com/kcgfarb) | member               | No Activity Found |
+| [kopardev](https://github.com/kopardev) | member               | No Activity Found |
+| [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
+| [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
+| [phoman14](https://github.com/phoman14) | member               | No Activity Found |
+| [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
+| [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
+| [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | collaborator         | No Activity Found |
+| [cristinabergamaschi](https://github.com/cristinabergamaschi) | collaborator         | No Activity Found |
+| [Hrishi9786](https://github.com/Hrishi9786) | collaborator         | No Activity Found |
+| [nshobaki](https://github.com/nshobaki) | collaborator         | No Activity Found |
+| [SeviKaraliota](https://github.com/SeviKaraliota) | collaborator         | No Activity Found |
+| [Wtraboulsi](https://github.com/Wtraboulsi) | collaborator         | No Activity Found |
