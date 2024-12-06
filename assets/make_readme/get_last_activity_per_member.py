@@ -1,5 +1,6 @@
 import requests,sys,os
 from datetime import datetime
+VERBOSE=0 # 0 means no comments ... anything else means print progress comments
 
 # This script retrieves and reports the last activity of members and outside collaborators 
 # for GitHub organizations where the authenticated user has an admin role. 
@@ -121,13 +122,13 @@ def report_org_activity(org,outmd):
     if dir_name and not os.path.exists(dir_name):
         os.makedirs(dir_name)
     try:
-        print(f"Organization: {org}")
+        if VERBOSE !=0: print(f"Organization: {org}")
         repositories = get_all_repos(org)
-        print(f"Total repositories: {len(repositories)}")
+        if VERBOSE !=0: print(f"Total repositories: {len(repositories)}")
         members = get_org_members(org)
-        print(f"Total members: {len(members)}")
+        if VERBOSE !=0: print(f"Total members: {len(members)}")
         collaborators = get_outside_collaborators(org)
-        print(f"Total collaborators: {len(collaborators)}")
+        if VERBOSE !=0: print(f"Total collaborators: {len(collaborators)}")
         # events=list_repo_events(org,sys.argv[1])
         # print(len(events))
         last_events=dict()
@@ -143,7 +144,7 @@ def report_org_activity(org,outmd):
                 last_events[user].append(event['created_at'])
             for user in users:
                 last_events[user]=[max(last_events[user])]
-            print(f"\tFinished working with repo: {org}/{reponame}; Found {len(users)} users and {len(events)} events.")
+            if VERBOSE !=0: print(f"\tFinished working with repo: {org}/{reponame}; Found {len(users)} users and {len(events)} events.")
 
         with open(outmd, "w") as file:
             file.write("\n| github_handle   | member/collaborator | days_inactive |\n")
