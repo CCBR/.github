@@ -34,13 +34,13 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            4871 |                     358 |                       1594 |
-| [kopardev](https://github.com/kopardev)             |            4463 |                      62 |                        408 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            4874 |                     350 |                       1597 |
+| [kopardev](https://github.com/kopardev)             |            4465 |                      61 |                        410 |
 | [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
 | [dnousome](https://github.com/dnousome)             |             666 |                       1 |                         48 |
 | [kcgfarb](https://github.com/kcgfarb)               |             650 |                      47 |                        215 |
-| [samarth8392](https://github.com/samarth8392)       |             466 |                      14 |                        158 |
+| [samarth8392](https://github.com/samarth8392)       |             466 |                      13 |                        158 |
 | [finneyr](https://github.com/finneyr)               |             348 |                       0 |                          8 |
 | [jlac](https://github.com/jlac)                     |             307 |                       0 |                          0 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
@@ -223,60 +223,14 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 
 ## Days since last activity 
 
- -1=No activity found!
-
-| github_handle   | member/collaborator | days_inactive |
-|-----------------|----------------------|---------------|
-| aemmons90       | member               | -1            |
-| bianjh-cloud    | member               | -1            |
-| dnousome        | member               | 8             |
-| epehrsson       | member               | -1            |
-| escauley        | member               | 1             |
-| finneyr         | member               | -1            |
-| hdegen          | member               | -1            |
-| jlmalin         | member               | -1            |
-| JWrows2014      | member               | -1            |
-| kcgfarb         | member               | -1            |
-| kelly-sovacool  | member               | 0             |
-| kopardev        | member               | 1             |
-| Krithika-Bhuvan | member               | -1            |
-| lobanovav       | member               | -1            |
-| maggiecam       | member               | -1            |
-| ncigithubbackup | member               | -1            |
-| pajailwala      | member               | -1            |
-| phoman14        | member               | 37            |
-| raraslw-nih     | member               | -1            |
-| rizk-nci-admin  | member               | -1            |
-| RobSchultz4     | member               | -1            |
-| samarth8392     | member               | 1             |
-| shaoli86        | member               | -1            |
-| shuartbr        | member               | -1            |
-| TJoshMeyer      | member               | -1            |
-| VidhurDS        | member               | -1            |
-| wilfriedguiblet | member               | -1            |
-| wong-nw         | member               | 19            |
-| wuy24           | member               | -1            |
-| yongmzhao       | member               | -1            |
-| e-hutchins      | outside_collaborator | -1            |
-| jeeyounkang     | outside_collaborator | -1            |
-| jlac            | outside_collaborator | -1            |
-| kait-codes      | outside_collaborator | -1            |
-| kvaldez         | outside_collaborator | -1            |
-| McIntoshC       | outside_collaborator | -1            |
-| mtandon09       | outside_collaborator | -1            |
-| nanobio-jcjones | outside_collaborator | -1            |
-| nilsboar        | outside_collaborator | -1            |
-| pchariou        | outside_collaborator | -1            |
-| rohanwedam      | outside_collaborator | -1            |
-| schaughencyp    | outside_collaborator | -1            |
-| seandavi        | outside_collaborator | -1            |
-| skchronicles    | outside_collaborator | -1            |
-| slsevilla       | outside_collaborator | -1            |
-| stephchid       | outside_collaborator | -1            |
-| tovahmarkowitz  | outside_collaborator | -1            |
-| tsnetterfield   | outside_collaborator | -1            |
-| vinegang        | outside_collaborator | -1            |
-| ZhaoBioinformaticsLab | outside_collaborator | -1            |
+  - [CCBR](activity_data/CCBR/README.md)
+  - [abcsFrederick](activity_data/abcsFrederick/README.md)
+  - [NCI-RBL](activity_data/NCI-RBL/README.md)
+  - [CCRGeneticsBranch](activity_data/CCRGeneticsBranch/README.md)
+  - [NCI-VB](activity_data/NCI-VB/README.md)
+  - [NIDAP-Community](activity_data/NIDAP-Community/README.md)
+  - [NCIPangea](activity_data/NCIPangea/README.md)
+  - [abcswebapps](activity_data/abcswebapps/README.md)
 
 
 
