@@ -34,8 +34,8 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            4884 |                     357 |                       1607 |
-| [kopardev](https://github.com/kopardev)             |            4469 |                      60 |                        414 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            4884 |                     293 |                       1604 |
+| [kopardev](https://github.com/kopardev)             |            4469 |                      26 |                        414 |
 | [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
 | [dnousome](https://github.com/dnousome)             |             666 |                       1 |                         48 |

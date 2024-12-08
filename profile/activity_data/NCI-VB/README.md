@@ -13,5 +13,5 @@
 | [cristinabergamaschi](https://github.com/cristinabergamaschi) | collaborator         | No Activity Found |
 | [Hrishi9786](https://github.com/Hrishi9786) | collaborator         | No Activity Found |
 | [nshobaki](https://github.com/nshobaki) | collaborator         | No Activity Found |
-| [SeviKaraliota](https://github.com/SeviKaraliota) | collaborator         | No Activity Found |
+| [SeviKaraliota](https://github.com/SeviKaraliota) | collaborator         | 2             |
 | [Wtraboulsi](https://github.com/Wtraboulsi) | collaborator         | No Activity Found |
