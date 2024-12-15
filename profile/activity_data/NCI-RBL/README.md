@@ -9,5 +9,5 @@
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
-| [wilfriedguiblet](https://github.com/wilfriedguiblet) | member               | 47            |
+| [wilfriedguiblet](https://github.com/wilfriedguiblet) | member               | 54            |
 | [skchronicles](https://github.com/skchronicles) | collaborator         | No Activity Found |

@@ -3,7 +3,7 @@
 |-----------------|----------------------|---------------|
 | [dnousome](https://github.com/dnousome) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 5             |
+| [kopardev](https://github.com/kopardev) | member               | 12            |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
