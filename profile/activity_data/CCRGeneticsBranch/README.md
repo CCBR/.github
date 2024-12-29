@@ -1,29 +1,29 @@
 
 | github_handle   | member/collaborator | days_inactive |
 |-----------------|----------------------|---------------|
-| [abidgen](https://github.com/abidgen) | member               | 73            |
-| [adamtolnay](https://github.com/adamtolnay) | member               | 6             |
+| [abidgen](https://github.com/abidgen) | member               | 80            |
+| [adamtolnay](https://github.com/adamtolnay) | member               | 13            |
 | [bukhariabbas](https://github.com/bukhariabbas) | member               | No Activity Found |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [cheanney](https://github.com/cheanney) | member               | No Activity Found |
 | [curtislisle](https://github.com/curtislisle) | member               | No Activity Found |
-| [epehrsson](https://github.com/epehrsson) | member               | 2             |
-| [hsienchao](https://github.com/hsienchao) | member               | 9             |
+| [epehrsson](https://github.com/epehrsson) | member               | 9             |
+| [hsienchao](https://github.com/hsienchao) | member               | 16            |
 | [jtoker117](https://github.com/jtoker117) | member               | No Activity Found |
-| [khanjav](https://github.com/khanjav) | member               | 2             |
-| [kopardev](https://github.com/kopardev) | member               | 26            |
+| [khanjav](https://github.com/khanjav) | member               | 9             |
+| [kopardev](https://github.com/kopardev) | member               | 33            |
 | [Krithika-Bhuvan](https://github.com/Krithika-Bhuvan) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
-| [shaoli86](https://github.com/shaoli86) | member               | 13            |
+| [shaoli86](https://github.com/shaoli86) | member               | 2             |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
-| [vinegang](https://github.com/vinegang) | member               | 65            |
+| [vinegang](https://github.com/vinegang) | member               | 72            |
 | [weij2016](https://github.com/weij2016) | member               | No Activity Found |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
-| [xinyuwen](https://github.com/xinyuwen) | member               | 2             |
-| [ZhaoBioinformaticsLab](https://github.com/ZhaoBioinformaticsLab) | member               | 72            |
+| [xinyuwen](https://github.com/xinyuwen) | member               | 6             |
+| [ZhaoBioinformaticsLab](https://github.com/ZhaoBioinformaticsLab) | member               | 79            |
 | [zhujack8](https://github.com/zhujack8) | member               | No Activity Found |
 | [beaver9701](https://github.com/beaver9701) | collaborator         | No Activity Found |
