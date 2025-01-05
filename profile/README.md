@@ -32,13 +32,13 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            4958 |                      99 |                       1613 |
-| [kopardev](https://github.com/kopardev)             |            4503 |                      46 |                        402 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            5032 |                     140 |                       1670 |
+| [kopardev](https://github.com/kopardev)             |            4505 |                      40 |                        396 |
 | [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
-| [dnousome](https://github.com/dnousome)             |             666 |                       0 |                         31 |
-| [kcgfarb](https://github.com/kcgfarb)               |             659 |                      12 |                        198 |
-| [samarth8392](https://github.com/samarth8392)       |             468 |                       2 |                        138 |
+| [dnousome](https://github.com/dnousome)             |             666 |                       0 |                         24 |
+| [kcgfarb](https://github.com/kcgfarb)               |             660 |                       9 |                        193 |
+| [samarth8392](https://github.com/samarth8392)       |             473 |                       7 |                        139 |
 | [finneyr](https://github.com/finneyr)               |             348 |                       0 |                          7 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
 | [wong-nw](https://github.com/wong-nw)               |              93 |                       0 |                          1 |

@@ -5,21 +5,21 @@
 | [amirinenik](https://github.com/amirinenik) | member               | 3             |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [cheanney](https://github.com/cheanney) | member               | No Activity Found |
-| [crazyjug](https://github.com/crazyjug) | member               | 2             |
-| [cwolcott](https://github.com/cwolcott) | member               | 8             |
-| [dambrosiomt](https://github.com/dambrosiomt) | member               | 9             |
-| [guthridgerg](https://github.com/guthridgerg) | member               | 9             |
+| [crazyjug](https://github.com/crazyjug) | member               | 3             |
+| [cwolcott](https://github.com/cwolcott) | member               | 15            |
+| [dambrosiomt](https://github.com/dambrosiomt) | member               | 2             |
+| [guthridgerg](https://github.com/guthridgerg) | member               | 16            |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
-| [LoneFenris](https://github.com/LoneFenris) | member               | 10            |
-| [lossm](https://github.com/lossm) | member               | 6             |
+| [LoneFenris](https://github.com/LoneFenris) | member               | 17            |
+| [lossm](https://github.com/lossm) | member               | 2             |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [newhyun00](https://github.com/newhyun00) | member               | No Activity Found |
 | [Rajani-NCI](https://github.com/Rajani-NCI) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
-| [ricardo-shaffer](https://github.com/ricardo-shaffer) | member               | 5             |
-| [shanj-github](https://github.com/shanj-github) | member               | 62            |
+| [ricardo-shaffer](https://github.com/ricardo-shaffer) | member               | 12            |
+| [shanj-github](https://github.com/shanj-github) | member               | 69            |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
-| [tymiao1220](https://github.com/tymiao1220) | member               | 11            |
+| [tymiao1220](https://github.com/tymiao1220) | member               | 18            |
 | [umasm1](https://github.com/umasm1) | member               | No Activity Found |
-| [watsondh7](https://github.com/watsondh7) | member               | 17            |
+| [watsondh7](https://github.com/watsondh7) | member               | 24            |
 | [samche42](https://github.com/samche42) | collaborator         | No Activity Found |
