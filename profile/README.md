@@ -22,26 +22,26 @@
 | [Tools](https://github.com/CCBR/Tools)               | [v0.1.3](https://github.com/CCBR/Tools/releases/tag/v0.1.3)        | 2024-12-02     |             8 |
 | [Dockers2](https://github.com/CCBR/Dockers2)         | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)     | 2024-12-02     |             3 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)           | [v0.11.1](https://github.com/CCBR/CHARLIE/releases/tag/v0.11.1)    | 2024-11-25     |            12 |
-| [journal-club](https://github.com/CCBR/journal-club) | [v0.1.1](https://github.com/CCBR/journal-club/releases/tag/v0.1.1) | 2024-11-20     |             1 |
+| [journal-club](https://github.com/CCBR/journal-club) | [v0.1.1](https://github.com/CCBR/journal-club/releases/tag/v0.1.1) | 2024-11-20     |             2 |
 | [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.1.2](https://github.com/CCBR/XAVIER/releases/tag/v3.1.2)       | 2024-11-05     |             9 |
 | [parkit](https://github.com/CCBR/parkit)             | [v2.1.0](https://github.com/CCBR/parkit/releases/tag/v2.1.0)       | 2024-10-16     |             2 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)           | [v1.0.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.0.1)      | 2024-10-16     |            15 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)         | [v2.6.1](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.1)     | 2024-10-14     |            12 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)         | [v2.6.1](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.1)     | 2024-10-14     |            14 |
 
 ## TOP contributors 
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            5032 |                     140 |                       1670 |
-| [kopardev](https://github.com/kopardev)             |            4505 |                      40 |                        396 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            5049 |                     143 |                       1652 |
+| [kopardev](https://github.com/kopardev)             |            4506 |                      19 |                        394 |
 | [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
-| [dnousome](https://github.com/dnousome)             |             666 |                       0 |                         24 |
-| [kcgfarb](https://github.com/kcgfarb)               |             660 |                       9 |                        193 |
-| [samarth8392](https://github.com/samarth8392)       |             473 |                       7 |                        139 |
+| [dnousome](https://github.com/dnousome)             |             666 |                       0 |                         19 |
+| [kcgfarb](https://github.com/kcgfarb)               |             661 |                       8 |                        192 |
+| [samarth8392](https://github.com/samarth8392)       |             475 |                       9 |                        134 |
 | [finneyr](https://github.com/finneyr)               |             348 |                       0 |                          7 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
-| [wong-nw](https://github.com/wong-nw)               |              93 |                       0 |                          1 |
+| [escauley](https://github.com/escauley)             |              98 |                       7 |                         34 |
 
 ## About Us
 
@@ -183,11 +183,11 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.1.3](https://github.com/CCBR/Tools/releases/tag/v0.1.3)                                        | 2024-12-02     |             8 |
 | [Dockers2](https://github.com/CCBR/Dockers2)                                                                             | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                                     | 2024-12-02     |             3 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.11.1](https://github.com/CCBR/CHARLIE/releases/tag/v0.11.1)                                    | 2024-11-25     |            12 |
-| [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.1](https://github.com/CCBR/journal-club/releases/tag/v0.1.1)                                 | 2024-11-20     |             1 |
+| [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.1](https://github.com/CCBR/journal-club/releases/tag/v0.1.1)                                 | 2024-11-20     |             2 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.1.2](https://github.com/CCBR/XAVIER/releases/tag/v3.1.2)                                       | 2024-11-05     |             9 |
 | [parkit](https://github.com/CCBR/parkit)                                                                                 | [v2.1.0](https://github.com/CCBR/parkit/releases/tag/v2.1.0)                                       | 2024-10-16     |             2 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.0.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.0.1)                                      | 2024-10-16     |            15 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.6.1](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.1)                                     | 2024-10-14     |            12 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.6.1](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.1)                                     | 2024-10-14     |            14 |
 | [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.4](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.4)                                       | 2024-09-23     |             0 |
 | [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.0.2](https://github.com/CCBR/ASPEN/releases/tag/v1.0.2)                                        | 2024-09-12     |             4 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                                                                           | [v0.4.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.4.0)                                    | 2024-09-11     |            30 |
