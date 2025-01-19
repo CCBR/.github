@@ -9,6 +9,6 @@
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
-| [wilfriedguiblet](https://github.com/wilfriedguiblet) | member               | 6             |
+| [wilfriedguiblet](https://github.com/wilfriedguiblet) | member               | 13            |
 | [McIntoshC](https://github.com/McIntoshC) | collaborator         | No Activity Found |
 | [skchronicles](https://github.com/skchronicles) | collaborator         | No Activity Found |
