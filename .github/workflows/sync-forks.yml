@@ -24,7 +24,7 @@ jobs:
       fail-fast: false
       matrix:
         FORK_OWNER: [NCIPangea, abcsFrederick]
-        REPO: [ASPEN, CARLISLE, CHAMPAGNE, CRUISE, RENEE, XAVIER]
+        REPO: [ASPEN, CARLISLE, CHAMPAGNE, CRISPIN, RENEE, XAVIER]
         include:
           - REPO: ASCENT
             FORK_OWNER: abcsFrederick
