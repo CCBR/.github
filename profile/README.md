@@ -21,7 +21,7 @@
 | [RENEE](https://github.com/CCBR/RENEE)               | [v2.6.4](https://github.com/CCBR/RENEE/releases/tag/v2.6.4)        | 2024-12-16     |            13 |
 | [spook](https://github.com/CCBR/spook)               | [v1.1.1](https://github.com/CCBR/spook/releases/tag/v1.1.1)        | 2024-12-16     |             2 |
 | [Tools](https://github.com/CCBR/Tools)               | [v0.1.3](https://github.com/CCBR/Tools/releases/tag/v0.1.3)        | 2024-12-02     |             8 |
-| [Dockers2](https://github.com/CCBR/Dockers2)         | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)     | 2024-12-02     |             5 |
+| [Dockers2](https://github.com/CCBR/Dockers2)         | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)     | 2024-12-02     |             3 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)           | [v0.11.1](https://github.com/CCBR/CHARLIE/releases/tag/v0.11.1)    | 2024-11-25     |            12 |
 | [journal-club](https://github.com/CCBR/journal-club) | [v0.1.1](https://github.com/CCBR/journal-club/releases/tag/v0.1.1) | 2024-11-20     |             4 |
 | [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.1.2](https://github.com/CCBR/XAVIER/releases/tag/v3.1.2)       | 2024-11-05     |            10 |
@@ -30,16 +30,16 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            5101 |                     148 |                       1621 |
-| [kopardev](https://github.com/kopardev)             |            4507 |                       4 |                        340 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            5131 |                      98 |                       1541 |
+| [kopardev](https://github.com/kopardev)             |            4508 |                       3 |                        297 |
 | [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
+| [kcgfarb](https://github.com/kcgfarb)               |             672 |                      12 |                        184 |
 | [dnousome](https://github.com/dnousome)             |             669 |                       3 |                         15 |
-| [kcgfarb](https://github.com/kcgfarb)               |             669 |                      10 |                        185 |
-| [samarth8392](https://github.com/samarth8392)       |             481 |                      13 |                        136 |
+| [samarth8392](https://github.com/samarth8392)       |             488 |                      16 |                        136 |
 | [finneyr](https://github.com/finneyr)               |             348 |                       0 |                          4 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
-| [escauley](https://github.com/escauley)             |              99 |                       8 |                         30 |
+| [escauley](https://github.com/escauley)             |              99 |                       8 |                         27 |
 
 ## About Us
 
@@ -180,7 +180,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.6.4](https://github.com/CCBR/RENEE/releases/tag/v2.6.4)                                        | 2024-12-16     |            13 |
 | [spook](https://github.com/CCBR/spook)                                                                                   | [v1.1.1](https://github.com/CCBR/spook/releases/tag/v1.1.1)                                        | 2024-12-16     |             2 |
 | [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.1.3](https://github.com/CCBR/Tools/releases/tag/v0.1.3)                                        | 2024-12-02     |             8 |
-| [Dockers2](https://github.com/CCBR/Dockers2)                                                                             | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                                     | 2024-12-02     |             5 |
+| [Dockers2](https://github.com/CCBR/Dockers2)                                                                             | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                                     | 2024-12-02     |             3 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.11.1](https://github.com/CCBR/CHARLIE/releases/tag/v0.11.1)                                    | 2024-11-25     |            12 |
 | [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.1](https://github.com/CCBR/journal-club/releases/tag/v0.1.1)                                 | 2024-11-20     |             4 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.1.2](https://github.com/CCBR/XAVIER/releases/tag/v3.1.2)                                       | 2024-11-05     |            10 |
