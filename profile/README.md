@@ -24,22 +24,21 @@
 | [Dockers2](https://github.com/CCBR/Dockers2)         | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)     | 2024-12-02     |             3 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)           | [v0.11.1](https://github.com/CCBR/CHARLIE/releases/tag/v0.11.1)    | 2024-11-25     |            12 |
 | [journal-club](https://github.com/CCBR/journal-club) | [v0.1.1](https://github.com/CCBR/journal-club/releases/tag/v0.1.1) | 2024-11-20     |             4 |
-| [XAVIER](https://github.com/CCBR/XAVIER)             | [v3.1.2](https://github.com/CCBR/XAVIER/releases/tag/v3.1.2)       | 2024-11-05     |            10 |
 
 ## TOP contributors 
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            5131 |                      98 |                       1541 |
-| [kopardev](https://github.com/kopardev)             |            4508 |                       3 |                        297 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            5148 |                      98 |                       1386 |
+| [kopardev](https://github.com/kopardev)             |            4514 |                       8 |                        303 |
 | [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
-| [kcgfarb](https://github.com/kcgfarb)               |             672 |                      12 |                        184 |
-| [dnousome](https://github.com/dnousome)             |             669 |                       3 |                         15 |
-| [samarth8392](https://github.com/samarth8392)       |             488 |                      16 |                        136 |
+| [kcgfarb](https://github.com/kcgfarb)               |             686 |                      26 |                        198 |
+| [dnousome](https://github.com/dnousome)             |             669 |                       3 |                         14 |
+| [samarth8392](https://github.com/samarth8392)       |             490 |                      15 |                        130 |
 | [finneyr](https://github.com/finneyr)               |             348 |                       0 |                          4 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
-| [escauley](https://github.com/escauley)             |              99 |                       8 |                         27 |
+| [escauley](https://github.com/escauley)             |              99 |                       1 |                         27 |
 
 ## About Us
 
