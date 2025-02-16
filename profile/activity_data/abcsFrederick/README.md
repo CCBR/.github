@@ -11,9 +11,9 @@
 | [DorsaZiaei](https://github.com/DorsaZiaei) | member               | No Activity Found |
 | [guthridgerg](https://github.com/guthridgerg) | member               | No Activity Found |
 | [jackchenx3](https://github.com/jackchenx3) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 19            |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 26            |
 | [KeyTals](https://github.com/KeyTals) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 1             |
+| [kopardev](https://github.com/kopardev) | member               | 5             |
 | [LoneFenris](https://github.com/LoneFenris) | member               | No Activity Found |
 | [lossm](https://github.com/lossm) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
@@ -26,7 +26,7 @@
 | [shanj-github](https://github.com/shanj-github) | member               | No Activity Found |
 | [shent2](https://github.com/shent2) | member               | No Activity Found |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
-| [tymiao1220](https://github.com/tymiao1220) | member               | No Activity Found |
+| [tymiao1220](https://github.com/tymiao1220) | member               | 6             |
 | [umasm1](https://github.com/umasm1) | member               | No Activity Found |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
 | [xies4](https://github.com/xies4) | member               | No Activity Found |

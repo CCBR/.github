@@ -7,13 +7,13 @@
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [ChadAHighfill](https://github.com/ChadAHighfill) | member               | No Activity Found |
 | [escauley](https://github.com/escauley) | member               | No Activity Found |
-| [finneyr](https://github.com/finneyr) | member               | 19            |
+| [finneyr](https://github.com/finneyr) | member               | 26            |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
 | [kelly-sovacool](https://github.com/kelly-sovacool) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [kunlin0814](https://github.com/kunlin0814) | member               | No Activity Found |
-| [lobanovav](https://github.com/lobanovav) | member               | 22            |
-| [maggiecam](https://github.com/maggiecam) | member               | 27            |
+| [lobanovav](https://github.com/lobanovav) | member               | 29            |
+| [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
