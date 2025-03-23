@@ -29,13 +29,13 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            5364 |                     173 |                       1105 |
-| [kopardev](https://github.com/kopardev)             |            4459 |                      35 |                        346 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            5420 |                     189 |                       1128 |
+| [kopardev](https://github.com/kopardev)             |            4571 |                      35 |                        349 |
 | [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
-| [dnousome](https://github.com/dnousome)             |             821 |                      34 |                        132 |
-| [kcgfarb](https://github.com/kcgfarb)               |             766 |                      71 |                        236 |
-| [samarth8392](https://github.com/samarth8392)       |             544 |                      54 |                        119 |
+| [dnousome](https://github.com/dnousome)             |             821 |                      23 |                        132 |
+| [kcgfarb](https://github.com/kcgfarb)               |             766 |                      71 |                        232 |
+| [samarth8392](https://github.com/samarth8392)       |             544 |                      54 |                        111 |
 | [finneyr](https://github.com/finneyr)               |             352 |                       0 |                          4 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
 | [escauley](https://github.com/escauley)             |             104 |                       5 |                         29 |

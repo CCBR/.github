@@ -3,7 +3,7 @@
 |-----------------|----------------------|---------------|
 | [ammichalowski](https://github.com/ammichalowski) | member               | No Activity Found |
 | [bafsariNIH](https://github.com/bafsariNIH) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 1             |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 3             |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [ChadAHighfill](https://github.com/ChadAHighfill) | member               | No Activity Found |
 | [escauley](https://github.com/escauley) | member               | No Activity Found |
@@ -12,12 +12,12 @@
 | [kelly-sovacool](https://github.com/kelly-sovacool) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [kunlin0814](https://github.com/kunlin0814) | member               | No Activity Found |
-| [lobanovav](https://github.com/lobanovav) | member               | 21            |
+| [lobanovav](https://github.com/lobanovav) | member               | 23            |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
-| [phoman14](https://github.com/phoman14) | member               | 21            |
+| [phoman14](https://github.com/phoman14) | member               | 23            |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [ruiheesi](https://github.com/ruiheesi) | member               | No Activity Found |
