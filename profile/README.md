@@ -16,12 +16,13 @@
 
 | Repo Name                                      | Release Name                                                    | Release Date   |   Open Issues |
 |:-----------------------------------------------|:----------------------------------------------------------------|:---------------|--------------:|
-| [ESCAPE](https://github.com/CCBR/ESCAPE)       | [v1.1.5](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.5)    | 2025-03-20     |             0 |
+| [ESCAPE](https://github.com/CCBR/ESCAPE)       | [v1.2.0](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.0)    | 2025-03-26     |             0 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)   | [v2.6.2](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.2)  | 2025-03-24     |            15 |
 | [RENEE](https://github.com/CCBR/RENEE)         | [v2.6.5](https://github.com/CCBR/RENEE/releases/tag/v2.6.5)     | 2025-03-12     |            14 |
 | [XAVIER](https://github.com/CCBR/XAVIER)       | [v3.1.4](https://github.com/CCBR/XAVIER/releases/tag/v3.1.4)    | 2025-03-06     |             9 |
 | [actions](https://github.com/CCBR/actions)     | [v0.2.5](https://github.com/CCBR/actions/releases/tag/v0.2.5)   | 2025-03-06     |             7 |
 | [ASPEN](https://github.com/CCBR/ASPEN)         | [v1.0.6](https://github.com/CCBR/ASPEN/releases/tag/v1.0.6)     | 2025-02-28     |            17 |
-| [LOGAN](https://github.com/CCBR/LOGAN)         | [v0.2.0](https://github.com/CCBR/LOGAN/releases/tag/v0.2.0)     | 2025-02-21     |            20 |
+| [LOGAN](https://github.com/CCBR/LOGAN)         | [v0.2.0](https://github.com/CCBR/LOGAN/releases/tag/v0.2.0)     | 2025-02-21     |            21 |
 | [Tools](https://github.com/CCBR/Tools)         | [v0.2.0](https://github.com/CCBR/Tools/releases/tag/v0.2.0)     | 2025-02-10     |             9 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE) | [v0.4.1](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.4.1) | 2025-01-13     |            30 |
 
@@ -29,13 +30,13 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            5420 |                     189 |                       1128 |
-| [kopardev](https://github.com/kopardev)             |            4571 |                      35 |                        349 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            5439 |                     168 |                       1120 |
+| [kopardev](https://github.com/kopardev)             |            4572 |                      12 |                        343 |
 | [slsevilla](https://github.com/slsevilla)           |            1700 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |            1074 |                       0 |                          0 |
-| [dnousome](https://github.com/dnousome)             |             821 |                      23 |                        132 |
-| [kcgfarb](https://github.com/kcgfarb)               |             766 |                      71 |                        232 |
-| [samarth8392](https://github.com/samarth8392)       |             544 |                      54 |                        111 |
+| [dnousome](https://github.com/dnousome)             |             824 |                      20 |                        135 |
+| [kcgfarb](https://github.com/kcgfarb)               |             780 |                      60 |                        238 |
+| [samarth8392](https://github.com/samarth8392)       |             572 |                      82 |                        133 |
 | [finneyr](https://github.com/finneyr)               |             352 |                       0 |                          4 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
 | [escauley](https://github.com/escauley)             |             104 |                       5 |                         29 |
@@ -174,12 +175,13 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 ## Latest Releases of pipelines/tools:
 | Repo Name                                                                                                                | Release Name                                                                                       | Release Date   |   Open Issues |
 |:-------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|:---------------|--------------:|
-| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.1.5](https://github.com/CCBR/ESCAPE/releases/tag/v1.1.5)                                       | 2025-03-20     |             0 |
+| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.2.0](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.0)                                       | 2025-03-26     |             0 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.6.2](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.2)                                     | 2025-03-24     |            15 |
 | [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.6.5](https://github.com/CCBR/RENEE/releases/tag/v2.6.5)                                        | 2025-03-12     |            14 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.1.4](https://github.com/CCBR/XAVIER/releases/tag/v3.1.4)                                       | 2025-03-06     |             9 |
 | [actions](https://github.com/CCBR/actions)                                                                               | [v0.2.5](https://github.com/CCBR/actions/releases/tag/v0.2.5)                                      | 2025-03-06     |             7 |
 | [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.0.6](https://github.com/CCBR/ASPEN/releases/tag/v1.0.6)                                        | 2025-02-28     |            17 |
-| [LOGAN](https://github.com/CCBR/LOGAN)                                                                                   | [v0.2.0](https://github.com/CCBR/LOGAN/releases/tag/v0.2.0)                                        | 2025-02-21     |            20 |
+| [LOGAN](https://github.com/CCBR/LOGAN)                                                                                   | [v0.2.0](https://github.com/CCBR/LOGAN/releases/tag/v0.2.0)                                        | 2025-02-21     |            21 |
 | [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.2.0](https://github.com/CCBR/Tools/releases/tag/v0.2.0)                                        | 2025-02-10     |             9 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                                                                           | [v0.4.1](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.4.1)                                    | 2025-01-13     |            30 |
 | [spook](https://github.com/CCBR/spook)                                                                                   | [v1.1.1](https://github.com/CCBR/spook/releases/tag/v1.1.1)                                        | 2024-12-16     |             2 |
@@ -188,7 +190,6 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.1](https://github.com/CCBR/journal-club/releases/tag/v0.1.1)                                 | 2024-11-20     |             4 |
 | [parkit](https://github.com/CCBR/parkit)                                                                                 | [v2.1.0](https://github.com/CCBR/parkit/releases/tag/v2.1.0)                                       | 2024-10-16     |             2 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.0.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.0.1)                                      | 2024-10-16     |            15 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.6.1](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.1)                                     | 2024-10-14     |            15 |
 | [reports](https://github.com/CCBR/reports)                                                                               | [v0.2.2](https://github.com/CCBR/reports/releases/tag/v0.2.2)                                      | 2024-08-22     |             9 |
 | [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                               | 2024-07-16     |             5 |
 | [permfix](https://github.com/CCBR/permfix)                                                                               | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)                                      | 2024-05-07     |             1 |

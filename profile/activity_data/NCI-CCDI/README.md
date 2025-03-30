@@ -10,13 +10,13 @@
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
-| [VidhurDS](https://github.com/VidhurDS) | member               | 17            |
-| [wuy24](https://github.com/wuy24) | member               | 23            |
+| [VidhurDS](https://github.com/VidhurDS) | member               | 24            |
+| [wuy24](https://github.com/wuy24) | member               | 30            |
 | [XYZ-NCI](https://github.com/XYZ-NCI) | member               | No Activity Found |
 | [edward130603](https://github.com/edward130603) | collaborator         | No Activity Found |
 | [JosquinMORALY](https://github.com/JosquinMORALY) | collaborator         | No Activity Found |
 | [kcgfarb](https://github.com/kcgfarb) | collaborator         | No Activity Found |
-| [Krithika-Bhuvan](https://github.com/Krithika-Bhuvan) | collaborator         | 11            |
-| [rtsundby](https://github.com/rtsundby) | collaborator         | 11            |
+| [Krithika-Bhuvan](https://github.com/Krithika-Bhuvan) | collaborator         | 18            |
+| [rtsundby](https://github.com/rtsundby) | collaborator         | 18            |
 | [shaoli86](https://github.com/shaoli86) | collaborator         | No Activity Found |
 | [slingoskit](https://github.com/slingoskit) | collaborator         | No Activity Found |
