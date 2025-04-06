@@ -6,8 +6,8 @@
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [cheanney](https://github.com/cheanney) | member               | No Activity Found |
 | [curtislisle](https://github.com/curtislisle) | member               | No Activity Found |
-| [epehrsson](https://github.com/epehrsson) | member               | 16            |
-| [hsienchao](https://github.com/hsienchao) | member               | 3             |
+| [epehrsson](https://github.com/epehrsson) | member               | 23            |
+| [hsienchao](https://github.com/hsienchao) | member               | 1             |
 | [jtoker117](https://github.com/jtoker117) | member               | No Activity Found |
 | [khanjav](https://github.com/khanjav) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
@@ -19,10 +19,9 @@
 | [shaoli86](https://github.com/shaoli86) | member               | 2             |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
 | [vinegang](https://github.com/vinegang) | member               | 2             |
-| [VN2008](https://github.com/VN2008) | member               | 2             |
+| [VN2008](https://github.com/VN2008) | member               | 9             |
 | [weij2016](https://github.com/weij2016) | member               | No Activity Found |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
-| [xinyuwen](https://github.com/xinyuwen) | member               | 6             |
+| [xinyuwen](https://github.com/xinyuwen) | member               | 13            |
 | [ZhaoBioinformaticsLab](https://github.com/ZhaoBioinformaticsLab) | member               | No Activity Found |
 | [zhujack8](https://github.com/zhujack8) | member               | No Activity Found |
-| [beaver9701](https://github.com/beaver9701) | collaborator         | No Activity Found |
