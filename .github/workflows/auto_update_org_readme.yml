@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "30 04 * * 0"
 
+permissions:
+  contents: write
+
 jobs:
   createreadme:
     runs-on: ubuntu-latest
