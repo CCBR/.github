@@ -3,13 +3,13 @@
 |-----------------|----------------------|---------------|
 | [ammichalowski](https://github.com/ammichalowski) | member               | No Activity Found |
 | [bafsariNIH](https://github.com/bafsariNIH) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 17            |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 7             |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [ChadAHighfill](https://github.com/ChadAHighfill) | member               | No Activity Found |
 | [escauley](https://github.com/escauley) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | No Activity Found |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 5             |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [kunlin0814](https://github.com/kunlin0814) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |

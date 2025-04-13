@@ -3,7 +3,7 @@
 |-----------------|----------------------|---------------|
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [epehrsson](https://github.com/epehrsson) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 1             |
+| [kopardev](https://github.com/kopardev) | member               | 8             |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [neerajaas](https://github.com/neerajaas) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
@@ -15,6 +15,6 @@
 | [XYZ-NCI](https://github.com/XYZ-NCI) | member               | No Activity Found |
 | [edward130603](https://github.com/edward130603) | collaborator         | No Activity Found |
 | [kcgfarb](https://github.com/kcgfarb) | collaborator         | No Activity Found |
-| [Krithika-Bhuvan](https://github.com/Krithika-Bhuvan) | collaborator         | 1             |
+| [Krithika-Bhuvan](https://github.com/Krithika-Bhuvan) | collaborator         | No Activity Found |
 | [rtsundby](https://github.com/rtsundby) | collaborator         | No Activity Found |
 | [shaoli86](https://github.com/shaoli86) | collaborator         | No Activity Found |
