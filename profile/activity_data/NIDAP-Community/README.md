@@ -3,17 +3,18 @@
 |-----------------|----------------------|---------------|
 | [ammichalowski](https://github.com/ammichalowski) | member               | No Activity Found |
 | [bafsariNIH](https://github.com/bafsariNIH) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 14            |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 21            |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [ChadAHighfill](https://github.com/ChadAHighfill) | member               | No Activity Found |
+| [djsmith17](https://github.com/djsmith17) | member               | 2             |
 | [escauley](https://github.com/escauley) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 12            |
-| [kopardev](https://github.com/kopardev) | member               | No Activity Found |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 19            |
+| [kopardev](https://github.com/kopardev) | member               | 2             |
 | [kunlin0814](https://github.com/kunlin0814) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
-| [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
+| [maggiecam](https://github.com/maggiecam) | member               | 6             |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
