@@ -16,33 +16,33 @@
 
 | Repo Name                                    | Release Name                                                    | Release Date   |   Open Issues |
 |:---------------------------------------------|:----------------------------------------------------------------|:---------------|--------------:|
-| [Tools](https://github.com/CCBR/Tools)       | [v0.3.1](https://github.com/CCBR/Tools/releases/tag/v0.3.1)     | 2025-04-25     |             9 |
+| [Tools](https://github.com/CCBR/Tools)       | [v0.3.2](https://github.com/CCBR/Tools/releases/tag/v0.3.2)     | 2025-05-01     |             6 |
+| [XAVIER](https://github.com/CCBR/XAVIER)     | [v3.1.5](https://github.com/CCBR/XAVIER/releases/tag/v3.1.5)    | 2025-05-01     |            10 |
+| [CRISPIN](https://github.com/CCBR/CRISPIN)   | [v1.1.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.1.1)   | 2025-05-01     |            14 |
+| [ESCAPE](https://github.com/CCBR/ESCAPE)     | [v1.2.1](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.1)    | 2025-05-01     |             1 |
+| [SINCLAIR](https://github.com/CCBR/SINCLAIR) | [v0.3.1](https://github.com/CCBR/SINCLAIR/releases/tag/v0.3.1)  | 2025-04-28     |            30 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)   | [v0.11.2](https://github.com/CCBR/CHARLIE/releases/tag/v0.11.2) | 2025-04-25     |            12 |
 | [RENEE](https://github.com/CCBR/RENEE)       | [v2.6.6](https://github.com/CCBR/RENEE/releases/tag/v2.6.6)     | 2025-04-25     |            15 |
-| [SINCLAIR](https://github.com/CCBR/SINCLAIR) | [v0.3.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.3.0)  | 2025-04-25     |            30 |
 | [HowTos](https://github.com/CCBR/HowTos)     | [v0.1](https://github.com/CCBR/HowTos/releases/tag/v0.1)        | 2025-04-21     |             3 |
-| [CRISPIN](https://github.com/CCBR/CRISPIN)   | [v1.1.0](https://github.com/CCBR/CRISPIN/releases/tag/v1.1.0)   | 2025-04-21     |            14 |
 | [actions](https://github.com/CCBR/actions)   | [v0.2.6](https://github.com/CCBR/actions/releases/tag/v0.2.6)   | 2025-04-21     |             9 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE) | [v2.6.3](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.3)  | 2025-04-15     |            13 |
-| [ESCAPE](https://github.com/CCBR/ESCAPE)     | [v1.2.0](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.0)    | 2025-03-26     |             0 |
-| [XAVIER](https://github.com/CCBR/XAVIER)     | [v3.1.4](https://github.com/CCBR/XAVIER/releases/tag/v3.1.4)    | 2025-03-06     |            10 |
-| [ASPEN](https://github.com/CCBR/ASPEN)       | [v1.0.6](https://github.com/CCBR/ASPEN/releases/tag/v1.0.6)     | 2025-02-28     |            26 |
-| [LOGAN](https://github.com/CCBR/LOGAN)       | [v0.2.0](https://github.com/CCBR/LOGAN/releases/tag/v0.2.0)     | 2025-02-21     |            23 |
+| [ASPEN](https://github.com/CCBR/ASPEN)       | [v1.0.6](https://github.com/CCBR/ASPEN/releases/tag/v1.0.6)     | 2025-02-28     |            14 |
+| [LOGAN](https://github.com/CCBR/LOGAN)       | [v0.2.0](https://github.com/CCBR/LOGAN/releases/tag/v0.2.0)     | 2025-02-21     |            21 |
 
 ## TOP contributors 
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            5696 |                     242 |                       1199 |
-| [kopardev](https://github.com/kopardev)             |            4186 |                      56 |                        366 |
-| [slsevilla](https://github.com/slsevilla)           |            1270 |                       0 |                          0 |
-| [skchronicles](https://github.com/skchronicles)     |             929 |                       0 |                          0 |
-| [dnousome](https://github.com/dnousome)             |             835 |                      10 |                        127 |
-| [kcgfarb](https://github.com/kcgfarb)               |             819 |                      41 |                        237 |
-| [samarth8392](https://github.com/samarth8392)       |             599 |                      29 |                        147 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            5766 |                     303 |                       1243 |
+| [kopardev](https://github.com/kopardev)             |            4685 |                     111 |                        284 |
+| [slsevilla](https://github.com/slsevilla)           |            1363 |                       0 |                          0 |
+| [skchronicles](https://github.com/skchronicles)     |             970 |                       0 |                          0 |
+| [kcgfarb](https://github.com/kcgfarb)               |             829 |                      36 |                        226 |
+| [samarth8392](https://github.com/samarth8392)       |             635 |                      62 |                        183 |
 | [finneyr](https://github.com/finneyr)               |             352 |                       0 |                          4 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
 | [wong-nw](https://github.com/wong-nw)               |             113 |                      10 |                         19 |
+| [escauley](https://github.com/escauley)             |             105 |                       1 |                         24 |
 
 ## About Us
 
@@ -178,25 +178,25 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 ## Latest Releases of pipelines/tools:
 | Repo Name                                                                                                                | Release Name                                                                                       | Release Date   |   Open Issues |
 |:-------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|:---------------|--------------:|
-| [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.3.1](https://github.com/CCBR/Tools/releases/tag/v0.3.1)                                        | 2025-04-25     |             9 |
+| [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.3.2](https://github.com/CCBR/Tools/releases/tag/v0.3.2)                                        | 2025-05-01     |             6 |
+| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.1.5](https://github.com/CCBR/XAVIER/releases/tag/v3.1.5)                                       | 2025-05-01     |            10 |
+| [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.1.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.1.1)                                      | 2025-05-01     |            14 |
+| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.2.1](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.1)                                       | 2025-05-01     |             1 |
+| [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                                                             | [v0.3.1](https://github.com/CCBR/SINCLAIR/releases/tag/v0.3.1)                                     | 2025-04-28     |            30 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.11.2](https://github.com/CCBR/CHARLIE/releases/tag/v0.11.2)                                    | 2025-04-25     |            12 |
 | [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.6.6](https://github.com/CCBR/RENEE/releases/tag/v2.6.6)                                        | 2025-04-25     |            15 |
-| [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                                                             | [v0.3.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.3.0)                                     | 2025-04-25     |            30 |
 | [HowTos](https://github.com/CCBR/HowTos)                                                                                 | [v0.1](https://github.com/CCBR/HowTos/releases/tag/v0.1)                                           | 2025-04-21     |             3 |
-| [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.1.0](https://github.com/CCBR/CRISPIN/releases/tag/v1.1.0)                                      | 2025-04-21     |            14 |
 | [actions](https://github.com/CCBR/actions)                                                                               | [v0.2.6](https://github.com/CCBR/actions/releases/tag/v0.2.6)                                      | 2025-04-21     |             9 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.6.3](https://github.com/CCBR/CARLISLE/releases/tag/v2.6.3)                                     | 2025-04-15     |            13 |
-| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.2.0](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.0)                                       | 2025-03-26     |             0 |
-| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.1.4](https://github.com/CCBR/XAVIER/releases/tag/v3.1.4)                                       | 2025-03-06     |            10 |
-| [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.0.6](https://github.com/CCBR/ASPEN/releases/tag/v1.0.6)                                        | 2025-02-28     |            26 |
-| [LOGAN](https://github.com/CCBR/LOGAN)                                                                                   | [v0.2.0](https://github.com/CCBR/LOGAN/releases/tag/v0.2.0)                                        | 2025-02-21     |            23 |
+| [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.0.6](https://github.com/CCBR/ASPEN/releases/tag/v1.0.6)                                        | 2025-02-28     |            14 |
+| [LOGAN](https://github.com/CCBR/LOGAN)                                                                                   | [v0.2.0](https://github.com/CCBR/LOGAN/releases/tag/v0.2.0)                                        | 2025-02-21     |            21 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                                                                           | [v0.4.1](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.4.1)                                    | 2025-01-13     |            30 |
-| [spook](https://github.com/CCBR/spook)                                                                                   | [v1.1.1](https://github.com/CCBR/spook/releases/tag/v1.1.1)                                        | 2024-12-16     |             2 |
+| [spook](https://github.com/CCBR/spook)                                                                                   | [v1.1.1](https://github.com/CCBR/spook/releases/tag/v1.1.1)                                        | 2024-12-16     |             3 |
 | [Dockers2](https://github.com/CCBR/Dockers2)                                                                             | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                                     | 2024-12-02     |             6 |
 | [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.1](https://github.com/CCBR/journal-club/releases/tag/v0.1.1)                                 | 2024-11-20     |             2 |
 | [parkit](https://github.com/CCBR/parkit)                                                                                 | [v2.1.0](https://github.com/CCBR/parkit/releases/tag/v2.1.0)                                       | 2024-10-16     |             2 |
 | [reports](https://github.com/CCBR/reports)                                                                               | [v0.2.2](https://github.com/CCBR/reports/releases/tag/v0.2.2)                                      | 2024-08-22     |            12 |
-| [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                               | 2024-07-16     |             5 |
+| [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.0](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.0)                               | 2024-07-16     |             6 |
 | [permfix](https://github.com/CCBR/permfix)                                                                               | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)                                      | 2024-05-07     |             1 |
 | [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                                                                       | [v0.3.0](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.0)                                  | 2024-04-12     |             3 |
 | [METRO](https://github.com/CCBR/METRO)                                                                                   | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                                            | 2024-03-28     |             2 |

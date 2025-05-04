@@ -1,7 +1,7 @@
 
 | github_handle   | member/collaborator | days_inactive |
 |-----------------|----------------------|---------------|
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 6             |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 13            |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [McIntoshC](https://github.com/McIntoshC) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
@@ -11,5 +11,5 @@
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
-| [wilfriedguiblet](https://github.com/wilfriedguiblet) | member               | 6             |
-| [BK0109](https://github.com/BK0109) | collaborator         | 6             |
+| [wilfriedguiblet](https://github.com/wilfriedguiblet) | member               | 13            |
+| [BK0109](https://github.com/BK0109) | collaborator         | 5             |
