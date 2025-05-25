@@ -11,7 +11,7 @@
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
 | [VidhurDS](https://github.com/VidhurDS) | member               | No Activity Found |
-| [wuy24](https://github.com/wuy24) | member               | 3             |
+| [wuy24](https://github.com/wuy24) | member               | 2             |
 | [XYZ-NCI](https://github.com/XYZ-NCI) | member               | No Activity Found |
 | [ammichalowski](https://github.com/ammichalowski) | collaborator         | No Activity Found |
 | [BMurray96](https://github.com/BMurray96) | collaborator         | No Activity Found |
