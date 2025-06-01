@@ -12,7 +12,6 @@
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
 | [VidhurDS](https://github.com/VidhurDS) | member               | No Activity Found |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
-| [XYZ-NCI](https://github.com/XYZ-NCI) | member               | No Activity Found |
 | [edward130603](https://github.com/edward130603) | collaborator         | No Activity Found |
 | [kcgfarb](https://github.com/kcgfarb) | collaborator         | No Activity Found |
 | [Krithika-Bhuvan](https://github.com/Krithika-Bhuvan) | collaborator         | No Activity Found |

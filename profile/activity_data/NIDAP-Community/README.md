@@ -3,19 +3,19 @@
 |-----------------|----------------------|---------------|
 | [ammichalowski](https://github.com/ammichalowski) | member               | No Activity Found |
 | [bafsariNIH](https://github.com/bafsariNIH) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 10            |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 17            |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [ChadAHighfill](https://github.com/ChadAHighfill) | member               | No Activity Found |
-| [djsmith17](https://github.com/djsmith17) | member               | 2             |
+| [djsmith17](https://github.com/djsmith17) | member               | 1             |
 | [escauley](https://github.com/escauley) | member               | No Activity Found |
-| [fangliu117](https://github.com/fangliu117) | member               | 19            |
+| [fangliu117](https://github.com/fangliu117) | member               | 26            |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
 | [kelly-sovacool](https://github.com/kelly-sovacool) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 30            |
+| [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [kunlin0814](https://github.com/kunlin0814) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
-| [maggiecam](https://github.com/maggiecam) | member               | 10            |
+| [maggiecam](https://github.com/maggiecam) | member               | 4             |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
