@@ -1,7 +1,7 @@
 
 | github_handle   | member/collaborator | days_inactive |
 |-----------------|----------------------|---------------|
-| [kcgfarb](https://github.com/kcgfarb) | member               | No Activity Found |
+| [kcgfarb](https://github.com/kcgfarb) | member               | 1             |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
