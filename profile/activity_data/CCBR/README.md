@@ -2,17 +2,17 @@
 | github_handle   | member/collaborator | days_inactive |
 |-----------------|----------------------|---------------|
 | [aemmons90](https://github.com/aemmons90) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 3             |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 10            |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [epehrsson](https://github.com/epehrsson) | member               | No Activity Found |
-| [escauley](https://github.com/escauley) | member               | 4             |
-| [finneyr](https://github.com/finneyr) | member               | 25            |
+| [escauley](https://github.com/escauley) | member               | 6             |
+| [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [hdegen](https://github.com/hdegen) | member               | No Activity Found |
 | [jlmalin](https://github.com/jlmalin) | member               | No Activity Found |
 | [JWrows2014](https://github.com/JWrows2014) | member               | No Activity Found |
-| [kcgfarb](https://github.com/kcgfarb) | member               | 1             |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 2             |
-| [kopardev](https://github.com/kopardev) | member               | 3             |
+| [kcgfarb](https://github.com/kcgfarb) | member               | 5             |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 4             |
+| [kopardev](https://github.com/kopardev) | member               | 7             |
 | [kvaldez](https://github.com/kvaldez) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
@@ -29,12 +29,12 @@
 | [TJoshMeyer](https://github.com/TJoshMeyer) | member               | No Activity Found |
 | [VidhurDS](https://github.com/VidhurDS) | member               | No Activity Found |
 | [wilfriedguiblet](https://github.com/wilfriedguiblet) | member               | No Activity Found |
-| [wong-nw](https://github.com/wong-nw) | member               | 2             |
+| [wong-nw](https://github.com/wong-nw) | member               | 9             |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
 | [dnousome](https://github.com/dnousome) | collaborator         | No Activity Found |
 | [e-hutchins](https://github.com/e-hutchins) | collaborator         | No Activity Found |
 | [skchronicles](https://github.com/skchronicles) | collaborator         | No Activity Found |
 | [slsevilla](https://github.com/slsevilla) | collaborator         | No Activity Found |
-| [stephchid](https://github.com/stephchid) | collaborator         | 2             |
+| [stephchid](https://github.com/stephchid) | collaborator         | No Activity Found |
 | [tsnetterfield](https://github.com/tsnetterfield) | collaborator         | No Activity Found |
 | [vinegang](https://github.com/vinegang) | collaborator         | No Activity Found |
