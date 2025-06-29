@@ -11,7 +11,7 @@
 | [DorsaZiaei](https://github.com/DorsaZiaei) | member               | No Activity Found |
 | [guthridgerg](https://github.com/guthridgerg) | member               | No Activity Found |
 | [jackchenx3](https://github.com/jackchenx3) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | No Activity Found |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 5             |
 | [KeyTals](https://github.com/KeyTals) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | 3             |
 | [LoneFenris](https://github.com/LoneFenris) | member               | No Activity Found |
