@@ -24,7 +24,7 @@
 | [Tools](https://github.com/CCBR/Tools)               | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)        | 2025-06-10     |             5 |
 | [LOGAN](https://github.com/CCBR/LOGAN)               | [v0.3.1](https://github.com/CCBR/LOGAN/releases/tag/v0.3.1)        | 2025-05-28     |            21 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)           | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)      | 2025-05-28     |            14 |
-| [actions](https://github.com/CCBR/actions)           | [v0.2.7](https://github.com/CCBR/actions/releases/tag/v0.2.7)      | 2025-05-27     |            11 |
+| [actions](https://github.com/CCBR/actions)           | [v0.2.7](https://github.com/CCBR/actions/releases/tag/v0.2.7)      | 2025-05-27     |             9 |
 | [ASPEN](https://github.com/CCBR/ASPEN)               | [v1.1.1](https://github.com/CCBR/ASPEN/releases/tag/v1.1.1)        | 2025-05-22     |            12 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)           | [v0.12.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.12.0)    | 2025-05-20     |            12 |
 | [RENEE](https://github.com/CCBR/RENEE)               | [v2.7.0](https://github.com/CCBR/RENEE/releases/tag/v2.7.0)        | 2025-05-20     |            18 |
@@ -36,13 +36,13 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            6079 |                      86 |                       1062 |
-| [kopardev](https://github.com/kopardev)             |            4742 |                      10 |                        237 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            6127 |                     105 |                       1074 |
+| [kopardev](https://github.com/kopardev)             |            4742 |                       2 |                        236 |
 | [slsevilla](https://github.com/slsevilla)           |            1363 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |             970 |                       0 |                          0 |
-| [kcgfarb](https://github.com/kcgfarb)               |             901 |                      30 |                        242 |
-| [dnousome](https://github.com/dnousome)             |             852 |                       0 |                        100 |
-| [samarth8392](https://github.com/samarth8392)       |             731 |                      55 |                        259 |
+| [kcgfarb](https://github.com/kcgfarb)               |             917 |                      37 |                        257 |
+| [dnousome](https://github.com/dnousome)             |             852 |                       0 |                         89 |
+| [samarth8392](https://github.com/samarth8392)       |             736 |                      38 |                        263 |
 | [finneyr](https://github.com/finneyr)               |             354 |                       0 |                          6 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
 | [wong-nw](https://github.com/wong-nw)               |             122 |                       0 |                         28 |
@@ -189,7 +189,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)                                        | 2025-06-10     |             5 |
 | [LOGAN](https://github.com/CCBR/LOGAN)                                                                                   | [v0.3.1](https://github.com/CCBR/LOGAN/releases/tag/v0.3.1)                                        | 2025-05-28     |            21 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                                      | 2025-05-28     |            14 |
-| [actions](https://github.com/CCBR/actions)                                                                               | [v0.2.7](https://github.com/CCBR/actions/releases/tag/v0.2.7)                                      | 2025-05-27     |            11 |
+| [actions](https://github.com/CCBR/actions)                                                                               | [v0.2.7](https://github.com/CCBR/actions/releases/tag/v0.2.7)                                      | 2025-05-27     |             9 |
 | [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.1.1](https://github.com/CCBR/ASPEN/releases/tag/v1.1.1)                                        | 2025-05-22     |            12 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.12.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.12.0)                                    | 2025-05-20     |            12 |
 | [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.7.0](https://github.com/CCBR/RENEE/releases/tag/v2.7.0)                                        | 2025-05-20     |            18 |
