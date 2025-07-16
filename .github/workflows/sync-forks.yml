@@ -18,59 +18,56 @@ env:
   UPSTREAM_OWNER: CCBR
 
 jobs:
-  sync-from-CCBR:
+  sync-to-ABCS:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        FORK_OWNER: [NCIPangea, abcsFrederick]
-        REPO: [ASPEN, CARLISLE, CHAMPAGNE, CRISPIN, RENEE, XAVIER]
-        include:
-          - REPO: ASCENT
-            FORK_OWNER: abcsFrederick
-          - REPO: CCBR_circRNA_AmpliconSeq
-            FORK_OWNER: abcsFrederick
-          - REPO: CCBR_NextflowTemplate
-            FORK_OWNER: abcsFrederick
-          - REPO: CCBR_SnakemakeTemplate
-            FORK_OWNER: abcsFrederick
-          - REPO: DNAnexus
-            FORK_OWNER: abcsFrederick
-          - REPO: DOCKERS
-            FORK_OWNER: abcsFrederick
-          - REPO: HapFerret
-            FORK_OWNER: abcsFrederick
-          - REPO: HERVx
-            FORK_OWNER: abcsFrederick
-          - REPO: l2p
-            FORK_OWNER: abcsFrederick
-          - REPO: METRO
-            FORK_OWNER: abcsFrederick
-          - REPO: MAAPSTER
-            FORK_OWNER: abcsFrederick
-          - REPO: permfix
-            FORK_OWNER: abcsFrederick
-          - REPO: pyrkit
-            FORK_OWNER: abcsFrederick
-          - REPO: rNA
-            FORK_OWNER: abcsFrederick
-          - REPO: SINCLAIR
-            FORK_OWNER: abcsFrederick
-          - REPO: spacesavers2
-            FORK_OWNER: abcsFrederick
-          - REPO: TRANQUIL
-            FORK_OWNER: abcsFrederick
-          - REPO: MAPLE
-            FORK_OWNER: abcsFrederick
-          - REPO: LOGAN
-            FORK_OWNER: abcsFrederick
-
+        FORK_OWNER: [abcsFrederick]
+        REPO:
+          - ASPEN
+          - CARLISLE
+          - CHAMPAGNE
+          - CRISPIN
+          - RENEE
+          - XAVIER
+          - ASCENT
+          - CCBR_circRNA_AmpliconSeq
+          - CCBR_NextflowTemplate
+          - CCBR_SnakemakeTemplate
+          - DNAnexus
+          - DOCKERS
+          - HapFerret
+          - HERVx
+          - l2p
+          - METRO
+          - MAAPSTER
+          - permfix
+          - pyrkit
+          - rNA
+          - SINCLAIR
+          - spacesavers2
+          - TRANQUIL
+          - MAPLE
+          - LOGAN
     steps:
       - name: sync forked repos
         run: |
           gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source $UPSTREAM_OWNER/${{ matrix.REPO }} --force
 
-  sync-to-nidap:
+  sync-to-Pangea:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        FORK_OWNER: [NCIPangea]
+        REPO: [ASPEN, CARLISLE, CHAMPAGNE, CRISPIN, RENEE, XAVIER]
+    steps:
+      - name: sync forked repos
+        run: |
+          gh repo sync ${{ matrix.FORK_OWNER }}/${{ matrix.REPO }} --source $UPSTREAM_OWNER/${{ matrix.REPO }} --force
+
+  sync-to-NIDAP:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
