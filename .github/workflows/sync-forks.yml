@@ -36,7 +36,7 @@ jobs:
           - CCBR_NextflowTemplate
           - CCBR_SnakemakeTemplate
           - DNAnexus
-          - DOCKERS
+          - Dockers2
           - HapFerret
           - HERVx
           - l2p
