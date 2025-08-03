@@ -2,7 +2,7 @@
 | github_handle   | member/collaborator | days_inactive |
 |-----------------|----------------------|---------------|
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 1             |
+| [kopardev](https://github.com/kopardev) | member               | 8             |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
