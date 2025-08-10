@@ -29,7 +29,7 @@
 | [journal-club](https://github.com/CCBR/journal-club)   | [v0.1.2](https://github.com/CCBR/journal-club/releases/tag/v0.1.2)   | 2025-06-17     |             1 |
 | [TRANQUIL](https://github.com/CCBR/TRANQUIL)           | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)       | 2025-06-16     |             2 |
 | [XAVIER](https://github.com/CCBR/XAVIER)               | [v3.2.1](https://github.com/CCBR/XAVIER/releases/tag/v3.2.1)         | 2025-06-12     |            11 |
-| [Tools](https://github.com/CCBR/Tools)                 | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)          | 2025-06-10     |             5 |
+| [Tools](https://github.com/CCBR/Tools)                 | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)          | 2025-06-10     |             8 |
 | [LOGAN](https://github.com/CCBR/LOGAN)                 | [v0.3.1](https://github.com/CCBR/LOGAN/releases/tag/v0.3.1)          | 2025-05-28     |            21 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)             | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)        | 2025-05-28     |            14 |
 | [actions](https://github.com/CCBR/actions)             | [v0.2.7](https://github.com/CCBR/actions/releases/tag/v0.2.7)        | 2025-05-27     |            10 |
@@ -40,13 +40,13 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            6303 |                     160 |                       1138 |
-| [kopardev](https://github.com/kopardev)             |            4760 |                      12 |                        252 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            6303 |                     131 |                       1090 |
+| [kopardev](https://github.com/kopardev)             |            4761 |                      13 |                        243 |
 | [slsevilla](https://github.com/slsevilla)           |            1363 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |             970 |                       0 |                          0 |
-| [kcgfarb](https://github.com/kcgfarb)               |             941 |                      24 |                        269 |
-| [dnousome](https://github.com/dnousome)             |             852 |                       0 |                         73 |
-| [samarth8392](https://github.com/samarth8392)       |             753 |                      17 |                        263 |
+| [kcgfarb](https://github.com/kcgfarb)               |             946 |                      20 |                        260 |
+| [dnousome](https://github.com/dnousome)             |             852 |                       0 |                         71 |
+| [samarth8392](https://github.com/samarth8392)       |             757 |                      15 |                        267 |
 | [finneyr](https://github.com/finneyr)               |             354 |                       0 |                          6 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
 | [escauley](https://github.com/escauley)             |             136 |                       1 |                         37 |
@@ -163,11 +163,12 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | --- | --- | --- | --- |
 | 1 | RENEE v2.1 <sup>@#</sup> | July, 10th 2023 | July, 14th 2023 |
 | 2 | RENEE v2.2 <sup>@#</sup> | July, 14th 2023 | September, 5th 2023 |
-| 3 | RENEE v2.2 <sup>@#</sup>, XAVIER v2.0 <sup>@</sup>| July, 21st 2023 | - |
-| 4 | RENEE v2.5 <sup>@#</sup>, XAVIER v3.0 <sup>@#</sup>| September, 5th 2023 | - |
-| 5 | RENEE v2.5 <sup>@#</sup>, XAVIER v3.0 <sup>@#</sup>, CARLISLE v2.4 <sup>@</sup>, CHAMPAGNE v0.2 <sup>@</sup>, CRUISE v0.1 <sup>@</sup>, spacesavers2 v0.10 <sup>@</sup>, permfix v0.6 <sup>@</sup> | October, 27th 2023 | - |
-| 6<sup>*</sup> | RENEE v2.5 <sup>@#</sup>, XAVIER v3.0 <sup>@#</sup>, CARLISLE v2.4 <sup>@</sup>, CHAMPAGNE v0.3 <sup>@</sup>, CRUISE v0.1 <sup>@</sup>, ASPEN v1.0 <sup>@</sup>, spacesavers2 v0.12 <sup>@</sup>, permfix v0.6 <sup>@</sup> | February, 29th 2024 | - |
-
+| 3 | RENEE v2.2 <sup>@#</sup>,<br> XAVIER v2.0 <sup>@</sup>| July, 21st 2023 | - |
+| 4 | RENEE v2.5 <sup>@#</sup>,<br> XAVIER v3.0 <sup>@#</sup>| September, 5th 2023 | - |
+| 5 | RENEE v2.5 <sup>@#</sup>,<br> XAVIER v3.0 <sup>@#</sup>,<br> CARLISLE v2.4 <sup>@</sup>,<br> CHAMPAGNE v0.2 <sup>@</sup>,<br> CRUISE v0.1 <sup>@</sup>,<br> spacesavers2 v0.10 <sup>@</sup>,<br> permfix v0.6 <sup>@</sup> | October, 27th 2023 | - |
+| 6 | RENEE v2.5 <sup>@#</sup>,<br> XAVIER v3.0 <sup>@#</sup>,<br> CARLISLE v2.4 <sup>@</sup>,<br> CHAMPAGNE v0.3 <sup>@</sup>,<br> CRUISE v0.1 <sup>@</sup>,<br> ASPEN v1.0 <sup>@</sup>,<br> spacesavers2 v0.12 <sup>@</sup>,<br> permfix v0.6 <sup>@</sup> | February, 29th 2024 | - |
+| 7 | RENEE v2.6 <sup>@#</sup>,<br> XAVIER v3.1 <sup>@#</sup>,<br> CARLISLE v2.6 <sup>@</sup>,<br> CHAMPAGNE v0.4 <sup>@</sup>,<br> CHARLIE v0.11 <sup>@</sup>,<br> CRISPIN v1.0 <sup>@</sup> (previously CRUISE),<br> ASPEN v1.0 <sup>@</sup>,<br> spacesavers2 v0.14 <sup>@</sup>,<br> permfix v0.6 <sup>@</sup>,<br> ccbr_tools v0.1 <sup>@</sup> | Jan, 10th 2025 | - |
+| 8<sup>*</sup> | RENEE v2.7 <sup>@#</sup>,<br> XAVIER v3.2 <sup>@#</sup>,<br> CARLISLE v2.7 <sup>@</sup>,<br> CHAMPAGNE v0.5 <sup>@</sup>,<br> CHARLIE v0.12 <sup>@</sup>,<br> CRISPIN v1.2 <sup>@</sup>,<br> ASPEN v1.1 <sup>@</sup>,<br> ESCAPE v1.2 <sup>@</sup>,<br> LOGAN v0.3 <sup>@</sup>,<br> SINCLAIR v0.3 <sup>@</sup>,<br> spacesavers2 v0.14 <sup>@</sup>,<br> permfix v0.6 <sup>@</sup>,<br> ccbr_tools v0.4 <sup>@</sup> | Jul, 18th 2025 | - |
 >
 > <sup>*</sup> = Current DEFAULT version on BIOWULF
 >
@@ -177,6 +178,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 
 
 > `module load ccbrpipeliner` is also available on HELIX. It only loads the **tools** and not the **pipelines** as HELIX does not have a job scheduler
+
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -198,7 +200,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.2](https://github.com/CCBR/journal-club/releases/tag/v0.1.2)                                 | 2025-06-17     |             1 |
 | [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                                                             | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)                                     | 2025-06-16     |             2 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.2.1](https://github.com/CCBR/XAVIER/releases/tag/v3.2.1)                                       | 2025-06-12     |            11 |
-| [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)                                        | 2025-06-10     |             5 |
+| [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)                                        | 2025-06-10     |             8 |
 | [LOGAN](https://github.com/CCBR/LOGAN)                                                                                   | [v0.3.1](https://github.com/CCBR/LOGAN/releases/tag/v0.3.1)                                        | 2025-05-28     |            21 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                                      | 2025-05-28     |            14 |
 | [actions](https://github.com/CCBR/actions)                                                                               | [v0.2.7](https://github.com/CCBR/actions/releases/tag/v0.2.7)                                      | 2025-05-27     |            10 |

@@ -6,7 +6,7 @@
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [cheanney](https://github.com/cheanney) | member               | No Activity Found |
 | [curtislisle](https://github.com/curtislisle) | member               | No Activity Found |
-| [epehrsson](https://github.com/epehrsson) | member               | 9             |
+| [epehrsson](https://github.com/epehrsson) | member               | 16            |
 | [hsienchao](https://github.com/hsienchao) | member               | 3             |
 | [jtoker117](https://github.com/jtoker117) | member               | No Activity Found |
 | [khanjav](https://github.com/khanjav) | member               | No Activity Found |
@@ -19,7 +19,6 @@
 | [shaoli86](https://github.com/shaoli86) | member               | No Activity Found |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
 | [vinegang](https://github.com/vinegang) | member               | 2             |
-| [VN2008](https://github.com/VN2008) | member               | No Activity Found |
 | [weij2016](https://github.com/weij2016) | member               | No Activity Found |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
 | [xinyuwen](https://github.com/xinyuwen) | member               | No Activity Found |
