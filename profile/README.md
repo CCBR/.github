@@ -29,7 +29,7 @@
 | [journal-club](https://github.com/CCBR/journal-club)   | [v0.1.2](https://github.com/CCBR/journal-club/releases/tag/v0.1.2)   | 2025-06-17     |             1 |
 | [TRANQUIL](https://github.com/CCBR/TRANQUIL)           | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)       | 2025-06-16     |             2 |
 | [XAVIER](https://github.com/CCBR/XAVIER)               | [v3.2.1](https://github.com/CCBR/XAVIER/releases/tag/v3.2.1)         | 2025-06-12     |            11 |
-| [Tools](https://github.com/CCBR/Tools)                 | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)          | 2025-06-10     |             8 |
+| [Tools](https://github.com/CCBR/Tools)                 | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)          | 2025-06-10     |            15 |
 | [LOGAN](https://github.com/CCBR/LOGAN)                 | [v0.3.1](https://github.com/CCBR/LOGAN/releases/tag/v0.3.1)          | 2025-05-28     |            21 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)             | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)        | 2025-05-28     |            14 |
 | [actions](https://github.com/CCBR/actions)             | [v0.2.7](https://github.com/CCBR/actions/releases/tag/v0.2.7)        | 2025-05-27     |            10 |
@@ -40,14 +40,14 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            6303 |                     131 |                       1090 |
-| [kopardev](https://github.com/kopardev)             |            4761 |                      13 |                        243 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            6315 |                      88 |                       1084 |
+| [kopardev](https://github.com/kopardev)             |            4761 |                       4 |                        224 |
 | [slsevilla](https://github.com/slsevilla)           |            1363 |                       0 |                          0 |
 | [skchronicles](https://github.com/skchronicles)     |             970 |                       0 |                          0 |
-| [kcgfarb](https://github.com/kcgfarb)               |             946 |                      20 |                        260 |
-| [dnousome](https://github.com/dnousome)             |             852 |                       0 |                         71 |
-| [samarth8392](https://github.com/samarth8392)       |             757 |                      15 |                        267 |
-| [finneyr](https://github.com/finneyr)               |             354 |                       0 |                          6 |
+| [kcgfarb](https://github.com/kcgfarb)               |             957 |                      28 |                        266 |
+| [dnousome](https://github.com/dnousome)             |             852 |                       0 |                         66 |
+| [samarth8392](https://github.com/samarth8392)       |             760 |                      13 |                        270 |
+| [finneyr](https://github.com/finneyr)               |             354 |                       0 |                          2 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
 | [escauley](https://github.com/escauley)             |             136 |                       1 |                         37 |
 
@@ -200,7 +200,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.2](https://github.com/CCBR/journal-club/releases/tag/v0.1.2)                                 | 2025-06-17     |             1 |
 | [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                                                             | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)                                     | 2025-06-16     |             2 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.2.1](https://github.com/CCBR/XAVIER/releases/tag/v3.2.1)                                       | 2025-06-12     |            11 |
-| [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)                                        | 2025-06-10     |             8 |
+| [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.4.3](https://github.com/CCBR/Tools/releases/tag/v0.4.3)                                        | 2025-06-10     |            15 |
 | [LOGAN](https://github.com/CCBR/LOGAN)                                                                                   | [v0.3.1](https://github.com/CCBR/LOGAN/releases/tag/v0.3.1)                                        | 2025-05-28     |            21 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                                      | 2025-05-28     |            14 |
 | [actions](https://github.com/CCBR/actions)                                                                               | [v0.2.7](https://github.com/CCBR/actions/releases/tag/v0.2.7)                                      | 2025-05-27     |            10 |
