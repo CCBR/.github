@@ -3,6 +3,7 @@
 |-----------------|----------------------|---------------|
 | [alodadims](https://github.com/alodadims) | member               | No Activity Found |
 | [amirinenik](https://github.com/amirinenik) | member               | No Activity Found |
+| [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
 | [bshrestha617](https://github.com/bshrestha617) | member               | No Activity Found |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [choudharis2](https://github.com/choudharis2) | member               | No Activity Found |
@@ -18,7 +19,7 @@
 | [lossm](https://github.com/lossm) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [newhyun00](https://github.com/newhyun00) | member               | No Activity Found |
-| [npacheco2](https://github.com/npacheco2) | member               | 2             |
+| [npacheco2](https://github.com/npacheco2) | member               | 9             |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
@@ -30,7 +31,6 @@
 | [umasm1](https://github.com/umasm1) | member               | No Activity Found |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
 | [xies4](https://github.com/xies4) | member               | No Activity Found |
-| [yongmzhao](https://github.com/yongmzhao) | member               | No Activity Found |
 | [chenv3](https://github.com/chenv3) | collaborator         | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | collaborator         | No Activity Found |
 | [plmoer](https://github.com/plmoer) | collaborator         | No Activity Found |

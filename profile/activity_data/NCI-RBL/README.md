@@ -1,6 +1,7 @@
 
 | github_handle   | member/collaborator | days_inactive |
 |-----------------|----------------------|---------------|
+| [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
 | [kelly-sovacool](https://github.com/kelly-sovacool) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [McIntoshC](https://github.com/McIntoshC) | member               | No Activity Found |

@@ -3,6 +3,7 @@
 |-----------------|----------------------|---------------|
 | [abidgen](https://github.com/abidgen) | member               | No Activity Found |
 | [adamtolnay](https://github.com/adamtolnay) | member               | No Activity Found |
+| [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [cheanney](https://github.com/cheanney) | member               | No Activity Found |
 | [curtislisle](https://github.com/curtislisle) | member               | No Activity Found |
@@ -16,7 +17,7 @@
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
-| [shaoli86](https://github.com/shaoli86) | member               | 4             |
+| [shaoli86](https://github.com/shaoli86) | member               | 6             |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
 | [vinegang](https://github.com/vinegang) | member               | 2             |
 | [weij2016](https://github.com/weij2016) | member               | No Activity Found |
