@@ -16,7 +16,7 @@
 | [ammichalowski](https://github.com/ammichalowski) | collaborator         | No Activity Found |
 | [BMurray96](https://github.com/BMurray96) | collaborator         | No Activity Found |
 | [francesanne-tosto](https://github.com/francesanne-tosto) | collaborator         | No Activity Found |
-| [HYan-lei](https://github.com/HYan-lei) | collaborator         | 4             |
+| [HYan-lei](https://github.com/HYan-lei) | collaborator         | 11            |
 | [Krithika-Bhuvan](https://github.com/Krithika-Bhuvan) | collaborator         | No Activity Found |
 | [liux31](https://github.com/liux31) | collaborator         | No Activity Found |
 | [micheleceribelli](https://github.com/micheleceribelli) | collaborator         | No Activity Found |

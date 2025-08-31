@@ -7,7 +7,7 @@
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [cheanney](https://github.com/cheanney) | member               | No Activity Found |
 | [curtislisle](https://github.com/curtislisle) | member               | No Activity Found |
-| [epehrsson](https://github.com/epehrsson) | member               | 2             |
+| [epehrsson](https://github.com/epehrsson) | member               | 4             |
 | [hsienchao](https://github.com/hsienchao) | member               | 2             |
 | [jtoker117](https://github.com/jtoker117) | member               | No Activity Found |
 | [khanjav](https://github.com/khanjav) | member               | No Activity Found |
@@ -17,7 +17,7 @@
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
-| [shaoli86](https://github.com/shaoli86) | member               | 6             |
+| [shaoli86](https://github.com/shaoli86) | member               | 5             |
 | [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
 | [vinegang](https://github.com/vinegang) | member               | 2             |
 | [weij2016](https://github.com/weij2016) | member               | No Activity Found |
