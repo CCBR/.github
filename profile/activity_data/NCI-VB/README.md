@@ -2,7 +2,8 @@
 | github_handle   | member/collaborator | days_inactive |
 |-----------------|----------------------|---------------|
 | [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
-| [kcgfarb](https://github.com/kcgfarb) | member               | 24            |
+| [burnskd](https://github.com/burnskd) | member               | No Activity Found |
+| [kcgfarb](https://github.com/kcgfarb) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
