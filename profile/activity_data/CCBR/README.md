@@ -3,15 +3,15 @@
 |-----------------|----------------------|---------------|
 | [aemmons90](https://github.com/aemmons90) | member               | No Activity Found |
 | [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 18            |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 25            |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
-| [epehrsson](https://github.com/epehrsson) | member               | 9             |
-| [escauley](https://github.com/escauley) | member               | 4             |
+| [epehrsson](https://github.com/epehrsson) | member               | 16            |
+| [escauley](https://github.com/escauley) | member               | 11            |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [JWrows2014](https://github.com/JWrows2014) | member               | No Activity Found |
 | [kcgfarb](https://github.com/kcgfarb) | member               | 2             |
 | [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 2             |
-| [kopardev](https://github.com/kopardev) | member               | 3             |
+| [kopardev](https://github.com/kopardev) | member               | 5             |
 | [kvaldez](https://github.com/kvaldez) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
