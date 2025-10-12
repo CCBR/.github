@@ -12,14 +12,14 @@
 | [DorsaZiaei](https://github.com/DorsaZiaei) | member               | No Activity Found |
 | [guthridgerg](https://github.com/guthridgerg) | member               | No Activity Found |
 | [jackchenx3](https://github.com/jackchenx3) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 15            |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 22            |
 | [KeyTals](https://github.com/KeyTals) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 3             |
-| [LoneFenris](https://github.com/LoneFenris) | member               | 3             |
+| [kopardev](https://github.com/kopardev) | member               | 1             |
+| [LoneFenris](https://github.com/LoneFenris) | member               | 10            |
 | [lossm](https://github.com/lossm) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [newhyun00](https://github.com/newhyun00) | member               | No Activity Found |
-| [npacheco2](https://github.com/npacheco2) | member               | 5             |
+| [npacheco2](https://github.com/npacheco2) | member               | 12            |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |

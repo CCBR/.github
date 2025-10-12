@@ -12,7 +12,7 @@
 | [fangliu117](https://github.com/fangliu117) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 2             |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 9             |
 | [kopardev](https://github.com/kopardev) | member               | 26            |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
