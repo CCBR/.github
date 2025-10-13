@@ -106,11 +106,17 @@ Please see the [tidyverse style guide](https://style.tidyverse.org) for more det
 
 #### Nextflow
 
-We use `nf-test` for our nextflow pipelines.
+We use [`nf-test`](https://www.nf-test.com/) for our nextflow pipelines.
+
+If you change the **workflow**, please run the workflow with the test profile
+and make sure your new feature or bug fix works as intended.
 
 #### Python
 
-We use `pytest` and write unit tests in the `tests/` directory.
+Changes to the **python package** code will need unit tests to demonstrate
+that the changes work as intended.
+We write unit tests with pytest and store them in the `tests/` subdirectory.
+Run the tests with `python -m pytest`.
 
 ##### R package
 
@@ -134,9 +140,12 @@ See instructions on writing roxygen2 comments here:
 <https://r-pkgs.org/man.html>.
 If the function is used in a vignette, you may also need to update the vignette.
 
-#### all other repos
+#### Python & workflows
 
-Long-form documentation is in the `docs/` directory.
+If you have added a new feature or changed the API of an existing feature,
+you will likely need to update the documentation in `docs/`.
+
+User-facing changes to python functions should also include corresponding changes to the function's docstring.
 
 #### check
 
@@ -301,10 +310,16 @@ start from the most recent commits in main.
 
 - This contributing guide was adapted from the [tidyverse contributing guide](https://github.com/tidyverse/tidyverse/blob/main/.github/CONTRIBUTING.md)
 - [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow)
-- [tidyverse style guide](https://style.tidyverse.org)
 - [tidyverse code review principles](https://code-review.tidyverse.org)
 - [reproducible examples](https://www.tidyverse.org/help/#reprex)
+- [semantic versioning guidelines](https://semver.org/)
+- [changelog guidelines](https://keepachangelog.com/en/1.1.0/)
+- [nf-core extensions for VS Code](https://marketplace.visualstudio.com/items?itemName=nf-core.nf-core-extensionpack)
+
+### R-specific resources
+
 - [R packages book](https://r-pkgs.org/)
+- [tidyverse style guide](https://style.tidyverse.org)
 - R packages:
   - [usethis](https://usethis.r-lib.org/)
   - [devtools](https://devtools.r-lib.org/)
