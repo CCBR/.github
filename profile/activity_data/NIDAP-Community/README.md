@@ -12,18 +12,17 @@
 | [fangliu117](https://github.com/fangliu117) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 16            |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 5             |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
-| [phoman14](https://github.com/phoman14) | member               | 2             |
+| [phoman14](https://github.com/phoman14) | member               | 3             |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [ruiheesi](https://github.com/ruiheesi) | member               | No Activity Found |
-| [shuartbr](https://github.com/shuartbr) | member               | No Activity Found |
 | [thomas-french-0](https://github.com/thomas-french-0) | member               | No Activity Found |
 | [TJoshMeyer](https://github.com/TJoshMeyer) | member               | No Activity Found |
 | [wangdi2016](https://github.com/wangdi2016) | member               | No Activity Found |
