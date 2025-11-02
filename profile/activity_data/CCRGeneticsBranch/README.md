@@ -8,7 +8,7 @@
 | [cheanney](https://github.com/cheanney) | member               | No Activity Found |
 | [curtislisle](https://github.com/curtislisle) | member               | No Activity Found |
 | [epehrsson](https://github.com/epehrsson) | member               | 2             |
-| [hsienchao](https://github.com/hsienchao) | member               | 2             |
+| [hsienchao](https://github.com/hsienchao) | member               | 3             |
 | [jtoker117](https://github.com/jtoker117) | member               | No Activity Found |
 | [khanjav](https://github.com/khanjav) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
@@ -18,8 +18,8 @@
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [shaoli86](https://github.com/shaoli86) | member               | No Activity Found |
-| [vinegang](https://github.com/vinegang) | member               | 9             |
+| [vinegang](https://github.com/vinegang) | member               | 2             |
 | [weij2016](https://github.com/weij2016) | member               | No Activity Found |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
-| [xinyuwen](https://github.com/xinyuwen) | member               | 18            |
+| [xinyuwen](https://github.com/xinyuwen) | member               | 25            |
 | [zhujack8](https://github.com/zhujack8) | member               | No Activity Found |
