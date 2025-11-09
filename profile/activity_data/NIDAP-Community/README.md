@@ -7,19 +7,19 @@
 | [bianjh-cloud](https://github.com/bianjh-cloud) | member               | No Activity Found |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [ChadAHighfill](https://github.com/ChadAHighfill) | member               | No Activity Found |
-| [djsmith17](https://github.com/djsmith17) | member               | 6             |
+| [djsmith17](https://github.com/djsmith17) | member               | 13            |
 | [escauley](https://github.com/escauley) | member               | No Activity Found |
 | [fangliu117](https://github.com/fangliu117) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 2             |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 3             |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
-| [maggiecam](https://github.com/maggiecam) | member               | 5             |
+| [maggiecam](https://github.com/maggiecam) | member               | 12            |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
-| [phoman14](https://github.com/phoman14) | member               | 2             |
+| [phoman14](https://github.com/phoman14) | member               | 9             |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [ruiheesi](https://github.com/ruiheesi) | member               | No Activity Found |
