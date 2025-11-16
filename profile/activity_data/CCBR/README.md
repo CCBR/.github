@@ -3,22 +3,23 @@
 |-----------------|----------------------|---------------|
 | [aemmons90](https://github.com/aemmons90) | member               | No Activity Found |
 | [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 5             |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 3             |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [epehrsson](https://github.com/epehrsson) | member               | No Activity Found |
 | [escauley](https://github.com/escauley) | member               | 2             |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
-| [JWrows2014](https://github.com/JWrows2014) | member               | 9             |
-| [kcgfarb](https://github.com/kcgfarb) | member               | 1             |
+| [JWrows2014](https://github.com/JWrows2014) | member               | 6             |
+| [kcgfarb](https://github.com/kcgfarb) | member               | 2             |
 | [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 2             |
-| [kopardev](https://github.com/kopardev) | member               | 6             |
+| [kopardev](https://github.com/kopardev) | member               | 7             |
 | [kvaldez](https://github.com/kvaldez) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
 | [McIntoshC](https://github.com/McIntoshC) | member               | No Activity Found |
+| [ncigithub](https://github.com/ncigithub) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
-| [pajailwala](https://github.com/pajailwala) | member               | 9             |
+| [pajailwala](https://github.com/pajailwala) | member               | 16            |
 | [phoman14](https://github.com/phoman14) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
@@ -30,7 +31,6 @@
 | [vinegang](https://github.com/vinegang) | member               | No Activity Found |
 | [wilfriedguiblet](https://github.com/wilfriedguiblet) | member               | No Activity Found |
 | [wong-nw](https://github.com/wong-nw) | member               | 2             |
-| [wuy24](https://github.com/wuy24) | member               | No Activity Found |
 | [dnousome](https://github.com/dnousome) | collaborator         | No Activity Found |
 | [e-hutchins](https://github.com/e-hutchins) | collaborator         | No Activity Found |
 | [skchronicles](https://github.com/skchronicles) | collaborator         | No Activity Found |

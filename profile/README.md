@@ -30,13 +30,13 @@
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            6629 |                     103 |                        792 |
-| [kopardev](https://github.com/kopardev)             |            4794 |                       8 |                         81 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            6632 |                      68 |                        715 |
+| [kopardev](https://github.com/kopardev)             |            4794 |                       0 |                         76 |
 | [slsevilla](https://github.com/slsevilla)           |            1363 |                       0 |                          0 |
-| [kcgfarb](https://github.com/kcgfarb)               |            1028 |                      24 |                        189 |
+| [kcgfarb](https://github.com/kcgfarb)               |            1036 |                      28 |                        186 |
 | [skchronicles](https://github.com/skchronicles)     |             970 |                       0 |                          0 |
+| [samarth8392](https://github.com/samarth8392)       |             858 |                      22 |                        193 |
 | [dnousome](https://github.com/dnousome)             |             852 |                       0 |                          0 |
-| [samarth8392](https://github.com/samarth8392)       |             847 |                      15 |                        192 |
 | [finneyr](https://github.com/finneyr)               |             354 |                       0 |                          2 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
 | [wong-nw](https://github.com/wong-nw)               |             164 |                       0 |                         37 |

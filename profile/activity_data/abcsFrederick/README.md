@@ -14,9 +14,10 @@
 | [jackchenx3](https://github.com/jackchenx3) | member               | No Activity Found |
 | [kelly-sovacool](https://github.com/kelly-sovacool) | member               | No Activity Found |
 | [KeyTals](https://github.com/KeyTals) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 23            |
-| [LoneFenris](https://github.com/LoneFenris) | member               | 4             |
+| [kopardev](https://github.com/kopardev) | member               | 3             |
+| [LoneFenris](https://github.com/LoneFenris) | member               | 11            |
 | [lossm](https://github.com/lossm) | member               | No Activity Found |
+| [ncigithub](https://github.com/ncigithub) | member               | No Activity Found |
 | [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [newhyun00](https://github.com/newhyun00) | member               | No Activity Found |
 | [npacheco2](https://github.com/npacheco2) | member               | No Activity Found |
@@ -30,7 +31,6 @@
 | [umasm1](https://github.com/umasm1) | member               | No Activity Found |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
 | [xies4](https://github.com/xies4) | member               | No Activity Found |
-| [yongmzhao](https://github.com/yongmzhao) | member               | No Activity Found |
 | [chenv3](https://github.com/chenv3) | collaborator         | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | collaborator         | No Activity Found |
 | [plmoer](https://github.com/plmoer) | collaborator         | No Activity Found |
