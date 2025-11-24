@@ -38,7 +38,7 @@ jobs:
         run: |
           echo ${{ inputs.username }} ${{ steps.metadata.outputs[inputs.username] }}
 
-      - uses: actions/add-to-project@v0.5.0
+      - uses: actions/add-to-project@v1.0.2
         if: ${{ steps.metadata.outputs[inputs.username] != '' }}
         with:
           project-url: ${{ steps.metadata.outputs[inputs.username] }}
