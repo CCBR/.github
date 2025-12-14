@@ -6,7 +6,6 @@
 | [epehrsson](https://github.com/epehrsson) | member               | No Activity Found |
 | [jashern](https://github.com/jashern) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
-| [ncigithubbackup](https://github.com/ncigithubbackup) | member               | No Activity Found |
 | [neerajaas](https://github.com/neerajaas) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
