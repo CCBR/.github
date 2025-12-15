@@ -2,4 +2,4 @@
 
 ## Reporting a Vulnerability
 
-Please email <mailto:CCBR_Pipeliner@mail.nih.gov> to report a vulnerability.
+Please email [CCBR_Pipeliner@mail.nih.gov](mailto:CCBR_Pipeliner@mail.nih.gov) to report a vulnerability.
