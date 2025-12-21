@@ -12,10 +12,10 @@
 | [DorsaZiaei](https://github.com/DorsaZiaei) | member               | No Activity Found |
 | [guthridgerg](https://github.com/guthridgerg) | member               | No Activity Found |
 | [jackchenx3](https://github.com/jackchenx3) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 4             |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 11            |
 | [KeyTals](https://github.com/KeyTals) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 4             |
-| [LoneFenris](https://github.com/LoneFenris) | member               | 23            |
+| [kopardev](https://github.com/kopardev) | member               | 11            |
+| [LoneFenris](https://github.com/LoneFenris) | member               | 30            |
 | [lossm](https://github.com/lossm) | member               | No Activity Found |
 | [newhyun00](https://github.com/newhyun00) | member               | No Activity Found |
 | [npacheco2](https://github.com/npacheco2) | member               | No Activity Found |
@@ -32,5 +32,5 @@
 | [yongmzhao](https://github.com/yongmzhao) | member               | No Activity Found |
 | [chenv3](https://github.com/chenv3) | collaborator         | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | collaborator         | No Activity Found |
-| [johnsonra](https://github.com/johnsonra) | collaborator         | 4             |
+| [johnsonra](https://github.com/johnsonra) | collaborator         | 11            |
 | [plmoer](https://github.com/plmoer) | collaborator         | No Activity Found |

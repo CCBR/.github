@@ -4,7 +4,7 @@
 | [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 11            |
+| [kopardev](https://github.com/kopardev) | member               | 18            |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
