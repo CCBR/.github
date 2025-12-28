@@ -12,10 +12,10 @@
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [VidhurDS](https://github.com/VidhurDS) | member               | No Activity Found |
-| [wuy24](https://github.com/wuy24) | member               | 3             |
+| [wuy24](https://github.com/wuy24) | member               | 10            |
 | [ammichalowski](https://github.com/ammichalowski) | collaborator         | No Activity Found |
 | [BMurray96](https://github.com/BMurray96) | collaborator         | No Activity Found |
-| [chittiboina-lab](https://github.com/chittiboina-lab) | collaborator         | 3             |
+| [chittiboina-lab](https://github.com/chittiboina-lab) | collaborator         | 9             |
 | [francesanne-tosto](https://github.com/francesanne-tosto) | collaborator         | No Activity Found |
 | [hans529K](https://github.com/hans529K) | collaborator         | No Activity Found |
 | [HYan-lei](https://github.com/HYan-lei) | collaborator         | No Activity Found |
