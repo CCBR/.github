@@ -7,8 +7,8 @@
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [cheanney](https://github.com/cheanney) | member               | No Activity Found |
 | [curtislisle](https://github.com/curtislisle) | member               | No Activity Found |
-| [epehrsson](https://github.com/epehrsson) | member               | 10            |
-| [hsienchao](https://github.com/hsienchao) | member               | 3             |
+| [epehrsson](https://github.com/epehrsson) | member               | 17            |
+| [hsienchao](https://github.com/hsienchao) | member               | 5             |
 | [jtoker117](https://github.com/jtoker117) | member               | No Activity Found |
 | [khanjav](https://github.com/khanjav) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
