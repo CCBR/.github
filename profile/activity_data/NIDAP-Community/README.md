@@ -12,13 +12,13 @@
 | [fangliu117](https://github.com/fangliu117) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 20            |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 27            |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
-| [maggiecam](https://github.com/maggiecam) | member               | 5             |
+| [maggiecam](https://github.com/maggiecam) | member               | 2             |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
-| [phoman14](https://github.com/phoman14) | member               | 19            |
+| [phoman14](https://github.com/phoman14) | member               | 26            |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [ruiheesi](https://github.com/ruiheesi) | member               | No Activity Found |
