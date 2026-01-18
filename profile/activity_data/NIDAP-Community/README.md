@@ -4,7 +4,7 @@
 | [ammichalowski](https://github.com/ammichalowski) | member               | No Activity Found |
 | [bafsariNIH](https://github.com/bafsariNIH) | member               | No Activity Found |
 | [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | No Activity Found |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 3             |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [ChadAHighfill](https://github.com/ChadAHighfill) | member               | No Activity Found |
 | [djsmith17](https://github.com/djsmith17) | member               | No Activity Found |
@@ -12,13 +12,13 @@
 | [fangliu117](https://github.com/fangliu117) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 27            |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
-| [maggiecam](https://github.com/maggiecam) | member               | 2             |
+| [maggiecam](https://github.com/maggiecam) | member               | 5             |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
-| [phoman14](https://github.com/phoman14) | member               | 26            |
+| [phoman14](https://github.com/phoman14) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [ruiheesi](https://github.com/ruiheesi) | member               | No Activity Found |
