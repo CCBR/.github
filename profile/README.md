@@ -20,25 +20,24 @@
 | [ccbr1429](https://github.com/CCBR/ccbr1429)   | [v1.0.0](https://github.com/CCBR/ccbr1429/releases/tag/v1.0.0)  | 2026-01-14     |             0 |
 | [MOSuite](https://github.com/CCBR/MOSuite)     | [v0.2.1](https://github.com/CCBR/MOSuite/releases/tag/v0.2.1)   | 2026-01-12     |            30 |
 | [HowTos](https://github.com/CCBR/HowTos)       | [v1.0.0](https://github.com/CCBR/HowTos/releases/tag/v1.0.0)    | 2025-12-23     |            16 |
-| [RENEE](https://github.com/CCBR/RENEE)         | [v2.7.3](https://github.com/CCBR/RENEE/releases/tag/v2.7.3)     | 2025-12-22     |            23 |
+| [RENEE](https://github.com/CCBR/RENEE)         | [v2.7.3](https://github.com/CCBR/RENEE/releases/tag/v2.7.3)     | 2025-12-22     |            25 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE) | [v0.5.3](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.5.3) | 2025-12-02     |            30 |
 | [ESCAPE](https://github.com/CCBR/ESCAPE)       | [v1.2.6](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.6)    | 2025-11-21     |             0 |
-| [actions](https://github.com/CCBR/actions)     | [v0.3.0](https://github.com/CCBR/actions/releases/tag/v0.3.0)   | 2025-10-23     |            11 |
 
 ## TOP contributors 
 
 | User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            6910 |                     158 |                        645 |
-| [kopardev](https://github.com/kopardev)             |            4827 |                      26 |                         67 |
-| [slsevilla](https://github.com/slsevilla)           |            1363 |                       0 |                          0 |
-| [kcgfarb](https://github.com/kcgfarb)               |            1107 |                      34 |                        178 |
-| [samarth8392](https://github.com/samarth8392)       |            1028 |                      30 |                        281 |
-| [skchronicles](https://github.com/skchronicles)     |             970 |                       0 |                          0 |
-| [dnousome](https://github.com/dnousome)             |             852 |                       0 |                          0 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |            7006 |                     202 |                        698 |
+| [kopardev](https://github.com/kopardev)             |            4827 |                      23 |                         67 |
+| [slsevilla](https://github.com/slsevilla)           |            1364 |                       1 |                          1 |
+| [kcgfarb](https://github.com/kcgfarb)               |            1110 |                      33 |                        169 |
+| [samarth8392](https://github.com/samarth8392)       |            1028 |                      30 |                        275 |
+| [skchronicles](https://github.com/skchronicles)     |             971 |                       1 |                          1 |
+| [dnousome](https://github.com/dnousome)             |             853 |                       1 |                          1 |
 | [finneyr](https://github.com/finneyr)               |             354 |                       0 |                          0 |
 | [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
-| [escauley](https://github.com/escauley)             |             196 |                      27 |                         61 |
+| [escauley](https://github.com/escauley)             |             196 |                      22 |                         60 |
 
 ## About Us
 
@@ -180,7 +179,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [ccbr1429](https://github.com/CCBR/ccbr1429)                                                                             | [v1.0.0](https://github.com/CCBR/ccbr1429/releases/tag/v1.0.0)                                     | 2026-01-14     |             0 |
 | [MOSuite](https://github.com/CCBR/MOSuite)                                                                               | [v0.2.1](https://github.com/CCBR/MOSuite/releases/tag/v0.2.1)                                      | 2026-01-12     |            30 |
 | [HowTos](https://github.com/CCBR/HowTos)                                                                                 | [v1.0.0](https://github.com/CCBR/HowTos/releases/tag/v1.0.0)                                       | 2025-12-23     |            16 |
-| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.7.3](https://github.com/CCBR/RENEE/releases/tag/v2.7.3)                                        | 2025-12-22     |            23 |
+| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.7.3](https://github.com/CCBR/RENEE/releases/tag/v2.7.3)                                        | 2025-12-22     |            25 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                                                                           | [v0.5.3](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.5.3)                                    | 2025-12-02     |            30 |
 | [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.2.6](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.6)                                       | 2025-11-21     |             0 |
 | [actions](https://github.com/CCBR/actions)                                                                               | [v0.3.0](https://github.com/CCBR/actions/releases/tag/v0.3.0)                                      | 2025-10-23     |            11 |

@@ -14,7 +14,7 @@
 | [jackchenx3](https://github.com/jackchenx3) | member               | No Activity Found |
 | [kelly-sovacool](https://github.com/kelly-sovacool) | member               | No Activity Found |
 | [KeyTals](https://github.com/KeyTals) | member               | No Activity Found |
-| [kopardev](https://github.com/kopardev) | member               | 26            |
+| [kopardev](https://github.com/kopardev) | member               | 7             |
 | [LoneFenris](https://github.com/LoneFenris) | member               | No Activity Found |
 | [lossm](https://github.com/lossm) | member               | No Activity Found |
 | [newhyun00](https://github.com/newhyun00) | member               | No Activity Found |
@@ -22,7 +22,6 @@
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
-| [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [shanj-github](https://github.com/shanj-github) | member               | No Activity Found |
 | [shent2](https://github.com/shent2) | member               | No Activity Found |
 | [tymiao1220](https://github.com/tymiao1220) | member               | No Activity Found |

@@ -15,7 +15,6 @@
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
-| [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [shaoli86](https://github.com/shaoli86) | member               | No Activity Found |
 | [vinegang](https://github.com/vinegang) | member               | No Activity Found |
 | [weij2016](https://github.com/weij2016) | member               | No Activity Found |

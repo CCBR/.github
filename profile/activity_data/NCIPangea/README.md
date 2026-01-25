@@ -9,6 +9,5 @@
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
-| [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
 | [samarth8392](https://github.com/samarth8392) | member               | No Activity Found |
 | [kelly-sovacool](https://github.com/kelly-sovacool) | collaborator         | No Activity Found |

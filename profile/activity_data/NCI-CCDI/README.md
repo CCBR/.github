@@ -9,9 +9,8 @@
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
-| [rizk-nci-admin](https://github.com/rizk-nci-admin) | member               | No Activity Found |
-| [VidhurDS](https://github.com/VidhurDS) | member               | 6             |
-| [wuy24](https://github.com/wuy24) | member               | 6             |
+| [VidhurDS](https://github.com/VidhurDS) | member               | 13            |
+| [wuy24](https://github.com/wuy24) | member               | 13            |
 | [edward130603](https://github.com/edward130603) | collaborator         | No Activity Found |
 | [kcgfarb](https://github.com/kcgfarb) | collaborator         | No Activity Found |
 | [Krithika-Bhuvan](https://github.com/Krithika-Bhuvan) | collaborator         | No Activity Found |
