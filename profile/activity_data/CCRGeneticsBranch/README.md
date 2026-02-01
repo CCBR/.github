@@ -12,6 +12,7 @@
 | [jtoker117](https://github.com/jtoker117) | member               | No Activity Found |
 | [khanjav](https://github.com/khanjav) | member               | No Activity Found |
 | [kopardev](https://github.com/kopardev) | member               | No Activity Found |
+| [newhyun00](https://github.com/newhyun00) | member               | No Activity Found |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
