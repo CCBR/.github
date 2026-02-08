@@ -4,18 +4,18 @@
 | [ammichalowski](https://github.com/ammichalowski) | member               | No Activity Found |
 | [bafsariNIH](https://github.com/bafsariNIH) | member               | No Activity Found |
 | [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 12            |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 19            |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
 | [ChadAHighfill](https://github.com/ChadAHighfill) | member               | No Activity Found |
 | [djsmith17](https://github.com/djsmith17) | member               | No Activity Found |
-| [escauley](https://github.com/escauley) | member               | 4             |
-| [fangliu117](https://github.com/fangliu117) | member               | 11            |
+| [escauley](https://github.com/escauley) | member               | 11            |
+| [fangliu117](https://github.com/fangliu117) | member               | 18            |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [georgezakinih](https://github.com/georgezakinih) | member               | No Activity Found |
 | [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 2             |
-| [kopardev](https://github.com/kopardev) | member               | No Activity Found |
+| [kopardev](https://github.com/kopardev) | member               | 2             |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
-| [maggiecam](https://github.com/maggiecam) | member               | 19            |
+| [maggiecam](https://github.com/maggiecam) | member               | 26            |
 | [onealka](https://github.com/onealka) | member               | No Activity Found |
 | [pajailwala](https://github.com/pajailwala) | member               | No Activity Found |
 | [phoman14](https://github.com/phoman14) | member               | No Activity Found |
