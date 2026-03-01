@@ -21,4 +21,4 @@
 | [weij2016](https://github.com/weij2016) | member               | No Activity Found |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
 | [xinyuwen](https://github.com/xinyuwen) | member               | No Activity Found |
-| [zhujack8](https://github.com/zhujack8) | member               | No Activity Found |
+| [zhujack](https://github.com/zhujack) | member               | No Activity Found |
