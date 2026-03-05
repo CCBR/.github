@@ -47,7 +47,7 @@ _Sample GH Action check (concept): if AI usage is declared, require an AI-assist
 
 # Python and R script standards
 - Python and R scripts MUST include module and function/class docstrings.
-- Python CLIs MUST use `typer` (project default) unless an existing component already uses `click`.
+- Where a standard CLI framework is adopted, Python CLIs SHOULD use `typer` or `click` for consistency with existing components.
 - R CLIs MUST use the `argparse` package.
 - Scripts MUST support `--help` and document required/optional arguments.
 - Python code MUST follow PEP 8, use `snake_case`, and include type hints for public functions.
