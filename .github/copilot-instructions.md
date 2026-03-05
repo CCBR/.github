@@ -9,7 +9,7 @@
 
 # CI & enforcement suggestions (automatable)
 1. **PR template**: include optional AI-assistance disclosure fields (model used, high-level prompt intent, manual review confirmation).
-2. **Pre-merge check (GitHub Action)**: verify `.github/ai-agent-instructions.md` matches canonical version and that new pipeline files include a `# CRAFT:` header.
+2. **Pre-merge check (GitHub Action)**: verify `.github/copilot-instructions.md` is present in the repository and that new pipeline files include a `# CRAFT:` header.
 3. **Lint jobs**: `flake8`/`black` for Python, `shellcheck` for shell, and `nf-core lint` or Snakemake lint checks where applicable.
 4. **Secrets scan**: run `TruffleHog` or `Gitleaks` on PRs to detect accidental credentials.
 5. **AI usage label**: if AI usage is declared, an Action SHOULD add `generated-by-AI` label (create this label if it does not exist); the PR body SHOULD end with the italicized Markdown line: *Generated using AI*, and any associated commit messages SHOULD end with the plain footer line: `Generated using AI`.
