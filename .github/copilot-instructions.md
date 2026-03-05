@@ -81,8 +81,8 @@ Rules:
 ---
 
 # Onboarding checklist for new developers
-- [ ] Read `.github/ai-agent-instructions.md` and CONTRIBUTING.md.  
-- [ ] Configure VSCode workspace to open `ai-agent-instructions.md` by default (so Copilot Chat sees it).  
+- [ ] Read `.github/copilot-instructions.md` and CONTRIBUTING.md.  
+- [ ] Configure VSCode workspace to open `copilot-instructions.md` by default (so Copilot Chat sees it).  
 
 ---
 
