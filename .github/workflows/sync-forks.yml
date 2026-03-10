@@ -39,7 +39,6 @@ jobs:
           - l2p
           - METRO
           - MAAPSTER
-          - permfix
           - pyrkit
           - rNA
           - SINCLAIR
