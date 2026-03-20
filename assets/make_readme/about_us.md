@@ -1,4 +1,3 @@
-
 ## About Us
 
 - 👋 Hi, we're the [**@CCBR**](https://bioinformatics.ccr.cancer.gov/ccbr/), a group of bioinformatics analysts and engineers

@@ -17,33 +17,33 @@
 
 | Repo Name                                              | Release Name                                                          | Release Date | Open Issues |
 | :----------------------------------------------------- | :-------------------------------------------------------------------- | :----------- | ----------: |
-| [actions](https://github.com/CCBR/actions)             | [v0.5.1](https://github.com/CCBR/actions/releases/tag/v0.5.1)         | 2026-03-06   |          13 |
+| [Tools](https://github.com/CCBR/Tools)                 | [v0.5.1](https://github.com/CCBR/Tools/releases/tag/v0.5.1)           | 2026-03-09   |           8 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)           | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5)        | 2026-03-09   |          17 |
+| [actions](https://github.com/CCBR/actions)             | [v0.5.1](https://github.com/CCBR/actions/releases/tag/v0.5.1)         | 2026-03-06   |          11 |
 | [LIBERTY](https://github.com/CCBR/LIBERTY)             | [v1.2.0](https://github.com/CCBR/LIBERTY/releases/tag/v1.2.0)         | 2026-03-05   |           0 |
-| [Tools](https://github.com/CCBR/Tools)                 | [v0.5.0](https://github.com/CCBR/Tools/releases/tag/v0.5.0)           | 2026-03-04   |           9 |
 | [HowTos](https://github.com/CCBR/HowTos)               | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)          | 2026-02-23   |          15 |
-| [parkit](https://github.com/CCBR/parkit)               | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)          | 2026-02-19   |           2 |
-| [ccbrpipeliner](https://github.com/CCBR/ccbrpipeliner) | [8.1](https://github.com/CCBR/ccbrpipeliner/releases/tag/release/8.1) | 2026-02-17   |          12 |
-| [LOGAN](https://github.com/CCBR/LOGAN)                 | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)           | 2026-02-12   |          19 |
+| [parkit](https://github.com/CCBR/parkit)               | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)          | 2026-02-19   |           3 |
+| [ccbrpipeliner](https://github.com/CCBR/ccbrpipeliner) | [8.1](https://github.com/CCBR/ccbrpipeliner/releases/tag/release/8.1) | 2026-02-17   |          13 |
+| [LOGAN](https://github.com/CCBR/LOGAN)                 | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)           | 2026-02-12   |          21 |
 | [MOSuite](https://github.com/CCBR/MOSuite)             | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)         | 2026-02-06   |          30 |
-| [RENEE](https://github.com/CCBR/RENEE)                 | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)           | 2026-02-03   |          24 |
-| [XAVIER](https://github.com/CCBR/XAVIER)               | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)          | 2026-01-29   |           9 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)           | [v2.7.3](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.3)        | 2026-01-17   |          30 |
+| [RENEE](https://github.com/CCBR/RENEE)                 | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)           | 2026-02-03   |          26 |
+| [XAVIER](https://github.com/CCBR/XAVIER)               | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)          | 2026-01-29   |          11 |
 | [ccbr1429](https://github.com/CCBR/ccbr1429)           | [v1.0.0](https://github.com/CCBR/ccbr1429/releases/tag/v1.0.0)        | 2026-01-14   |           0 |
 
 ## TOP contributors
 
 | User                                                | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |          7248 |                   155 |                      806 |
-| [kopardev](https://github.com/kopardev)             |          4882 |                    54 |                      117 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |          7323 |                   163 |                      848 |
 | [slsevilla](https://github.com/slsevilla)           |          1378 |                     0 |                        2 |
-| [kcgfarb](https://github.com/kcgfarb)               |          1162 |                    28 |                      185 |
-| [samarth8392](https://github.com/samarth8392)       |          1133 |                    74 |                      359 |
 | [skchronicles](https://github.com/skchronicles)     |           972 |                     0 |                        2 |
 | [dnousome](https://github.com/dnousome)             |           854 |                     0 |                        2 |
-| [finneyr](https://github.com/finneyr)               |           354 |                     0 |                        0 |
-| [kvaldez](https://github.com/kvaldez)               |           222 |                     0 |                        0 |
-| [escauley](https://github.com/escauley)             |           196 |                     0 |                       59 |
+| [maggiecam](https://github.com/maggiecam)           |            48 |                     0 |                        0 |
+| [tsnetterfield](https://github.com/tsnetterfield)   |             8 |                     0 |                        4 |
+| [abombin](https://github.com/abombin)               |             4 |                     0 |                        4 |
+| [syding327](https://github.com/syding327)           |             2 |                     0 |                        2 |
+| [e-hutchins](https://github.com/e-hutchins)         |             2 |                     0 |                        2 |
+| [stephchid](https://github.com/stephchid)           |             2 |                     0 |                        2 |
 
 ## About Us
 
@@ -53,10 +53,10 @@
 - 📫 You can reach us at [ccbr_pipeliner@mail.nih.gov](mailto:ccbr_pipeliner@mail.nih.gov)
 - 🏁 Check out our [release history](#release-history)
 - :link: Our [Zenodo](https://zenodo.org/communities/ccbr) community
-  <hr>
-  <p align="center">
-  	<a href="##table-of-contents">Back to Top</a>
-  </p>
+<hr>
+<p align="center">
+	<a href="##table-of-contents">Back to Top</a>
+</p>
 
 ## Our model
 
@@ -78,14 +78,13 @@ The CCBR comprises of the core team and the embedded team. These teams serve dif
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
-
 ## Pipelines
 
 CCBR offers end-to-end analysis pipelines for NGS data analysis.
 
 > <b><ins>RHEL8 BIOWULF updates:</ins></b>
 >
-> In late 2023, [BIOWULF](https://hpc.nih.gov) migrated to a new operating system, [RHEL8](https://hpc.nih.gov/docs/rhel8.html). This migration rendered the Legacy functionality of CCBRPipeliner un-usable. We have been (and will continue to) work dilegently to bring `ccbrpipeliner` suite of pipelines back on-line for our Biowulf users. At the same time, we are also taking this opportunity to not only increase our repetoire of pipelines but also modernize and containerize our end-to-end analysis offerings. These changes will minimize, if not eliminate, the pipelines' dependencies on other Biowulf modules and make `ccbrpipeliner` "operating system and HPC" - agnostic, thereby making it shareable with collaborators, and runnable on other HPCs (like [FRCE](https://ncifrederick.cancer.gov/staff/frce/welcome)) and beyond.
+> In late 2023, [BIOWULF](https://hpc.nih.gov) migrated to a new operating system, [RHEL8](https://hpc.nih.gov/docs/rhel8.html). This migration rendered the Legacy functionality of CCBRPipeliner un-usable. We have been (and will continue to) work dilegently to bring `ccbrpipeliner` suite of pipelines back on-line for our Biowulf users. At the same time, we are also taking this opportunity to not only increase our repertoire of pipelines but also modernize and containerize our end-to-end analysis offerings. These changes will minimize, if not eliminate, the pipelines' dependencies on other Biowulf modules and make `ccbrpipeliner` "operating system and HPC" - agnostic, thereby making it shareable with collaborators, and runnable on other HPCs (like [FRCE](https://ncifrederick.cancer.gov/staff/frce/welcome)) and beyond.
 >
 > Here is a list of our prominent pipelines and their release schedule on BIOWULF:
 
@@ -112,7 +111,7 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 
 <sup> **3** ASPEN=_Atac Seq PipEliNe_ has limited support for differential ATACSeq signal analysis. CCBR has other pipelines for footprinting analysis like TOBIAS. Please reach out for details.</sup>
 
-<sup> **4** CHAMPAGNE=_CHromAtin iMmuno PrecipitAtion sequencinG aNalysis pipEline_. CCBR plans to completely revamp ChIPSeq and may not be available until Q4 of 2023. In the interim, we recommend using the [ENCODE pipeline](https://hpc.nih.gov/apps/chipseq_pipeline.html) on biowulf for ChIPSeq analsyis.</sup>
+<sup> **4** CHAMPAGNE=_CHromAtin iMmuno PrecipitAtion sequencinG aNalysis pipEline_. CCBR plans to completely revamp ChIPSeq and may not be available until Q4 of 2023. In the interim, we recommend using the [ENCODE pipeline](https://hpc.nih.gov/apps/chipseq_pipeline.html) on biowulf for ChIPSeq analysis.</sup>
 
 <sup> **5** CRISPIN=_CRISPr screen sequencing analysis pipelINe_( previously called, CRUISE=_Crispr scReen seqUencIng analySis pipEline_ ). CRISPRSeq analysis with MAGeCK, drugZ and BAGEL2. </sup>
 
@@ -180,29 +179,29 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 
 | Repo Name                                                                                                                | Release Name                                                                                       | Release Date | Open Issues |
 | :----------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :----------- | ----------: |
-| [actions](https://github.com/CCBR/actions)                                                                               | [v0.5.1](https://github.com/CCBR/actions/releases/tag/v0.5.1)                                      | 2026-03-06   |          13 |
+| [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.5.1](https://github.com/CCBR/Tools/releases/tag/v0.5.1)                                        | 2026-03-09   |           8 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5)                                     | 2026-03-09   |          17 |
+| [actions](https://github.com/CCBR/actions)                                                                               | [v0.5.1](https://github.com/CCBR/actions/releases/tag/v0.5.1)                                      | 2026-03-06   |          11 |
 | [LIBERTY](https://github.com/CCBR/LIBERTY)                                                                               | [v1.2.0](https://github.com/CCBR/LIBERTY/releases/tag/v1.2.0)                                      | 2026-03-05   |           0 |
-| [Tools](https://github.com/CCBR/Tools)                                                                                   | [v0.5.0](https://github.com/CCBR/Tools/releases/tag/v0.5.0)                                        | 2026-03-04   |           9 |
 | [HowTos](https://github.com/CCBR/HowTos)                                                                                 | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)                                       | 2026-02-23   |          15 |
-| [parkit](https://github.com/CCBR/parkit)                                                                                 | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)                                       | 2026-02-19   |           2 |
-| [ccbrpipeliner](https://github.com/CCBR/ccbrpipeliner)                                                                   | [8.1](https://github.com/CCBR/ccbrpipeliner/releases/tag/release/8.1)                              | 2026-02-17   |          12 |
-| [LOGAN](https://github.com/CCBR/LOGAN)                                                                                   | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)                                        | 2026-02-12   |          19 |
+| [parkit](https://github.com/CCBR/parkit)                                                                                 | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)                                       | 2026-02-19   |           3 |
+| [ccbrpipeliner](https://github.com/CCBR/ccbrpipeliner)                                                                   | [8.1](https://github.com/CCBR/ccbrpipeliner/releases/tag/release/8.1)                              | 2026-02-17   |          13 |
+| [LOGAN](https://github.com/CCBR/LOGAN)                                                                                   | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)                                        | 2026-02-12   |          21 |
 | [MOSuite](https://github.com/CCBR/MOSuite)                                                                               | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)                                      | 2026-02-06   |          30 |
-| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)                                        | 2026-02-03   |          24 |
-| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)                                       | 2026-01-29   |           9 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)                                                                             | [v2.7.3](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.3)                                     | 2026-01-17   |          30 |
+| [RENEE](https://github.com/CCBR/RENEE)                                                                                   | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)                                        | 2026-02-03   |          26 |
+| [XAVIER](https://github.com/CCBR/XAVIER)                                                                                 | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)                                       | 2026-01-29   |          11 |
 | [ccbr1429](https://github.com/CCBR/ccbr1429)                                                                             | [v1.0.0](https://github.com/CCBR/ccbr1429/releases/tag/v1.0.0)                                     | 2026-01-14   |           0 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                                                                           | [v0.5.3](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.5.3)                                    | 2025-12-02   |          30 |
-| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.2.6](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.6)                                       | 2025-11-21   |           0 |
+| [ESCAPE](https://github.com/CCBR/ESCAPE)                                                                                 | [v1.2.6](https://github.com/CCBR/ESCAPE/releases/tag/v1.2.6)                                       | 2025-11-21   |           1 |
 | [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                                                             | [v0.3.5](https://github.com/CCBR/SINCLAIR/releases/tag/v0.3.5)                                     | 2025-09-19   |          30 |
-| [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.1.2](https://github.com/CCBR/ASPEN/releases/tag/v1.1.2)                                        | 2025-07-17   |          12 |
-| [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.1](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.1)                               | 2025-07-15   |           6 |
-| [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                                                                       | [v0.3.1](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.1)                                  | 2025-06-23   |           2 |
-| [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.2](https://github.com/CCBR/journal-club/releases/tag/v0.1.2)                                 | 2025-06-17   |           2 |
-| [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                                                             | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)                                     | 2025-06-16   |           2 |
-| [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                                      | 2025-05-28   |          14 |
-| [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.12.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.12.0)                                    | 2025-05-20   |          12 |
-| [spook](https://github.com/CCBR/spook)                                                                                   | [v1.1.1](https://github.com/CCBR/spook/releases/tag/v1.1.1)                                        | 2024-12-16   |           4 |
+| [ASPEN](https://github.com/CCBR/ASPEN)                                                                                   | [v1.1.2](https://github.com/CCBR/ASPEN/releases/tag/v1.1.2)                                        | 2025-07-17   |          14 |
+| [spacesavers2](https://github.com/CCBR/spacesavers2)                                                                     | [v0.14.1](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.1)                               | 2025-07-15   |           7 |
+| [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                                                                       | [v0.3.1](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.1)                                  | 2025-06-23   |           3 |
+| [journal-club](https://github.com/CCBR/journal-club)                                                                     | [v0.1.2](https://github.com/CCBR/journal-club/releases/tag/v0.1.2)                                 | 2025-06-17   |           3 |
+| [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                                                             | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)                                     | 2025-06-16   |           3 |
+| [CRISPIN](https://github.com/CCBR/CRISPIN)                                                                               | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                                      | 2025-05-28   |          15 |
+| [CHARLIE](https://github.com/CCBR/CHARLIE)                                                                               | [v0.12.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.12.0)                                    | 2025-05-20   |          14 |
+| [spook](https://github.com/CCBR/spook)                                                                                   | [v1.1.1](https://github.com/CCBR/spook/releases/tag/v1.1.1)                                        | 2024-12-16   |           5 |
 | [Dockers2](https://github.com/CCBR/Dockers2)                                                                             | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                                     | 2024-12-02   |           6 |
 | [reports](https://github.com/CCBR/reports)                                                                               | [v0.2.2](https://github.com/CCBR/reports/releases/tag/v0.2.2)                                      | 2024-08-22   |          11 |
 | [permfix](https://github.com/CCBR/permfix)                                                                               | [v0.6.4](https://github.com/CCBR/permfix/releases/tag/v0.6.4)                                      | 2024-05-07   |           1 |
@@ -230,15 +229,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 
 ## Days since last activity
 
-- [CCBR](activity_data/CCBR/README.md)
-- [abcsFrederick](activity_data/abcsFrederick/README.md)
-- [NCI-RBL](activity_data/NCI-RBL/README.md)
-- [CCRGeneticsBranch](activity_data/CCRGeneticsBranch/README.md)
-- [NCI-VB](activity_data/NCI-VB/README.md)
-- [NIDAP-Community](activity_data/NIDAP-Community/README.md)
-- [NCIPangea](activity_data/NCIPangea/README.md)
-- [NCI-CCDI](activity_data/NCI-CCDI/README.md)
-- [NCI-CCR-POB](activity_data/NCI-CCR-POB/README.md)
+Error: 403 Client Error: Forbidden for url: https://api.github.com/user/memberships/orgs
 
 <hr>
 <p align="center">

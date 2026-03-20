@@ -1,4 +1,3 @@
-
 ## Tools
 
 In additions to end-to-end analysis pipelines, the CCBR dev team also builds tools for data management, meta-data management, APIs, user management, etc. Here are some examples:
