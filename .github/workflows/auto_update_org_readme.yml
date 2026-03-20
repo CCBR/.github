@@ -15,12 +15,19 @@ jobs:
       # Step 1: Checkout the main repository
       - name: Checkout repo
         uses: actions/checkout@v4
+      - name: Generate a token
+        id: generate-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.CCBR_BOT_APP_ID }}
+          private-key: ${{ secrets.CCBR_BOT_PRIVATE_KEY }}
+          owner: CCBR
 
       # Step 2: Set up Git for committing later
       - name: Set up Git
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'CCBR-bot[bot]'
+          git config --global user.email '258092125+CCBR-bot[bot]@users.noreply.github.com'
 
       # Step 3: Pull Docker container for README generation
       - name: Pull Docker
@@ -30,7 +37,7 @@ jobs:
       # Step 4: Run Docker to generate the README file
       - name: Run Docker to make readme
         env:
-          GITHUB_TOKEN: ${{ secrets.OMNITOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
         run: |
           docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/make_readme.sh
 
@@ -46,14 +53,14 @@ jobs:
           git commit -m "Commit changes made by createreadme github action."
           git push origin main --force
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
 
       # Step 7: Checkout the CCBR GitHub Pages repository (ccbr.github.io)
       - name: Checkout github.io
         uses: actions/checkout@v4
         with:
           repository: CCBR/ccbr.github.io
-          token: ${{ secrets.OMNITOKEN }} # Personal Access Token (PAT)
+          token: ${{ steps.generate-token.outputs.token }} # Personal Access Token (PAT)
           path: ccbr.github.io
 
       # Step 8: Copy the generated README.md to the index.md of the GitHub Pages repo
@@ -69,4 +76,4 @@ jobs:
           git commit -m "Update index.md with README.md content from main repo."
           git push origin master --force
         env:
-          GITHUB_TOKEN: ${{ secrets.OMNITOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
