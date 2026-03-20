@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   createreadme:
@@ -46,14 +47,38 @@ jobs:
         run: |
           cat profile/README.md
 
-      # Step 6: Commit and push changes to the main repository
-      - name: Commit and push changes
+      # Step 6: Commit changes, open a PR, and merge it into main
+      - name: Commit changes and auto-merge PR
         run: |
+          BRANCH="ci/auto-readme-${{ github.run_id }}"
+          git checkout -b "$BRANCH"
           git add .
-          git commit -m "Commit changes made by createreadme github action."
-          git push origin main --force
+
+          # Skip PR creation when there are no content changes.
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "ci: update readme with createreadme github action."
+          git push origin "$BRANCH"
+
+          PR_JSON=$(gh api \
+            repos/${{ github.repository }}/pulls \
+            --method POST \
+            -f title='ci: update readme with createreadme github action.' \
+            -f head="$BRANCH" \
+            -f base='main' \
+            -f body='Automated README update from workflow.')
+
+          PR_NUMBER=$(echo "$PR_JSON" | jq -r '.number')
+          gh api \
+            repos/${{ github.repository }}/pulls/"$PR_NUMBER"/merge \
+            --method PUT \
+            -f merge_method='squash' \
+            -f commit_title='ci: update readme with createreadme github action.'
         env:
-          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
+          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
 
       # Step 7: Checkout the CCBR GitHub Pages repository (ccbr.github.io)
       - name: Checkout github.io
@@ -73,7 +98,7 @@ jobs:
         working-directory: ccbr.github.io
         run: |
           git add .
-          git commit -m "Update index.md with README.md content from main repo."
+          git commit -m "ci: update index.md with README.md content from main repo."
           git push origin master --force
         env:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
