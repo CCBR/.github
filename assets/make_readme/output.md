@@ -1,6 +1,7 @@
 # Project Title
 
 ## Table of Contents
+
 - [Project Title](#project-title)
   - [Introduction](#introduction)
   - [Installation](#installation)

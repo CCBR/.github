@@ -55,7 +55,7 @@ cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
 # add toc
 python ${MDPATH}/add_toc.py --input README_tmp.md --output profile/README.md
-# mv member activity data in the right place 
+# mv member activity data in the right place
 if [ -d "profile/activity_data" ]; then rm -rf "profile/activity_data";fi
 mv activity_data profile/
 
