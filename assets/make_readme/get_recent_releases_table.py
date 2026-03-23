@@ -33,8 +33,7 @@ def get_repos(org_name):
             f"https://api.github.com/orgs/{org_name}/repos?per_page=100&page={page}",
             headers=headers,
         )
-        if response.status_code != 200:
-            break
+        response.raise_for_status()
         repos.extend(response.json())
         if len(response.json()) < 100:
             break

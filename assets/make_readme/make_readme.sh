@@ -1,5 +1,6 @@
 #!/bin/bash
 # This will be run inside nciccbr/make_readme:latest docker
+set -euo pipefail
 
 MDPATH="assets/make_readme"
 # MDPATH="/Users/kopardevn/Documents/GitRepos/.github/assets/make_readme"
@@ -9,7 +10,7 @@ cat ${MDPATH}/banner.md > README_tmp.md
 # add toc
 echo -ne "<!-- TOC --> \n\n" >> README_tmp.md
 
-# add latest releses
+# add latest releases
 echo -ne "## NEW Releases \n\n" >> README_tmp.md
 python ${MDPATH}/get_recent_releases_table.py --nmonths 3 >> README_tmp.md
 
@@ -37,7 +38,7 @@ cat ${MDPATH}/back_to_top.md >> README_tmp.md
 cat ${MDPATH}/ccbrpipeliner_release_history.md >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
-# add list of all releases releses
+# add list of all releases
 # echo -ne "## Latest Releases of pipelines/tools: \n\n" >> README_tmp.md
 cat ${MDPATH}/latest_releases.md >> README_tmp.md
 python ${MDPATH}/get_recent_releases_table.py >> README_tmp.md

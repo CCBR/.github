@@ -25,8 +25,7 @@ def get_repos(org_name):
             f"https://api.github.com/orgs/{org_name}/repos?per_page=100&page={page}",
             headers=headers,
         )
-        if response.status_code != 200:
-            break
+        response.raise_for_status()
         repos.extend(response.json())
         if len(response.json()) < 100:
             break
@@ -42,8 +41,7 @@ def get_members(org_name):
             f"https://api.github.com/orgs/{org_name}/members?per_page=100&page={page}",
             headers=headers,
         )
-        if response.status_code != 200:
-            break
+        response.raise_for_status()
         page_members = response.json()
         if not page_members:
             break
@@ -61,8 +59,7 @@ def get_outside_collaborators(repo_full_name):
             f"https://api.github.com/repos/{repo_full_name}/collaborators?affiliation=outside&per_page=100&page={page}",
             headers=headers,
         )
-        if response.status_code != 200:
-            break
+        response.raise_for_status()
         outside_collaborators = response.json()
         if not outside_collaborators:
             break
@@ -86,8 +83,7 @@ def get_commits_count(repo_full_name, members_and_collaborators):
             f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}",
             headers=headers,
         )
-        if response.status_code != 200:
-            break
+        response.raise_for_status()
         commits = response.json()
         if not commits:
             break
