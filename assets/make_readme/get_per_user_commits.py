@@ -3,6 +3,7 @@ import os
 import pandas as pd
 from collections import defaultdict
 from datetime import datetime, timedelta
+from time import sleep
 
 # Replace these with your GitHub token and organization name
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -83,6 +84,9 @@ def get_commits_count(repo_full_name, members_and_collaborators):
             f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}",
             headers=headers,
         )
+        if response.status_code == 502:
+            sleep(1)  # Wait for a second before retrying
+            break
         response.raise_for_status()
         commits = response.json()
         if not commits:
