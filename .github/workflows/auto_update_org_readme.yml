@@ -38,7 +38,7 @@ jobs:
       # Step 4: Run Docker to generate the README file
       - name: Run Docker to make readme
         env:
-          GITHUB_TOKEN: ${{ secrets.OMNITOKEN }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
         run: |
           docker run -e GITHUB_TOKEN=$GITHUB_TOKEN -v ${{ github.workspace }}:/workspace -w /workspace nciccbr/make_readme:latest bash ./assets/make_readme/make_readme.sh
 
