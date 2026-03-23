@@ -86,10 +86,10 @@ def get_commits_count(repo_full_name, members_and_collaborators):
         )
         if response.status_code == 502:
             sleep(1)  # Wait for a second before retrying
-            break
+            continue
         response.raise_for_status()
         commits = response.json()
-        if not commits:
+        if not commits or response.status_code == 409:
             break
 
         for commit in commits:
