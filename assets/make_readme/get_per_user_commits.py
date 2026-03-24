@@ -87,9 +87,11 @@ def get_commits_count(repo_full_name, members_and_collaborators):
         if response.status_code == 502:
             sleep(1)  # Wait for a second before retrying
             continue
+        if response.status_code == 409:
+            break  # Repository is empty, skip it
         response.raise_for_status()
         commits = response.json()
-        if not commits or response.status_code == 409:
+        if not commits:
             break
 
         for commit in commits:
