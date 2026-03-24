@@ -1,5 +1,6 @@
 import requests
 import os
+import warnings
 import pandas as pd
 from collections import defaultdict
 from datetime import datetime, timedelta
@@ -79,14 +80,32 @@ def get_commits_count(repo_full_name, members_and_collaborators):
     one_month_ago = today - timedelta(days=30)
     six_months_ago = today - timedelta(days=180)
 
+    retryable_statuses = {500, 502, 503, 504}
+    max_retries = 5
+
     while True:
-        response = requests.get(
-            f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}",
-            headers=headers,
-        )
-        if response.status_code == 502:
-            sleep(1)  # Wait for a second before retrying
-            continue
+        attempt = 0
+        while attempt < max_retries:
+            response = requests.get(
+                f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}",
+                headers=headers,
+                timeout=30,
+            )
+            if response.status_code in retryable_statuses:
+                attempt += 1
+                wait = min(2**attempt, 30)
+                warnings.warn(
+                    f"{response.status_code} on {repo_full_name} page {page}, "
+                    f"retry {attempt}/{max_retries} in {wait}s"
+                )
+                sleep(wait)
+                continue
+            break
+        else:
+            warnings.warn(
+                f"Skipping {repo_full_name} page {page} after {max_retries} retries"
+            )
+            return commits_count_by_user
         if response.status_code == 409:
             break  # Repository is empty, skip it
         response.raise_for_status()
