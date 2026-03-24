@@ -1,46 +1,49 @@
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
+
 ## Table of Contents
-  - [NEW Releases](#new-releases)
-  - [TOP contributors](#top-contributors)
-  - [About Us](#about-us)
-  - [Our model](#our-model)
-  - [Pipelines](#pipelines)
-  - [Tools](#tools)
-  - [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
-  - [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
-  - [Citation](#citation) 
 
-## NEW Releases 
+- [NEW Releases](#new-releases)
+- [TOP contributors](#top-contributors)
+- [About Us](#about-us)
+- [Our model](#our-model)
+- [Pipelines](#pipelines)
+- [Tools](#tools)
+- [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
+- [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
+- [Citation](#citation)
 
-| Repo Name                                              | Release Name                                                          | Release Date   |   Open Issues |
-|:-------------------------------------------------------|:----------------------------------------------------------------------|:---------------|--------------:|
-| [actions](https://github.com/CCBR/actions)             | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)         | 2026-03-20     |            12 |
-| [Tools](https://github.com/CCBR/Tools)                 | [v0.5.1](https://github.com/CCBR/Tools/releases/tag/v0.5.1)           | 2026-03-09     |            10 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)           | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5)        | 2026-03-09     |            17 |
-| [LIBERTY](https://github.com/CCBR/LIBERTY)             | [v1.2.0](https://github.com/CCBR/LIBERTY/releases/tag/v1.2.0)         | 2026-03-05     |             0 |
-| [HowTos](https://github.com/CCBR/HowTos)               | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)          | 2026-02-23     |            15 |
-| [parkit](https://github.com/CCBR/parkit)               | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)          | 2026-02-19     |             3 |
-| [ccbrpipeliner](https://github.com/CCBR/ccbrpipeliner) | [8.1](https://github.com/CCBR/ccbrpipeliner/releases/tag/release/8.1) | 2026-02-17     |            13 |
-| [LOGAN](https://github.com/CCBR/LOGAN)                 | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)           | 2026-02-12     |            21 |
-| [MOSuite](https://github.com/CCBR/MOSuite)             | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)         | 2026-02-06     |            30 |
-| [RENEE](https://github.com/CCBR/RENEE)                 | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)           | 2026-02-03     |            26 |
-| [XAVIER](https://github.com/CCBR/XAVIER)               | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)          | 2026-01-29     |            11 |
-| [ccbr1429](https://github.com/CCBR/ccbr1429)           | [v1.0.0](https://github.com/CCBR/ccbr1429/releases/tag/v1.0.0)        | 2026-01-14     |             0 |
+## NEW Releases
 
-## TOP contributors 
+| Repo Name                                              | Release Name                                                          | Release Date | Open Issues |
+| :----------------------------------------------------- | :-------------------------------------------------------------------- | :----------- | ----------: |
+| [actions](https://github.com/CCBR/actions)             | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)         | 2026-03-20   |          12 |
+| [Tools](https://github.com/CCBR/Tools)                 | [v0.5.1](https://github.com/CCBR/Tools/releases/tag/v0.5.1)           | 2026-03-09   |          10 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)           | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5)        | 2026-03-09   |          17 |
+| [LIBERTY](https://github.com/CCBR/LIBERTY)             | [v1.2.0](https://github.com/CCBR/LIBERTY/releases/tag/v1.2.0)         | 2026-03-05   |           0 |
+| [HowTos](https://github.com/CCBR/HowTos)               | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)          | 2026-02-23   |          15 |
+| [parkit](https://github.com/CCBR/parkit)               | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)          | 2026-02-19   |           3 |
+| [ccbrpipeliner](https://github.com/CCBR/ccbrpipeliner) | [8.1](https://github.com/CCBR/ccbrpipeliner/releases/tag/release/8.1) | 2026-02-17   |          13 |
+| [LOGAN](https://github.com/CCBR/LOGAN)                 | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)           | 2026-02-12   |          21 |
+| [MOSuite](https://github.com/CCBR/MOSuite)             | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)         | 2026-02-06   |          30 |
+| [RENEE](https://github.com/CCBR/RENEE)                 | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)           | 2026-02-03   |          26 |
+| [XAVIER](https://github.com/CCBR/XAVIER)               | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)          | 2026-01-29   |          11 |
+| [ccbr1429](https://github.com/CCBR/ccbr1429)           | [v1.0.0](https://github.com/CCBR/ccbr1429/releases/tag/v1.0.0)        | 2026-01-14   |           0 |
 
-| User                                                |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
-|:----------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool) |            7335 |                     164 |                        850 |
-| [kopardev](https://github.com/kopardev)             |            4906 |                      51 |                        140 |
-| [slsevilla](https://github.com/slsevilla)           |            1378 |                       0 |                          2 |
-| [samarth8392](https://github.com/samarth8392)       |            1210 |                      88 |                        395 |
-| [kcgfarb](https://github.com/kcgfarb)               |            1172 |                      22 |                        184 |
-| [skchronicles](https://github.com/skchronicles)     |             972 |                       0 |                          2 |
-| [dnousome](https://github.com/dnousome)             |             854 |                       0 |                          2 |
-| [finneyr](https://github.com/finneyr)               |             354 |                       0 |                          0 |
-| [kvaldez](https://github.com/kvaldez)               |             222 |                       0 |                          0 |
-| [escauley](https://github.com/escauley)             |             196 |                       0 |                         59 |
+## TOP contributors
+
+| User                                                | Total Commits | Commits in Last Month | Commits in Last 6 Months |
+| :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |          7335 |                   164 |                      850 |
+| [kopardev](https://github.com/kopardev)             |          4906 |                    51 |                      140 |
+| [slsevilla](https://github.com/slsevilla)           |          1378 |                     0 |                        2 |
+| [samarth8392](https://github.com/samarth8392)       |          1210 |                    88 |                      395 |
+| [kcgfarb](https://github.com/kcgfarb)               |          1172 |                    22 |                      184 |
+| [skchronicles](https://github.com/skchronicles)     |           972 |                     0 |                        2 |
+| [dnousome](https://github.com/dnousome)             |           854 |                     0 |                        2 |
+| [finneyr](https://github.com/finneyr)               |           354 |                     0 |                        0 |
+| [kvaldez](https://github.com/kvaldez)               |           222 |                     0 |                        0 |
+| [escauley](https://github.com/escauley)             |           196 |                     0 |                       59 |
+
 ## About Us
 
 - 👋 Hi, we're the [**@CCBR**](https://bioinformatics.ccr.cancer.gov/ccbr/), a group of bioinformatics analysts and engineers
@@ -53,6 +56,7 @@
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
+
 ## Our model
 
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/CCBR_circle_diagram.png" width=600>](https://bioinformatics.ccr.cancer.gov/ccbr/)
@@ -68,6 +72,7 @@ The CCBR comprises of the core team and the embedded team. These teams serve dif
 - The embedded team members are bioinformaticians who are integrated within specific research groups or labs. Their role is to provide more focused, day-to-day bioinformatics support tailored to the specific needs of the research group they are embedded in. This allows for a deeper collaboration and a more nuanced understanding of the ongoing research projects within that group.
 
 > For details, please visit [CCBR's official website](https://bioinformatics.ccr.cancer.gov/ccbr/).
+
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -122,6 +127,7 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 <sup> **11** SPENCER=_SPatial seqeENCing Resource_.</sup>
 
 For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started!
+
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -137,6 +143,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
+
 ## `ccbrpipeliner` module release history on BIOWULF
 
 `module load ccbrpipeliner` loads default release of ccbrpipeliner. Each release comprises of a unique combination of the version numbers of the different pipelines offered as part of the ccbrpipeliner suite.
@@ -159,6 +166,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 > <sup>#</sup> = GUI available
 
 > `module load ccbrpipeliner` is also available on HELIX. It only loads the **tools** and not the **pipelines** as HELIX does not have a job scheduler
+
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -216,6 +224,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 ## Citation
 
 Most of our end-to-end pipelines which have been used in published research work have been made available to the entire bioinformatics community via a Zenodo DOI. Please feel free to visit our [Zenodo community page](https://zenodo.org/communities/ccbr). And if you use our pipelines, don't forget to cite us!
+
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
