@@ -72,11 +72,11 @@ jobs:
             -f body='Automated README update from workflow.')
 
           PR_NUMBER=$(echo "$PR_JSON" | jq -r '.number')
-          # gh api \
-          #   repos/${{ github.repository }}/pulls/"$PR_NUMBER"/merge \
-          #   --method PUT \
-          #   -f merge_method='squash' \
-          #   -f commit_title='ci: update readme with createreadme github action.'
+          gh api \
+            repos/${{ github.repository }}/pulls/"$PR_NUMBER"/merge \
+            --method PUT \
+            -f merge_method='squash' \
+            -f commit_title='ci: update readme with createreadme github action.'
         env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
 
