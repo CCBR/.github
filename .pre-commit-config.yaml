@@ -6,7 +6,7 @@ exclude: |
    )
 repos:
   - repo: https://github.com/CCBR/Tools
-    rev: v0.5
+    rev: v0.5.2
     hooks:
       - id: detect-absolute-paths
         exclude: ^.gitignore, .*.gitignore, .*.diff$
