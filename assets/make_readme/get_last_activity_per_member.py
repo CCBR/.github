@@ -1,5 +1,6 @@
 import requests
 import os
+import sys
 from datetime import datetime
 
 VERBOSE = 0  # 0 means no comments ... anything else means print progress comments
@@ -198,7 +199,8 @@ def report_org_activity(org, outmd):
                 file.write(
                     f"| {username_with_hyperlink:<15} | {usertype:<20} | {days_since_activity:<13} |\n"
                 )
-    except:
+    except Exception as e:
+        print(f"Error while reporting activity for {org}: {e}", file=sys.stderr)
         return False
     return True
 
