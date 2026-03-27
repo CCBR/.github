@@ -1,28 +1,25 @@
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
-
 ## Table of Contents
+  - [NEW Releases](#new-releases)
+  - [TOP contributors](#top-contributors)
+  - [About Us](#about-us)
+  - [Our model](#our-model)
+  - [Pipelines](#pipelines)
+  - [Tools](#tools)
+  - [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
+  - [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
+  - [Days since last activity](#days-since-last-activity)
+  - [Citation](#citation) 
 
-- [NEW Releases](#new-releases)
-- [TOP contributors](#top-contributors)
-- [About Us](#about-us)
-- [Our model](#our-model)
-- [Pipelines](#pipelines)
-- [Tools](#tools)
-- [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
-- [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
-- [Days since last activity](#days-since-last-activity)
-- [Citation](#citation)
+## NEW Releases 
 
-## NEW Releases
+| Repo Name   | Release Name   | Release Date   | Open Issues   |
+|-------------|----------------|----------------|---------------|
 
-| Repo Name | Release Name | Release Date | Open Issues |
-| --------- | ------------ | ------------ | ----------- |
+## TOP contributors 
 
-## TOP contributors
-
-| User | Total Commits | Commits in Last Month | Commits in Last 6 Months |
-| ---- | ------------- | --------------------- | ------------------------ |
-
+| User   | Total Commits   | Commits in Last Month   | Commits in Last 6 Months   |
+|--------|-----------------|-------------------------|----------------------------|
 ## About Us
 
 - 👋 Hi, we're the [**@CCBR**](https://bioinformatics.ccr.cancer.gov/ccbr/), a group of bioinformatics analysts and engineers
@@ -35,7 +32,6 @@
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
-
 ## Our model
 
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/CCBR_circle_diagram.png" width=600>](https://bioinformatics.ccr.cancer.gov/ccbr/)
@@ -51,7 +47,6 @@ The CCBR comprises of the core team and the embedded team. These teams serve dif
 - The embedded team members are bioinformaticians who are integrated within specific research groups or labs. Their role is to provide more focused, day-to-day bioinformatics support tailored to the specific needs of the research group they are embedded in. This allows for a deeper collaboration and a more nuanced understanding of the ongoing research projects within that group.
 
 > For details, please visit [CCBR's official website](https://bioinformatics.ccr.cancer.gov/ccbr/).
-
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -106,7 +101,6 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 <sup> **11** SPENCER=_SPatial seqeENCing Resource_.</sup>
 
 For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started!
-
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -122,7 +116,6 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
-
 ## `ccbrpipeliner` module release history on BIOWULF
 
 `module load ccbrpipeliner` loads default release of ccbrpipeliner. Each release comprises of a unique combination of the version numbers of the different pipelines offered as part of the ccbrpipeliner suite.
@@ -145,7 +138,6 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 > <sup>#</sup> = GUI available
 
 > `module load ccbrpipeliner` is also available on HELIX. It only loads the **tools** and not the **pipelines** as HELIX does not have a job scheduler
-
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -159,9 +151,12 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 	<a href="##table-of-contents">Back to Top</a>
 </p>
 
-## Days since last activity
+## Days since last activity 
 
 Error: 401 Client Error: Unauthorized for url: https://api.github.com/user/memberships/orgs
+
+
+
 
 <hr>
 <p align="center">
@@ -170,7 +165,6 @@ Error: 401 Client Error: Unauthorized for url: https://api.github.com/user/membe
 ## Citation
 
 Most of our end-to-end pipelines which have been used in published research work have been made available to the entire bioinformatics community via a Zenodo DOI. Please feel free to visit our [Zenodo community page](https://zenodo.org/communities/ccbr). And if you use our pipelines, don't forget to cite us!
-
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
