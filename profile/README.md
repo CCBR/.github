@@ -22,15 +22,15 @@
 | [parkit](https://github.com/CCBR/parkit)     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)   | 2026-02-19     |             3 |
 | [LOGAN](https://github.com/CCBR/LOGAN)       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)    | 2026-02-12     |            21 |
 | [MOSuite](https://github.com/CCBR/MOSuite)   | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)  | 2026-02-06     |            30 |
-| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)    | 2026-02-03     |            26 |
+| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)    | 2026-02-03     |            27 |
 | [XAVIER](https://github.com/CCBR/XAVIER)     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)   | 2026-01-29     |            11 |
 
 ## TOP contributors 
 
 | User                                                  |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
 |:------------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool)   |            5690 |                     139 |                        692 |
-| [kopardev](https://github.com/kopardev)               |            2785 |                      41 |                        135 |
+| [kelly-sovacool](https://github.com/kelly-sovacool)   |            5692 |                     117 |                        688 |
+| [kopardev](https://github.com/kopardev)               |            2785 |                      39 |                        135 |
 | [finneyr](https://github.com/finneyr)                 |             323 |                       0 |                          0 |
 | [kvaldez](https://github.com/kvaldez)                 |             222 |                       0 |                          0 |
 | [escauley](https://github.com/escauley)               |             192 |                       0 |                         56 |
@@ -171,7 +171,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 | [parkit](https://github.com/CCBR/parkit)                                     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)                   | 2026-02-19     |             3 |
 | [LOGAN](https://github.com/CCBR/LOGAN)                                       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)                    | 2026-02-12     |            21 |
 | [MOSuite](https://github.com/CCBR/MOSuite)                                   | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)                  | 2026-02-06     |            30 |
-| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)                    | 2026-02-03     |            26 |
+| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)                    | 2026-02-03     |            27 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)                   | 2026-01-29     |            11 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                               | [v0.5.3](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.5.3)                | 2025-12-02     |            30 |
 | [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                 | [v0.3.5](https://github.com/CCBR/SINCLAIR/releases/tag/v0.3.5)                 | 2025-09-19     |            30 |

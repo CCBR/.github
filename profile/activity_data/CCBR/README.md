@@ -3,17 +3,17 @@
 |-----------------|----------------------|---------------|
 | [aemmons90](https://github.com/aemmons90) | member               | No Activity Found |
 | [bfugaru2025](https://github.com/bfugaru2025) | member               | No Activity Found |
-| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 11            |
+| [bianjh-cloud](https://github.com/bianjh-cloud) | member               | 13            |
 | [burnskd](https://github.com/burnskd) | member               | No Activity Found |
-| [epehrsson](https://github.com/epehrsson) | member               | 21            |
+| [epehrsson](https://github.com/epehrsson) | member               | 23            |
 | [escauley](https://github.com/escauley) | member               | No Activity Found |
 | [finneyr](https://github.com/finneyr) | member               | No Activity Found |
 | [huaitian1129](https://github.com/huaitian1129) | member               | No Activity Found |
 | [JWrows2014](https://github.com/JWrows2014) | member               | No Activity Found |
 | [kcgfarb](https://github.com/kcgfarb) | member               | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 1             |
-| [kopardev](https://github.com/kopardev) | member               | 15            |
-| [kvaldez](https://github.com/kvaldez) | member               | 3             |
+| [kelly-sovacool](https://github.com/kelly-sovacool) | member               | 2             |
+| [kopardev](https://github.com/kopardev) | member               | 17            |
+| [kvaldez](https://github.com/kvaldez) | member               | 5             |
 | [lobanovav](https://github.com/lobanovav) | member               | No Activity Found |
 | [maggiecam](https://github.com/maggiecam) | member               | No Activity Found |
 | [McIntoshC](https://github.com/McIntoshC) | member               | No Activity Found |
@@ -22,13 +22,13 @@
 | [phoman14](https://github.com/phoman14) | member               | No Activity Found |
 | [raraslw-nih](https://github.com/raraslw-nih) | member               | No Activity Found |
 | [RobSchultz4](https://github.com/RobSchultz4) | member               | No Activity Found |
-| [samarth8392](https://github.com/samarth8392) | member               | 7             |
+| [samarth8392](https://github.com/samarth8392) | member               | 9             |
 | [shaoli86](https://github.com/shaoli86) | member               | No Activity Found |
 | [TJoshMeyer](https://github.com/TJoshMeyer) | member               | No Activity Found |
 | [VidhurDS](https://github.com/VidhurDS) | member               | No Activity Found |
 | [vinegang](https://github.com/vinegang) | member               | No Activity Found |
 | [wilfriedguiblet](https://github.com/wilfriedguiblet) | member               | No Activity Found |
-| [wong-nw](https://github.com/wong-nw) | member               | 8             |
+| [wong-nw](https://github.com/wong-nw) | member               | 2             |
 | [wuy24](https://github.com/wuy24) | member               | No Activity Found |
 | [yongmzhao](https://github.com/yongmzhao) | member               | No Activity Found |
 | [abombin](https://github.com/abombin) | collaborator         | No Activity Found |
