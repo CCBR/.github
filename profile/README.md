@@ -1,44 +1,47 @@
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
+
 ## Table of Contents
-  - [NEW Releases](#new-releases)
-  - [TOP contributors](#top-contributors)
-  - [About Us](#about-us)
-  - [Our model](#our-model)
-  - [Pipelines](#pipelines)
-  - [Tools](#tools)
-  - [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
-  - [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
-  - [Days since last activity](#days-since-last-activity)
-  - [Citation](#citation) 
 
-## NEW Releases 
+- [NEW Releases](#new-releases)
+- [TOP contributors](#top-contributors)
+- [About Us](#about-us)
+- [Our model](#our-model)
+- [Pipelines](#pipelines)
+- [Tools](#tools)
+- [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
+- [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
+- [Days since last activity](#days-since-last-activity)
+- [Citation](#citation)
 
-| Repo Name                                    | Release Name                                                   | Release Date   |   Open Issues |
-|:---------------------------------------------|:---------------------------------------------------------------|:---------------|--------------:|
-| [Tools](https://github.com/CCBR/Tools)       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)    | 2026-03-24     |             8 |
-| [actions](https://github.com/CCBR/actions)   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)  | 2026-03-20     |            11 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE) | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5) | 2026-03-09     |            17 |
-| [HowTos](https://github.com/CCBR/HowTos)     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)   | 2026-02-23     |            15 |
-| [parkit](https://github.com/CCBR/parkit)     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)   | 2026-02-19     |             3 |
-| [LOGAN](https://github.com/CCBR/LOGAN)       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)    | 2026-02-12     |            21 |
-| [MOSuite](https://github.com/CCBR/MOSuite)   | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)  | 2026-02-06     |            30 |
-| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)    | 2026-02-03     |            26 |
-| [XAVIER](https://github.com/CCBR/XAVIER)     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)   | 2026-01-29     |            11 |
+## NEW Releases
 
-## TOP contributors 
+| Repo Name                                    | Release Name                                                   | Release Date | Open Issues |
+| :------------------------------------------- | :------------------------------------------------------------- | :----------- | ----------: |
+| [Tools](https://github.com/CCBR/Tools)       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)    | 2026-03-24   |           8 |
+| [actions](https://github.com/CCBR/actions)   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)  | 2026-03-20   |          11 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE) | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5) | 2026-03-09   |          17 |
+| [HowTos](https://github.com/CCBR/HowTos)     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)   | 2026-02-23   |          15 |
+| [parkit](https://github.com/CCBR/parkit)     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)   | 2026-02-19   |           3 |
+| [LOGAN](https://github.com/CCBR/LOGAN)       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)    | 2026-02-12   |          21 |
+| [MOSuite](https://github.com/CCBR/MOSuite)   | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)  | 2026-02-06   |          30 |
+| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)    | 2026-02-03   |          26 |
+| [XAVIER](https://github.com/CCBR/XAVIER)     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)   | 2026-01-29   |          11 |
 
-| User                                                  |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
-|:------------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool)   |            5690 |                     139 |                        692 |
-| [kopardev](https://github.com/kopardev)               |            2785 |                      41 |                        135 |
-| [finneyr](https://github.com/finneyr)                 |             323 |                       0 |                          0 |
-| [kvaldez](https://github.com/kvaldez)                 |             222 |                       0 |                          0 |
-| [escauley](https://github.com/escauley)               |             192 |                       0 |                         56 |
-| [samarth8392](https://github.com/samarth8392)         |             161 |                       2 |                         20 |
-| [wong-nw](https://github.com/wong-nw)                 |             111 |                       0 |                          0 |
-| [maggiecam](https://github.com/maggiecam)             |              46 |                       0 |                          0 |
-| [pajailwala](https://github.com/pajailwala)           |              23 |                       0 |                          0 |
-| [wilfriedguiblet](https://github.com/wilfriedguiblet) |              14 |                       1 |                          1 |
+## TOP contributors
+
+| User                                                  | Total Commits | Commits in Last Month | Commits in Last 6 Months |
+| :---------------------------------------------------- | ------------: | --------------------: | -----------------------: |
+| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5690 |                   139 |                      692 |
+| [kopardev](https://github.com/kopardev)               |          2785 |                    41 |                      135 |
+| [finneyr](https://github.com/finneyr)                 |           323 |                     0 |                        0 |
+| [kvaldez](https://github.com/kvaldez)                 |           222 |                     0 |                        0 |
+| [escauley](https://github.com/escauley)               |           192 |                     0 |                       56 |
+| [samarth8392](https://github.com/samarth8392)         |           161 |                     2 |                       20 |
+| [wong-nw](https://github.com/wong-nw)                 |           111 |                     0 |                        0 |
+| [maggiecam](https://github.com/maggiecam)             |            46 |                     0 |                        0 |
+| [pajailwala](https://github.com/pajailwala)           |            23 |                     0 |                        0 |
+| [wilfriedguiblet](https://github.com/wilfriedguiblet) |            14 |                     1 |                        1 |
+
 ## About Us
 
 - 👋 Hi, we're the [**@CCBR**](https://bioinformatics.ccr.cancer.gov/ccbr/), a group of bioinformatics analysts and engineers
@@ -51,6 +54,7 @@
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
+
 ## Our model
 
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/CCBR_circle_diagram.png" width=600>](https://bioinformatics.ccr.cancer.gov/ccbr/)
@@ -66,6 +70,7 @@ The CCBR comprises of the core team and the embedded team. These teams serve dif
 - The embedded team members are bioinformaticians who are integrated within specific research groups or labs. Their role is to provide more focused, day-to-day bioinformatics support tailored to the specific needs of the research group they are embedded in. This allows for a deeper collaboration and a more nuanced understanding of the ongoing research projects within that group.
 
 > For details, please visit [CCBR's official website](https://bioinformatics.ccr.cancer.gov/ccbr/).
+
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -120,6 +125,7 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 <sup> **11** SPENCER=_SPatial seqeENCing Resource_.</sup>
 
 For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started!
+
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -135,6 +141,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
+
 ## `ccbrpipeliner` module release history on BIOWULF
 
 `module load ccbrpipeliner` loads default release of ccbrpipeliner. Each release comprises of a unique combination of the version numbers of the different pipelines offered as part of the ccbrpipeliner suite.
@@ -157,6 +164,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 > <sup>#</sup> = GUI available
 
 > `module load ccbrpipeliner` is also available on HELIX. It only loads the **tools** and not the **pipelines** as HELIX does not have a job scheduler
+
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
@@ -202,12 +210,9 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 	<a href="##table-of-contents">Back to Top</a>
 </p>
 
-## Days since last activity 
+## Days since last activity
 
-
-
-  - [CCBR](activity_data/CCBR/README.md)
-
+- [CCBR](activity_data/CCBR/README.md)
 
 <hr>
 <p align="center">
@@ -216,6 +221,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 ## Citation
 
 Most of our end-to-end pipelines which have been used in published research work have been made available to the entire bioinformatics community via a Zenodo DOI. Please feel free to visit our [Zenodo community page](https://zenodo.org/communities/ccbr). And if you use our pipelines, don't forget to cite us!
+
 <hr>
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
