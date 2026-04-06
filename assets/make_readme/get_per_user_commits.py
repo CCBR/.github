@@ -109,7 +109,7 @@ def get_commits_count(repo_full_name, members_and_collaborators):
     return commits_count_by_user
 
 
-def main():
+def get_per_user_commits():
     members = get_members(ORG_NAME)
     repos = get_repos(ORG_NAME)
 
@@ -167,7 +167,11 @@ def main():
             "Commits in Last 6 Months",
         ],
     )
-    print(markdown_table)
+    return markdown_table
+
+
+def main():
+    print(get_per_user_commits())
 
 
 if __name__ == "__main__":
