@@ -53,9 +53,8 @@ jobs:
         run: |
           quarto render profile/README.qmd
 
-      - name: verify output
-        run: |
-          cat profile/README.md
+      - uses: pre-commit/action@v3.0.1
+        continue-on-error: true
 
       - name: Update PR with new README
         if: github.event_name == 'pull_request'
