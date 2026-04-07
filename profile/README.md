@@ -58,6 +58,14 @@
 - 🏁 Check out our [release history](#release-history)
 - :link: Our [Zenodo](https://zenodo.org/communities/ccbr) community
 
+<hr>
+
+<p align="center">
+
+<a href="#table-of-contents">Back to Top</a>
+
+</p>
+
 ## Our model
 
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/CCBR_circle_diagram.png" width=600>](https://bioinformatics.ccr.cancer.gov/ccbr/)
@@ -102,6 +110,14 @@ serve different, but similar roles within the CCBR’s support structure.
 > For details, please visit [CCBR’s official
 > website](https://bioinformatics.ccr.cancer.gov/ccbr/).
 
+<hr>
+
+<p align="center">
+
+<a href="#table-of-contents">Back to Top</a>
+
+</p>
+
 ## Pipelines
 
 CCBR offers end-to-end analysis pipelines for NGS data analysis.
@@ -140,8 +156,9 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 | WGSSeq<sup>9</sup>      | [LOGAN](https://github.com/CCBR/LOGAN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)         | _May 31st 2025_                    | TBD                                |
 | spatialSeq<sup>11</sup> | [SPENCER](https://github.com/CCBR/SPENCER)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | TBD                                | TBD                                |
 
-<sup>\_ CLI = Command Line Interface </sup> <sup>\_ GUI = Graphical User
-Interface </sup>
+<sup>\_ CLI = Command Line Interface </sup>
+
+<sup>\_ GUI = Graphical User Interface </sup>
 
 <sup> **1** RENEE=_Rna sEquencing aNalysis pipElinE_ starts with raw
 fastq files and ends with counts matrix. Downstream DEG support will be
@@ -188,6 +205,14 @@ For any other datatype or pipeline, please [email
 :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the
 conversation started!
 
+<hr>
+
+<p align="center">
+
+<a href="#table-of-contents">Back to Top</a>
+
+</p>
+
 ## Tools
 
 In additions to end-to-end analysis pipelines, the CCBR dev team also
@@ -225,6 +250,14 @@ different pipelines offered as part of the ccbrpipeliner suite.
 > the **tools** and not the **pipelines** as HELIX does not have a job
 > scheduler
 
+<hr>
+
+<p align="center">
+
+<a href="#table-of-contents">Back to Top</a>
+
+</p>
+
 ## Latest Releases of pipelines/tools:
 
 | Repo Name                                                                    | Release Name                                                                   | Release Date | Open Issues |
@@ -261,6 +294,14 @@ different pipelines offered as part of the ccbrpipeliner suite.
 | [rNA](https://github.com/CCBR/rNA)                                           | [v1.0.0](https://github.com/CCBR/rNA/releases/tag/v1.0.0)                      | 2021-01-21   |           0 |
 | [l2p](https://github.com/CCBR/l2p)                                           | [v0.0.3](https://github.com/CCBR/l2p/releases/tag/v0.0.3)                      | 2020-07-13   |           0 |
 | [MAAPster](https://github.com/CCBR/MAAPster)                                 | [v2.0.0](https://github.com/CCBR/MAAPster/releases/tag/v2.0.0)                 | 2020-04-27   |           0 |
+
+<hr>
+
+<p align="center">
+
+<a href="#table-of-contents">Back to Top</a>
+
+</p>
 
 ## Days since last activity
 
