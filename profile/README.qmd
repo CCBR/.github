@@ -14,9 +14,16 @@ execute:
 ```{python imports}
 import sys
 from pathlib import Path
+```
 
+```{python params}
+#| tags: [parameters]
+repo_root = Path.cwd().parent
+```
+
+```{python import_make_readme}
 # add make_readme scripts to the Python path
-sys.path.insert(0, str(Path.cwd().parent.parent / "src" / "make_readme"))
+sys.path.insert(0, str(repo_root))
 
 from src.make_readme import (
 	get_last_activity_per_member,
