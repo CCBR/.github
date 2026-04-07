@@ -87,6 +87,7 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 | spatialSeq<sup>11</sup> | [SPENCER](https://github.com/CCBR/SPENCER)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | TBD                                | TBD                                |
 
 <sup>_ CLI = Command Line Interface </sup>
+
 <sup>_ GUI = Graphical User Interface </sup>
 
 <sup> **1** RENEE=_Rna sEquencing aNalysis pipElinE_ starts with raw fastq files and ends with counts matrix. Downstream DEG support will be added at a later date. In the mean time you can use NIDAP or [iDEP](http://bioinformatics.sdstate.edu/idep96/) for DEG analysis.</sup>
