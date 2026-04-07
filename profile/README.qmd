@@ -1,10 +1,11 @@
 ---
-title: "CCBR"
+title: |
+    [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
 format:
   gfm:
       toc: true
       toc-location: body
-      include-before-body: _banner.md
+      include-before-body: _before-body.md
 execute:
   echo: false
   output: asis
