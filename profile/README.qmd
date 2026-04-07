@@ -46,6 +46,8 @@ print(get_per_user_commits())
 - 🏁 Check out our [release history](#release-history)
 - :link: Our [Zenodo](https://zenodo.org/communities/ccbr) community
 
+{{< include _back-to-top.md >}}
+
 ## Our model
 
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/CCBR_circle_diagram.png" width=600>](https://bioinformatics.ccr.cancer.gov/ccbr/)
@@ -61,6 +63,8 @@ The CCBR comprises of the core team and the embedded team. These teams serve dif
 - The embedded team members are bioinformaticians who are integrated within specific research groups or labs. Their role is to provide more focused, day-to-day bioinformatics support tailored to the specific needs of the research group they are embedded in. This allows for a deeper collaboration and a more nuanced understanding of the ongoing research projects within that group.
 
 > For details, please visit [CCBR's official website](https://bioinformatics.ccr.cancer.gov/ccbr/).
+
+{{< include _back-to-top.md >}}
 
 ## Pipelines
 
@@ -114,6 +118,8 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 
 For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started!
 
+{{< include _back-to-top.md >}}
+
 ## Tools
 
 In additions to end-to-end analysis pipelines, the CCBR dev team also builds tools for data management, meta-data management, APIs, user management, etc. Here are some examples:
@@ -145,11 +151,15 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 
 > `module load ccbrpipeliner` is also available on HELIX. It only loads the **tools** and not the **pipelines** as HELIX does not have a job scheduler
 
+{{< include _back-to-top.md >}}
+
 ## Latest Releases of pipelines/tools:
 
 ```{python}
 print(get_recent_releases_table())
 ```
+
+{{< include _back-to-top.md >}}
 
 ## Days since last activity
 
