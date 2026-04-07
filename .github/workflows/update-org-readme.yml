@@ -6,7 +6,7 @@ on:
     paths:
       - "profile/README.qmd"
       - ".github/workflows/update-org-readme.yml"
-      - "assets/make_readme/**"
+      - "src/make_readme/**"
   workflow_dispatch:
   schedule:
     - cron: "30 04 * * 0"

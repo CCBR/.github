@@ -15,18 +15,10 @@ execute:
 import sys
 from pathlib import Path
 
-candidate_roots = [Path.cwd(), Path.cwd().parent, Path.cwd().parent.parent]
-repo_root = next(
-	(root for root in candidate_roots if (root / "assets" / "make_readme").is_dir()),
-	None,
-)
+# add make_readme scripts to the Python path
+sys.path.insert(0, str(Path.cwd() / "src" / "make_readme"))
 
-if repo_root is None:
-	raise FileNotFoundError("Could not locate assets/make_readme from the current Quarto execution directory")
-
-sys.path.insert(0, str(repo_root))
-
-from assets.make_readme import (
+from src.make_readme import (
 	get_last_activity_per_member,
 	get_per_user_commits,
 	get_recent_releases_table,
