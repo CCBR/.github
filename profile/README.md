@@ -10,8 +10,10 @@
 - [Our model](#our-model)
 - [Pipelines](#pipelines)
 - [Tools](#tools)
-- [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
-- [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
+- [`ccbrpipeliner` module release history on
+  BIOWULF](#ccbrpipeliner-module-release-history-on-biowulf)
+- [Latest Releases of
+  pipelines/tools:](#latest-releases-of-pipelinestools)
 - [Days since last activity](#days-since-last-activity)
 - [Citation](#citation)
 
@@ -19,7 +21,7 @@
 
 | Repo Name                                    | Release Name                                                   | Release Date | Open Issues |
 | :------------------------------------------- | :------------------------------------------------------------- | :----------- | ----------: |
-| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)    | 2026-04-06   |          22 |
+| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)    | 2026-04-06   |          23 |
 | [Tools](https://github.com/CCBR/Tools)       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)    | 2026-03-24   |          10 |
 | [actions](https://github.com/CCBR/actions)   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)  | 2026-03-20   |          12 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE) | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5) | 2026-03-09   |          17 |
@@ -33,8 +35,8 @@
 
 | User                                                  | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :---------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5735 |                    86 |                      706 |
-| [kopardev](https://github.com/kopardev)               |          2785 |                     0 |                      116 |
+| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5736 |                    83 |                      677 |
+| [kopardev](https://github.com/kopardev)               |          2785 |                     0 |                      108 |
 | [finneyr](https://github.com/finneyr)                 |           323 |                     0 |                        0 |
 | [kvaldez](https://github.com/kvaldez)                 |           222 |                     0 |                        0 |
 | [escauley](https://github.com/escauley)               |           192 |                     0 |                       55 |
@@ -42,7 +44,7 @@
 | [wong-nw](https://github.com/wong-nw)                 |           112 |                     1 |                        1 |
 | [maggiecam](https://github.com/maggiecam)             |            46 |                     0 |                        0 |
 | [pajailwala](https://github.com/pajailwala)           |            33 |                    10 |                       10 |
-| [wilfriedguiblet](https://github.com/wilfriedguiblet) |            14 |                     1 |                        1 |
+| [wilfriedguiblet](https://github.com/wilfriedguiblet) |            14 |                     0 |                        1 |
 
 ## About Us
 
@@ -262,7 +264,7 @@ different pipelines offered as part of the ccbrpipeliner suite.
 
 | Repo Name                                                                    | Release Name                                                                   | Release Date | Open Issues |
 | :--------------------------------------------------------------------------- | :----------------------------------------------------------------------------- | :----------- | ----------: |
-| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)                    | 2026-04-06   |          22 |
+| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)                    | 2026-04-06   |          23 |
 | [Tools](https://github.com/CCBR/Tools)                                       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)                    | 2026-03-24   |          10 |
 | [actions](https://github.com/CCBR/actions)                                   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)                  | 2026-03-20   |          12 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)                                 | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5)                 | 2026-03-09   |          17 |
