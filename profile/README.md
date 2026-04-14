@@ -3,45 +3,47 @@
 <!-- This file is generated from profile/README.qmd. Please edit that file, not the plain markdown file. -->
 
 ## Table of Contents
-  - [NEW Releases](#new-releases)
-  - [TOP contributors](#top-contributors)
-  - [About Us](#about-us)
-  - [Our model](#our-model)
-  - [Pipelines](#pipelines)
-  - [Tools](#tools)
-  - [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
-  - [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
-  - [Days since last activity](#days-since-last-activity)
-  - [Citation](#citation) 
 
-## NEW Releases 
+- [NEW Releases](#new-releases)
+- [TOP contributors](#top-contributors)
+- [About Us](#about-us)
+- [Our model](#our-model)
+- [Pipelines](#pipelines)
+- [Tools](#tools)
+- [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
+- [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
+- [Days since last activity](#days-since-last-activity)
+- [Citation](#citation)
 
-| Repo Name                                    | Release Name                                                   | Release Date   |   Open Issues |
-|:---------------------------------------------|:---------------------------------------------------------------|:---------------|--------------:|
-| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)    | 2026-04-06     |            22 |
-| [Tools](https://github.com/CCBR/Tools)       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)    | 2026-03-24     |            10 |
-| [actions](https://github.com/CCBR/actions)   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)  | 2026-03-20     |            12 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE) | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5) | 2026-03-09     |            17 |
-| [HowTos](https://github.com/CCBR/HowTos)     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)   | 2026-02-23     |            15 |
-| [parkit](https://github.com/CCBR/parkit)     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)   | 2026-02-19     |             3 |
-| [LOGAN](https://github.com/CCBR/LOGAN)       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)    | 2026-02-12     |            21 |
-| [MOSuite](https://github.com/CCBR/MOSuite)   | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)  | 2026-02-06     |            30 |
-| [XAVIER](https://github.com/CCBR/XAVIER)     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)   | 2026-01-29     |            11 |
+## NEW Releases
 
-## TOP contributors 
+| Repo Name                                    | Release Name                                                   | Release Date | Open Issues |
+| :------------------------------------------- | :------------------------------------------------------------- | :----------- | ----------: |
+| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)    | 2026-04-06   |          22 |
+| [Tools](https://github.com/CCBR/Tools)       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)    | 2026-03-24   |          10 |
+| [actions](https://github.com/CCBR/actions)   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)  | 2026-03-20   |          12 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE) | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5) | 2026-03-09   |          17 |
+| [HowTos](https://github.com/CCBR/HowTos)     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)   | 2026-02-23   |          15 |
+| [parkit](https://github.com/CCBR/parkit)     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)   | 2026-02-19   |           3 |
+| [LOGAN](https://github.com/CCBR/LOGAN)       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)    | 2026-02-12   |          21 |
+| [MOSuite](https://github.com/CCBR/MOSuite)   | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)  | 2026-02-06   |          30 |
+| [XAVIER](https://github.com/CCBR/XAVIER)     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)   | 2026-01-29   |          11 |
 
-| User                                                  |   Total Commits |   Commits in Last Month |   Commits in Last 6 Months |
-|:------------------------------------------------------|----------------:|------------------------:|---------------------------:|
-| [kelly-sovacool](https://github.com/kelly-sovacool)   |            5735 |                      86 |                        706 |
-| [kopardev](https://github.com/kopardev)               |            2785 |                       0 |                        116 |
-| [finneyr](https://github.com/finneyr)                 |             323 |                       0 |                          0 |
-| [kvaldez](https://github.com/kvaldez)                 |             222 |                       0 |                          0 |
-| [escauley](https://github.com/escauley)               |             192 |                       0 |                         55 |
-| [samarth8392](https://github.com/samarth8392)         |             161 |                       2 |                         19 |
-| [wong-nw](https://github.com/wong-nw)                 |             112 |                       1 |                          1 |
-| [maggiecam](https://github.com/maggiecam)             |              46 |                       0 |                          0 |
-| [pajailwala](https://github.com/pajailwala)           |              33 |                      10 |                         10 |
-| [wilfriedguiblet](https://github.com/wilfriedguiblet) |              14 |                       1 |                          1 |
+## TOP contributors
+
+| User                                                  | Total Commits | Commits in Last Month | Commits in Last 6 Months |
+| :---------------------------------------------------- | ------------: | --------------------: | -----------------------: |
+| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5735 |                    86 |                      706 |
+| [kopardev](https://github.com/kopardev)               |          2785 |                     0 |                      116 |
+| [finneyr](https://github.com/finneyr)                 |           323 |                     0 |                        0 |
+| [kvaldez](https://github.com/kvaldez)                 |           222 |                     0 |                        0 |
+| [escauley](https://github.com/escauley)               |           192 |                     0 |                       55 |
+| [samarth8392](https://github.com/samarth8392)         |           161 |                     2 |                       19 |
+| [wong-nw](https://github.com/wong-nw)                 |           112 |                     1 |                        1 |
+| [maggiecam](https://github.com/maggiecam)             |            46 |                     0 |                        0 |
+| [pajailwala](https://github.com/pajailwala)           |            33 |                    10 |                       10 |
+| [wilfriedguiblet](https://github.com/wilfriedguiblet) |            14 |                     1 |                        1 |
+
 ## About Us
 
 - 👋 Hi, we’re the
