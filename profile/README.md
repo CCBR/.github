@@ -1,6 +1,4 @@
-# [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
-
-<!-- This file is generated from profile/README.qmd. Please edit that file, not the plain markdown file. -->
+[<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
 
 ## Table of Contents
 
@@ -10,10 +8,8 @@
 - [Our model](#our-model)
 - [Pipelines](#pipelines)
 - [Tools](#tools)
-- [`ccbrpipeliner` module release history on
-  BIOWULF](#ccbrpipeliner-module-release-history-on-biowulf)
-- [Latest Releases of
-  pipelines/tools:](#latest-releases-of-pipelinestools)
+- [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
+- [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
 - [Days since last activity](#days-since-last-activity)
 - [Citation](#citation)
 
@@ -21,7 +17,7 @@
 
 | Repo Name                                    | Release Name                                                   | Release Date | Open Issues |
 | :------------------------------------------- | :------------------------------------------------------------- | :----------- | ----------: |
-| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)    | 2026-04-06   |          23 |
+| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)    | 2026-04-06   |          22 |
 | [Tools](https://github.com/CCBR/Tools)       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)    | 2026-03-24   |          10 |
 | [actions](https://github.com/CCBR/actions)   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)  | 2026-03-20   |          12 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE) | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5) | 2026-03-09   |          17 |
@@ -35,8 +31,8 @@
 
 | User                                                  | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :---------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5736 |                    83 |                      677 |
-| [kopardev](https://github.com/kopardev)               |          2785 |                     0 |                      108 |
+| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5735 |                    86 |                      706 |
+| [kopardev](https://github.com/kopardev)               |          2785 |                     0 |                      116 |
 | [finneyr](https://github.com/finneyr)                 |           323 |                     0 |                        0 |
 | [kvaldez](https://github.com/kvaldez)                 |           222 |                     0 |                        0 |
 | [escauley](https://github.com/escauley)               |           192 |                     0 |                       55 |
@@ -44,7 +40,7 @@
 | [wong-nw](https://github.com/wong-nw)                 |           112 |                     1 |                        1 |
 | [maggiecam](https://github.com/maggiecam)             |            46 |                     0 |                        0 |
 | [pajailwala](https://github.com/pajailwala)           |            33 |                    10 |                       10 |
-| [wilfriedguiblet](https://github.com/wilfriedguiblet) |            14 |                     0 |                        1 |
+| [wilfriedguiblet](https://github.com/wilfriedguiblet) |            14 |                     1 |                        1 |
 
 ## About Us
 
@@ -118,6 +114,11 @@ serve different, but similar roles within the CCBR’s support structure.
 
 <a href="#table-of-contents">Back to Top</a>
 
+> For details, please visit [CCBR's official website](https://bioinformatics.ccr.cancer.gov/ccbr/).
+
+<hr>
+<p align="center">
+	<a href="##table-of-contents">Back to Top</a>
 </p>
 
 ## Pipelines
@@ -203,9 +204,7 @@ be CCBR’s newest offering.</sup>
 
 <sup> **11** SPENCER=_SPatial seqeENCing Resource_.</sup>
 
-For any other datatype or pipeline, please [email
-:mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the
-conversation started!
+For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started!
 
 <hr>
 
@@ -224,6 +223,10 @@ management, etc. Here are some examples:
 - [spacesavers2](https://github.com/CCBR/spacesavers2)
 - [permfix](https://github.com/CCBR/permfix/)
 - [pyrkit](https://github.com/CCBR/pyrkit)
+<hr>
+<p align="center">
+	<a href="##table-of-contents">Back to Top</a>
+</p>
 
 ## `ccbrpipeliner` module release history on BIOWULF
 
@@ -251,6 +254,8 @@ different pipelines offered as part of the ccbrpipeliner suite.
 > `module load ccbrpipeliner` is also available on HELIX. It only loads
 > the **tools** and not the **pipelines** as HELIX does not have a job
 > scheduler
+
+> `module load ccbrpipeliner` is also available on HELIX. It only loads the **tools** and not the **pipelines** as HELIX does not have a job scheduler
 
 <hr>
 
@@ -299,20 +304,15 @@ different pipelines offered as part of the ccbrpipeliner suite.
 
 <hr>
 
-<p align="center">
-
-<a href="#table-of-contents">Back to Top</a>
-
-</p>
-
 ## Days since last activity
 
 - [CCBR](activity_data/CCBR/README.md)
 
 ## Citation
 
-Most of our end-to-end pipelines which have been used in published
-research work have been made available to the entire bioinformatics
-community via a Zenodo DOI. Please feel free to visit our [Zenodo
-community page](https://zenodo.org/communities/ccbr). And if you use our
-pipelines, don’t forget to cite us!
+Most of our end-to-end pipelines which have been used in published research work have been made available to the entire bioinformatics community via a Zenodo DOI. Please feel free to visit our [Zenodo community page](https://zenodo.org/communities/ccbr). And if you use our pipelines, don't forget to cite us!
+
+<hr>
+<p align="center">
+	<a href="##table-of-contents">Back to Top</a>
+</p>
