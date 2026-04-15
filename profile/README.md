@@ -1,4 +1,6 @@
-[<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
+# [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/ccbrbanner.png">](https://bioinformatics.ccr.cancer.gov/ccbr/)
+
+<!-- This file is generated from profile/README.qmd. Please edit that file, not the plain markdown file. -->
 
 ## Table of Contents
 
@@ -8,8 +10,10 @@
 - [Our model](#our-model)
 - [Pipelines](#pipelines)
 - [Tools](#tools)
-- [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
-- [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
+- [`ccbrpipeliner` module release history on
+  BIOWULF](#ccbrpipeliner-module-release-history-on-biowulf)
+- [Latest Releases of
+  pipelines/tools:](#latest-releases-of-pipelinestools)
 - [Days since last activity](#days-since-last-activity)
 - [Citation](#citation)
 
@@ -17,7 +21,7 @@
 
 | Repo Name                                    | Release Name                                                   | Release Date | Open Issues |
 | :------------------------------------------- | :------------------------------------------------------------- | :----------- | ----------: |
-| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)    | 2026-04-06   |          22 |
+| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)    | 2026-04-06   |          23 |
 | [Tools](https://github.com/CCBR/Tools)       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)    | 2026-03-24   |          10 |
 | [actions](https://github.com/CCBR/actions)   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)  | 2026-03-20   |          12 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE) | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5) | 2026-03-09   |          17 |
@@ -31,16 +35,16 @@
 
 | User                                                  | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :---------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5735 |                    86 |                      706 |
-| [kopardev](https://github.com/kopardev)               |          2785 |                     0 |                      116 |
+| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5736 |                    81 |                      677 |
+| [kopardev](https://github.com/kopardev)               |          2785 |                     0 |                      107 |
 | [finneyr](https://github.com/finneyr)                 |           323 |                     0 |                        0 |
 | [kvaldez](https://github.com/kvaldez)                 |           222 |                     0 |                        0 |
 | [escauley](https://github.com/escauley)               |           192 |                     0 |                       55 |
 | [samarth8392](https://github.com/samarth8392)         |           161 |                     2 |                       19 |
 | [wong-nw](https://github.com/wong-nw)                 |           112 |                     1 |                        1 |
 | [maggiecam](https://github.com/maggiecam)             |            46 |                     0 |                        0 |
-| [pajailwala](https://github.com/pajailwala)           |            33 |                    10 |                       10 |
-| [wilfriedguiblet](https://github.com/wilfriedguiblet) |            14 |                     1 |                        1 |
+| [pajailwala](https://github.com/pajailwala)           |            37 |                    14 |                       14 |
+| [wilfriedguiblet](https://github.com/wilfriedguiblet) |            14 |                     0 |                        1 |
 
 ## About Us
 
@@ -114,11 +118,6 @@ serve different, but similar roles within the CCBR’s support structure.
 
 <a href="#table-of-contents">Back to Top</a>
 
-> For details, please visit [CCBR's official website](https://bioinformatics.ccr.cancer.gov/ccbr/).
-
-<hr>
-<p align="center">
-	<a href="##table-of-contents">Back to Top</a>
 </p>
 
 ## Pipelines
@@ -204,7 +203,9 @@ be CCBR’s newest offering.</sup>
 
 <sup> **11** SPENCER=_SPatial seqeENCing Resource_.</sup>
 
-For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the conversation started!
+For any other datatype or pipeline, please [email
+:mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) us directly to get the
+conversation started!
 
 <hr>
 
@@ -223,10 +224,6 @@ management, etc. Here are some examples:
 - [spacesavers2](https://github.com/CCBR/spacesavers2)
 - [permfix](https://github.com/CCBR/permfix/)
 - [pyrkit](https://github.com/CCBR/pyrkit)
-<hr>
-<p align="center">
-	<a href="##table-of-contents">Back to Top</a>
-</p>
 
 ## `ccbrpipeliner` module release history on BIOWULF
 
@@ -254,8 +251,6 @@ different pipelines offered as part of the ccbrpipeliner suite.
 > `module load ccbrpipeliner` is also available on HELIX. It only loads
 > the **tools** and not the **pipelines** as HELIX does not have a job
 > scheduler
-
-> `module load ccbrpipeliner` is also available on HELIX. It only loads the **tools** and not the **pipelines** as HELIX does not have a job scheduler
 
 <hr>
 
@@ -286,7 +281,7 @@ different pipelines offered as part of the ccbrpipeliner suite.
 | [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                 | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)                 | 2025-06-16   |           3 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)                                   | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                  | 2025-05-28   |          16 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                   | [v0.12.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.12.0)                | 2025-05-20   |          14 |
-| [Dockers2](https://github.com/CCBR/Dockers2)                                 | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                 | 2024-12-02   |           7 |
+| [Dockers2](https://github.com/CCBR/Dockers2)                                 | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                 | 2024-12-02   |           6 |
 | [METRO](https://github.com/CCBR/METRO)                                       | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                        | 2024-03-28   |           2 |
 | [CCBR-1144](https://github.com/CCBR/CCBR-1144)                               | [v1.0.0](https://github.com/CCBR/CCBR-1144/releases/tag/v1.0.0)                | 2024-03-04   |           0 |
 | [ccbr1271_ERVpipeline](https://github.com/CCBR/ccbr1271_ERVpipeline)         | [v1.0.3](https://github.com/CCBR/ccbr1271_ERVpipeline/releases/tag/v1.0.3)     | 2024-02-21   |           1 |
@@ -304,15 +299,20 @@ different pipelines offered as part of the ccbrpipeliner suite.
 
 <hr>
 
+<p align="center">
+
+<a href="#table-of-contents">Back to Top</a>
+
+</p>
+
 ## Days since last activity
 
 - [CCBR](activity_data/CCBR/README.md)
 
 ## Citation
 
-Most of our end-to-end pipelines which have been used in published research work have been made available to the entire bioinformatics community via a Zenodo DOI. Please feel free to visit our [Zenodo community page](https://zenodo.org/communities/ccbr). And if you use our pipelines, don't forget to cite us!
-
-<hr>
-<p align="center">
-	<a href="##table-of-contents">Back to Top</a>
-</p>
+Most of our end-to-end pipelines which have been used in published
+research work have been made available to the entire bioinformatics
+community via a Zenodo DOI. Please feel free to visit our [Zenodo
+community page](https://zenodo.org/communities/ccbr). And if you use our
+pipelines, don’t forget to cite us!
