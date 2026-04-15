@@ -1,0 +1,132 @@
+name: Update CCBR README
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "profile/README.qmd"
+      - ".github/workflows/update-org-readme.yml"
+      - "src/make_readme/**"
+  workflow_dispatch:
+  schedule:
+    - cron: "30 04 * * 0"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  commit_msg: "ci: 🤖 auto-update README.md"
+
+jobs:
+  render-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
+      - uses: actions/setup-python@v6
+        with:
+          cache: pip
+          python-version: 3.14
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          quarto-version: 1.7
+      - name: Install Python dependencies
+        run: pip install -r src/make_readme/requirements.txt
+      - name: Generate a token
+        id: generate-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.CCBR_BOT_APP_ID }}
+          private-key: ${{ secrets.CCBR_BOT_PRIVATE_KEY }}
+          owner: CCBR
+      - name: Set up Git
+        run: |
+          git config --global user.name 'CCBR-bot[bot]'
+          git config --global user.email '258092125+CCBR-bot[bot]@users.noreply.github.com'
+
+      - name: render README
+        env:
+          GITHUB_TOKEN: ${{ secrets.OMNITOKEN }} # must be OMNITOKEN for user activity data
+        run: |
+          quarto render profile/README.qmd
+
+      - uses: pre-commit/action@v3.0.1
+        continue-on-error: true
+
+      - name: Update PR with new README
+        if: github.event_name == 'pull_request'
+        run: |
+          git add profile/README.md
+          git commit -m "${{ env.commit_msg }}" || echo "No changes to commit."
+          git push origin HEAD:${{ github.head_ref }} || echo "No changes to push."
+
+      # Commit changes, open a PR, and merge it into main
+      - name: Commit changes and auto-merge PR
+        if: github.event_name != 'pull_request'
+        run: |
+          BRANCH="ci/auto-readme-${{ github.run_id }}"
+          git checkout -b "$BRANCH"
+          git add .
+
+          # Skip PR creation when there are no content changes.
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "${{ env.commit_msg }}"
+          git push origin "$BRANCH"
+
+          PR_JSON=$(gh api \
+            repos/${{ github.repository }}/pulls \
+            --method POST \
+            -f title='${{ env.commit_msg }}' \
+            -f head="$BRANCH" \
+            -f base='main' \
+            -f body='Automated README update from workflow.')
+
+          PR_NUMBER=$(echo "$PR_JSON" | jq -r '.number')
+          gh api \
+            repos/${{ github.repository }}/pulls/"$PR_NUMBER"/merge \
+            --method PUT \
+            -f merge_method='squash' \
+            -f commit_title='${{ env.commit_msg }}'
+        env:
+          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
+
+  update-github-pages:
+    needs: render-readme
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || ( github.event_name == 'workflow_dispatch' && github.ref_name == 'main' )
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v6
+      - name: Generate a token
+        id: generate-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.CCBR_BOT_APP_ID }}
+          private-key: ${{ secrets.CCBR_BOT_PRIVATE_KEY }}
+          owner: CCBR
+      - name: Checkout github.io
+        uses: actions/checkout@v4
+        with:
+          repository: CCBR/ccbr.github.io
+          token: ${{ steps.generate-token.outputs.token }}
+          path: ccbr.github.io
+
+      - name: Copy README.md to index.md
+        run: |
+          cp profile/README.md ccbr.github.io/index.md
+
+      - name: Commit and push to GitHub Pages
+        working-directory: ccbr.github.io
+        run: |
+          git add .
+          git commit -m "ci: 🤖 auto-update index from profile README" || echo "No changes to commit."
+          git push origin master --force
+        env:
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}

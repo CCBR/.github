@@ -71,19 +71,10 @@ def get_open_issues_count(repo_full_name):
     return 0
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Fetch GitHub repository releases.")
-    parser.add_argument(
-        "--nmonths",
-        type=int,
-        default=0,
-        help="Number of months to filter releases. If not provided, shows all releases.",
-    )
-    args = parser.parse_args()
-
+def get_recent_releases_table(nmonths=0):
     repos = get_repos(ORG_NAME)
     releases = []
-    cutoff_date = get_date_n_months_ago(args.nmonths)
+    cutoff_date = get_date_n_months_ago(nmonths)
 
     for repo in repos:
         latest_release = get_latest_release(repo["full_name"])
@@ -98,7 +89,7 @@ def main():
             release_date = latest_release["published_at"]
             formatted_date = format_date(release_date)
             if formatted_date != "Unknown date" and (
-                args.nmonths == 0 or formatted_date >= cutoff_date
+                nmonths == 0 or formatted_date >= cutoff_date
             ):
                 releases.append(
                     {
@@ -119,9 +110,20 @@ def main():
         headers=["Repo Name", "Release Name", "Release Date", "Open Issues"],
     )
 
-    # Print Markdown table
-    print(markdown_table)
-    print()
+    return f"{markdown_table}\n"
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Fetch GitHub repository releases.")
+    parser.add_argument(
+        "--nmonths",
+        type=int,
+        default=0,
+        help="Number of months to filter releases. If not provided, shows all releases.",
+    )
+    args = parser.parse_args()
+
+    print(get_recent_releases_table(nmonths=args.nmonths), end="")
 
 
 if __name__ == "__main__":

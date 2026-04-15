@@ -205,15 +205,22 @@ def report_org_activity(org, outmd):
     return True
 
 
-def main():
+def get_last_activity_per_member():
     organizations = get_admin_orgs(GITHUB_TOKEN)
-    print("\n")
+    lines = []
     # organizations = ["NCI-CCDI"]
     # organizations = ["abcswebapps"]
     for org in organizations:
         outpath = os.path.join("activity_data", org, "README.md")
         if report_org_activity(org, outpath):
-            print(f"  - [{org}]({outpath})")
+            lines.append(f"- [{org}]({outpath})")
+    return "\n".join(lines)
+
+
+def main():
+    output = get_last_activity_per_member()
+    if output:
+        print(output)
 
 
 if __name__ == "__main__":
