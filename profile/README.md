@@ -17,29 +17,29 @@
 
 | Repo Name                                    | Release Name                                                   | Release Date | Open Issues |
 | :------------------------------------------- | :------------------------------------------------------------- | :----------- | ----------: |
-| [Tools](https://github.com/CCBR/Tools)       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)    | 2026-03-24   |           8 |
-| [actions](https://github.com/CCBR/actions)   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)  | 2026-03-20   |          11 |
+| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)    | 2026-04-06   |          22 |
+| [Tools](https://github.com/CCBR/Tools)       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)    | 2026-03-24   |          10 |
+| [actions](https://github.com/CCBR/actions)   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)  | 2026-03-20   |          12 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE) | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5) | 2026-03-09   |          17 |
 | [HowTos](https://github.com/CCBR/HowTos)     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)   | 2026-02-23   |          15 |
 | [parkit](https://github.com/CCBR/parkit)     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)   | 2026-02-19   |           3 |
 | [LOGAN](https://github.com/CCBR/LOGAN)       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)    | 2026-02-12   |          21 |
 | [MOSuite](https://github.com/CCBR/MOSuite)   | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)  | 2026-02-06   |          30 |
-| [RENEE](https://github.com/CCBR/RENEE)       | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)    | 2026-02-03   |          26 |
 | [XAVIER](https://github.com/CCBR/XAVIER)     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)   | 2026-01-29   |          11 |
 
 ## TOP contributors
 
 | User                                                  | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :---------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5690 |                   139 |                      692 |
-| [kopardev](https://github.com/kopardev)               |          2785 |                    41 |                      135 |
+| [kelly-sovacool](https://github.com/kelly-sovacool)   |          5735 |                    86 |                      706 |
+| [kopardev](https://github.com/kopardev)               |          2785 |                     0 |                      116 |
 | [finneyr](https://github.com/finneyr)                 |           323 |                     0 |                        0 |
 | [kvaldez](https://github.com/kvaldez)                 |           222 |                     0 |                        0 |
-| [escauley](https://github.com/escauley)               |           192 |                     0 |                       56 |
-| [samarth8392](https://github.com/samarth8392)         |           161 |                     2 |                       20 |
-| [wong-nw](https://github.com/wong-nw)                 |           111 |                     0 |                        0 |
+| [escauley](https://github.com/escauley)               |           192 |                     0 |                       55 |
+| [samarth8392](https://github.com/samarth8392)         |           161 |                     2 |                       19 |
+| [wong-nw](https://github.com/wong-nw)                 |           112 |                     1 |                        1 |
 | [maggiecam](https://github.com/maggiecam)             |            46 |                     0 |                        0 |
-| [pajailwala](https://github.com/pajailwala)           |            23 |                     0 |                        0 |
+| [pajailwala](https://github.com/pajailwala)           |            33 |                    10 |                       10 |
 | [wilfriedguiblet](https://github.com/wilfriedguiblet) |            14 |                     1 |                        1 |
 
 ## About Us
@@ -75,6 +75,7 @@ The CCBR comprises of the core team and the embedded team. These teams serve dif
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
+\n
 ## Pipelines
 
 CCBR offers end-to-end analysis pipelines for NGS data analysis.
@@ -130,6 +131,7 @@ For any other datatype or pipeline, please [email :mailbox:](mailto:ccbr_pipelin
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
+\n
 ## Tools
 
 In additions to end-to-end analysis pipelines, the CCBR dev team also builds tools for data management, meta-data management, APIs, user management, etc. Here are some examples:
@@ -169,17 +171,18 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
+\n
 ## Latest Releases of pipelines/tools:
 | Repo Name                                                                    | Release Name                                                                   | Release Date   |   Open Issues |
 |:-----------------------------------------------------------------------------|:-------------------------------------------------------------------------------|:---------------|--------------:|
-| [Tools](https://github.com/CCBR/Tools)                                       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)                    | 2026-03-24     |             8 |
-| [actions](https://github.com/CCBR/actions)                                   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)                  | 2026-03-20     |            11 |
+| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)                    | 2026-04-06     |            22 |
+| [Tools](https://github.com/CCBR/Tools)                                       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)                    | 2026-03-24     |            10 |
+| [actions](https://github.com/CCBR/actions)                                   | [v0.5.2](https://github.com/CCBR/actions/releases/tag/v0.5.2)                  | 2026-03-20     |            12 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)                                 | [v2.7.5](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.5)                 | 2026-03-09     |            17 |
 | [HowTos](https://github.com/CCBR/HowTos)                                     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)                   | 2026-02-23     |            15 |
 | [parkit](https://github.com/CCBR/parkit)                                     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)                   | 2026-02-19     |             3 |
 | [LOGAN](https://github.com/CCBR/LOGAN)                                       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)                    | 2026-02-12     |            21 |
 | [MOSuite](https://github.com/CCBR/MOSuite)                                   | [v0.3.0](https://github.com/CCBR/MOSuite/releases/tag/v0.3.0)                  | 2026-02-06     |            30 |
-| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.4](https://github.com/CCBR/RENEE/releases/tag/v2.7.4)                    | 2026-02-03     |            26 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)                   | 2026-01-29     |            11 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                               | [v0.5.3](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.5.3)                | 2025-12-02     |            30 |
 | [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                 | [v0.3.5](https://github.com/CCBR/SINCLAIR/releases/tag/v0.3.5)                 | 2025-09-19     |            30 |
@@ -218,6 +221,7 @@ In additions to end-to-end analysis pipelines, the CCBR dev team also builds too
 <p align="center">
 	<a href="##table-of-contents">Back to Top</a>
 </p>
+\n
 ## Citation
 
 Most of our end-to-end pipelines which have been used in published research work have been made available to the entire bioinformatics community via a Zenodo DOI. Please feel free to visit our [Zenodo community page](https://zenodo.org/communities/ccbr). And if you use our pipelines, don't forget to cite us!

@@ -9,7 +9,7 @@ cat ${MDPATH}/banner.md > README_tmp.md
 # add toc
 echo -ne "<!-- TOC --> \n\n" >> README_tmp.md
 
-# add latest releses
+# add latest releases
 echo -ne "## NEW Releases \n\n" >> README_tmp.md
 python ${MDPATH}/get_recent_releases_table.py --nmonths 3 >> README_tmp.md
 
@@ -26,10 +26,12 @@ cat ${MDPATH}/our_model.md >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
 # add pipelines
+echo "\n" >> README_tmp.md
 cat ${MDPATH}/pipelines.md >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
 # add tools
+echo "\n" >> README_tmp.md
 cat ${MDPATH}/tools.md >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
@@ -37,8 +39,8 @@ cat ${MDPATH}/back_to_top.md >> README_tmp.md
 cat ${MDPATH}/ccbrpipeliner_release_history.md >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
-# add list of all releases releses
-# echo -ne "## Latest Releases of pipelines/tools: \n\n" >> README_tmp.md
+# add list of all releases releases
+echo "\n" >> README_tmp.md
 cat ${MDPATH}/latest_releases.md >> README_tmp.md
 python ${MDPATH}/get_recent_releases_table.py >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
@@ -50,6 +52,7 @@ echo -ne "\n\n" >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
 # add citation
+echo "\n" >> README_tmp.md
 cat ${MDPATH}/citation.md >> README_tmp.md
 cat ${MDPATH}/back_to_top.md >> README_tmp.md
 
