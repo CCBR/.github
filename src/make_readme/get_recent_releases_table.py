@@ -19,6 +19,15 @@ headers = {
 }
 
 
+def _raise_api_error(response, endpoint):
+    raise RuntimeError(
+        f"Failed to retrieve {endpoint} from GitHub API "
+        f"(status {response.status_code}). "
+        "Critical README data is unavailable. "
+        "Check whether GITHUB_TOKEN is expired or missing required permissions."
+    )
+
+
 def get_date_n_months_ago(n_months):
     today = datetime.now()
     n_months_ago = today - relativedelta(months=n_months)
@@ -34,11 +43,17 @@ def get_repos(org_name):
             headers=headers,
         )
         if response.status_code != 200:
-            break
+            _raise_api_error(response, f"repositories for org '{org_name}'")
         repos.extend(response.json())
         if len(response.json()) < 100:
             break
         page += 1
+    if not repos:
+        raise RuntimeError(
+            f"No repositories were returned for org '{org_name}'. "
+            "Critical README data is unavailable. "
+            "Check whether GITHUB_TOKEN is expired or missing required permissions."
+        )
     return repos
 
 
@@ -58,6 +73,8 @@ def get_latest_release(repo_full_name):
     )
     if response.status_code == 200:
         return response.json()
+    if response.status_code in {401, 403}:
+        _raise_api_error(response, f"latest release for repo '{repo_full_name}'")
     return None
 
 
@@ -68,7 +85,7 @@ def get_open_issues_count(repo_full_name):
     )
     if response.status_code == 200:
         return len(response.json())
-    return 0
+    _raise_api_error(response, f"open issues for repo '{repo_full_name}'")
 
 
 def get_recent_releases_table(nmonths=0):

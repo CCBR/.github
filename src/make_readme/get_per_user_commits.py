@@ -6,6 +6,8 @@ from datetime import datetime, timedelta
 
 # Replace these with your GitHub token and organization name
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+if not GITHUB_TOKEN:
+    raise ValueError("GITHUB_TOKEN environment variable not set")
 ORG_NAME = "CCBR"
 # ORG_NAME = 'CCRGeneticsBranch'
 # ORG_NAME = 'NIDAP-Community'
@@ -17,6 +19,15 @@ headers = {
 }
 
 
+def _raise_api_error(response, endpoint):
+    raise RuntimeError(
+        f"Failed to retrieve {endpoint} from GitHub API "
+        f"(status {response.status_code}). "
+        "Critical README data is unavailable. "
+        "Check whether GITHUB_TOKEN is expired or missing required permissions."
+    )
+
+
 def get_repos(org_name):
     repos = []
     page = 1
@@ -26,11 +37,17 @@ def get_repos(org_name):
             headers=headers,
         )
         if response.status_code != 200:
-            break
+            _raise_api_error(response, f"repositories for org '{org_name}'")
         repos.extend(response.json())
         if len(response.json()) < 100:
             break
         page += 1
+    if not repos:
+        raise RuntimeError(
+            f"No repositories were returned for org '{org_name}'. "
+            "Critical README data is unavailable. "
+            "Check whether GITHUB_TOKEN is expired or missing required permissions."
+        )
     return repos
 
 
@@ -43,13 +60,19 @@ def get_members(org_name):
             headers=headers,
         )
         if response.status_code != 200:
-            break
+            _raise_api_error(response, f"members for org '{org_name}'")
         page_members = response.json()
         if not page_members:
             break
         for member in page_members:
             members.add(member["login"])
         page += 1
+    if not members:
+        raise RuntimeError(
+            f"No members were returned for org '{org_name}'. "
+            "Critical README data is unavailable. "
+            "Check whether GITHUB_TOKEN is expired or missing required permissions."
+        )
     return members
 
 
@@ -62,7 +85,9 @@ def get_outside_collaborators(repo_full_name):
             headers=headers,
         )
         if response.status_code != 200:
-            break
+            _raise_api_error(
+                response, f"outside collaborators for repo '{repo_full_name}'"
+            )
         outside_collaborators = response.json()
         if not outside_collaborators:
             break
@@ -87,7 +112,7 @@ def get_commits_count(repo_full_name, members_and_collaborators):
             headers=headers,
         )
         if response.status_code != 200:
-            break
+            _raise_api_error(response, f"commits for repo '{repo_full_name}'")
         commits = response.json()
         if not commits:
             break

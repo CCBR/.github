@@ -1,6 +1,5 @@
 import requests
 import os
-import sys
 from datetime import datetime
 
 VERBOSE = 0  # 0 means no comments ... anything else means print progress comments
@@ -13,6 +12,8 @@ VERBOSE = 0  # 0 means no comments ... anything else means print progress commen
 
 BASE_URL = "https://api.github.com"
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+if not GITHUB_TOKEN:
+    raise ValueError("GITHUB_TOKEN environment variable not set")
 HEADERS = {
     "Authorization": f"token {GITHUB_TOKEN}",
     "Accept": "application/vnd.github.v3+json",
@@ -32,21 +33,19 @@ def get_admin_orgs(github_token):
     url = "https://api.github.com/user/memberships/orgs"
     headers = {"Authorization": f"token {github_token}"}
 
-    try:
-        response = requests.get(url, headers=headers)
-        response.raise_for_status()  # Raise an exception for HTTP errors
+    response = requests.get(url, headers=headers)
+    if response.status_code != 200:
+        raise RuntimeError(
+            "Failed to retrieve organization memberships from GitHub API "
+            f"(status {response.status_code}). Critical README data is unavailable. "
+            "Check whether GITHUB_TOKEN is expired or missing required permissions."
+        )
 
-        memberships = response.json()
-        admin_orgs = [
-            org["organization"]["login"]
-            for org in memberships
-            if org.get("role") == "admin"
-        ]
-        return admin_orgs
-
-    except requests.exceptions.RequestException as e:
-        print(f"Error: {e}")
-        return []
+    memberships = response.json()
+    admin_orgs = [
+        org["organization"]["login"] for org in memberships if org.get("role") == "admin"
+    ]
+    return admin_orgs
 
 
 def get_org_members(org):
@@ -97,25 +96,25 @@ def list_repo_events(org, repo):
     events = []
     page = 1
 
-    try:
-        while True:
-            response = requests.get(f"{url}?per_page=100&page={page}", headers=HEADERS)
-            response.raise_for_status()
-            page_events = response.json()
+    while True:
+        response = requests.get(f"{url}?per_page=100&page={page}", headers=HEADERS)
+        if response.status_code != 200:
+            raise RuntimeError(
+                f"Failed to retrieve events for repo '{org}/{repo}' from GitHub API "
+                f"(status {response.status_code}). Critical README data is unavailable. "
+                "Check whether GITHUB_TOKEN is expired or missing required permissions."
+            )
+        page_events = response.json()
 
-            if not page_events:
-                break
+        if not page_events:
+            break
 
-            events.extend(page_events)
-            page += 1
-            if page == 4:
-                break  # get only top 300
+        events.extend(page_events)
+        page += 1
+        if page == 4:
+            break  # get only top 300
 
-        return events
-
-    except requests.exceptions.RequestException:
-        # print(f"Error fetching events for repo '{repo}': {e}")
-        return []
+    return events
 
 
 def report_org_activity(org, outmd):
@@ -130,83 +129,97 @@ def report_org_activity(org, outmd):
     # Create all necessary directories
     if dir_name and not os.path.exists(dir_name):
         os.makedirs(dir_name)
-    try:
+    if VERBOSE != 0:
+        print(f"Organization: {org}")
+    repositories = get_all_repos(org)
+    if not repositories:
+        raise RuntimeError(
+            f"No repositories were returned for org '{org}'. "
+            "Critical README data is unavailable. "
+            "Check whether GITHUB_TOKEN is expired or missing required permissions."
+        )
+    if VERBOSE != 0:
+        print(f"Total repositories: {len(repositories)}")
+    members = get_org_members(org)
+    if not members:
+        raise RuntimeError(
+            f"No members were returned for org '{org}'. "
+            "Critical README data is unavailable. "
+            "Check whether GITHUB_TOKEN is expired or missing required permissions."
+        )
+    if VERBOSE != 0:
+        print(f"Total members: {len(members)}")
+    collaborators = get_outside_collaborators(org)
+    if VERBOSE != 0:
+        print(f"Total collaborators: {len(collaborators)}")
+    # events=list_repo_events(org,sys.argv[1])
+    # print(len(events))
+    last_events = dict()
+    for repo in repositories:
+        reponame = repo["name"]
+        events = list_repo_events(org, reponame)
+        users = set()
+        for event in events:
+            user = event["actor"]["login"]
+            users.add(user)
+            if user not in last_events:
+                last_events[user] = []
+            last_events[user].append(event["created_at"])
+        for user in users:
+            last_events[user] = [max(last_events[user])]
         if VERBOSE != 0:
-            print(f"Organization: {org}")
-        repositories = get_all_repos(org)
-        if VERBOSE != 0:
-            print(f"Total repositories: {len(repositories)}")
-        members = get_org_members(org)
-        if VERBOSE != 0:
-            print(f"Total members: {len(members)}")
-        collaborators = get_outside_collaborators(org)
-        if VERBOSE != 0:
-            print(f"Total collaborators: {len(collaborators)}")
-        # events=list_repo_events(org,sys.argv[1])
-        # print(len(events))
-        last_events = dict()
-        for repo in repositories:
-            reponame = repo["name"]
-            events = list_repo_events(org, reponame)
-            users = set()
-            for event in events:
-                user = event["actor"]["login"]
-                users.add(user)
-                if user not in last_events:
-                    last_events[user] = []
-                last_events[user].append(event["created_at"])
-            for user in users:
-                last_events[user] = [max(last_events[user])]
-            if VERBOSE != 0:
-                print(
-                    f"\tFinished working with repo: {org}/{reponame}; Found {len(users)} users and {len(events)} events."
-                )
+            print(
+                f"\tFinished working with repo: {org}/{reponame}; Found {len(users)} users and {len(events)} events."
+            )
 
-        with open(outmd, "w") as file:
-            file.write("\n| github_handle   | member/collaborator | days_inactive |\n")
-            file.write("|-----------------|----------------------|---------------|\n")
-            days_inactivity = dict()
-            for member in members:
-                username = member["login"]
-                if username not in last_events:
-                    days_inactivity[username] = "No Activity Found"
-                else:
-                    last_event = max(last_events[username])
-                    event_date = datetime.fromisoformat(last_event).date()
-                    today_date = datetime.now().date()
-                    days_inactivity[username] = str((today_date - event_date).days)
-                # print(username,"member",days_inactivity[username])
-                days_since_activity = days_inactivity[username]
-                usertype = "member"
-                username_with_hyperlink = f"[{username}](https://github.com/{username})"
-                file.write(
-                    f"| {username_with_hyperlink:<15} | {usertype:<20} | {days_since_activity:<13} |\n"
-                )
+    with open(outmd, "w") as file:
+        file.write("\n| github_handle   | member/collaborator | days_inactive |\n")
+        file.write("|-----------------|----------------------|---------------|\n")
+        days_inactivity = dict()
+        for member in members:
+            username = member["login"]
+            if username not in last_events:
+                days_inactivity[username] = "No Activity Found"
+            else:
+                last_event = max(last_events[username])
+                event_date = datetime.fromisoformat(last_event).date()
+                today_date = datetime.now().date()
+                days_inactivity[username] = str((today_date - event_date).days)
+            # print(username,"member",days_inactivity[username])
+            days_since_activity = days_inactivity[username]
+            usertype = "member"
+            username_with_hyperlink = f"[{username}](https://github.com/{username})"
+            file.write(
+                f"| {username_with_hyperlink:<15} | {usertype:<20} | {days_since_activity:<13} |\n"
+            )
 
-            for collaborator in collaborators:
-                username = collaborator["login"]
-                if username not in last_events:
-                    days_inactivity[username] = "No Activity Found"
-                else:
-                    last_event = max(last_events[user])
-                    event_date = datetime.fromisoformat(last_event).date()
-                    today_date = datetime.now().date()
-                    days_inactivity[username] = str((today_date - event_date).days)
-                # print(username,"outside_collaborator",days_inactivity[username])
-                days_since_activity = days_inactivity[username]
-                usertype = "collaborator"
-                username_with_hyperlink = f"[{username}](https://github.com/{username})"
-                file.write(
-                    f"| {username_with_hyperlink:<15} | {usertype:<20} | {days_since_activity:<13} |\n"
-                )
-    except Exception as e:
-        print(f"Error: {e}", file=sys.stderr)
-        return False
+        for collaborator in collaborators:
+            username = collaborator["login"]
+            if username not in last_events:
+                days_inactivity[username] = "No Activity Found"
+            else:
+                last_event = max(last_events[username])
+                event_date = datetime.fromisoformat(last_event).date()
+                today_date = datetime.now().date()
+                days_inactivity[username] = str((today_date - event_date).days)
+            # print(username,"outside_collaborator",days_inactivity[username])
+            days_since_activity = days_inactivity[username]
+            usertype = "collaborator"
+            username_with_hyperlink = f"[{username}](https://github.com/{username})"
+            file.write(
+                f"| {username_with_hyperlink:<15} | {usertype:<20} | {days_since_activity:<13} |\n"
+            )
     return True
 
 
 def get_last_activity_per_member():
     organizations = get_admin_orgs(GITHUB_TOKEN)
+    if not organizations:
+        raise RuntimeError(
+            "No admin organizations were returned from GitHub API. "
+            "Critical README data is unavailable. "
+            "Check whether GITHUB_TOKEN is expired or missing required permissions."
+        )
     lines = []
     # organizations = ["NCI-CCDI"]
     # organizations = ["abcswebapps"]
