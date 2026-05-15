@@ -53,14 +53,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.OMNITOKEN }} # must be OMNITOKEN for user activity data
         run: |
           quarto render profile/README.qmd
+      - uses: pre-commit/action@v3.0.1
+        continue-on-error: true
+        
       - name: Upload rendered README artifact
         uses: actions/upload-artifact@v4
         with:
           name: rendered-readme
           path: profile/README.md
-
-      - uses: pre-commit/action@v3.0.1
-        continue-on-error: true
 
       - name: Update PR with new README
         if: github.event_name == 'pull_request'
