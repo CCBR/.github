@@ -43,7 +43,9 @@ def get_admin_orgs(github_token):
 
     memberships = response.json()
     admin_orgs = [
-        org["organization"]["login"] for org in memberships if org.get("role") == "admin"
+        org["organization"]["login"]
+        for org in memberships
+        if org.get("role") == "admin"
     ]
     return admin_orgs
 
