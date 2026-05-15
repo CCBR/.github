@@ -180,10 +180,17 @@ Most of our end-to-end pipelines which have been used in published research work
 
 ```{python}
 # Handle activity_data directory
-# Move activity_data to profile/ if generated
+# Move activity_data to profile/ only when it was generated outside profile/
 import shutil
-if Path("activity_data").exists():
-    if (Path("profile") / "activity_data").exists():
-        shutil.rmtree(Path("profile") / "activity_data")
-    shutil.move("activity_data", "profile/")
+from pathlib import Path
+
+current_dir = Path.cwd().resolve()
+profile_dir = current_dir if current_dir.name == "profile" else (current_dir / "profile").resolve()
+source_dir = current_dir / "activity_data"
+destination_dir = profile_dir / "activity_data"
+
+if source_dir.exists() and source_dir != destination_dir:
+    if destination_dir.exists():
+        shutil.rmtree(destination_dir)
+    shutil.move(str(source_dir), str(profile_dir))
 ```
