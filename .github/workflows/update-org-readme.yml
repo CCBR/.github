@@ -53,6 +53,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.OMNITOKEN }} # must be OMNITOKEN for user activity data
         run: |
           quarto render profile/README.qmd
+      - name: Upload rendered README artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-readme
+          path: profile/README.md
 
       - uses: pre-commit/action@v3.0.1
         continue-on-error: true
@@ -103,8 +108,11 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'schedule' || ( github.event_name == 'workflow_dispatch' && github.ref_name == 'main' )
     steps:
-      - name: Checkout main repo
-        uses: actions/checkout@v6
+      - name: Download rendered README artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: rendered-readme
+          path: rendered-readme
       - name: Generate a token
         id: generate-token
         uses: actions/create-github-app-token@v2
@@ -121,7 +129,7 @@ jobs:
 
       - name: Copy README.md to index.md
         run: |
-          cp profile/README.md ccbr.github.io/index.md
+          cp rendered-readme/README.md ccbr.github.io/index.md
 
       - name: Commit and push to GitHub Pages
         working-directory: ccbr.github.io
