@@ -55,7 +55,7 @@ jobs:
           quarto render profile/README.qmd
       - uses: pre-commit/action@v3.0.1
         continue-on-error: true
-        
+
       - name: Upload rendered README artifact
         uses: actions/upload-artifact@v4
         with:
