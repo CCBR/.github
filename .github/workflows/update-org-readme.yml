@@ -113,7 +113,7 @@ jobs:
           private-key: ${{ secrets.CCBR_BOT_PRIVATE_KEY }}
           owner: CCBR
       - name: Checkout github.io
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: CCBR/ccbr.github.io
           token: ${{ steps.generate-token.outputs.token }}
