@@ -70,16 +70,17 @@ def get_all_repos(org):
     """Get all repos in the org"""
     repos = []
     page = 1
-    while True:
+    has_more_pages = True
+    while has_more_pages:
         url = f"{BASE_URL}/orgs/{org}/repos"
         params = {"type": "all", "per_page": 100, "page": page}
         response = requests.get(url, headers=HEADERS, params=params)
         response.raise_for_status()
         page_repos = response.json()
-        if not page_repos:
-            break
+        has_more_pages = bool(page_repos)
         repos.extend(page_repos)
-        page += 1
+        if has_more_pages:
+            page += 1
     return repos
 
 
@@ -98,7 +99,8 @@ def list_repo_events(org, repo):
     events = []
     page = 1
 
-    while True:
+    has_more_pages = True
+    while has_more_pages and page <= 3:
         response = requests.get(f"{url}?per_page=100&page={page}", headers=HEADERS)
         if response.status_code != 200:
             raise RuntimeError(
@@ -107,14 +109,10 @@ def list_repo_events(org, repo):
                 "Check whether GITHUB_TOKEN is expired or missing required permissions."
             )
         page_events = response.json()
-
-        if not page_events:
-            break
-
+        has_more_pages = bool(page_events)
         events.extend(page_events)
-        page += 1
-        if page == 4:
-            break  # get only top 300
+        if has_more_pages:
+            page += 1
 
     return events
 

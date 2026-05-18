@@ -37,17 +37,19 @@ def get_date_n_months_ago(n_months):
 def get_repos(org_name):
     repos = []
     page = 1
-    while True:
+    has_more_pages = True
+    while has_more_pages:
         response = requests.get(
             f"https://api.github.com/orgs/{org_name}/repos?per_page=100&page={page}",
             headers=headers,
         )
         if response.status_code != 200:
             _raise_api_error(response, f"repositories for org '{org_name}'")
-        repos.extend(response.json())
-        if len(response.json()) < 100:
-            break
-        page += 1
+        page_repos = response.json()
+        repos.extend(page_repos)
+        has_more_pages = len(page_repos) == 100
+        if has_more_pages:
+            page += 1
     if not repos:
         raise RuntimeError(
             f"No repositories were returned for org '{org_name}'. "

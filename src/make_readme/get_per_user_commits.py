@@ -34,17 +34,19 @@ def _raise_api_error(response, endpoint):
 def get_repos(org_name):
     repos = []
     page = 1
-    while True:
+    has_more_pages = True
+    while has_more_pages:
         response = requests.get(
             f"https://api.github.com/orgs/{org_name}/repos?per_page=100&page={page}",
             headers=headers,
         )
         if response.status_code != 200:
             _raise_api_error(response, f"repositories for org '{org_name}'")
-        repos.extend(response.json())
-        if len(response.json()) < 100:
-            break
-        page += 1
+        page_repos = response.json()
+        repos.extend(page_repos)
+        has_more_pages = len(page_repos) == 100
+        if has_more_pages:
+            page += 1
     if not repos:
         raise RuntimeError(
             f"No repositories were returned for org '{org_name}'. "
@@ -57,7 +59,8 @@ def get_repos(org_name):
 def get_members(org_name):
     members = set()
     page = 1
-    while True:
+    has_more_pages = True
+    while has_more_pages:
         response = requests.get(
             f"https://api.github.com/orgs/{org_name}/members?per_page=100&page={page}",
             headers=headers,
@@ -65,11 +68,11 @@ def get_members(org_name):
         if response.status_code != 200:
             _raise_api_error(response, f"members for org '{org_name}'")
         page_members = response.json()
-        if not page_members:
-            break
+        has_more_pages = bool(page_members)
         for member in page_members:
             members.add(member["login"])
-        page += 1
+        if has_more_pages:
+            page += 1
     if not members:
         raise RuntimeError(
             f"No members were returned for org '{org_name}'. "
@@ -82,7 +85,8 @@ def get_members(org_name):
 def get_outside_collaborators(repo_full_name):
     collaborators = set()
     page = 1
-    while True:
+    has_more_pages = True
+    while has_more_pages:
         response = requests.get(
             f"https://api.github.com/repos/{repo_full_name}/collaborators?affiliation=outside&per_page=100&page={page}",
             headers=headers,
@@ -111,16 +115,17 @@ def get_outside_collaborators(repo_full_name):
                         response.status_code,
                         error_message or "<no message>",
                     )
-                    break
+                    has_more_pages = False
+                    continue
             _raise_api_error(
                 response, f"outside collaborators for repo '{repo_full_name}'"
             )
         outside_collaborators = response.json()
-        if not outside_collaborators:
-            break
+        has_more_pages = bool(outside_collaborators)
         for collaborator in outside_collaborators:
             collaborators.add(collaborator["login"])
-        page += 1
+        if has_more_pages:
+            page += 1
     return collaborators
 
 
@@ -133,7 +138,8 @@ def get_commits_count(repo_full_name, members_and_collaborators):
     one_month_ago = today - timedelta(days=30)
     six_months_ago = today - timedelta(days=180)
 
-    while True:
+    has_more_pages = True
+    while has_more_pages:
         response = requests.get(
             f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}",
             headers=headers,
@@ -141,8 +147,7 @@ def get_commits_count(repo_full_name, members_and_collaborators):
         if response.status_code != 200:
             _raise_api_error(response, f"commits for repo '{repo_full_name}'")
         commits = response.json()
-        if not commits:
-            break
+        has_more_pages = bool(commits)
 
         for commit in commits:
             author_login = commit["author"]["login"] if commit["author"] else "unknown"
@@ -156,7 +161,8 @@ def get_commits_count(repo_full_name, members_and_collaborators):
                 if commit_date >= six_months_ago:
                     commits_count_by_user[author_login]["last_6_months"] += 1
 
-        page += 1
+        if has_more_pages:
+            page += 1
 
     return commits_count_by_user
 
