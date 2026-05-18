@@ -2,8 +2,22 @@ import requests
 import os
 import argparse
 import pandas as pd
+import logging
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+
+try:
+    from .github_api import (
+        is_critical_api_error,
+        log_noncritical_api_error,
+        raise_api_error,
+    )
+except ImportError:
+    from github_api import (
+        is_critical_api_error,
+        log_noncritical_api_error,
+        raise_api_error,
+    )
 
 exclude_list = ["nf-sandbox"]
 
@@ -18,14 +32,7 @@ headers = {
     "Authorization": f"token {GITHUB_TOKEN}",
 }
 
-
-def _raise_api_error(response, endpoint):
-    raise RuntimeError(
-        f"Failed to retrieve {endpoint} from GitHub API "
-        f"(status {response.status_code}). "
-        "Critical README data is unavailable. "
-        "Check whether GITHUB_TOKEN is expired or missing required permissions."
-    )
+logger = logging.getLogger(__name__)
 
 
 def get_date_n_months_ago(n_months):
@@ -44,7 +51,7 @@ def get_repos(org_name):
             headers=headers,
         )
         if response.status_code != 200:
-            _raise_api_error(response, f"repositories for org '{org_name}'")
+            raise_api_error(response, f"repositories for org '{org_name}'")
         page_repos = response.json()
         repos.extend(page_repos)
         has_more_pages = len(page_repos) == 100
@@ -75,8 +82,16 @@ def get_latest_release(repo_full_name):
     )
     if response.status_code == 200:
         return response.json()
-    if response.status_code in {401, 403}:
-        _raise_api_error(response, f"latest release for repo '{repo_full_name}'")
+    if is_critical_api_error(response):
+        raise_api_error(response, f"latest release for repo '{repo_full_name}'")
+    if response.status_code == 404:
+        return None
+    log_noncritical_api_error(
+        response,
+        f"latest release for repo '{repo_full_name}'",
+        "no release metadata for that repository",
+        logger,
+    )
     return None
 
 
@@ -87,7 +102,15 @@ def get_open_issues_count(repo_full_name):
     )
     if response.status_code == 200:
         return len(response.json())
-    _raise_api_error(response, f"open issues for repo '{repo_full_name}'")
+    if is_critical_api_error(response):
+        raise_api_error(response, f"open issues for repo '{repo_full_name}'")
+    log_noncritical_api_error(
+        response,
+        f"open issues for repo '{repo_full_name}'",
+        "'Unavailable' for open issue counts",
+        logger,
+    )
+    return "Unavailable"
 
 
 def get_recent_releases_table(nmonths=0):

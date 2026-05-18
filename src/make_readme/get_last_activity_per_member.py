@@ -1,6 +1,20 @@
 import requests
 import os
+import logging
 from datetime import datetime
+
+try:
+    from .github_api import (
+        is_critical_api_error,
+        log_noncritical_api_error,
+        raise_api_error,
+    )
+except ImportError:
+    from github_api import (
+        is_critical_api_error,
+        log_noncritical_api_error,
+        raise_api_error,
+    )
 
 VERBOSE = 0  # 0 means no comments ... anything else means print progress comments
 
@@ -19,6 +33,8 @@ HEADERS = {
     "Accept": "application/vnd.github.v3+json",
 }
 
+logger = logging.getLogger(__name__)
+
 
 def get_admin_orgs(github_token):
     """
@@ -35,11 +51,7 @@ def get_admin_orgs(github_token):
 
     response = requests.get(url, headers=headers)
     if response.status_code != 200:
-        raise RuntimeError(
-            "Failed to retrieve organization memberships from GitHub API "
-            f"(status {response.status_code}). Critical README data is unavailable. "
-            "Check whether GITHUB_TOKEN is expired or missing required permissions."
-        )
+        raise_api_error(response, "organization memberships")
 
     memberships = response.json()
     admin_orgs = [
@@ -54,7 +66,8 @@ def get_org_members(org):
     """Get all members of the organization."""
     url = f"{BASE_URL}/orgs/{org}/members"
     response = requests.get(url, headers=HEADERS)
-    response.raise_for_status()
+    if response.status_code != 200:
+        raise_api_error(response, f"members for org '{org}'")
     return response.json()
 
 
@@ -62,7 +75,8 @@ def get_outside_collaborators(org):
     """Get all outside collaborators of the organization."""
     url = f"{BASE_URL}/orgs/{org}/outside_collaborators"
     response = requests.get(url, headers=HEADERS)
-    response.raise_for_status()
+    if response.status_code != 200:
+        raise_api_error(response, f"outside collaborators for org '{org}'")
     return response.json()
 
 
@@ -75,7 +89,8 @@ def get_all_repos(org):
         url = f"{BASE_URL}/orgs/{org}/repos"
         params = {"type": "all", "per_page": 100, "page": page}
         response = requests.get(url, headers=HEADERS, params=params)
-        response.raise_for_status()
+        if response.status_code != 200:
+            raise_api_error(response, f"repositories for org '{org}'")
         page_repos = response.json()
         has_more_pages = bool(page_repos)
         repos.extend(page_repos)
@@ -103,11 +118,16 @@ def list_repo_events(org, repo):
     while has_more_pages and page <= 3:
         response = requests.get(f"{url}?per_page=100&page={page}", headers=HEADERS)
         if response.status_code != 200:
-            raise RuntimeError(
-                f"Failed to retrieve events for repo '{org}/{repo}' from GitHub API "
-                f"(status {response.status_code}). Critical README data is unavailable. "
-                "Check whether GITHUB_TOKEN is expired or missing required permissions."
+            if is_critical_api_error(response):
+                raise_api_error(response, f"events for repo '{org}/{repo}'")
+            log_noncritical_api_error(
+                response,
+                f"events for repo '{org}/{repo}'",
+                "an empty event list",
+                logger,
             )
+            has_more_pages = False
+            continue
         page_events = response.json()
         has_more_pages = bool(page_events)
         events.extend(page_events)

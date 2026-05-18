@@ -5,6 +5,19 @@ import logging
 from collections import defaultdict
 from datetime import datetime, timedelta
 
+try:
+    from .github_api import (
+        is_critical_api_error,
+        log_noncritical_api_error,
+        raise_api_error,
+    )
+except ImportError:
+    from github_api import (
+        is_critical_api_error,
+        log_noncritical_api_error,
+        raise_api_error,
+    )
+
 # Replace these with your GitHub token and organization name
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 if not GITHUB_TOKEN:
@@ -22,15 +35,6 @@ headers = {
 logger = logging.getLogger(__name__)
 
 
-def _raise_api_error(response, endpoint):
-    raise RuntimeError(
-        f"Failed to retrieve {endpoint} from GitHub API "
-        f"(status {response.status_code}). "
-        "Critical README data is unavailable. "
-        "Check whether GITHUB_TOKEN is expired or missing required permissions."
-    )
-
-
 def get_repos(org_name):
     repos = []
     page = 1
@@ -41,7 +45,7 @@ def get_repos(org_name):
             headers=headers,
         )
         if response.status_code != 200:
-            _raise_api_error(response, f"repositories for org '{org_name}'")
+            raise_api_error(response, f"repositories for org '{org_name}'")
         page_repos = response.json()
         repos.extend(page_repos)
         has_more_pages = len(page_repos) == 100
@@ -66,7 +70,7 @@ def get_members(org_name):
             headers=headers,
         )
         if response.status_code != 200:
-            _raise_api_error(response, f"members for org '{org_name}'")
+            raise_api_error(response, f"members for org '{org_name}'")
         page_members = response.json()
         has_more_pages = bool(page_members)
         for member in page_members:
@@ -82,44 +86,26 @@ def get_members(org_name):
     return members
 
 
-def get_outside_collaborators(repo_full_name):
+def get_outside_collaborators(org_name):
     collaborators = set()
     page = 1
     has_more_pages = True
     while has_more_pages:
         response = requests.get(
-            f"https://api.github.com/repos/{repo_full_name}/collaborators?affiliation=outside&per_page=100&page={page}",
+            f"https://api.github.com/orgs/{org_name}/outside_collaborators?per_page=100&page={page}",
             headers=headers,
         )
         if response.status_code != 200:
-            # Some repos can deny collaborator visibility to this token.
-            # That should not fail the entire README workflow; just skip them.
-            if response.status_code in {403, 404}:
-                error_message = ""
-                try:
-                    error_message = response.json().get("message", "")
-                except ValueError:
-                    error_message = ""
-
-                lowered_message = error_message.lower()
-                rate_limited = "rate limit" in lowered_message
-                bad_credentials = (
-                    response.status_code == 403 and "bad credentials" in lowered_message
-                )
-
-                if not rate_limited and not bad_credentials:
-                    logger.warning(
-                        "Skipping outside collaborators for %s due to API access restrictions "
-                        "(status %s, message: %s)",
-                        repo_full_name,
-                        response.status_code,
-                        error_message or "<no message>",
-                    )
-                    has_more_pages = False
-                    continue
-            _raise_api_error(
-                response, f"outside collaborators for repo '{repo_full_name}'"
+            if is_critical_api_error(response):
+                raise_api_error(response, f"outside collaborators for org '{org_name}'")
+            log_noncritical_api_error(
+                response,
+                f"outside collaborators for org '{org_name}'",
+                "an empty collaborator set",
+                logger,
             )
+            has_more_pages = False
+            continue
         outside_collaborators = response.json()
         has_more_pages = bool(outside_collaborators)
         for collaborator in outside_collaborators:
@@ -145,7 +131,16 @@ def get_commits_count(repo_full_name, members_and_collaborators):
             headers=headers,
         )
         if response.status_code != 200:
-            _raise_api_error(response, f"commits for repo '{repo_full_name}'")
+            if is_critical_api_error(response):
+                raise_api_error(response, f"commits for repo '{repo_full_name}'")
+            log_noncritical_api_error(
+                response,
+                f"commits for repo '{repo_full_name}'",
+                "no commits for that repository",
+                logger,
+            )
+            has_more_pages = False
+            continue
         commits = response.json()
         has_more_pages = bool(commits)
 
@@ -171,12 +166,7 @@ def get_per_user_commits():
     members = get_members(ORG_NAME)
     repos = get_repos(ORG_NAME)
 
-    # Collect outside collaborators
-    outside_collaborators = set()
-    for repo in repos:
-        repo_full_name = repo["full_name"]
-        # print(f"Fetching outside collaborators for repository: {repo_full_name}")
-        outside_collaborators.update(get_outside_collaborators(repo_full_name))
+    outside_collaborators = get_outside_collaborators(ORG_NAME)
 
     members_and_collaborators = members.union(outside_collaborators)
 
