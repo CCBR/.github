@@ -10,8 +10,10 @@
 - [Our model](#our-model)
 - [Pipelines](#pipelines)
 - [Tools](#tools)
-- [`ccbrpipeliner` module release history on BIOWULF](#`ccbrpipeliner`-module-release-history-on-biowulf)
-- [Latest Releases of pipelines/tools:](#latest-releases-of-pipelines/tools:)
+- [`ccbrpipeliner` module release history on
+  BIOWULF](#ccbrpipeliner-module-release-history-on-biowulf)
+- [Latest Releases of
+  pipelines/tools:](#latest-releases-of-pipelinestools)
 - [Days since last activity](#days-since-last-activity)
 - [Citation](#citation)
 
@@ -31,18 +33,20 @@
 
 ## TOP contributors
 
+    Skipping commits for repo 'CCBR/nf_common_modules' due to GitHub API response 409 (Git Repository is empty.). Using no commits for that repository.
+
 | User                                                | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |          6096 |                   150 |                      871 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |          6096 |                   139 |                      866 |
 | [kopardev](https://github.com/kopardev)             |          2791 |                     4 |                      113 |
+| [slsevilla](https://github.com/slsevilla)           |          1193 |                     0 |                        0 |
+| [skchronicles](https://github.com/skchronicles)     |           846 |                     0 |                        0 |
+| [dnousome](https://github.com/dnousome)             |           834 |                     0 |                        0 |
 | [finneyr](https://github.com/finneyr)               |           323 |                     0 |                        0 |
 | [kvaldez](https://github.com/kvaldez)               |           222 |                     0 |                        0 |
-| [wong-nw](https://github.com/wong-nw)               |           196 |                     4 |                       49 |
-| [escauley](https://github.com/escauley)             |           192 |                     0 |                       32 |
+| [wong-nw](https://github.com/wong-nw)               |           196 |                     4 |                       42 |
+| [escauley](https://github.com/escauley)             |           192 |                     0 |                       29 |
 | [samarth8392](https://github.com/samarth8392)       |           163 |                     2 |                       19 |
-| [pajailwala](https://github.com/pajailwala)         |            47 |                     3 |                       24 |
-| [maggiecam](https://github.com/maggiecam)           |            46 |                     0 |                        0 |
-| [phoman14](https://github.com/phoman14)             |            19 |                     2 |                       11 |
 
 ## About Us
 
@@ -305,8 +309,11 @@ different pipelines offered as part of the ccbrpipeliner suite.
 
 ## Days since last activity
 
-Error: 403 Client Error: Forbidden for url:
-https://api.github.com/user/memberships/orgs
+    Skipping events for repo 'CCBR/parkit' due to GitHub API response 500 (<no message>). Using an empty event list.
+    Skipping events for repo 'CCBR/LOGAN' due to GitHub API response 502 (Server Error). Using an empty event list.
+    Skipping events for repo 'CCBR/spacesavers2' due to GitHub API response 502 (Server Error). Using an empty event list.
+
+- [CCBR](activity_data/CCBR/README.md)
 
 ## Citation
 
