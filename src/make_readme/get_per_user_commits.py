@@ -1,6 +1,7 @@
 import requests
 import os
 import pandas as pd
+import logging
 from collections import defaultdict
 from datetime import datetime, timedelta
 
@@ -17,6 +18,8 @@ headers = {
     "Accept": "application/vnd.github.v3+json",
     "Authorization": f"token {GITHUB_TOKEN}",
 }
+
+logger = logging.getLogger(__name__)
 
 
 def _raise_api_error(response, endpoint):
@@ -85,6 +88,30 @@ def get_outside_collaborators(repo_full_name):
             headers=headers,
         )
         if response.status_code != 200:
+            # Some repos can deny collaborator visibility to this token.
+            # That should not fail the entire README workflow; just skip them.
+            if response.status_code in {403, 404}:
+                error_message = ""
+                try:
+                    error_message = response.json().get("message", "")
+                except ValueError:
+                    error_message = ""
+
+                lowered_message = error_message.lower()
+                rate_limited = "rate limit" in lowered_message
+                bad_credentials = (
+                    response.status_code == 403 and "bad credentials" in lowered_message
+                )
+
+                if not rate_limited and not bad_credentials:
+                    logger.warning(
+                        "Skipping outside collaborators for %s due to API access restrictions "
+                        "(status %s, message: %s)",
+                        repo_full_name,
+                        response.status_code,
+                        error_message or "<no message>",
+                    )
+                    break
             _raise_api_error(
                 response, f"outside collaborators for repo '{repo_full_name}'"
             )
@@ -166,7 +193,12 @@ def get_per_user_commits():
     data = []
     for user, counts in user_commits.items():
         data.append(
-            [user, counts["total"], counts["last_month"], counts["last_6_months"]]
+            [
+                user,
+                counts["total"],
+                counts["last_month"],
+                counts["last_6_months"],
+            ]
         )
 
     df = pd.DataFrame(
