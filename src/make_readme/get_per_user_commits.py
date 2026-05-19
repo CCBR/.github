@@ -86,36 +86,7 @@ def get_members(org_name):
     return members
 
 
-def get_outside_collaborators(org_name):
-    collaborators = set()
-    page = 1
-    has_more_pages = True
-    while has_more_pages:
-        response = requests.get(
-            f"https://api.github.com/orgs/{org_name}/outside_collaborators?per_page=100&page={page}",
-            headers=headers,
-        )
-        if response.status_code != 200:
-            if is_critical_api_error(response):
-                raise_api_error(response, f"outside collaborators for org '{org_name}'")
-            log_noncritical_api_error(
-                response,
-                f"outside collaborators for org '{org_name}'",
-                "an empty collaborator set",
-                logger,
-            )
-            has_more_pages = False
-            continue
-        outside_collaborators = response.json()
-        has_more_pages = bool(outside_collaborators)
-        for collaborator in outside_collaborators:
-            collaborators.add(collaborator["login"])
-        if has_more_pages:
-            page += 1
-    return collaborators
-
-
-def get_commits_count(repo_full_name, members_and_collaborators):
+def get_commits_count(repo_full_name, eligible_members):
     commits_count_by_user = defaultdict(
         lambda: {"total": 0, "last_month": 0, "last_6_months": 0}
     )
@@ -149,7 +120,7 @@ def get_commits_count(repo_full_name, members_and_collaborators):
             commit_date_str = commit["commit"]["author"]["date"]
             commit_date = datetime.strptime(commit_date_str, "%Y-%m-%dT%H:%M:%SZ")
 
-            if author_login != "unknown" and author_login in members_and_collaborators:
+            if author_login != "unknown" and author_login in eligible_members:
                 commits_count_by_user[author_login]["total"] += 1
                 if commit_date >= one_month_ago:
                     commits_count_by_user[author_login]["last_month"] += 1
@@ -166,10 +137,6 @@ def get_per_user_commits():
     members = get_members(ORG_NAME)
     repos = get_repos(ORG_NAME)
 
-    outside_collaborators = get_outside_collaborators(ORG_NAME)
-
-    members_and_collaborators = members.union(outside_collaborators)
-
     user_commits = defaultdict(
         lambda: {"total": 0, "last_month": 0, "last_6_months": 0}
     )
@@ -177,9 +144,7 @@ def get_per_user_commits():
     for repo in repos:
         repo_full_name = repo["full_name"]
         # print(f"Processing repository: {repo_full_name}")
-        commits_count_by_user = get_commits_count(
-            repo_full_name, members_and_collaborators
-        )
+        commits_count_by_user = get_commits_count(repo_full_name, members)
         for user, counts in commits_count_by_user.items():
             user_commits[user]["total"] += counts["total"]
             user_commits[user]["last_month"] += counts["last_month"]
