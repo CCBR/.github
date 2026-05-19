@@ -37,14 +37,14 @@
 | :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
 | [kelly-sovacool](https://github.com/kelly-sovacool) |          6102 |                   145 |                      865 |
 | [kopardev](https://github.com/kopardev)             |          2791 |                     4 |                      112 |
-| [slsevilla](https://github.com/slsevilla)           |          1193 |                     0 |                        0 |
-| [skchronicles](https://github.com/skchronicles)     |           846 |                     0 |                        0 |
-| [dnousome](https://github.com/dnousome)             |           834 |                     0 |                        0 |
 | [finneyr](https://github.com/finneyr)               |           323 |                     0 |                        0 |
 | [kvaldez](https://github.com/kvaldez)               |           222 |                     0 |                        0 |
 | [wong-nw](https://github.com/wong-nw)               |           196 |                     4 |                       42 |
 | [escauley](https://github.com/escauley)             |           192 |                     0 |                       29 |
 | [samarth8392](https://github.com/samarth8392)       |           163 |                     2 |                       19 |
+| [pajailwala](https://github.com/pajailwala)         |            51 |                     6 |                       28 |
+| [maggiecam](https://github.com/maggiecam)           |            46 |                     0 |                        0 |
+| [phoman14](https://github.com/phoman14)             |            19 |                     2 |                       11 |
 
 ## About Us
 
