@@ -32,13 +32,11 @@ jobs:
           cache-dependency-path: src/make_readme/requirements.txt
           python-version: 3.14
       - uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          quarto-version: 1.7
       - name: Install Python dependencies
         run: pip install -r src/make_readme/requirements.txt
       - name: Generate a token
         id: generate-token
-        uses: actions/create-github-app-token@v2
+        uses: actions/create-github-app-token@v3
         with:
           app-id: ${{ vars.CCBR_BOT_APP_ID }}
           private-key: ${{ secrets.CCBR_BOT_PRIVATE_KEY }}
@@ -57,7 +55,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload rendered README artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: rendered-readme
           path: profile/README.md
@@ -109,7 +107,7 @@ jobs:
     if: github.event_name == 'schedule' || ( github.event_name == 'workflow_dispatch' && github.ref_name == 'main' )
     steps:
       - name: Download rendered README artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: rendered-readme
           path: rendered-readme
