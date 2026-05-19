@@ -23,22 +23,20 @@
 | :--------------------------------------------- | :-------------------------------------------------------------- | :----------- | ----------: |
 | [SINCLAIR](https://github.com/CCBR/SINCLAIR)   | [v0.4.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.4.0)  | 2026-05-13   |          30 |
 | [MOSuite](https://github.com/CCBR/MOSuite)     | [v0.3.1](https://github.com/CCBR/MOSuite/releases/tag/v0.3.1)   | 2026-05-07   |          30 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)   | [v2.7.6](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.6)  | 2026-05-06   |          20 |
-| [actions](https://github.com/CCBR/actions)     | [v0.6.2](https://github.com/CCBR/actions/releases/tag/v0.6.2)   | 2026-04-23   |          12 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)   | [v2.7.6](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.6)  | 2026-05-06   |          21 |
+| [actions](https://github.com/CCBR/actions)     | [v0.6.2](https://github.com/CCBR/actions/releases/tag/v0.6.2)   | 2026-04-23   |          13 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE) | [v0.6.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.6.0) | 2026-04-17   |          30 |
-| [RENEE](https://github.com/CCBR/RENEE)         | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)     | 2026-04-06   |          22 |
-| [Tools](https://github.com/CCBR/Tools)         | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)     | 2026-03-24   |           8 |
+| [RENEE](https://github.com/CCBR/RENEE)         | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)     | 2026-04-06   |          23 |
+| [Tools](https://github.com/CCBR/Tools)         | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)     | 2026-03-24   |           9 |
 | [HowTos](https://github.com/CCBR/HowTos)       | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)    | 2026-02-23   |          15 |
-| [parkit](https://github.com/CCBR/parkit)       | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)    | 2026-02-19   |           3 |
+| [parkit](https://github.com/CCBR/parkit)       | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)    | 2026-02-19   |           0 |
 
 ## TOP contributors
 
-    Skipping commits for repo 'CCBR/nf_common_modules' due to GitHub API response 409 (Git Repository is empty.). Using no commits for that repository.
-
 | User                                                | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |          6096 |                   139 |                      866 |
-| [kopardev](https://github.com/kopardev)             |          2791 |                     4 |                      113 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |          6102 |                   145 |                      865 |
+| [kopardev](https://github.com/kopardev)             |          2791 |                     4 |                      112 |
 | [slsevilla](https://github.com/slsevilla)           |          1193 |                     0 |                        0 |
 | [skchronicles](https://github.com/skchronicles)     |           846 |                     0 |                        0 |
 | [dnousome](https://github.com/dnousome)             |           834 |                     0 |                        0 |
@@ -268,20 +266,20 @@ different pipelines offered as part of the ccbrpipeliner suite.
 | :--------------------------------------------------------------------------- | :----------------------------------------------------------------------------- | :----------- | ----------: |
 | [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                 | [v0.4.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.4.0)                 | 2026-05-13   |          30 |
 | [MOSuite](https://github.com/CCBR/MOSuite)                                   | [v0.3.1](https://github.com/CCBR/MOSuite/releases/tag/v0.3.1)                  | 2026-05-07   |          30 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)                                 | [v2.7.6](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.6)                 | 2026-05-06   |          20 |
-| [actions](https://github.com/CCBR/actions)                                   | [v0.6.2](https://github.com/CCBR/actions/releases/tag/v0.6.2)                  | 2026-04-23   |          12 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)                                 | [v2.7.6](https://github.com/CCBR/CARLISLE/releases/tag/v2.7.6)                 | 2026-05-06   |          21 |
+| [actions](https://github.com/CCBR/actions)                                   | [v0.6.2](https://github.com/CCBR/actions/releases/tag/v0.6.2)                  | 2026-04-23   |          13 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                               | [v0.6.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.6.0)                | 2026-04-17   |          30 |
-| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)                    | 2026-04-06   |          22 |
-| [Tools](https://github.com/CCBR/Tools)                                       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)                    | 2026-03-24   |           8 |
+| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.5](https://github.com/CCBR/RENEE/releases/tag/v2.7.5)                    | 2026-04-06   |          23 |
+| [Tools](https://github.com/CCBR/Tools)                                       | [v0.5.2](https://github.com/CCBR/Tools/releases/tag/v0.5.2)                    | 2026-03-24   |           9 |
 | [HowTos](https://github.com/CCBR/HowTos)                                     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)                   | 2026-02-23   |          15 |
-| [parkit](https://github.com/CCBR/parkit)                                     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)                   | 2026-02-19   |           3 |
+| [parkit](https://github.com/CCBR/parkit)                                     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)                   | 2026-02-19   |           0 |
 | [LOGAN](https://github.com/CCBR/LOGAN)                                       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)                    | 2026-02-12   |          21 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)                   | 2026-01-29   |          11 |
-| [ASPEN](https://github.com/CCBR/ASPEN)                                       | [v1.1.2](https://github.com/CCBR/ASPEN/releases/tag/v1.1.2)                    | 2025-07-17   |          17 |
+| [ASPEN](https://github.com/CCBR/ASPEN)                                       | [v1.1.2](https://github.com/CCBR/ASPEN/releases/tag/v1.1.2)                    | 2025-07-17   |          18 |
 | [spacesavers2](https://github.com/CCBR/spacesavers2)                         | [v0.14.1](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.1)           | 2025-07-15   |           7 |
 | [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                           | [v0.3.1](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.1)              | 2025-06-23   |           3 |
 | [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                 | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)                 | 2025-06-16   |           3 |
-| [CRISPIN](https://github.com/CCBR/CRISPIN)                                   | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                  | 2025-05-28   |          19 |
+| [CRISPIN](https://github.com/CCBR/CRISPIN)                                   | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                  | 2025-05-28   |          20 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                   | [v0.12.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.12.0)                | 2025-05-20   |          14 |
 | [Dockers2](https://github.com/CCBR/Dockers2)                                 | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                 | 2024-12-02   |           5 |
 | [METRO](https://github.com/CCBR/METRO)                                       | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                        | 2024-03-28   |           2 |
@@ -308,10 +306,6 @@ different pipelines offered as part of the ccbrpipeliner suite.
 </p>
 
 ## Days since last activity
-
-    Skipping events for repo 'CCBR/parkit' due to GitHub API response 500 (<no message>). Using an empty event list.
-    Skipping events for repo 'CCBR/LOGAN' due to GitHub API response 502 (Server Error). Using an empty event list.
-    Skipping events for repo 'CCBR/spacesavers2' due to GitHub API response 502 (Server Error). Using an empty event list.
 
 - [CCBR](activity_data/CCBR/README.md)
 
