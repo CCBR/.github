@@ -9,6 +9,8 @@ format:
 execute:
   echo: false
   output: asis
+  warning: false
+  message: false
 ---
 
 ```{python imports}
