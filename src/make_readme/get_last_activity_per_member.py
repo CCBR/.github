@@ -63,21 +63,37 @@ def get_admin_orgs(github_token):
 
 
 def get_org_members(org):
-    """Get all members of the organization."""
-    url = f"{BASE_URL}/orgs/{org}/members"
-    response = requests.get(url, headers=HEADERS)
-    if response.status_code != 200:
-        raise_api_error(response, f"members for org '{org}'")
-    return response.json()
+    """Get all members of the organization, handling pagination."""
+    members = []
+    page = 1
+    while True:
+        url = f"{BASE_URL}/orgs/{org}/members"
+        response = requests.get(url, headers=HEADERS, params={"per_page": 100, "page": page})
+        if response.status_code != 200:
+            raise_api_error(response, f"members for org '{org}'")
+        page_members = response.json()
+        if not page_members:
+            break
+        members.extend(page_members)
+        page += 1
+    return members
 
 
 def get_outside_collaborators(org):
-    """Get all outside collaborators of the organization."""
-    url = f"{BASE_URL}/orgs/{org}/outside_collaborators"
-    response = requests.get(url, headers=HEADERS)
-    if response.status_code != 200:
-        raise_api_error(response, f"outside collaborators for org '{org}'")
-    return response.json()
+    """Get all outside collaborators of the organization, handling pagination."""
+    collaborators = []
+    page = 1
+    while True:
+        url = f"{BASE_URL}/orgs/{org}/outside_collaborators"
+        response = requests.get(url, headers=HEADERS, params={"per_page": 100, "page": page})
+        if response.status_code != 200:
+            raise_api_error(response, f"outside collaborators for org '{org}'")
+        page_collabs = response.json()
+        if not page_collabs:
+            break
+        collaborators.extend(page_collabs)
+        page += 1
+    return collaborators
 
 
 def get_all_repos(org):
@@ -202,7 +218,7 @@ def report_org_activity(org, outmd):
                 days_inactivity[username] = "No Activity Found"
             else:
                 last_event = max(last_events[username])
-                event_date = datetime.fromisoformat(last_event).date()
+                event_date = datetime.fromisoformat(last_event.replace("Z", "+00:00")).date()
                 today_date = datetime.now().date()
                 days_inactivity[username] = str((today_date - event_date).days)
             # print(username,"member",days_inactivity[username])
@@ -219,7 +235,7 @@ def report_org_activity(org, outmd):
                 days_inactivity[username] = "No Activity Found"
             else:
                 last_event = max(last_events[username])
-                event_date = datetime.fromisoformat(last_event).date()
+                event_date = datetime.fromisoformat(last_event.replace("Z", "+00:00")).date()
                 today_date = datetime.now().date()
                 days_inactivity[username] = str((today_date - event_date).days)
             # print(username,"outside_collaborator",days_inactivity[username])

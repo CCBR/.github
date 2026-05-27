@@ -118,6 +118,11 @@ jobs:
           app-id: ${{ vars.CCBR_BOT_APP_ID }}
           private-key: ${{ secrets.CCBR_BOT_PRIVATE_KEY }}
           owner: CCBR
+      - name: Set up Git
+        run: |
+          git config --global user.name 'CCBR-bot[bot]'
+          git config --global user.email '258092125+CCBR-bot[bot]@users.noreply.github.com'
+
       - name: Checkout github.io
         uses: actions/checkout@v6
         with:
