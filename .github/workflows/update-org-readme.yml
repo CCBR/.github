@@ -46,7 +46,15 @@ jobs:
           git config --global user.name 'CCBR-bot[bot]'
           git config --global user.email '258092125+CCBR-bot[bot]@users.noreply.github.com'
 
-      - name: render README
+      - name: render README (PR - no code execution for security)
+        if: github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          quarto render profile/README.qmd -M eval:false
+
+      - name: render README (full)
+        if: github.event_name != 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.OMNITOKEN }} # must be OMNITOKEN for user activity data
         run: |
@@ -59,6 +67,12 @@ jobs:
         with:
           name: rendered-readme
           path: profile/README.md
+
+      - name: Upload activity data artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: activity-data
+          path: profile/activity_data/
 
       - name: Update PR with new README
         if: github.event_name == 'pull_request'
@@ -111,6 +125,12 @@ jobs:
         with:
           name: rendered-readme
           path: rendered-readme
+
+      - name: Download activity data artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: activity-data
+          path: rendered-activity-data
       - name: Generate a token
         id: generate-token
         uses: actions/create-github-app-token@v3
@@ -130,15 +150,19 @@ jobs:
           token: ${{ steps.generate-token.outputs.token }}
           path: ccbr.github.io
 
-      - name: Copy README.md to index.md
+      - name: Copy README.md and activity data to GitHub Pages
         run: |
           cp rendered-readme/README.md ccbr.github.io/index.md
+          if [ -d rendered-activity-data ]; then
+            mkdir -p ccbr.github.io/activity_data
+            cp -r rendered-activity-data/. ccbr.github.io/activity_data/
+          fi
 
       - name: Commit and push to GitHub Pages
         working-directory: ccbr.github.io
         run: |
           git add .
           git commit -m "ci: 🤖 auto-update index from profile README" || echo "No changes to commit."
-          git push origin master --force
+          git push origin master --force-with-lease
         env:
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
