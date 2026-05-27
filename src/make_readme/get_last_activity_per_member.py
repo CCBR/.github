@@ -68,7 +68,9 @@ def get_org_members(org):
     page = 1
     while True:
         url = f"{BASE_URL}/orgs/{org}/members"
-        response = requests.get(url, headers=HEADERS, params={"per_page": 100, "page": page})
+        response = requests.get(
+            url, headers=HEADERS, params={"per_page": 100, "page": page}
+        )
         if response.status_code != 200:
             raise_api_error(response, f"members for org '{org}'")
         page_members = response.json()
@@ -85,7 +87,9 @@ def get_outside_collaborators(org):
     page = 1
     while True:
         url = f"{BASE_URL}/orgs/{org}/outside_collaborators"
-        response = requests.get(url, headers=HEADERS, params={"per_page": 100, "page": page})
+        response = requests.get(
+            url, headers=HEADERS, params={"per_page": 100, "page": page}
+        )
         if response.status_code != 200:
             raise_api_error(response, f"outside collaborators for org '{org}'")
         page_collabs = response.json()
@@ -218,7 +222,9 @@ def report_org_activity(org, outmd):
                 days_inactivity[username] = "No Activity Found"
             else:
                 last_event = max(last_events[username])
-                event_date = datetime.fromisoformat(last_event.replace("Z", "+00:00")).date()
+                event_date = datetime.fromisoformat(
+                    last_event.replace("Z", "+00:00")
+                ).date()
                 today_date = datetime.now().date()
                 days_inactivity[username] = str((today_date - event_date).days)
             # print(username,"member",days_inactivity[username])
@@ -235,7 +241,9 @@ def report_org_activity(org, outmd):
                 days_inactivity[username] = "No Activity Found"
             else:
                 last_event = max(last_events[username])
-                event_date = datetime.fromisoformat(last_event.replace("Z", "+00:00")).date()
+                event_date = datetime.fromisoformat(
+                    last_event.replace("Z", "+00:00")
+                ).date()
                 today_date = datetime.now().date()
                 days_inactivity[username] = str((today_date - event_date).days)
             # print(username,"outside_collaborator",days_inactivity[username])
