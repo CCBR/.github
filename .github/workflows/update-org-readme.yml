@@ -58,7 +58,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          quarto render profile/README.qmd -M execute:false
+          quarto render profile/README.qmd --no-execute
 
       - name: render README (full)
         if: github.event_name != 'pull_request'
