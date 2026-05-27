@@ -19,7 +19,7 @@ except ImportError:
         raise_api_error,
     )
 
-exclude_list = ["nf-sandbox"]
+exclude_list = ["nf-sandbox", "ChIP-Seq-Pipeline"]
 
 # Replace these with your GitHub token and organization name
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -119,12 +119,12 @@ def get_recent_releases_table(nmonths=0):
     cutoff_date = get_date_n_months_ago(nmonths)
 
     for repo in repos:
+        repo_name = repo["name"]
+        if repo_name in exclude_list:
+            continue
         latest_release = get_latest_release(repo["full_name"])
         open_issues_count = get_open_issues_count(repo["full_name"])
         if latest_release:
-            repo_name = repo["name"]
-            if repo_name in exclude_list:
-                continue
             # release_name = latest_release['name']
             release_url = latest_release["html_url"]
             release_name = release_url.split("/")[-1]

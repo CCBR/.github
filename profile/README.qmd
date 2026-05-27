@@ -34,7 +34,7 @@ from src.make_readme import (
 )
 ```
 
-## NEW Releases
+## 🎉 Recent Releases (last 3 months)
 
 ```{python}
 print(get_recent_releases_table(nmonths=3))
@@ -50,10 +50,18 @@ print(get_per_user_commits())
 
 - 👋 Hi, we're the [**@CCBR**](https://bioinformatics.ccr.cancer.gov/ccbr/), a group of bioinformatics analysts and engineers
 - 📖 We build flexible, reproducible, workflows for next-generation sequencing data
-- :bulb: We [collaborate](https://abcs-amp.nih.gov/project/request/CCBR/) with [CCR](https://ccr.cancer.gov/) PIs
+- 💡 We [collaborate](https://abcs-amp.nih.gov/project/request/CCBR/) with [CCR](https://ccr.cancer.gov/) PIs
 - 📫 You can reach us at [ccbr_pipeliner@mail.nih.gov](mailto:ccbr_pipeliner@mail.nih.gov)
-- 🏁 Check out our [release history](#release-history)
-- :link: Our [Zenodo](https://zenodo.org/communities/ccbr) community
+- 🏁 Check out our [release history](#ccbrpipeliner-module-release-history-on-biowulf)
+- 🔗 Our [Zenodo](https://zenodo.org/communities/ccbr) community
+
+### 🆘 Need Help?
+
+📧 Email us at [ccbr_pipeliner@mail.nih.gov](mailto:ccbr_pipeliner@mail.nih.gov) — we're always happy to help!
+
+🗓️ **Weekly Office Hours** — Thursdays, 3–5 PM
+- 📍 In-person: Bethesda Campus, Building 37, Room 3041
+- 💻 Virtual: [Join via Microsoft Teams](https://teams.microsoft.com/meet/2207566172748?p=aoXDCUX4EFqcmCGmsK)
 
 {{< include _back-to-top.md >}}
 
@@ -61,17 +69,17 @@ print(get_per_user_commits())
 
 [<img src="https://raw.githubusercontent.com/CCBR/.github/main/img/CCBR_circle_diagram.png" width=600>](https://bioinformatics.ccr.cancer.gov/ccbr/)
 
-The CCR Collaborative Bioinformatics Resource (CCBR) operates as a crucial support system within the National Cancer Institute, particularly for researchers at the Center for Cancer Research (CCR). CCBR brings together a team of bioinformatics experts from various institutions, including the CCR Office of Science and Technology Resources (OSTR), Frederick National Laboratory for Cancer Research (FNLCR), and the Center for Biomedical Informatics and Information Technology (CBIIT). This collaborative model allows CCBR to offer a wide array of bioinformatics services, ranging from data analysis and interpretation to software development and training.
+Got data? We've got you covered! 🎉 The **CCR Collaborative Bioinformatics Resource (CCBR)** is your one-stop shop for bioinformatics support at the National Cancer Institute's [Center for Cancer Research (CCR)](https://ccr.cancer.gov/). We're a powerhouse team of bioinformatics experts drawn from across NCI — including the [CCR Office of Science and Technology Resources (OSTR)](https://ostr.ccr.cancer.gov/), the [Frederick National Laboratory for Cancer Research (FNLCR)](https://frederick.cancer.gov/), and the [Center for Biomedical Informatics and Information Technology (CBIIT)](https://cbiit.cancer.gov/) — all united by one mission: **turning your raw data into discovery**.
 
-CCBR's working model emphasizes accessibility and collaboration. Researchers at CCR can easily request bioinformatics support through a formal project submission process. This process is designed to streamline access to bioinformatics resources, ensuring that projects receive timely and appropriate expertise. The CCBR team offers personalized consultations, both in-person and virtual, to understand the specific needs of each research project, facilitating a tailored approach that enhances the quality and impact of scientific research within the cancer research community.
+Whether you need help with experimental design, data analysis, pipeline development, or training, we make it easy to get started. Just [submit a request](https://bioinformatics.ccr.cancer.gov/ccbr/ask-for-help/) and we'll take it from there — with personalized consultations (in-person or virtual!) tailored to your project's needs. No bioinformatics background required on your end; that's literally what we're here for. 🙌
 
-The CCBR comprises of the core team and the embedded team. These teams serve different, but similar roles within the CCBR's support structure.
+We operate through two complementary teams that together keep CCR researchers moving forward:
 
-- The core team consists of bioinformatics experts who provide centralized support to researchers, offering services such as data analysis, software development, and training across a broad range of projects. They are available to assist any CCR researcher who submits a request for bioinformatics help.
+- 🏢 **The Core Team** — Our centralized squad available to any CCR researcher. From bulk RNA-seq to whole-genome analysis, we bring broad expertise and dedicated bandwidth to help you tackle the big questions.
 
-- The embedded team members are bioinformaticians who are integrated within specific research groups or labs. Their role is to provide more focused, day-to-day bioinformatics support tailored to the specific needs of the research group they are embedded in. This allows for a deeper collaboration and a more nuanced understanding of the ongoing research projects within that group.
+- 🔬 **The Embedded Team** — Bioinformaticians embedded directly within specific labs and research groups, providing day-to-day, hands-on support with deep familiarity of your ongoing projects. Think of them as your in-house bioinformatics colleagues!
 
-> For details, please visit [CCBR's official website](https://bioinformatics.ccr.cancer.gov/ccbr/).
+> 💡 Ready to get started? Visit [CCBR's official website](https://bioinformatics.ccr.cancer.gov/ccbr/) or [reach out directly](https://bioinformatics.ccr.cancer.gov/ccbr/ask-for-help/) — we'd love to work with you!
 
 {{< include _back-to-top.md >}}
 
@@ -79,31 +87,27 @@ The CCBR comprises of the core team and the embedded team. These teams serve dif
 
 CCBR offers end-to-end analysis pipelines for NGS data analysis.
 
-> <b><ins>RHEL8 BIOWULF updates:</ins></b>
->
-> In late 2023, [BIOWULF](https://hpc.nih.gov) migrated to a new operating system, [RHEL8](https://hpc.nih.gov/docs/rhel8.html). This migration rendered the Legacy functionality of CCBRPipeliner un-usable. We have been (and will continue to) work dilegently to bring `ccbrpipeliner` suite of pipelines back on-line for our Biowulf users. At the same time, we are also taking this opportunity to not only increase our repertoire of pipelines but also modernize and containerize our end-to-end analysis offerings. These changes will minimize, if not eliminate, the pipelines' dependencies on other Biowulf modules and make `ccbrpipeliner` "operating system and HPC" - agnostic, thereby making it shareable with collaborators, and runnable on other HPCs (like [FRCE](https://ncifrederick.cancer.gov/staff/frce/welcome)) and beyond.
->
-> Here is a list of our prominent pipelines and their release schedule on BIOWULF:
+Here is a list of our prominent pipelines and their release schedule on BIOWULF:
 
-| Data Type               | Pipeline Name                                                                                                                            | CLI<sup>\*</sup> availability date | GUI<sup>\*</sup> availability date |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | ---------------------------------- |
-| RNASeq<sup>1</sup>      | [RENEE](https://github.com/CCBR/RENEE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)       | July 3rd 2023                      | July 14th 2023                     |
-| WESSeq<sup>2</sup>      | [XAVIER](https://github.com/CCBR/XAVIER)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)     | July 21th 2023                     | Sep 1st 2023                       |
-| ATACSeq<sup>3</sup>     | [ASPEN](https://github.com/CCBR/ASPEN)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)       | November 30th 2023                 | TBD                                |
-| ChIPSeq<sup>4</sup>     | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | October 15th 2023                  | TBD                                |
-| CRISPRSeq<sup>5</sup>   | [CRISPIN](https://github.com/CCBR/CRISPIN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | September 31st 2023                | TBD                                |
-| CUT&RunSeq<sup>6</sup>  | [CARLISLE](https://github.com/CCBR/CARLISLE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | October 31st 2023                  | TBD                                |
-| EV-Seq<sup>10</sup>     | [ESCAPE](https://github.com/CCBR/ESCAPE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)     | March 26th, 2024                   | TBD                                |
-| circRNASeq<sup>7</sup>  | [CHARLIE](https://github.com/CCBR/CHARLIE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)   | Sep 16th 2024                      | TBD                                |
-| scRNASeq<sup>8</sup>    | [SINCLAIR](https://github.com/CCBR/SINCLAIR)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)   | _Feb 28th 2025_                    | TBD                                |
-| WGSSeq<sup>9</sup>      | [LOGAN](https://github.com/CCBR/LOGAN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)         | _May 31st 2025_                    | TBD                                |
-| spatialSeq<sup>11</sup> | [SPENCER](https://github.com/CCBR/SPENCER)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | TBD                                | TBD                                |
+| Data Type               | Pipeline Name                                                                                                                            | CLI<sup>\*</sup> available since |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| RNASeq<sup>1</sup>      | [RENEE](https://github.com/CCBR/RENEE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)       | July 3rd 2023                     |
+| WESSeq<sup>2</sup>      | [XAVIER](https://github.com/CCBR/XAVIER)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)     | July 21st 2023                    |
+| ATACSeq<sup>3</sup>     | [ASPEN](https://github.com/CCBR/ASPEN)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)       | November 30th 2023                |
+| ChIPSeq<sup>4</sup>     | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | October 15th 2023                 |
+| CRISPRSeq<sup>5</sup>   | [CRISPIN](https://github.com/CCBR/CRISPIN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | September 2023                    |
+| CUT&RunSeq<sup>6</sup>  | [CARLISLE](https://github.com/CCBR/CARLISLE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | October 31st 2023                 |
+| EV-Seq<sup>10</sup>     | [ESCAPE](https://github.com/CCBR/ESCAPE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)     | March 26th 2024                   |
+| circRNASeq<sup>7</sup>  | [CHARLIE](https://github.com/CCBR/CHARLIE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)   | September 16th 2024               |
+| scRNASeq<sup>8</sup>    | [SINCLAIR](https://github.com/CCBR/SINCLAIR)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)   | February 28th 2025                 |
+| WGSSeq<sup>9</sup>      | [LOGAN](https://github.com/CCBR/LOGAN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)         | May 31st 2025                      |
+| spatialSeq<sup>11</sup> | [SPENCER](https://github.com/CCBR/SPENCER)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | TBD                               |
 
-<sup>_ CLI = Command Line Interface </sup>
+<sup>\* CLI = Command Line Interface</sup>
 
-<sup>_ GUI = Graphical User Interface </sup>
+> ℹ️ GUI (Graphical User Interface) development has been suspended for the time being but may resume in the future.
 
-<sup> **1** RENEE=_Rna sEquencing aNalysis pipElinE_. Starts with raw fastq files and ends with counts matrix. Downstream differential analysis support is coming soon!</sup>
+<sup> **1** RENEE=_Rna sEquencing aNalysis pipElinE_. Starts with raw fastq files and ends with a counts matrix.</sup>
 
 <sup> **2** XAVIER=_eXome Analysis and Variant explorER_.</sup>
 
@@ -125,22 +129,25 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 
 <sup> **11** SPENCER=_SPatial sequENCing Resource_.</sup>
 
-For any other datatype or pipeline, please [email us :mailbox:](mailto:ccbr_pipeliner@mail.nih.gov) directly to get the conversation started!
+For any other datatype or pipeline, please [email us 📬](mailto:ccbr_pipeliner@mail.nih.gov) directly to get the conversation started!
 
 {{< include _back-to-top.md >}}
 
 ## Tools
 
-In addition to end-to-end analysis pipelines, the CCBR dev team also builds tools for data management, meta-data management, APIs, user management, etc. Here are some examples:
+In addition to end-to-end analysis pipelines, the CCBR dev team also builds tools for data management, metadata management, and HPC utilities:
 
-- [spacesavers2](https://github.com/CCBR/spacesavers2)
-- [parkit](https://github.com/CCBR/parkit)
-- [permfix](https://github.com/CCBR/permfix/)
-- [pyrkit](https://github.com/CCBR/pyrkit)
+| Tool | Description |
+|---|---|
+| [spacesavers2](https://github.com/CCBR/spacesavers2) | 🚀 Crawls HPC folders to identify duplicate files and report how much disk space can be reclaimed — essential for keeping Biowulf storage lean |
+| [parkit](https://github.com/CCBR/parkit) | 🅿️ Archives completed project data (folders or tarballs) from Biowulf/Helix to the [HPC-DME](https://hpcdmeweb.nci.nih.gov/login) CCBR_Archive vault for long-term storage |
+| [permfix](https://github.com/CCBR/permfix) | 🔐 Fixes folder and file permissions for Biowulf users — handy when shared project directories get locked down |
 
 ## `ccbrpipeliner` module release history on BIOWULF
 
-`module load ccbrpipeliner` loads default release of ccbrpipeliner. Each release comprises of a unique combination of the version numbers of the different pipelines offered as part of the ccbrpipeliner suite.
+`module load ccbrpipeliner` loads the default release of ccbrpipeliner on BIOWULF. Each release comprises a unique combination of pipeline versions bundled together.
+
+> ⚠️ Older releases remain available on BIOWULF but may not function as originally intended — changes to HPC modules, dependencies, or system software over time can affect behavior. We recommend using the current default release whenever possible.
 
 | Release        | Tool versions                                                                                                                                                                                                                                                                                                                                                                                                         | Released on         | Decommissioned on   |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------- |
@@ -163,7 +170,7 @@ In addition to end-to-end analysis pipelines, the CCBR dev team also builds tool
 
 {{< include _back-to-top.md >}}
 
-## Latest Releases of pipelines/tools:
+## 📦 Full Release History
 
 ```{python}
 print(get_recent_releases_table())
