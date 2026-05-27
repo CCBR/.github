@@ -7,6 +7,12 @@ on:
       - "profile/README.qmd"
       - ".github/workflows/update-org-readme.yml"
       - "src/make_readme/**"
+  push:
+    branches: [main]
+    paths:
+      - "profile/README.qmd"
+      - ".github/workflows/update-org-readme.yml"
+      - "src/make_readme/**"
   workflow_dispatch:
   schedule:
     - cron: "30 04 * * 0"
@@ -36,6 +42,7 @@ jobs:
         run: pip install -r src/make_readme/requirements.txt
       - name: Generate a token
         id: generate-token
+        if: github.event_name != 'pull_request'
         uses: actions/create-github-app-token@v3
         with:
           app-id: ${{ vars.CCBR_BOT_APP_ID }}
@@ -46,12 +53,12 @@ jobs:
           git config --global user.name 'CCBR-bot[bot]'
           git config --global user.email '258092125+CCBR-bot[bot]@users.noreply.github.com'
 
-      - name: render README (PR - no code execution for security)
+      - name: render README (PR - structural check only, no code execution)
         if: github.event_name == 'pull_request'
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          quarto render profile/README.qmd -M eval:false
+          quarto render profile/README.qmd -M execute:false
 
       - name: render README (full)
         if: github.event_name != 'pull_request'
@@ -75,7 +82,7 @@ jobs:
           path: profile/activity_data/
 
       - name: Update PR with new README
-        if: github.event_name == 'pull_request'
+        if: false # Skipped: PR renders are non-executing and would commit an incomplete README.
         run: |
           git add profile/README.md
           git commit -m "${{ env.commit_msg }}" || echo "No changes to commit."
