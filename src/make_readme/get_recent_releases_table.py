@@ -96,21 +96,31 @@ def get_latest_release(repo_full_name):
 
 
 def get_open_issues_count(repo_full_name):
-    response = requests.get(
-        f"https://api.github.com/repos/{repo_full_name}/issues?state=open",
-        headers=headers,
-    )
-    if response.status_code == 200:
-        return len(response.json())
-    if is_critical_api_error(response):
-        raise_api_error(response, f"open issues for repo '{repo_full_name}'")
-    log_noncritical_api_error(
-        response,
-        f"open issues for repo '{repo_full_name}'",
-        "'Unavailable' for open issue counts",
-        logger,
-    )
-    return "Unavailable"
+    """Return total open issue count for a repo, paginating through all results."""
+    count = 0
+    page = 1
+    while True:
+        response = requests.get(
+            f"https://api.github.com/repos/{repo_full_name}/issues",
+            headers=headers,
+            params={"state": "open", "per_page": 100, "page": page},
+        )
+        if response.status_code != 200:
+            if is_critical_api_error(response):
+                raise_api_error(response, f"open issues for repo '{repo_full_name}'")
+            log_noncritical_api_error(
+                response,
+                f"open issues for repo '{repo_full_name}'",
+                "'Unavailable' for open issue counts",
+                logger,
+            )
+            return "Unavailable"
+        page_items = response.json()
+        if not page_items:
+            break
+        count += len(page_items)
+        page += 1
+    return count
 
 
 def get_recent_releases_table(nmonths=0):
