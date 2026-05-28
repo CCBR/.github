@@ -213,7 +213,9 @@ def get_repo_branch_tips(repo_full_name):
     return branch_tips
 
 
-def get_branch_commits_full(repo_full_name, branch_name, eligible_members, commit_metadata):
+def get_branch_commits_full(
+    repo_full_name, branch_name, eligible_members, commit_metadata
+):
     branch_shas = set()
     page = 1
     has_more_pages = True
@@ -241,7 +243,9 @@ def get_branch_commits_full(repo_full_name, branch_name, eligible_members, commi
         commits = response.json()
         has_more_pages = bool(commits)
         for commit in commits:
-            sha = record_eligible_commit_metadata(commit, eligible_members, commit_metadata)
+            sha = record_eligible_commit_metadata(
+                commit, eligible_members, commit_metadata
+            )
             if sha:
                 branch_shas.add(sha)
 
@@ -367,7 +371,10 @@ def get_per_user_commits(
                         total_commits = compare_data.get("total_commits", 0)
                         compare_is_truncated = total_commits > len(commits)
 
-                        if compare_status in {"ahead", "identical"} and not compare_is_truncated:
+                        if (
+                            compare_status in {"ahead", "identical"}
+                            and not compare_is_truncated
+                        ):
                             branch_shas = set(cached_shas)
                             for commit in commits:
                                 sha = record_eligible_commit_metadata(
