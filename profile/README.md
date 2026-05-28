@@ -34,8 +34,8 @@
 
 | User                                                | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |          6145 |                   121 |                      880 |
-| [kopardev](https://github.com/kopardev)             |          2801 |                    11 |                      122 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |          6145 |                   118 |                      880 |
+| [kopardev](https://github.com/kopardev)             |          2804 |                    14 |                      125 |
 | [finneyr](https://github.com/finneyr)               |           323 |                     0 |                        0 |
 | [kvaldez](https://github.com/kvaldez)               |           222 |                     0 |                        0 |
 | [wong-nw](https://github.com/wong-nw)               |           197 |                     4 |                       42 |
@@ -164,7 +164,8 @@ aNalysis pipEline_.</sup>
 
 <sup> **6** CARLISLE=_Cut And Run anaLysIS pipeLinE_.</sup>
 
-<sup> **7** CHARLIE=_Circrnas in Host And viRuses anaLysis pIpEline_.</sup>
+<sup> **7** CHARLIE=_Circrnas in Host And viRuses anaLysis
+pIpEline_.</sup>
 
 <sup> **8** SINCLAIR=_SINgle CelL AnalysIs Resource_.</sup>
 
@@ -257,7 +258,7 @@ versions bundled together.
 | [spacesavers2](https://github.com/CCBR/spacesavers2)                         | [v0.14.1](https://github.com/CCBR/spacesavers2/releases/tag/v0.14.1)           | 2025-07-15   |           7 |
 | [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                           | [v0.3.1](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.1)              | 2025-06-23   |           3 |
 | [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                 | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)                 | 2025-06-16   |           3 |
-| [CRISPIN](https://github.com/CCBR/CRISPIN)                                   | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                  | 2025-05-28   |          21 |
+| [CRISPIN](https://github.com/CCBR/CRISPIN)                                   | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                  | 2025-05-28   |          22 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                   | [v0.12.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.12.0)                | 2025-05-20   |          14 |
 | [Dockers2](https://github.com/CCBR/Dockers2)                                 | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                 | 2024-12-02   |           6 |
 | [METRO](https://github.com/CCBR/METRO)                                       | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                        | 2024-03-28   |           2 |
