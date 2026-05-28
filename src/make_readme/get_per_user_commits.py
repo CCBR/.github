@@ -312,9 +312,29 @@ def get_per_user_commits(
     include_archived=True,
     include_forks=True,
     use_cache=True,
+    log_run_summary=True,
 ):
     members = get_members(ORG_NAME)
     repos = get_repos(ORG_NAME)
+
+    run_stats = {
+        "repos_total": len(repos),
+        "repos_processed": 0,
+        "repos_skipped_archived": 0,
+        "repos_skipped_forks": 0,
+        "repos_branch_tip_failures": 0,
+        "repos_reused_cached_on_tip_failure": 0,
+        "branches_seen": 0,
+        "branch_cache_hits": 0,
+        "branch_compare_attempts": 0,
+        "branch_compare_delta_applied": 0,
+        "branch_compare_resync_required": 0,
+        "branch_full_resync_attempts": 0,
+        "branch_full_resync_success": 0,
+        "branch_full_resync_fallback_cached": 0,
+        "branch_full_resync_empty": 0,
+        "delta_commits_added": 0,
+    }
 
     state = load_state() if use_cache else initialize_state()
     commit_metadata = dict(state.get("commit_metadata", {}))
@@ -323,9 +343,13 @@ def get_per_user_commits(
 
     for repo in repos:
         if not include_archived and repo.get("archived", False):
+            run_stats["repos_skipped_archived"] += 1
             continue
         if not include_forks and repo.get("fork", False):
+            run_stats["repos_skipped_forks"] += 1
             continue
+
+        run_stats["repos_processed"] += 1
 
         repo_full_name = repo["full_name"]
         cached_repo_state = state.get("repos", {}).get(repo_full_name, {})
@@ -333,8 +357,10 @@ def get_per_user_commits(
 
         branch_tips = get_repo_branch_tips(repo_full_name)
         if branch_tips is None:
+            run_stats["repos_branch_tip_failures"] += 1
             if cached_repo_state:
                 next_repos_state[repo_full_name] = cached_repo_state
+                run_stats["repos_reused_cached_on_tip_failure"] += 1
             continue
 
         if include_all_branches:
@@ -348,6 +374,7 @@ def get_per_user_commits(
 
         next_branch_state = {}
         for branch_name, branch_tip_sha in target_branch_tips.items():
+            run_stats["branches_seen"] += 1
             cached_branch_state = cached_branches.get(branch_name, {})
             cached_tip_sha = cached_branch_state.get("tip_sha")
             cached_shas = set(cached_branch_state.get("commit_shas", []))
@@ -360,6 +387,7 @@ def get_per_user_commits(
                 branch_shas = None
 
                 if cached_tip_sha:
+                    run_stats["branch_compare_attempts"] += 1
                     compare_data = get_compare_data(
                         repo_full_name,
                         cached_tip_sha,
@@ -376,6 +404,7 @@ def get_per_user_commits(
                             and not compare_is_truncated
                         ):
                             branch_shas = set(cached_shas)
+                            added_from_delta = 0
                             for commit in commits:
                                 sha = record_eligible_commit_metadata(
                                     commit,
@@ -383,9 +412,18 @@ def get_per_user_commits(
                                     commit_metadata,
                                 )
                                 if sha:
+                                    if sha not in branch_shas:
+                                        added_from_delta += 1
                                     branch_shas.add(sha)
+                            run_stats["branch_compare_delta_applied"] += 1
+                            run_stats["delta_commits_added"] += added_from_delta
+                        else:
+                            run_stats["branch_compare_resync_required"] += 1
+                    else:
+                        run_stats["branch_compare_resync_required"] += 1
 
                 if branch_shas is None:
+                    run_stats["branch_full_resync_attempts"] += 1
                     full_scan_shas = get_branch_commits_full(
                         repo_full_name,
                         branch_name,
@@ -396,10 +434,15 @@ def get_per_user_commits(
                         if cached_branch_state:
                             branch_shas = set(cached_shas)
                             branch_tip_to_store = cached_tip_sha
+                            run_stats["branch_full_resync_fallback_cached"] += 1
                         else:
                             branch_shas = set()
+                            run_stats["branch_full_resync_empty"] += 1
                     else:
                         branch_shas = full_scan_shas
+                        run_stats["branch_full_resync_success"] += 1
+            else:
+                run_stats["branch_cache_hits"] += 1
 
             next_branch_state[branch_name] = {
                 "tip_sha": branch_tip_to_store,
@@ -430,6 +473,32 @@ def get_per_user_commits(
         state["repos"] = next_repos_state
         state["commit_metadata"] = commit_metadata
         save_state(state)
+
+    if log_run_summary:
+        logger.info(
+            "per_user_commits summary: repos=%s processed=%s "
+            "skipped_archived=%s skipped_forks=%s tip_failures=%s tip_failures_with_cache=%s "
+            "branches=%s cache_hits=%s compare_attempts=%s compare_deltas=%s compare_resyncs=%s "
+            "full_resync_attempts=%s full_resync_success=%s full_resync_cached=%s full_resync_empty=%s "
+            "delta_commits_added=%s active_unique_shas=%s",
+            run_stats["repos_total"],
+            run_stats["repos_processed"],
+            run_stats["repos_skipped_archived"],
+            run_stats["repos_skipped_forks"],
+            run_stats["repos_branch_tip_failures"],
+            run_stats["repos_reused_cached_on_tip_failure"],
+            run_stats["branches_seen"],
+            run_stats["branch_cache_hits"],
+            run_stats["branch_compare_attempts"],
+            run_stats["branch_compare_delta_applied"],
+            run_stats["branch_compare_resync_required"],
+            run_stats["branch_full_resync_attempts"],
+            run_stats["branch_full_resync_success"],
+            run_stats["branch_full_resync_fallback_cached"],
+            run_stats["branch_full_resync_empty"],
+            run_stats["delta_commits_added"],
+            len(active_commit_shas),
+        )
 
     # Convert to a DataFrame
     data = []
