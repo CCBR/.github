@@ -89,25 +89,25 @@ CCBR offers end-to-end analysis pipelines for NGS data analysis.
 
 Here is a list of our prominent pipelines and their release schedule on BIOWULF:
 
-| Data Type               | Pipeline Name                                                                                                                            | CLI<sup>\*</sup> available since |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| RNASeq<sup>1</sup>      | [RENEE](https://github.com/CCBR/RENEE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)       | July 3rd 2023                     |
-| WESSeq<sup>2</sup>      | [XAVIER](https://github.com/CCBR/XAVIER)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)     | July 21st 2023                    |
-| ATACSeq<sup>3</sup>     | [ASPEN](https://github.com/CCBR/ASPEN)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)       | November 30th 2023                |
-| ChIPSeq<sup>4</sup>     | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | October 15th 2023                 |
-| CRISPRSeq<sup>5</sup>   | [CRISPIN](https://github.com/CCBR/CRISPIN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | September 2023                    |
-| CUT&RunSeq<sup>6</sup>  | [CARLISLE](https://github.com/CCBR/CARLISLE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | October 31st 2023                 |
-| EV-Seq<sup>10</sup>     | [ESCAPE](https://github.com/CCBR/ESCAPE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)     | March 26th 2024                   |
-| circRNASeq<sup>7</sup>  | [CHARLIE](https://github.com/CCBR/CHARLIE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)   | September 16th 2024               |
-| scRNASeq<sup>8</sup>    | [SINCLAIR](https://github.com/CCBR/SINCLAIR)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)   | February 28th 2025                 |
-| WGSSeq<sup>9</sup>      | [LOGAN](https://github.com/CCBR/LOGAN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)         | May 31st 2025                      |
-| spatialSeq<sup>11</sup> | [SPENCER](https://github.com/CCBR/SPENCER)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | TBD                               |
+| Data Type               | Pipeline Name                                                                                                                            | Description | CLI<sup>\*</sup> available since |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------- |
+| RNASeq<sup>1</sup>      | [RENEE](https://github.com/CCBR/RENEE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)       | Comprehensive RNA-seq workflow that combines contamination screening, adapter trimming, two-pass STAR alignment, and RSEM quantification. It generates gene and isoform count matrices, fusion calls, and MultiQC-style quality summaries for cohort-level review. | July 3rd 2023                     |
+| WESSeq<sup>2</sup>      | [XAVIER](https://github.com/CCBR/XAVIER)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)     | Whole-exome sequencing pipeline aligned to Broad-style best practices using a reproducible Snakemake execution model. It accepts FASTQ or BAM inputs and supports germline and somatic variant calling, CNV inference, and downstream annotation. | July 21st 2023                    |
+| ATACSeq<sup>3</sup>     | [ASPEN](https://github.com/CCBR/ASPEN)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)       | ATAC-seq analysis workflow for preliminary QC, peak calling, and differential chromatin accessibility testing. It is configured for Biowulf usage and provides standardized outputs for regulatory genomics interpretation. | November 30th 2023                |
+| ChIPSeq<sup>4</sup>     | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg) | ChIP-seq analysis pipeline with support for configurable reference genomes and optional spike-in genome handling. It produces reproducible peak-centric outputs from aligned sequencing data and can be run through CCBR module-based workflows. | October 15th 2023                 |
+| CRISPRSeq<sup>5</sup>   | [CRISPIN](https://github.com/CCBR/CRISPIN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | CRISPR screen sequencing workflow designed for reproducible run setup and execution on Biowulf. It processes screening libraries into analysis-ready outputs suitable for guide-level and gene-level interpretation. | September 2023                    |
+| CUT&RunSeq<sup>6</sup>  | [CARLISLE](https://github.com/CCBR/CARLISLE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg) | CUT&RUN pipeline that performs peak calling with MACS2, SEACR, and GoPeaks using spike-in-normalized FASTQ inputs. It is built in Snakemake and tuned for reproducible chromatin profiling on Biowulf. | October 31st 2023                 |
+| EV-Seq<sup>10</sup>     | [ESCAPE](https://github.com/CCBR/ESCAPE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)     | Extracellular vesicle RNA-seq workflow for EV-derived libraries from raw reads through analysis-ready quantification outputs. It emphasizes consistent QC and standardized processing for comparative EV transcriptomics. | March 26th 2024                   |
+| circRNASeq<sup>7</sup>  | [CHARLIE](https://github.com/CCBR/CHARLIE)![snakemake](https://raw.githubusercontent.com/CCBR/.github/main/img/snakemake-small-v2.svg)   | circRNA pipeline for detection, annotation, and quantification of host and viral circular RNAs. It orchestrates multiple circRNA callers in parallel, including CIRCExplorer2 and CIRI2-based paths, to support robust cross-method discovery. | September 16th 2024               |
+| scRNASeq<sup>8</sup>    | [SINCLAIR](https://github.com/CCBR/SINCLAIR)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)   | Single-cell analysis resource supporting multiple next-generation modalities in a reproducible Nextflow framework. It starts from FASTQ or h5-aligned inputs, performs per-sample QC, and generates per-contrast integration reports. | February 28th 2025                 |
+| WGSSeq<sup>9</sup>      | [LOGAN](https://github.com/CCBR/LOGAN)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)         | Whole-genome sequencing pipeline based on Broad-aligned processing patterns and Nextflow orchestration. It calls and annotates germline and somatic variants, CNVs, and SVs with reproducible containerized execution. | May 31st 2025                      |
+| spatialSeq<sup>11</sup> | [SPENCER](https://github.com/CCBR/SPENCER)![nextflow](https://raw.githubusercontent.com/CCBR/.github/main/img/nextflow-small-v2.svg)     | Spatial sequencing workflow for processing location-aware transcriptomic measurements across tissue regions. It is designed to produce structured outputs for downstream spatial feature analysis, integration, and visualization. | TBD                               |
 
 <sup>\* CLI = Command Line Interface</sup>
 
 > ℹ️ GUI (Graphical User Interface) development has been suspended for the time being but may resume in the future.
 
-<sup> **1** RENEE=_Rna sEquencing aNalysis pipElinE_. Starts with raw fastq files and ends with a counts matrix.</sup>
+<sup> **1** RENEE=_Rna sEquencing aNalysis pipElinE_.</sup>
 
 <sup> **2** XAVIER=_eXome Analysis and Variant explorER_.</sup>
 
@@ -115,11 +115,11 @@ Here is a list of our prominent pipelines and their release schedule on BIOWULF:
 
 <sup> **4** CHAMPAGNE=_CHromAtin iMmuno PrecipitAtion sequencinG aNalysis pipEline_.</sup>
 
-<sup> **5** CRISPIN=_CRISPr screen sequencing analysis pipelINe_. CRISPRSeq analysis with MAGeCK, drugZ and BAGEL2. </sup>
+<sup> **5** CRISPIN=_CRISPr screen sequencing analysis pipelINe_.</sup>
 
-<sup> **6** CARLISLE=_Cut And Run anaLysIS pipeLinE_. Supports human and mouse samples with (recommended) or without spike-ins.</sup>
+<sup> **6** CARLISLE=_Cut And Run anaLysIS pipeLinE_.</sup>
 
-<sup> **7** CHARLIE=_Circrnas in Host And viRuses anaLysis pIpEline_. Finds known and novel circRNAs in human/mouse + virus genomes.</sup>
+<sup> **7** CHARLIE=_Circrnas in Host And viRuses anaLysis pIpEline_.</sup>
 
 <sup> **8** SINCLAIR=_SINgle CelL AnalysIs Resource_.</sup>
 
