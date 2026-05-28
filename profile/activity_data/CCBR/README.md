@@ -1,6 +1,6 @@
 | github_handle                                               | member/collaborator | days_inactive     |
 | ----------------------------------------------------------- | ------------------- | ----------------- |
-| [bfugaru2025](https://github.com/bfugaru2025)               | member              | No Activity Found |
+| [AlecSilver](https://github.com/AlecSilver)                 | member              | 19                |
 | [bianjh-cloud](https://github.com/bianjh-cloud)             | member              | 7                 |
 | [burnskd](https://github.com/burnskd)                       | member              | No Activity Found |
 | [desireetillo](https://github.com/desireetillo)             | member              | No Activity Found |
@@ -32,7 +32,6 @@
 | [wuy24](https://github.com/wuy24)                           | member              | No Activity Found |
 | [yongmzhao](https://github.com/yongmzhao)                   | member              | No Activity Found |
 | [abombin](https://github.com/abombin)                       | collaborator        | No Activity Found |
-| [AlecSilver](https://github.com/AlecSilver)                 | collaborator        | 19                |
 | [dnousome](https://github.com/dnousome)                     | collaborator        | No Activity Found |
 | [e-hutchins](https://github.com/e-hutchins)                 | collaborator        | No Activity Found |
 | [fangliu117](https://github.com/fangliu117)                 | collaborator        | 28                |
