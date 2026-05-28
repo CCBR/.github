@@ -86,54 +86,106 @@ def get_members(org_name):
     return members
 
 
-def get_commits_count(repo_full_name, eligible_members):
-    commits_count_by_user = defaultdict(
-        lambda: {"total": 0, "last_month": 0, "last_6_months": 0}
-    )
+def get_repo_branches(repo_full_name):
+    branches = []
     page = 1
-    today = datetime.utcnow()
-    one_month_ago = today - timedelta(days=30)
-    six_months_ago = today - timedelta(days=180)
-
     has_more_pages = True
+
     while has_more_pages:
         response = requests.get(
-            f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}",
+            f"https://api.github.com/repos/{repo_full_name}/branches?per_page=100&page={page}",
             headers=headers,
         )
         if response.status_code != 200:
             if is_critical_api_error(response):
-                raise_api_error(response, f"commits for repo '{repo_full_name}'")
+                raise_api_error(response, f"branches for repo '{repo_full_name}'")
             log_noncritical_api_error(
                 response,
-                f"commits for repo '{repo_full_name}'",
-                "no commits for that repository",
+                f"branches for repo '{repo_full_name}'",
+                "default-branch-only commit counting",
                 logger,
             )
-            has_more_pages = False
-            continue
-        commits = response.json()
-        has_more_pages = bool(commits)
+            return []
 
-        for commit in commits:
-            author_login = commit["author"]["login"] if commit["author"] else "unknown"
-            commit_date_str = commit["commit"]["author"]["date"]
-            commit_date = datetime.strptime(commit_date_str, "%Y-%m-%dT%H:%M:%SZ")
-
-            if author_login != "unknown" and author_login in eligible_members:
-                commits_count_by_user[author_login]["total"] += 1
-                if commit_date >= one_month_ago:
-                    commits_count_by_user[author_login]["last_month"] += 1
-                if commit_date >= six_months_ago:
-                    commits_count_by_user[author_login]["last_6_months"] += 1
+        page_branches = response.json()
+        has_more_pages = bool(page_branches)
+        for branch in page_branches:
+            branch_name = branch.get("name")
+            if branch_name:
+                branches.append(branch_name)
 
         if has_more_pages:
             page += 1
 
+    return branches
+
+
+def get_commits_count(repo_full_name, eligible_members, include_all_branches=False):
+    commits_count_by_user = defaultdict(
+        lambda: {"total": 0, "last_month": 0, "last_6_months": 0}
+    )
+    today = datetime.utcnow()
+    one_month_ago = today - timedelta(days=30)
+    six_months_ago = today - timedelta(days=180)
+
+    branch_refs = [None]
+    if include_all_branches:
+        repo_branches = get_repo_branches(repo_full_name)
+        if repo_branches:
+            branch_refs = repo_branches
+
+    seen_shas = set()
+    for branch_ref in branch_refs:
+        page = 1
+        has_more_pages = True
+
+        while has_more_pages:
+            commits_url = (
+                f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}"
+            )
+            if branch_ref:
+                commits_url += f"&sha={branch_ref}"
+
+            response = requests.get(commits_url, headers=headers)
+            if response.status_code != 200:
+                if is_critical_api_error(response):
+                    raise_api_error(response, f"commits for repo '{repo_full_name}'")
+                log_noncritical_api_error(
+                    response,
+                    f"commits for repo '{repo_full_name}'",
+                    "no commits for that repository",
+                    logger,
+                )
+                break
+
+            commits = response.json()
+            has_more_pages = bool(commits)
+
+            for commit in commits:
+                sha = commit.get("sha")
+                if sha in seen_shas:
+                    continue
+                if sha:
+                    seen_shas.add(sha)
+
+                author_login = commit["author"]["login"] if commit["author"] else "unknown"
+                commit_date_str = commit["commit"]["author"]["date"]
+                commit_date = datetime.strptime(commit_date_str, "%Y-%m-%dT%H:%M:%SZ")
+
+                if author_login != "unknown" and author_login in eligible_members:
+                    commits_count_by_user[author_login]["total"] += 1
+                    if commit_date >= one_month_ago:
+                        commits_count_by_user[author_login]["last_month"] += 1
+                    if commit_date >= six_months_ago:
+                        commits_count_by_user[author_login]["last_6_months"] += 1
+
+            if has_more_pages:
+                page += 1
+
     return commits_count_by_user
 
 
-def get_per_user_commits():
+def get_per_user_commits(include_all_branches=False):
     members = get_members(ORG_NAME)
     repos = get_repos(ORG_NAME)
 
@@ -144,7 +196,11 @@ def get_per_user_commits():
     for repo in repos:
         repo_full_name = repo["full_name"]
         # print(f"Processing repository: {repo_full_name}")
-        commits_count_by_user = get_commits_count(repo_full_name, members)
+        commits_count_by_user = get_commits_count(
+            repo_full_name,
+            members,
+            include_all_branches=include_all_branches,
+        )
         for user, counts in commits_count_by_user.items():
             user_commits[user]["total"] += counts["total"]
             user_commits[user]["last_month"] += counts["last_month"]
@@ -189,7 +245,7 @@ def get_per_user_commits():
 
 
 def main():
-    print(get_per_user_commits())
+    print(get_per_user_commits(include_all_branches=True))
 
 
 if __name__ == "__main__":

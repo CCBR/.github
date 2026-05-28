@@ -43,7 +43,7 @@ print(get_recent_releases_table(nmonths=3))
 ## TOP contributors
 
 ```{python}
-print(get_per_user_commits())
+print(get_per_user_commits(include_all_branches=True))
 ```
 
 ## About Us
