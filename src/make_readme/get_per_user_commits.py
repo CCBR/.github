@@ -1,9 +1,12 @@
-import requests
-import os
-import pandas as pd
+import json
 import logging
+import os
 from collections import defaultdict
 from datetime import datetime, timedelta
+from pathlib import Path
+
+import pandas as pd
+import requests
 
 try:
     from .github_api import (
@@ -33,6 +36,95 @@ headers = {
 }
 
 logger = logging.getLogger(__name__)
+
+STATE_SCHEMA_VERSION = 1
+STATE_FILE_PATH = (
+    Path(__file__).resolve().parents[2]
+    / "profile"
+    / "activity_data"
+    / "per_user_commits_state.json"
+)
+
+
+def initialize_state():
+    return {
+        "schema_version": STATE_SCHEMA_VERSION,
+        "updated_at": None,
+        "repos": {},
+        "commit_metadata": {},
+    }
+
+
+def load_state(state_path=STATE_FILE_PATH):
+    if not state_path.exists():
+        return initialize_state()
+
+    try:
+        with state_path.open("r", encoding="utf-8") as fh:
+            state = json.load(fh)
+    except (OSError, json.JSONDecodeError) as error:
+        logger.warning(
+            "Failed to read state file %s (%s). Rebuilding state from scratch.",
+            state_path,
+            error,
+        )
+        return initialize_state()
+
+    if state.get("schema_version") != STATE_SCHEMA_VERSION:
+        logger.warning(
+            "State file schema mismatch in %s. Rebuilding state from scratch.",
+            state_path,
+        )
+        return initialize_state()
+
+    if not isinstance(state.get("repos"), dict) or not isinstance(
+        state.get("commit_metadata"), dict
+    ):
+        logger.warning(
+            "State file %s is missing required keys. Rebuilding state from scratch.",
+            state_path,
+        )
+        return initialize_state()
+
+    return state
+
+
+def save_state(state, state_path=STATE_FILE_PATH):
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    state["updated_at"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+    temp_path = state_path.with_suffix(".tmp")
+    with temp_path.open("w", encoding="utf-8") as fh:
+        json.dump(state, fh, indent=2, sort_keys=True)
+    temp_path.replace(state_path)
+
+
+def parse_commit_date(commit_date_str):
+    return datetime.strptime(commit_date_str, "%Y-%m-%dT%H:%M:%SZ")
+
+
+def get_commit_author_login(commit):
+    if commit.get("author") and commit["author"].get("login"):
+        return commit["author"]["login"]
+    return None
+
+
+def get_commit_date(commit):
+    commit_author = commit.get("commit", {}).get("author", {})
+    return commit_author.get("date")
+
+
+def record_eligible_commit_metadata(commit, eligible_members, commit_metadata):
+    sha = commit.get("sha")
+    author_login = get_commit_author_login(commit)
+    commit_date = get_commit_date(commit)
+
+    if not sha or not author_login or not commit_date:
+        return None
+    if author_login not in eligible_members:
+        return None
+
+    commit_metadata[sha] = {"author": author_login, "date": commit_date}
+    return sha
 
 
 def get_repos(org_name):
@@ -86,8 +178,8 @@ def get_members(org_name):
     return members
 
 
-def get_repo_branches(repo_full_name):
-    branches = []
+def get_repo_branch_tips(repo_full_name):
+    branch_tips = {}
     page = 1
     has_more_pages = True
 
@@ -102,109 +194,235 @@ def get_repo_branches(repo_full_name):
             log_noncritical_api_error(
                 response,
                 f"branches for repo '{repo_full_name}'",
-                "default-branch-only commit counting",
+                "cached branch data for that repository",
                 logger,
             )
-            return []
+            return None
 
         page_branches = response.json()
         has_more_pages = bool(page_branches)
         for branch in page_branches:
             branch_name = branch.get("name")
-            if branch_name:
-                branches.append(branch_name)
+            branch_sha = branch.get("commit", {}).get("sha")
+            if branch_name and branch_sha:
+                branch_tips[branch_name] = branch_sha
 
         if has_more_pages:
             page += 1
 
-    return branches
+    return branch_tips
 
 
-def get_commits_count(repo_full_name, eligible_members, include_all_branches=False):
-    commits_count_by_user = defaultdict(
-        lambda: {"total": 0, "last_month": 0, "last_6_months": 0}
-    )
-    today = datetime.utcnow()
-    one_month_ago = today - timedelta(days=30)
-    six_months_ago = today - timedelta(days=180)
+def get_branch_commits_full(repo_full_name, branch_name, eligible_members, commit_metadata):
+    branch_shas = set()
+    page = 1
+    has_more_pages = True
 
-    branch_refs = [None]
-    if include_all_branches:
-        repo_branches = get_repo_branches(repo_full_name)
-        if repo_branches:
-            branch_refs = repo_branches
-
-    seen_shas = set()
-    for branch_ref in branch_refs:
-        page = 1
-        has_more_pages = True
-
-        while has_more_pages:
-            commits_url = f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}"
-            if branch_ref:
-                commits_url += f"&sha={branch_ref}"
-
-            response = requests.get(commits_url, headers=headers)
-            if response.status_code != 200:
-                if is_critical_api_error(response):
-                    raise_api_error(response, f"commits for repo '{repo_full_name}'")
-                log_noncritical_api_error(
+    while has_more_pages:
+        response = requests.get(
+            f"https://api.github.com/repos/{repo_full_name}/commits"
+            f"?sha={branch_name}&per_page=100&page={page}",
+            headers=headers,
+        )
+        if response.status_code != 200:
+            if is_critical_api_error(response):
+                raise_api_error(
                     response,
-                    f"commits for repo '{repo_full_name}'",
-                    "no commits for that repository",
-                    logger,
+                    f"commits for repo '{repo_full_name}' branch '{branch_name}'",
                 )
-                break
+            log_noncritical_api_error(
+                response,
+                f"commits for repo '{repo_full_name}' branch '{branch_name}'",
+                "cached branch commit data",
+                logger,
+            )
+            return None
 
-            commits = response.json()
-            has_more_pages = bool(commits)
+        commits = response.json()
+        has_more_pages = bool(commits)
+        for commit in commits:
+            sha = record_eligible_commit_metadata(commit, eligible_members, commit_metadata)
+            if sha:
+                branch_shas.add(sha)
 
-            for commit in commits:
-                sha = commit.get("sha")
-                if sha in seen_shas:
-                    continue
-                if sha:
-                    seen_shas.add(sha)
+        if has_more_pages:
+            page += 1
 
-                author_login = (
-                    commit["author"]["login"] if commit["author"] else "unknown"
-                )
-                commit_date_str = commit["commit"]["author"]["date"]
-                commit_date = datetime.strptime(commit_date_str, "%Y-%m-%dT%H:%M:%SZ")
-
-                if author_login != "unknown" and author_login in eligible_members:
-                    commits_count_by_user[author_login]["total"] += 1
-                    if commit_date >= one_month_ago:
-                        commits_count_by_user[author_login]["last_month"] += 1
-                    if commit_date >= six_months_ago:
-                        commits_count_by_user[author_login]["last_6_months"] += 1
-
-            if has_more_pages:
-                page += 1
-
-    return commits_count_by_user
+    return branch_shas
 
 
-def get_per_user_commits(include_all_branches=False):
-    members = get_members(ORG_NAME)
-    repos = get_repos(ORG_NAME)
+def get_compare_data(repo_full_name, base_sha, head_sha):
+    response = requests.get(
+        f"https://api.github.com/repos/{repo_full_name}/compare/{base_sha}...{head_sha}",
+        headers=headers,
+    )
+    if response.status_code != 200:
+        if is_critical_api_error(response):
+            raise_api_error(
+                response,
+                f"compare for repo '{repo_full_name}' ({base_sha}...{head_sha})",
+            )
+        log_noncritical_api_error(
+            response,
+            f"compare for repo '{repo_full_name}' ({base_sha}...{head_sha})",
+            "full branch resync",
+            logger,
+        )
+        return None
 
+    return response.json()
+
+
+def aggregate_user_counts(active_shas, commit_metadata, eligible_members):
     user_commits = defaultdict(
         lambda: {"total": 0, "last_month": 0, "last_6_months": 0}
     )
 
+    today = datetime.utcnow()
+    one_month_ago = today - timedelta(days=30)
+    six_months_ago = today - timedelta(days=180)
+
+    for sha in active_shas:
+        metadata = commit_metadata.get(sha)
+        if not metadata:
+            continue
+        author = metadata.get("author")
+        commit_date_str = metadata.get("date")
+        if not author or not commit_date_str:
+            continue
+        if author not in eligible_members:
+            continue
+
+        commit_date = parse_commit_date(commit_date_str)
+        user_commits[author]["total"] += 1
+        if commit_date >= one_month_ago:
+            user_commits[author]["last_month"] += 1
+        if commit_date >= six_months_ago:
+            user_commits[author]["last_6_months"] += 1
+
+    return user_commits
+
+
+def get_per_user_commits(
+    include_all_branches=False,
+    include_archived=True,
+    include_forks=True,
+    use_cache=True,
+):
+    members = get_members(ORG_NAME)
+    repos = get_repos(ORG_NAME)
+
+    state = load_state() if use_cache else initialize_state()
+    commit_metadata = dict(state.get("commit_metadata", {}))
+
+    next_repos_state = {}
+
     for repo in repos:
+        if not include_archived and repo.get("archived", False):
+            continue
+        if not include_forks and repo.get("fork", False):
+            continue
+
         repo_full_name = repo["full_name"]
-        # print(f"Processing repository: {repo_full_name}")
-        commits_count_by_user = get_commits_count(
-            repo_full_name,
-            members,
-            include_all_branches=include_all_branches,
-        )
-        for user, counts in commits_count_by_user.items():
-            user_commits[user]["total"] += counts["total"]
-            user_commits[user]["last_month"] += counts["last_month"]
-            user_commits[user]["last_6_months"] += counts["last_6_months"]
+        cached_repo_state = state.get("repos", {}).get(repo_full_name, {})
+        cached_branches = cached_repo_state.get("branches", {})
+
+        branch_tips = get_repo_branch_tips(repo_full_name)
+        if branch_tips is None:
+            if cached_repo_state:
+                next_repos_state[repo_full_name] = cached_repo_state
+            continue
+
+        if include_all_branches:
+            target_branch_tips = branch_tips
+        else:
+            default_branch = repo.get("default_branch")
+            if default_branch and default_branch in branch_tips:
+                target_branch_tips = {default_branch: branch_tips[default_branch]}
+            else:
+                target_branch_tips = {}
+
+        next_branch_state = {}
+        for branch_name, branch_tip_sha in target_branch_tips.items():
+            cached_branch_state = cached_branches.get(branch_name, {})
+            cached_tip_sha = cached_branch_state.get("tip_sha")
+            cached_shas = set(cached_branch_state.get("commit_shas", []))
+
+            # Default to cached values when branch tip has not changed.
+            branch_shas = cached_shas
+            branch_tip_to_store = branch_tip_sha
+
+            if not cached_tip_sha or cached_tip_sha != branch_tip_sha:
+                branch_shas = None
+
+                if cached_tip_sha:
+                    compare_data = get_compare_data(
+                        repo_full_name,
+                        cached_tip_sha,
+                        branch_tip_sha,
+                    )
+                    if compare_data is not None:
+                        compare_status = compare_data.get("status")
+                        commits = compare_data.get("commits", [])
+                        total_commits = compare_data.get("total_commits", 0)
+                        compare_is_truncated = total_commits > len(commits)
+
+                        if compare_status in {"ahead", "identical"} and not compare_is_truncated:
+                            branch_shas = set(cached_shas)
+                            for commit in commits:
+                                sha = record_eligible_commit_metadata(
+                                    commit,
+                                    members,
+                                    commit_metadata,
+                                )
+                                if sha:
+                                    branch_shas.add(sha)
+
+                if branch_shas is None:
+                    full_scan_shas = get_branch_commits_full(
+                        repo_full_name,
+                        branch_name,
+                        members,
+                        commit_metadata,
+                    )
+                    if full_scan_shas is None:
+                        if cached_branch_state:
+                            branch_shas = set(cached_shas)
+                            branch_tip_to_store = cached_tip_sha
+                        else:
+                            branch_shas = set()
+                    else:
+                        branch_shas = full_scan_shas
+
+            next_branch_state[branch_name] = {
+                "tip_sha": branch_tip_to_store,
+                "commit_shas": sorted(branch_shas),
+            }
+
+        next_repos_state[repo_full_name] = {
+            "archived": repo.get("archived", False),
+            "fork": repo.get("fork", False),
+            "branches": next_branch_state,
+        }
+
+    active_commit_shas = set()
+    for repo_state in next_repos_state.values():
+        for branch_state in repo_state.get("branches", {}).values():
+            active_commit_shas.update(branch_state.get("commit_shas", []))
+
+    # Keep metadata only for commits currently reachable by counted branches.
+    commit_metadata = {
+        sha: metadata
+        for sha, metadata in commit_metadata.items()
+        if sha in active_commit_shas
+    }
+
+    user_commits = aggregate_user_counts(active_commit_shas, commit_metadata, members)
+
+    if use_cache:
+        state["repos"] = next_repos_state
+        state["commit_metadata"] = commit_metadata
+        save_state(state)
 
     # Convert to a DataFrame
     data = []
@@ -245,7 +463,14 @@ def get_per_user_commits(include_all_branches=False):
 
 
 def main():
-    print(get_per_user_commits(include_all_branches=True))
+    print(
+        get_per_user_commits(
+            include_all_branches=True,
+            include_archived=True,
+            include_forks=True,
+            use_cache=True,
+        )
+    )
 
 
 if __name__ == "__main__":
