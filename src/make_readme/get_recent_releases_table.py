@@ -2,10 +2,24 @@ import requests
 import os
 import argparse
 import pandas as pd
+import logging
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-exclude_list = ["nf-sandbox"]
+try:
+    from .github_api import (
+        is_critical_api_error,
+        log_noncritical_api_error,
+        raise_api_error,
+    )
+except ImportError:
+    from github_api import (
+        is_critical_api_error,
+        log_noncritical_api_error,
+        raise_api_error,
+    )
+
+exclude_list = ["nf-sandbox", "ChIP-Seq-Pipeline"]
 
 # Replace these with your GitHub token and organization name
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -18,6 +32,8 @@ headers = {
     "Authorization": f"token {GITHUB_TOKEN}",
 }
 
+logger = logging.getLogger(__name__)
+
 
 def get_date_n_months_ago(n_months):
     today = datetime.now()
@@ -28,17 +44,25 @@ def get_date_n_months_ago(n_months):
 def get_repos(org_name):
     repos = []
     page = 1
-    while True:
+    has_more_pages = True
+    while has_more_pages:
         response = requests.get(
             f"https://api.github.com/orgs/{org_name}/repos?per_page=100&page={page}",
             headers=headers,
         )
         if response.status_code != 200:
-            break
-        repos.extend(response.json())
-        if len(response.json()) < 100:
-            break
-        page += 1
+            raise_api_error(response, f"repositories for org '{org_name}'")
+        page_repos = response.json()
+        repos.extend(page_repos)
+        has_more_pages = len(page_repos) == 100
+        if has_more_pages:
+            page += 1
+    if not repos:
+        raise RuntimeError(
+            f"No repositories were returned for org '{org_name}'. "
+            "Critical README data is unavailable. "
+            "Check whether GITHUB_TOKEN is expired or missing required permissions."
+        )
     return repos
 
 
@@ -58,47 +82,38 @@ def get_latest_release(repo_full_name):
     )
     if response.status_code == 200:
         return response.json()
+    if is_critical_api_error(response):
+        raise_api_error(response, f"latest release for repo '{repo_full_name}'")
+    if response.status_code == 404:
+        return None
+    log_noncritical_api_error(
+        response,
+        f"latest release for repo '{repo_full_name}'",
+        "no release metadata for that repository",
+        logger,
+    )
     return None
 
 
-def get_open_issues_count(repo_full_name):
-    response = requests.get(
-        f"https://api.github.com/repos/{repo_full_name}/issues?state=open",
-        headers=headers,
-    )
-    if response.status_code == 200:
-        return len(response.json())
-    return 0
-
-
-def main():
-    parser = argparse.ArgumentParser(description="Fetch GitHub repository releases.")
-    parser.add_argument(
-        "--nmonths",
-        type=int,
-        default=0,
-        help="Number of months to filter releases. If not provided, shows all releases.",
-    )
-    args = parser.parse_args()
-
+def get_recent_releases_table(nmonths=0):
     repos = get_repos(ORG_NAME)
     releases = []
-    cutoff_date = get_date_n_months_ago(args.nmonths)
+    cutoff_date = get_date_n_months_ago(nmonths)
 
     for repo in repos:
+        repo_name = repo["name"]
+        if repo_name in exclude_list:
+            continue
         latest_release = get_latest_release(repo["full_name"])
-        open_issues_count = get_open_issues_count(repo["full_name"])
+        open_issues_count = repo.get("open_issues_count", "Unavailable")
         if latest_release:
-            repo_name = repo["name"]
-            if repo_name in exclude_list:
-                continue
             # release_name = latest_release['name']
             release_url = latest_release["html_url"]
             release_name = release_url.split("/")[-1]
             release_date = latest_release["published_at"]
             formatted_date = format_date(release_date)
             if formatted_date != "Unknown date" and (
-                args.nmonths == 0 or formatted_date >= cutoff_date
+                nmonths == 0 or formatted_date >= cutoff_date
             ):
                 releases.append(
                     {
@@ -119,9 +134,20 @@ def main():
         headers=["Repo Name", "Release Name", "Release Date", "Open Issues"],
     )
 
-    # Print Markdown table
-    print(markdown_table)
-    print()
+    return f"{markdown_table}\n"
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Fetch GitHub repository releases.")
+    parser.add_argument(
+        "--nmonths",
+        type=int,
+        default=0,
+        help="Number of months to filter releases. If not provided, shows all releases.",
+    )
+    args = parser.parse_args()
+
+    print(get_recent_releases_table(nmonths=args.nmonths), end="")
 
 
 if __name__ == "__main__":

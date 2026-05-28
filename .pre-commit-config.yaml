@@ -49,15 +49,6 @@ repos:
     rev: 0.9.0
     hooks:
       - id: air-format
-  - repo: https://github.com/lorenzwalthert/precommit
-    rev: v0.4.3.9021
-    hooks:
-      - id: parsable-R
-      - id: readme-rmd-rendered
-      - id: use-tidy-description
-      - id: lintr
-        args: [--warn_only]
-        verbose: true
   # enforce commit format
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v4.4.0
