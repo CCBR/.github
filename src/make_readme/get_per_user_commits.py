@@ -140,9 +140,7 @@ def get_commits_count(repo_full_name, eligible_members, include_all_branches=Fal
         has_more_pages = True
 
         while has_more_pages:
-            commits_url = (
-                f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}"
-            )
+            commits_url = f"https://api.github.com/repos/{repo_full_name}/commits?per_page=100&page={page}"
             if branch_ref:
                 commits_url += f"&sha={branch_ref}"
 
@@ -168,7 +166,9 @@ def get_commits_count(repo_full_name, eligible_members, include_all_branches=Fal
                 if sha:
                     seen_shas.add(sha)
 
-                author_login = commit["author"]["login"] if commit["author"] else "unknown"
+                author_login = (
+                    commit["author"]["login"] if commit["author"] else "unknown"
+                )
                 commit_date_str = commit["commit"]["author"]["date"]
                 commit_date = datetime.strptime(commit_date_str, "%Y-%m-%dT%H:%M:%SZ")
 
