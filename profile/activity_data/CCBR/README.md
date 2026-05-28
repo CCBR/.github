@@ -28,7 +28,7 @@
 | [VidhurDS](https://github.com/VidhurDS)                     | member              | No Activity Found |
 | [vinegang](https://github.com/vinegang)                     | member              | No Activity Found |
 | [wilfriedguiblet](https://github.com/wilfriedguiblet)       | member              | No Activity Found |
-| [wong-nw](https://github.com/wong-nw)                       | member              | 1                 |
+| [wong-nw](https://github.com/wong-nw)                       | member              | 0                 |
 | [wuy24](https://github.com/wuy24)                           | member              | No Activity Found |
 | [yongmzhao](https://github.com/yongmzhao)                   | member              | No Activity Found |
 | [abombin](https://github.com/abombin)                       | collaborator        | No Activity Found |
