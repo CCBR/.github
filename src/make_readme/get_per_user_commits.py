@@ -223,9 +223,7 @@ def get_repo_branch_tips(repo_full_name):
     return branch_tips
 
 
-def get_branch_commits_full(
-    repo_full_name, branch_name, commit_metadata
-):
+def get_branch_commits_full(repo_full_name, branch_name, commit_metadata):
     branch_shas = set()
     page = 1
     has_more_pages = True
