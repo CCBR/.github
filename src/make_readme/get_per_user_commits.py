@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+import tempfile
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -37,13 +38,24 @@ headers = {
 
 logger = logging.getLogger(__name__)
 
-STATE_SCHEMA_VERSION = 1
-STATE_FILE_PATH = (
-    Path(__file__).resolve().parents[2]
-    / "profile"
-    / "activity_data"
-    / "per_user_commits_state.json"
-)
+STATE_SCHEMA_VERSION = 2
+
+
+def get_default_state_file_path():
+    state_path_override = os.getenv("PER_USER_COMMITS_STATE_PATH")
+    if state_path_override:
+        return Path(state_path_override).expanduser().resolve()
+
+    cache_root = os.getenv("XDG_CACHE_HOME")
+    if cache_root:
+        cache_base = Path(cache_root).expanduser()
+    else:
+        cache_base = Path(tempfile.gettempdir()) / "ccbr_cache"
+
+    return cache_base / "per_user_commits_state.json"
+
+
+STATE_FILE_PATH = get_default_state_file_path()
 
 
 def initialize_state():
@@ -113,14 +125,12 @@ def get_commit_date(commit):
     return commit_author.get("date")
 
 
-def record_eligible_commit_metadata(commit, eligible_members, commit_metadata):
+def record_commit_metadata(commit, commit_metadata):
     sha = commit.get("sha")
     author_login = get_commit_author_login(commit)
     commit_date = get_commit_date(commit)
 
     if not sha or not author_login or not commit_date:
-        return None
-    if author_login not in eligible_members:
         return None
 
     commit_metadata[sha] = {"author": author_login, "date": commit_date}
@@ -214,7 +224,7 @@ def get_repo_branch_tips(repo_full_name):
 
 
 def get_branch_commits_full(
-    repo_full_name, branch_name, eligible_members, commit_metadata
+    repo_full_name, branch_name, commit_metadata
 ):
     branch_shas = set()
     page = 1
@@ -222,8 +232,8 @@ def get_branch_commits_full(
 
     while has_more_pages:
         response = requests.get(
-            f"https://api.github.com/repos/{repo_full_name}/commits"
-            f"?sha={branch_name}&per_page=100&page={page}",
+            f"https://api.github.com/repos/{repo_full_name}/commits",
+            params={"sha": branch_name, "per_page": 100, "page": page},
             headers=headers,
         )
         if response.status_code != 200:
@@ -243,9 +253,7 @@ def get_branch_commits_full(
         commits = response.json()
         has_more_pages = bool(commits)
         for commit in commits:
-            sha = record_eligible_commit_metadata(
-                commit, eligible_members, commit_metadata
-            )
+            sha = record_commit_metadata(commit, commit_metadata)
             if sha:
                 branch_shas.add(sha)
 
@@ -297,7 +305,15 @@ def aggregate_user_counts(active_shas, commit_metadata, eligible_members):
         if author not in eligible_members:
             continue
 
-        commit_date = parse_commit_date(commit_date_str)
+        try:
+            commit_date = parse_commit_date(commit_date_str)
+        except ValueError:
+            logger.warning(
+                "Skipping commit %s due to invalid cached date format: %s",
+                sha,
+                commit_date_str,
+            )
+            continue
         user_commits[author]["total"] += 1
         if commit_date >= one_month_ago:
             user_commits[author]["last_month"] += 1
@@ -406,11 +422,7 @@ def get_per_user_commits(
                             branch_shas = set(cached_shas)
                             added_from_delta = 0
                             for commit in commits:
-                                sha = record_eligible_commit_metadata(
-                                    commit,
-                                    members,
-                                    commit_metadata,
-                                )
+                                sha = record_commit_metadata(commit, commit_metadata)
                                 if sha:
                                     if sha not in branch_shas:
                                         added_from_delta += 1
@@ -427,7 +439,6 @@ def get_per_user_commits(
                     full_scan_shas = get_branch_commits_full(
                         repo_full_name,
                         branch_name,
-                        members,
                         commit_metadata,
                     )
                     if full_scan_shas is None:
