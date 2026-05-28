@@ -34,16 +34,16 @@
 
 | User                                                | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |          6145 |                   118 |                      880 |
-| [kopardev](https://github.com/kopardev)             |          2804 |                    14 |                      125 |
-| [finneyr](https://github.com/finneyr)               |           323 |                     0 |                        0 |
-| [kvaldez](https://github.com/kvaldez)               |           222 |                     0 |                        0 |
-| [wong-nw](https://github.com/wong-nw)               |           197 |                     4 |                       42 |
-| [escauley](https://github.com/escauley)             |           192 |                     0 |                       29 |
-| [samarth8392](https://github.com/samarth8392)       |           163 |                     2 |                       18 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |          7040 |                   193 |                     1187 |
+| [kopardev](https://github.com/kopardev)             |          2986 |                    67 |                      187 |
+| [finneyr](https://github.com/finneyr)               |           331 |                     0 |                        0 |
+| [escauley](https://github.com/escauley)             |           243 |                    15 |                       73 |
+| [kvaldez](https://github.com/kvaldez)               |           223 |                     0 |                        0 |
+| [wong-nw](https://github.com/wong-nw)               |           209 |                     7 |                       51 |
+| [samarth8392](https://github.com/samarth8392)       |           190 |                     6 |                       33 |
+| [maggiecam](https://github.com/maggiecam)           |            53 |                     0 |                        0 |
 | [pajailwala](https://github.com/pajailwala)         |            52 |                     5 |                       29 |
-| [maggiecam](https://github.com/maggiecam)           |            46 |                     0 |                        0 |
-| [phoman14](https://github.com/phoman14)             |            19 |                     0 |                       11 |
+| [bianjh-cloud](https://github.com/bianjh-cloud)     |            43 |                    10 |                       37 |
 
 ## About Us
 
