@@ -34,12 +34,12 @@
 
 | User                                                | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |          7040 |                   193 |                     1187 |
-| [kopardev](https://github.com/kopardev)             |          2986 |                    67 |                      187 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |          7040 |                   172 |                     1186 |
+| [kopardev](https://github.com/kopardev)             |          2986 |                    58 |                      187 |
 | [finneyr](https://github.com/finneyr)               |           331 |                     0 |                        0 |
 | [escauley](https://github.com/escauley)             |           243 |                    15 |                       73 |
 | [kvaldez](https://github.com/kvaldez)               |           223 |                     0 |                        0 |
-| [wong-nw](https://github.com/wong-nw)               |           209 |                     7 |                       51 |
+| [wong-nw](https://github.com/wong-nw)               |           209 |                     7 |                       50 |
 | [samarth8392](https://github.com/samarth8392)       |           190 |                     6 |                       33 |
 | [maggiecam](https://github.com/maggiecam)           |            53 |                     0 |                        0 |
 | [pajailwala](https://github.com/pajailwala)         |            52 |                     5 |                       29 |
