@@ -22,27 +22,28 @@
 
 | Repo Name                                      | Release Name                                                    | Release Date | Open Issues |
 | :--------------------------------------------- | :-------------------------------------------------------------- | :----------- | ----------: |
-| [actions](https://github.com/CCBR/actions)     | [v0.7.0](https://github.com/CCBR/actions/releases/tag/v0.7.0)   | 2026-06-16   |          12 |
-| [CHARLIE](https://github.com/CCBR/CHARLIE)     | [v0.13.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.13.0) | 2026-06-12   |          12 |
-| [Tools](https://github.com/CCBR/Tools)         | [v0.7.0](https://github.com/CCBR/Tools/releases/tag/v0.7.0)     | 2026-06-10   |          11 |
-| [RENEE](https://github.com/CCBR/RENEE)         | [v2.7.6](https://github.com/CCBR/RENEE/releases/tag/v2.7.6)     | 2026-06-08   |          25 |
+| [parkit](https://github.com/CCBR/parkit)       | [v3.1.0](https://github.com/CCBR/parkit/releases/tag/v3.1.0)    | 2026-06-25   |           0 |
+| [MOSuite](https://github.com/CCBR/MOSuite)     | [v0.3.2](https://github.com/CCBR/MOSuite/releases/tag/v0.3.2)   | 2026-06-22   |          29 |
+| [actions](https://github.com/CCBR/actions)     | [v0.7.1](https://github.com/CCBR/actions/releases/tag/v0.7.1)   | 2026-06-22   |          15 |
+| [CHARLIE](https://github.com/CCBR/CHARLIE)     | [v0.13.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.13.0) | 2026-06-12   |          13 |
+| [Tools](https://github.com/CCBR/Tools)         | [v0.7.0](https://github.com/CCBR/Tools/releases/tag/v0.7.0)     | 2026-06-10   |          10 |
+| [RENEE](https://github.com/CCBR/RENEE)         | [v2.7.6](https://github.com/CCBR/RENEE/releases/tag/v2.7.6)     | 2026-06-08   |          23 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)   | [v2.8.0](https://github.com/CCBR/CARLISLE/releases/tag/v2.8.0)  | 2026-06-02   |          11 |
-| [SINCLAIR](https://github.com/CCBR/SINCLAIR)   | [v0.4.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.4.0)  | 2026-05-13   |          56 |
-| [MOSuite](https://github.com/CCBR/MOSuite)     | [v0.3.1](https://github.com/CCBR/MOSuite/releases/tag/v0.3.1)   | 2026-05-07   |          30 |
-| [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE) | [v0.6.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.6.0) | 2026-04-17   |          56 |
+| [SINCLAIR](https://github.com/CCBR/SINCLAIR)   | [v0.4.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.4.0)  | 2026-05-13   |          55 |
+| [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE) | [v0.6.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.6.0) | 2026-04-17   |          57 |
 
 ## TOP contributors
 
 | User                                                | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |          7084 |                    70 |                     1146 |
-| [kopardev](https://github.com/kopardev)             |          3006 |                    88 |                      200 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |          7244 |                   230 |                     1270 |
+| [kopardev](https://github.com/kopardev)             |          3036 |                    99 |                      225 |
 | [finneyr](https://github.com/finneyr)               |           331 |                     0 |                        0 |
-| [escauley](https://github.com/escauley)             |           241 |                     8 |                       69 |
+| [escauley](https://github.com/escauley)             |           246 |                    11 |                       74 |
 | [kvaldez](https://github.com/kvaldez)               |           223 |                     0 |                        0 |
-| [wong-nw](https://github.com/wong-nw)               |           215 |                     6 |                       53 |
+| [wong-nw](https://github.com/wong-nw)               |           218 |                     9 |                       56 |
 | [samarth8392](https://github.com/samarth8392)       |           186 |                     0 |                       29 |
-| [pajailwala](https://github.com/pajailwala)         |            55 |                     4 |                       32 |
+| [pajailwala](https://github.com/pajailwala)         |            55 |                     3 |                       32 |
 | [maggiecam](https://github.com/maggiecam)           |            53 |                     0 |                        0 |
 | [bianjh-cloud](https://github.com/bianjh-cloud)     |            51 |                     8 |                       45 |
 
@@ -244,16 +245,16 @@ versions bundled together.
 
 | Repo Name                                                                    | Release Name                                                                   | Release Date | Open Issues |
 | :--------------------------------------------------------------------------- | :----------------------------------------------------------------------------- | :----------- | ----------: |
-| [actions](https://github.com/CCBR/actions)                                   | [v0.7.0](https://github.com/CCBR/actions/releases/tag/v0.7.0)                  | 2026-06-16   |          12 |
-| [CHARLIE](https://github.com/CCBR/CHARLIE)                                   | [v0.13.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.13.0)                | 2026-06-12   |          12 |
-| [Tools](https://github.com/CCBR/Tools)                                       | [v0.7.0](https://github.com/CCBR/Tools/releases/tag/v0.7.0)                    | 2026-06-10   |          11 |
-| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.6](https://github.com/CCBR/RENEE/releases/tag/v2.7.6)                    | 2026-06-08   |          25 |
+| [parkit](https://github.com/CCBR/parkit)                                     | [v3.1.0](https://github.com/CCBR/parkit/releases/tag/v3.1.0)                   | 2026-06-25   |           0 |
+| [MOSuite](https://github.com/CCBR/MOSuite)                                   | [v0.3.2](https://github.com/CCBR/MOSuite/releases/tag/v0.3.2)                  | 2026-06-22   |          29 |
+| [actions](https://github.com/CCBR/actions)                                   | [v0.7.1](https://github.com/CCBR/actions/releases/tag/v0.7.1)                  | 2026-06-22   |          15 |
+| [CHARLIE](https://github.com/CCBR/CHARLIE)                                   | [v0.13.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.13.0)                | 2026-06-12   |          13 |
+| [Tools](https://github.com/CCBR/Tools)                                       | [v0.7.0](https://github.com/CCBR/Tools/releases/tag/v0.7.0)                    | 2026-06-10   |          10 |
+| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.6](https://github.com/CCBR/RENEE/releases/tag/v2.7.6)                    | 2026-06-08   |          23 |
 | [CARLISLE](https://github.com/CCBR/CARLISLE)                                 | [v2.8.0](https://github.com/CCBR/CARLISLE/releases/tag/v2.8.0)                 | 2026-06-02   |          11 |
-| [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                 | [v0.4.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.4.0)                 | 2026-05-13   |          56 |
-| [MOSuite](https://github.com/CCBR/MOSuite)                                   | [v0.3.1](https://github.com/CCBR/MOSuite/releases/tag/v0.3.1)                  | 2026-05-07   |          30 |
-| [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                               | [v0.6.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.6.0)                | 2026-04-17   |          56 |
-| [HowTos](https://github.com/CCBR/HowTos)                                     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)                   | 2026-02-23   |          15 |
-| [parkit](https://github.com/CCBR/parkit)                                     | [v3.0.1](https://github.com/CCBR/parkit/releases/tag/v3.0.1)                   | 2026-02-19   |           2 |
+| [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                 | [v0.4.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.4.0)                 | 2026-05-13   |          55 |
+| [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                               | [v0.6.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.6.0)                | 2026-04-17   |          57 |
+| [HowTos](https://github.com/CCBR/HowTos)                                     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)                   | 2026-02-23   |          16 |
 | [LOGAN](https://github.com/CCBR/LOGAN)                                       | [v0.3.3](https://github.com/CCBR/LOGAN/releases/tag/v0.3.3)                    | 2026-02-12   |          21 |
 | [XAVIER](https://github.com/CCBR/XAVIER)                                     | [v3.2.2](https://github.com/CCBR/XAVIER/releases/tag/v3.2.2)                   | 2026-01-29   |          10 |
 | [ASPEN](https://github.com/CCBR/ASPEN)                                       | [v1.1.2](https://github.com/CCBR/ASPEN/releases/tag/v1.1.2)                    | 2025-07-17   |          18 |
