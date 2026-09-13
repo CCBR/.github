@@ -6,15 +6,15 @@
 | [burnskd](https://github.com/burnskd)                       | member              | No Activity Found |
 | [desireetillo](https://github.com/desireetillo)             | member              | No Activity Found |
 | [epehrsson](https://github.com/epehrsson)                   | member              | No Activity Found |
-| [escauley](https://github.com/escauley)                     | member              | 18                |
+| [escauley](https://github.com/escauley)                     | member              | 4                 |
 | [finneyr](https://github.com/finneyr)                       | member              | No Activity Found |
 | [Gunny-wlw](https://github.com/Gunny-wlw)                   | member              | No Activity Found |
 | [HidetakaOhnuki-NCI](https://github.com/HidetakaOhnuki-NCI) | member              | No Activity Found |
 | [huaitian1129](https://github.com/huaitian1129)             | member              | No Activity Found |
 | [JWrows2014](https://github.com/JWrows2014)                 | member              | No Activity Found |
 | [kcgfarb](https://github.com/kcgfarb)                       | member              | No Activity Found |
-| [kelly-sovacool](https://github.com/kelly-sovacool)         | member              | 3                 |
-| [kopardev](https://github.com/kopardev)                     | member              | 3                 |
+| [kelly-sovacool](https://github.com/kelly-sovacool)         | member              | 2                 |
+| [kopardev](https://github.com/kopardev)                     | member              | 2                 |
 | [kvaldez](https://github.com/kvaldez)                       | member              | No Activity Found |
 | [lobanovav](https://github.com/lobanovav)                   | member              | No Activity Found |
 | [maggiecam](https://github.com/maggiecam)                   | member              | No Activity Found |
@@ -22,20 +22,20 @@
 | [mw-nci](https://github.com/mw-nci)                         | member              | No Activity Found |
 | [onealka](https://github.com/onealka)                       | member              | No Activity Found |
 | [pajailwala](https://github.com/pajailwala)                 | member              | No Activity Found |
-| [phoman14](https://github.com/phoman14)                     | member              | 10                |
+| [phoman14](https://github.com/phoman14)                     | member              | 17                |
 | [raraslw-nih](https://github.com/raraslw-nih)               | member              | No Activity Found |
 | [RobSchultz4](https://github.com/RobSchultz4)               | member              | No Activity Found |
 | [samarth8392](https://github.com/samarth8392)               | member              | No Activity Found |
 | [shaoli86](https://github.com/shaoli86)                     | member              | No Activity Found |
 | [shuartbr](https://github.com/shuartbr)                     | member              | No Activity Found |
-| [TJoshMeyer](https://github.com/TJoshMeyer)                 | member              | 3                 |
+| [TJoshMeyer](https://github.com/TJoshMeyer)                 | member              | 10                |
 | [VidhurDS](https://github.com/VidhurDS)                     | member              | No Activity Found |
 | [vinegang](https://github.com/vinegang)                     | member              | No Activity Found |
 | [wilfriedguiblet](https://github.com/wilfriedguiblet)       | member              | No Activity Found |
-| [wong-nw](https://github.com/wong-nw)                       | member              | 2                 |
+| [wong-nw](https://github.com/wong-nw)                       | member              | 9                 |
 | [wuy24](https://github.com/wuy24)                           | member              | No Activity Found |
 | [yongmzhao](https://github.com/yongmzhao)                   | member              | No Activity Found |
-| [AlecSilver](https://github.com/AlecSilver)                 | collaborator        | 9                 |
+| [AlecSilver](https://github.com/AlecSilver)                 | collaborator        | 16                |
 | [dnousome](https://github.com/dnousome)                     | collaborator        | No Activity Found |
 | [e-hutchins](https://github.com/e-hutchins)                 | collaborator        | No Activity Found |
 | [fangliu117](https://github.com/fangliu117)                 | collaborator        | No Activity Found |
