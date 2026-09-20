@@ -22,28 +22,29 @@
 
 | Repo Name                                                                | Release Name                                                                 | Release Date | Open Issues |
 | :----------------------------------------------------------------------- | :--------------------------------------------------------------------------- | :----------- | ----------: |
+| [Tools](https://github.com/CCBR/Tools)                                   | [v0.7.1](https://github.com/CCBR/Tools/releases/tag/v0.7.1)                  | 2026-09-17   |          20 |
+| [ASPEN](https://github.com/CCBR/ASPEN)                                   | [v1.3.0](https://github.com/CCBR/ASPEN/releases/tag/v1.3.0)                  | 2026-09-17   |          20 |
 | [MOSuite](https://github.com/CCBR/MOSuite)                               | [v0.5.0](https://github.com/CCBR/MOSuite/releases/tag/v0.5.0)                | 2026-09-02   |          43 |
 | [MOObject](https://github.com/CCBR/MOObject)                             | [v0.5.0](https://github.com/CCBR/MOObject/releases/tag/v0.5.0)               | 2026-09-02   |           1 |
-| [actions](https://github.com/CCBR/actions)                               | [v0.7.2](https://github.com/CCBR/actions/releases/tag/v0.7.2)                | 2026-09-01   |          15 |
+| [actions](https://github.com/CCBR/actions)                               | [v0.7.2](https://github.com/CCBR/actions/releases/tag/v0.7.2)                | 2026-09-01   |          11 |
 | [functracer](https://github.com/CCBR/functracer)                         | [v0.1.1](https://github.com/CCBR/functracer/releases/tag/v0.1.1)             | 2026-09-01   |           2 |
-| [ASPEN](https://github.com/CCBR/ASPEN)                                   | [v1.2.0](https://github.com/CCBR/ASPEN/releases/tag/v1.2.0)                  | 2026-08-27   |          22 |
-| [syncweaver](https://github.com/CCBR/syncweaver)                         | [v0.1.1](https://github.com/CCBR/syncweaver/releases/tag/v0.1.1)             | 2026-07-29   |           7 |
+| [syncweaver](https://github.com/CCBR/syncweaver)                         | [v0.1.1](https://github.com/CCBR/syncweaver/releases/tag/v0.1.1)             | 2026-07-29   |           8 |
 | [reproducible-toolchain](https://github.com/CCBR/reproducible-toolchain) | [v1.0.0](https://github.com/CCBR/reproducible-toolchain/releases/tag/v1.0.0) | 2026-07-20   |           0 |
-| [RENEE](https://github.com/CCBR/RENEE)                                   | [v2.7.7](https://github.com/CCBR/RENEE/releases/tag/v2.7.7)                  | 2026-06-30   |          25 |
+| [RENEE](https://github.com/CCBR/RENEE)                                   | [v2.7.7](https://github.com/CCBR/RENEE/releases/tag/v2.7.7)                  | 2026-06-30   |          26 |
 | [parkit](https://github.com/CCBR/parkit)                                 | [v3.1.0](https://github.com/CCBR/parkit/releases/tag/v3.1.0)                 | 2026-06-25   |           1 |
 
 ## TOP contributors
 
 | User                                                | Total Commits | Commits in Last Month | Commits in Last 6 Months |
 | :-------------------------------------------------- | ------------: | --------------------: | -----------------------: |
-| [kelly-sovacool](https://github.com/kelly-sovacool) |          7681 |                   165 |                     1126 |
-| [kopardev](https://github.com/kopardev)             |          3142 |                    27 |                      230 |
+| [kelly-sovacool](https://github.com/kelly-sovacool) |          8005 |                   228 |                     1154 |
+| [kopardev](https://github.com/kopardev)             |          3147 |                    30 |                      234 |
 | [finneyr](https://github.com/finneyr)               |           331 |                     0 |                        0 |
-| [escauley](https://github.com/escauley)             |           289 |                     3 |                       64 |
-| [wong-nw](https://github.com/wong-nw)               |           238 |                     3 |                       49 |
+| [escauley](https://github.com/escauley)             |           290 |                     3 |                       65 |
+| [wong-nw](https://github.com/wong-nw)               |           239 |                     4 |                       50 |
 | [kvaldez](https://github.com/kvaldez)               |           223 |                     0 |                        0 |
-| [samarth8392](https://github.com/samarth8392)       |           186 |                     0 |                        9 |
-| [bianjh-cloud](https://github.com/bianjh-cloud)     |            57 |                     0 |                       48 |
+| [samarth8392](https://github.com/samarth8392)       |           186 |                     0 |                        3 |
+| [bianjh-cloud](https://github.com/bianjh-cloud)     |            57 |                     0 |                       47 |
 | [pajailwala](https://github.com/pajailwala)         |            55 |                     0 |                       32 |
 | [maggiecam](https://github.com/maggiecam)           |            53 |                     0 |                        0 |
 
@@ -245,18 +246,18 @@ versions bundled together.
 
 | Repo Name                                                                    | Release Name                                                                   | Release Date | Open Issues |
 | :--------------------------------------------------------------------------- | :----------------------------------------------------------------------------- | :----------- | ----------: |
+| [Tools](https://github.com/CCBR/Tools)                                       | [v0.7.1](https://github.com/CCBR/Tools/releases/tag/v0.7.1)                    | 2026-09-17   |          20 |
+| [ASPEN](https://github.com/CCBR/ASPEN)                                       | [v1.3.0](https://github.com/CCBR/ASPEN/releases/tag/v1.3.0)                    | 2026-09-17   |          20 |
 | [MOSuite](https://github.com/CCBR/MOSuite)                                   | [v0.5.0](https://github.com/CCBR/MOSuite/releases/tag/v0.5.0)                  | 2026-09-02   |          43 |
 | [MOObject](https://github.com/CCBR/MOObject)                                 | [v0.5.0](https://github.com/CCBR/MOObject/releases/tag/v0.5.0)                 | 2026-09-02   |           1 |
-| [actions](https://github.com/CCBR/actions)                                   | [v0.7.2](https://github.com/CCBR/actions/releases/tag/v0.7.2)                  | 2026-09-01   |          15 |
+| [actions](https://github.com/CCBR/actions)                                   | [v0.7.2](https://github.com/CCBR/actions/releases/tag/v0.7.2)                  | 2026-09-01   |          11 |
 | [functracer](https://github.com/CCBR/functracer)                             | [v0.1.1](https://github.com/CCBR/functracer/releases/tag/v0.1.1)               | 2026-09-01   |           2 |
-| [ASPEN](https://github.com/CCBR/ASPEN)                                       | [v1.2.0](https://github.com/CCBR/ASPEN/releases/tag/v1.2.0)                    | 2026-08-27   |          22 |
-| [syncweaver](https://github.com/CCBR/syncweaver)                             | [v0.1.1](https://github.com/CCBR/syncweaver/releases/tag/v0.1.1)               | 2026-07-29   |           7 |
+| [syncweaver](https://github.com/CCBR/syncweaver)                             | [v0.1.1](https://github.com/CCBR/syncweaver/releases/tag/v0.1.1)               | 2026-07-29   |           8 |
 | [reproducible-toolchain](https://github.com/CCBR/reproducible-toolchain)     | [v1.0.0](https://github.com/CCBR/reproducible-toolchain/releases/tag/v1.0.0)   | 2026-07-20   |           0 |
-| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.7](https://github.com/CCBR/RENEE/releases/tag/v2.7.7)                    | 2026-06-30   |          25 |
+| [RENEE](https://github.com/CCBR/RENEE)                                       | [v2.7.7](https://github.com/CCBR/RENEE/releases/tag/v2.7.7)                    | 2026-06-30   |          26 |
 | [parkit](https://github.com/CCBR/parkit)                                     | [v3.1.0](https://github.com/CCBR/parkit/releases/tag/v3.1.0)                   | 2026-06-25   |           1 |
 | [CHARLIE](https://github.com/CCBR/CHARLIE)                                   | [v0.13.0](https://github.com/CCBR/CHARLIE/releases/tag/v0.13.0)                | 2026-06-12   |          13 |
-| [Tools](https://github.com/CCBR/Tools)                                       | [v0.7.0](https://github.com/CCBR/Tools/releases/tag/v0.7.0)                    | 2026-06-10   |          20 |
-| [CARLISLE](https://github.com/CCBR/CARLISLE)                                 | [v2.8.0](https://github.com/CCBR/CARLISLE/releases/tag/v2.8.0)                 | 2026-06-02   |          23 |
+| [CARLISLE](https://github.com/CCBR/CARLISLE)                                 | [v2.8.0](https://github.com/CCBR/CARLISLE/releases/tag/v2.8.0)                 | 2026-06-02   |          26 |
 | [SINCLAIR](https://github.com/CCBR/SINCLAIR)                                 | [v0.4.0](https://github.com/CCBR/SINCLAIR/releases/tag/v0.4.0)                 | 2026-05-13   |          51 |
 | [CHAMPAGNE](https://github.com/CCBR/CHAMPAGNE)                               | [v0.6.0](https://github.com/CCBR/CHAMPAGNE/releases/tag/v0.6.0)                | 2026-04-17   |          65 |
 | [HowTos](https://github.com/CCBR/HowTos)                                     | [v1.1.0](https://github.com/CCBR/HowTos/releases/tag/v1.1.0)                   | 2026-02-23   |          18 |
@@ -266,7 +267,7 @@ versions bundled together.
 | [CCBR_tobias](https://github.com/CCBR/CCBR_tobias)                           | [v0.3.1](https://github.com/CCBR/CCBR_tobias/releases/tag/v0.3.1)              | 2025-06-23   |           3 |
 | [TRANQUIL](https://github.com/CCBR/TRANQUIL)                                 | [v0.3.0](https://github.com/CCBR/TRANQUIL/releases/tag/v0.3.0)                 | 2025-06-16   |           3 |
 | [CRISPIN](https://github.com/CCBR/CRISPIN)                                   | [v1.2.1](https://github.com/CCBR/CRISPIN/releases/tag/v1.2.1)                  | 2025-05-28   |          24 |
-| [Dockers2](https://github.com/CCBR/Dockers2)                                 | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                 | 2024-12-02   |          10 |
+| [Dockers2](https://github.com/CCBR/Dockers2)                                 | [v0.1.2](https://github.com/CCBR/Dockers2/releases/tag/v0.1.2)                 | 2024-12-02   |          11 |
 | [METRO](https://github.com/CCBR/METRO)                                       | [v2.1](https://github.com/CCBR/METRO/releases/tag/v2.1)                        | 2024-03-28   |           2 |
 | [CCBR-1144](https://github.com/CCBR/CCBR-1144)                               | [v1.0.0](https://github.com/CCBR/CCBR-1144/releases/tag/v1.0.0)                | 2024-03-04   |           0 |
 | [ccbr1271_ERVpipeline](https://github.com/CCBR/ccbr1271_ERVpipeline)         | [v1.0.3](https://github.com/CCBR/ccbr1271_ERVpipeline/releases/tag/v1.0.3)     | 2024-02-21   |           1 |
