@@ -1,7 +1,8 @@
-import requests
-import os
 import logging
+import os
 from datetime import datetime
+
+import requests
 
 try:
     from .github_api import (
